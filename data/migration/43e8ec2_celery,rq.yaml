@@ -1,0 +1,7 @@
+id: 43e8ec2_celery,rq
+source: celery
+target: rq
+repo: lonelam/onlinejudgeshu
+commit: 43e8ec2d90a3f14b3da385bf679c3287f837ab71
+pair_id: celery,rq
+commit_message: "\u5220\u9664 celery \u4F9D\u8D56"

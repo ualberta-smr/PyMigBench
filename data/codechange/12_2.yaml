@@ -1,0 +1,12 @@
+id: '12_2'
+repo: thombashi/datetimerange
+commit: 936761f779c4f7dc8c2d4c03c47b6e7b6e978a89
+source: dataproperty
+target: typepy
+pair_id: dataproperty,typepy
+filepath: datetimerange/__init__.py
+program_element: function call
+cardinality: 1-n
+properties: argument addition,argument deletion
+source_version_line: 484-485
+target_version_line: 498-499

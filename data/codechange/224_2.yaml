@@ -1,0 +1,12 @@
+id: '224_2'
+repo: intelai/inference-model-manager
+commit: 71aff3a0bd1ae2a7d7d91858dcbe721de152693e
+source: retrying
+target: tenacity
+pair_id: retrying,tenacity
+filepath: management/management_api/tenants/tenants_utils.py
+program_element: annotation
+cardinality: 1-1
+properties: argument transformation
+source_version_line: '129'
+target_version_line: '128'

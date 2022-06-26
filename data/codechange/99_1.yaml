@@ -1,0 +1,12 @@
+id: '99_1'
+repo: talkiq/gcloud-aio
+commit: d15540f94ecdf468b1baf7fd9c025e4f862b3b69
+source: gcloud-aio-core
+target: aiohttp
+pair_id: gcloud-aio-core,aiohttp
+filepath: taskqueue/gcloud/aio/taskqueue/taskqueue.py
+program_element: import
+cardinality: n-1
+properties: full statement replacement
+source_version_line: 12-17
+target_version_line: '6'

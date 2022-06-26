@@ -1,0 +1,12 @@
+id: '152_3'
+repo: malwaredllc/byob
+commit: 9291b54ed6a1c727030c571a6ebdf7b344781c8f
+source: pycryptodome
+target: pycryptodomex
+pair_id: pycryptodome,pycryptodomex
+filepath: byob/modules/ransom.py
+program_element: attribute access
+cardinality: 1-1
+properties: attribute name change
+source_version_line: '187'
+target_version_line: '187'

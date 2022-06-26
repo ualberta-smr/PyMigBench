@@ -1,0 +1,12 @@
+id: '34_1'
+repo: kizniche/mycodo
+commit: 516917351d7d8341375db4481ac72910c9510a42
+source: flask-restplus
+target: flask-restx
+pair_id: flask-restplus,flask-restx
+filepath: mycodo/mycodo_flask/api/measurement.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '8'
+target_version_line: '8'

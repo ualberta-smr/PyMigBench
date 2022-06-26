@@ -1,0 +1,12 @@
+id: '223_6'
+repo: ictu/quality-time
+commit: d3a9a16a72348cece48c9788cf10db6cc043ec7c
+source: requests
+target: aiohttp
+pair_id: requests,aiohttp
+filepath: components/collector/src/source_collectors/api_source_collectors/azure_devops.py
+program_element: function call
+cardinality: 1-1
+properties: making await
+source_version_line: '157'
+target_version_line: '158'

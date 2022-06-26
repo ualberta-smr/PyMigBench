@@ -1,0 +1,12 @@
+id: '188_1'
+repo: holgern/beem
+commit: f5ba90e2cc5bb88b29b173bae11ba46e06efecf7
+source: pyyaml
+target: ruamel.yaml
+pair_id: pyyaml,ruamel.yaml
+filepath: beem/utils.py
+program_element: import
+cardinality: 1-1
+properties: full statement replacement
+source_version_line: '9'
+target_version_line: '9'

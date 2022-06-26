@@ -1,0 +1,12 @@
+id: '48_2'
+repo: apryor6/flaskerize
+commit: 59d8319355bf95f26949fe13ac3d6be5b5282fb6
+source: flask-restplus
+target: flask-restx
+pair_id: flask-restplus,flask-restx
+filepath: flaskerize/schematics/entity/files/{{ name }}.template/controller.py.template
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '3'
+target_version_line: '3'

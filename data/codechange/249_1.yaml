@@ -1,0 +1,12 @@
+id: '249_1'
+repo: microsoft/nni
+commit: b955ac99a46094d2d701d447e9df07509767cc32
+source: ruamel.yaml
+target: pyyaml
+pair_id: ruamel.yaml,pyyaml
+filepath: test/nni_test/nnitest/utils.py
+program_element: function call
+cardinality: 1-1
+properties: function name change
+source_version_line: '51'
+target_version_line: '51'

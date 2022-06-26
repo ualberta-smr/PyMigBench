@@ -1,0 +1,12 @@
+id: '75_1'
+repo: intel/stacks-usecase
+commit: 22cc3f007a3267ca09a3f53b84fdbfff1f045e88
+source: flask
+target: quart
+pair_id: flask,quart
+filepath: github-issue-classification/python/rest.py
+program_element: import
+cardinality: 1-n
+properties: full statement replacement
+source_version_line: '19'
+target_version_line: '19:21'

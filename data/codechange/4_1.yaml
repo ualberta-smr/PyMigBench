@@ -1,0 +1,12 @@
+id: '4_1'
+repo: sapfir0/premier-eye
+commit: a7375ccc40885f04faf4a05852591e6de4ba676d
+source: celery
+target: rq
+pair_id: celery,rq
+filepath: pyfront/app/__init__.py
+program_element: import
+cardinality: 1-1
+properties: full statement replacement
+source_version_line: '2'
+target_version_line: '3'

@@ -1,0 +1,12 @@
+id: '105_1'
+repo: lonelam/onlinejudgeshu
+commit: b687d2067b28f6759a47ddcfe7bb575e8f83f679
+source: huey
+target: celery
+pair_id: huey,celery
+filepath: submission/tasks.py
+program_element: import
+cardinality: 1-1
+properties: module name change,object name change
+source_version_line: '2'
+target_version_line: '3'

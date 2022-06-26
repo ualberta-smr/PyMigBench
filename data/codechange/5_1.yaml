@@ -1,0 +1,12 @@
+id: '5_1'
+repo: thombashi/sqlitebiter
+commit: 26c8e7467fb764d6abca03d6830f7679cbfc3ea1
+source: dataproperty
+target: typepy
+pair_id: dataproperty,typepy
+filepath: sqlitebiter/sqlitebiter.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '13'
+target_version_line: '17'

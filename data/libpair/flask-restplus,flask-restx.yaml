@@ -1,0 +1,4 @@
+id: flask-restplus,flask-restx
+source: flask-restplus
+target: flask-restx
+domain: Development framework/extension

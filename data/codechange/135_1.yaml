@@ -1,0 +1,12 @@
+id: '135_1'
+repo: shoebot/shoebot
+commit: 0171fb9ff6ed2fed71dcfe82eef7ca723d609fcf
+source: pil
+target: pillow
+pair_id: pil,pillow
+filepath: shoebot/data/img.py
+program_element: import
+cardinality: 1-1
+properties: full statement replacement
+source_version_line: '9'
+target_version_line: '9'

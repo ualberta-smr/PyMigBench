@@ -1,0 +1,8 @@
+id: aa607bd_flask,quart
+source: flask
+target: quart
+repo: talkpython/async-techniques-python-course
+commit: aa607bd32a90d7693e91bd4a1be39baec2d889ba
+pair_id: flask,quart
+commit_message: Final code for first conversion from flask to quart (no real async
+  yet)

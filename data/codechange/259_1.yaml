@@ -1,0 +1,12 @@
+id: '259_1'
+repo: slackapi/python-slack-events-api
+commit: 813214e403c800722dd5a92449cb0a49b8b73abc
+source: slackclient
+target: slack-sdk
+pair_id: slackclient,slack-sdk
+filepath: example/example.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '2'
+target_version_line: '2'

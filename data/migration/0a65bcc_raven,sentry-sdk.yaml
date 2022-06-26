@@ -1,0 +1,7 @@
+id: 0a65bcc_raven,sentry-sdk
+source: raven
+target: sentry-sdk
+repo: habitissimo/myaas
+commit: 0a65bcc2ce97a2e3ad9b028b1cf9bcc58499f5d9
+pair_id: raven,sentry-sdk
+commit_message: update sentry client

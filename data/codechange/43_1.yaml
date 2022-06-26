@@ -1,0 +1,12 @@
+id: '43_1'
+repo: pythondataintegrator/pythondataintegrator
+commit: 598f275f11bdb1796b4ea0f6b3676a45758c08c4
+source: flask-restplus
+target: flask-restx
+pair_id: flask-restplus,flask-restx
+filepath: src/api/controllers/operation/models/DataOperationModels.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '5'
+target_version_line: '5'

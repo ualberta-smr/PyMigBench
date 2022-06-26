@@ -1,0 +1,12 @@
+id: '232_1'
+repo: pokainc/cfn-cross-region-export
+commit: 8d0ec687838ea69612d7b1236e2341198aef7937
+source: retrying
+target: tenacity
+pair_id: retrying,tenacity
+filepath: importer/lambda/cross_region_importer.py
+program_element: import
+cardinality: 1-1
+properties: full statement replacement
+source_version_line: '10'
+target_version_line: '10'

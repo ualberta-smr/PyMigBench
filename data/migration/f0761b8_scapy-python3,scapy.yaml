@@ -1,0 +1,14 @@
+id: f0761b8_scapy-python3,scapy
+source: scapy-python3
+target: scapy
+repo: plizonczyk/noiseprotocol
+commit: f0761b888a80201e28adb9fc2f614b997c868127
+pair_id: scapy-python3,scapy
+commit_message: 'Update scapy
+
+
+  scapy-python3 is an unofficial fork that is getting very oudated (many bug fixes
+  missing).
+
+  Migrates to original and up-to-date scapy, which now supports both python 2 and
+  3'

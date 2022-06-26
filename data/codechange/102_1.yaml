@@ -1,0 +1,12 @@
+id: '102_1'
+repo: duanhongyi/dwebsocket
+commit: d707ff652fd74c3420e83a50fc9b1b9026ed0d98
+source: gevent
+target: eventlet
+pair_id: gevent,eventlet
+filepath: examples/run_eventlet.py
+program_element: function call
+cardinality: n-n
+properties: '-'
+source_version_line: 14-15
+target_version_line: '16'

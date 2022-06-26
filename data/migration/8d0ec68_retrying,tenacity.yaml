@@ -1,0 +1,8 @@
+id: 8d0ec68_retrying,tenacity
+source: retrying
+target: tenacity
+repo: pokainc/cfn-cross-region-export
+commit: 8d0ec687838ea69612d7b1236e2341198aef7937
+pair_id: retrying,tenacity
+commit_message: 'Fix: Add retry logic to prevent throttling issue when listing exports
+  (#13)'

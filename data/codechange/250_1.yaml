@@ -1,0 +1,12 @@
+id: '250_1'
+repo: zulip/python-zulip-api
+commit: 2d9cf64db860ab5e5eabb8151254b0f3dab609bd
+source: slackclient
+target: slack-sdk
+pair_id: slackclient,slack-sdk
+filepath: zulip/integrations/bridge_with_slack/run-slack-bridge
+program_element: import
+cardinality: 1-n
+properties: full statement replacement
+source_version_line: '10'
+target_version_line: 10-11

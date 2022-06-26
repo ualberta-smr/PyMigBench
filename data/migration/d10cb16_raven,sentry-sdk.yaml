@@ -1,0 +1,9 @@
+id: d10cb16_raven,sentry-sdk
+source: raven
+target: sentry-sdk
+repo: weasyl/weasyl
+commit: d10cb162447d9e3a9506b76054851863b10ff27a
+pair_id: raven,sentry-sdk
+commit_message: "Upgrade Sentry client from raven to sentry-sdk\n\nThe API isn\u2019\
+  t great and there\u2019s already a workaround for a bug/glaring omission, but the\
+  \ library is actively maintained and the new performance/tracing features are nice."

@@ -1,0 +1,7 @@
+id: e38ec14_raven,sentry-sdk
+source: raven
+target: sentry-sdk
+repo: hypothesis/bouncer
+commit: e38ec148f5bad94648d338eea691d44abd4bdf5d
+pair_id: raven,sentry-sdk
+commit_message: Replace the raven dependency with `h_pyramid_sentry`

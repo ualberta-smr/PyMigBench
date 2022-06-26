@@ -1,0 +1,7 @@
+id: fe8e65d_dotenv,python-dotenv
+source: dotenv
+target: python-dotenv
+repo: kaveio/kavetoolbox
+commit: fe8e65df6d05e3818627638104d3ca0730753657
+pair_id: dotenv,python-dotenv
+commit_message: Changing dotenv to python-dotenv

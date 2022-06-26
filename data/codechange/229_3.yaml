@@ -1,0 +1,12 @@
+id: '229_3'
+repo: intelai/inference-model-manager
+commit: 71aff3a0bd1ae2a7d7d91858dcbe721de152693e
+source: retrying
+target: tenacity
+pair_id: retrying,tenacity
+filepath: tests/management_api_tests/context.py
+program_element: annotation
+cardinality: 1-1
+properties: argument transformation
+source_version_line: '107'
+target_version_line: '107'

@@ -1,0 +1,8 @@
+id: 35ae8f3_mysql-python,mysqlclient
+source: mysql-python
+target: mysqlclient
+repo: vippool/clerk
+commit: 35ae8f3a8f27de80f9650df805c8abfde2b21800
+pair_id: mysql-python,mysqlclient
+commit_message: "fix: mysql-python\u304B\u3089mysqlclient\u3078\u79FB\u884C&\u7D30\
+  \u304B\u306A\u4FEE\u6B63"

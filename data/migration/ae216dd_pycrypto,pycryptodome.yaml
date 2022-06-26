@@ -1,0 +1,7 @@
+id: ae216dd_pycrypto,pycryptodome
+source: pycrypto
+target: pycryptodome
+repo: wh1te909/tacticalrmm
+commit: ae216dd41d81c06bd5f7cad2bfef61f5c4843744
+pair_id: pycrypto,pycryptodome
+commit_message: replace pycrypto with newer pycryptodome

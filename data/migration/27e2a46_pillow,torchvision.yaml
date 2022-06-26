@@ -1,0 +1,7 @@
+id: 27e2a46_pillow,torchvision
+source: pillow
+target: torchvision
+repo: deep-spin/opennmt-ape
+commit: 27e2a46c1d1505324032b1d94fc6ce24d5b67e97
+pair_id: pillow,torchvision
+commit_message: cleaning up imagenet example and making it depend on torchvision

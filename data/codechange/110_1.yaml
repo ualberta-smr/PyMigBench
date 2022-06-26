@@ -1,0 +1,12 @@
+id: '110_1'
+repo: biznetgio/restknot
+commit: 6b10345398630fbb418f84ca7268d481ecad56ee
+source: kafka-python
+target: confluent-kafka
+pair_id: kafka-python,confluent-kafka
+filepath: api/app/helpers/producer.py
+program_element: function call
+cardinality: 1-1
+properties: argument deletion,argument transformation,function name change
+source_version_line: 18-21
+target_version_line: '20'

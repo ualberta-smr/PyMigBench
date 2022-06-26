@@ -1,0 +1,7 @@
+id: 71aff3a_retrying,tenacity
+source: retrying
+target: tenacity
+repo: intelai/inference-model-manager
+commit: 71aff3a0bd1ae2a7d7d91858dcbe721de152693e
+pair_id: retrying,tenacity
+commit_message: Replace retrying with tenacity (#119)

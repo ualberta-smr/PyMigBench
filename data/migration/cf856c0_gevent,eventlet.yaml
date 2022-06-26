@@ -1,0 +1,22 @@
+id: cf856c0_gevent,eventlet
+source: gevent
+target: eventlet
+repo: stefal/rtkbase
+commit: cf856c0cc9cbb0f810d59c9419f8789a1f9f5a80
+pair_id: gevent,eventlet
+commit_message: 'Switching back to eventlet
+
+  I can''t use gevent because:
+
+  - I can''t install it on an orange pi zero with only 256MB ram
+
+  - It breaks the satellite and location broadcast thread #29
+
+
+  Adding pyopenssl to fix #22 doesn''t help, I had to add pyopenssl AND switch from
+  urllib to requests
+
+
+  fix #29
+
+  fix #22'

@@ -1,0 +1,4 @@
+id: raven,sentry-sdk
+source: raven
+target: sentry-sdk
+domain: Logging/tracing

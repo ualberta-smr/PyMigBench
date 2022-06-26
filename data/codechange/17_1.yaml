@@ -1,0 +1,12 @@
+id: '17_1'
+repo: kizniche/mycodo
+commit: 047263beb9e4301c30eef0f44d8d93c722b31f20
+source: flask-restful
+target: flask-restplus
+pair_id: flask-restful,flask-restplus
+filepath: mycodo/mycodo_flask/api.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '5'
+target_version_line: '7'

@@ -1,0 +1,12 @@
+id: '92_1'
+repo: virtuber/openvtuber
+commit: 3abbc431e586218470f47eac10fa6d351c6fe907
+source: flask
+target: uvicorn
+pair_id: flask,uvicorn
+filepath: openvtuber-server/src/openvtuber/web/web.py
+program_element: import
+cardinality: 1-1
+properties: full statement replacement
+source_version_line: '3'
+target_version_line: '3'

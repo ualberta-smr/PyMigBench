@@ -1,0 +1,12 @@
+id: '7_1'
+repo: thombashi/pingparsing
+commit: 45fac3cb38661f80fc8bd129ce633cfd15423835
+source: dataproperty
+target: typepy
+pair_id: dataproperty,typepy
+filepath: pingparsing/_pingparsing.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '10'
+target_version_line: '11'

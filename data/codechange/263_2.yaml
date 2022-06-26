@@ -1,0 +1,12 @@
+id: '263_2'
+repo: alice-biometrics/petisco
+commit: 9abf7b1f6ef8c55bdddcb9a5c2eff513f6a93130
+source: slackclient
+target: slack-sdk
+pair_id: slackclient,slack-sdk
+filepath: petisco/legacy/notifier/infrastructure/slack/slack_notifier.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '2'
+target_version_line: '2'

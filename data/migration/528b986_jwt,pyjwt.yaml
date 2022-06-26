@@ -1,0 +1,7 @@
+id: 528b986_jwt,pyjwt
+source: jwt
+target: pyjwt
+repo: reddit/baseplate.py
+commit: 528b986f62e566611c00ba4fa13de526a6a78c1e
+pair_id: jwt,pyjwt
+commit_message: Fix PyPI package name for PyJWT

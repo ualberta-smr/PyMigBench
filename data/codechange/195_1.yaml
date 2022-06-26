@@ -1,0 +1,12 @@
+id: '195_1'
+repo: agdsn/sipa
+commit: ea23791cfdc36d614189418a01a57c78859fa5e8
+source: raven
+target: sentry-sdk
+pair_id: raven,sentry-sdk
+filepath: sipa/initialization.py
+program_element: function call
+cardinality: n-1
+properties: argument addition,argument deletion
+source_version_line: 186-187
+target_version_line: 189-194

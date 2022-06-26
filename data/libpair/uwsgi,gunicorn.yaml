@@ -1,0 +1,4 @@
+id: uwsgi,gunicorn
+source: uwsgi
+target: gunicorn
+domain: HTTP client/server

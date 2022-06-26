@@ -1,0 +1,12 @@
+id: '11_1'
+repo: thombashi/datetimerange
+commit: 936761f779c4f7dc8c2d4c03c47b6e7b6e978a89
+source: dataproperty
+target: typepy
+pair_id: dataproperty,typepy
+filepath: datetimerange/__init__.py
+program_element: import
+cardinality: 1-1
+properties: full statement replacement
+source_version_line: '11'
+target_version_line: '13'

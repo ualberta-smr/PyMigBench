@@ -1,0 +1,12 @@
+id: '93_1'
+repo: virtuber/openvtuber
+commit: 3abbc431e586218470f47eac10fa6d351c6fe907
+source: flask
+target: uvicorn
+pair_id: flask,uvicorn
+filepath: openvtuber-server/src/openvtuber/web/web.py
+program_element: function call
+cardinality: n-1
+properties: argument addition,argument deletion
+source_version_line: '6:17'
+target_version_line: '16'

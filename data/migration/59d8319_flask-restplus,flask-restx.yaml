@@ -1,0 +1,7 @@
+id: 59d8319_flask-restplus,flask-restx
+source: flask-restplus
+target: flask-restx
+repo: apryor6/flaskerize
+commit: 59d8319355bf95f26949fe13ac3d6be5b5282fb6
+pair_id: flask-restplus,flask-restx
+commit_message: Update to use flask-restx

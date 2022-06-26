@@ -1,0 +1,9 @@
+id: cbaf252_python-ldap,ldap3
+source: python-ldap
+target: ldap3
+repo: cloud-custodian/cloud-custodian
+commit: cbaf252ff1eb554511b0384392ea02387887ed6c
+pair_id: python-ldap,ldap3
+commit_message: "replace Python-LDAP with ldap3 (#690)\n\n* fix args in mailer\u2019\
+  s setup.py\n\n* switch mailer to ldap3\n\nclose #637\n\n* check that manager was\
+  \ set"

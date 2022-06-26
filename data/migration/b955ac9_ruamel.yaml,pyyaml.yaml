@@ -1,0 +1,7 @@
+id: b955ac9_ruamel.yaml,pyyaml
+source: ruamel.yaml
+target: pyyaml
+repo: microsoft/nni
+commit: b955ac99a46094d2d701d447e9df07509767cc32
+pair_id: ruamel.yaml,pyyaml
+commit_message: Use PyYAML instead of ruamel.yaml (#3702)

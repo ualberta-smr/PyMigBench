@@ -1,0 +1,7 @@
+id: 2adc6a9_xlrd,openpyxl
+source: xlrd
+target: openpyxl
+repo: dbvis-ukon/coronavis
+commit: 2adc6a9320c3dc5c801b75d1e32ca07bc13c2891
+pair_id: xlrd,openpyxl
+commit_message: '[refactor] migrate from xlrd to openpyxl and prepare for python 3.9+'

@@ -1,0 +1,7 @@
+id: 14388c3_pycrypto,pycryptodome
+source: pycrypto
+target: pycryptodome
+repo: camptocamp/c2cgeoportal
+commit: 14388c3d85ab164d7b36b1331534913a1c9d6c9a
+pair_id: pycrypto,pycryptodome
+commit_message: Use pycryptodome instance of the unmaintained pycrypto

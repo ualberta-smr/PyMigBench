@@ -1,0 +1,7 @@
+id: 24a848d_flask,uvicorn
+source: flask
+target: uvicorn
+repo: bretttolbert/verbecc-svc
+commit: 24a848d285ae2c6f3e5b06d1a8ee718cb3f17133
+pair_id: flask,uvicorn
+commit_message: switched from Flask to FastAPI/uvicorn

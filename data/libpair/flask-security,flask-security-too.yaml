@@ -1,0 +1,4 @@
+id: flask-security,flask-security-too
+source: flask-security
+target: flask-security-too
+domain: Development framework/extension

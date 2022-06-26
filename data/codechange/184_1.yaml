@@ -1,0 +1,12 @@
+id: '184_1'
+repo: common-workflow-language/cwltool
+commit: b9b65c0f4d7531c8a97690356ecf1a34214eaac2
+source: pyyaml
+target: ruamel.yaml
+pair_id: pyyaml,ruamel.yaml
+filepath: draft-4/salad/schema_salad/jsonld_context.py
+program_element: import
+cardinality: 1-1
+properties: full statement replacement
+source_version_line: '3'
+target_version_line: '4'

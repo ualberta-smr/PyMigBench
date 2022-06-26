@@ -1,0 +1,12 @@
+id: '26_1'
+repo: testdrivenio/flask-react-aws
+commit: d4119a0f609b151df99b2250e419c168e688a0c6
+source: flask-restful
+target: flask-restplus
+pair_id: flask-restful,flask-restplus
+filepath: services/users/project/api/ping.py
+program_element: function call
+cardinality: n-1
+properties: argument deletion
+source_version_line: '8'
+target_version_line: '6'

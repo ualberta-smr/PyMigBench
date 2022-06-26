@@ -1,0 +1,4 @@
+id: slackclient,slack-sdk
+source: slackclient
+target: slack-sdk
+domain: API wrapper

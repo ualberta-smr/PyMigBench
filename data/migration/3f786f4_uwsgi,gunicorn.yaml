@@ -1,0 +1,7 @@
+id: 3f786f4_uwsgi,gunicorn
+source: uwsgi
+target: gunicorn
+repo: materialsproject/mpcontribs
+commit: 3f786f4d1527e53a5fa2865f71e6bbad8add41a9
+pair_id: uwsgi,gunicorn
+commit_message: switch to gunicorn[gevent]

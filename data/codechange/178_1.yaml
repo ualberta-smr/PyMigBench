@@ -1,0 +1,12 @@
+id: '178_1'
+repo: ictu/quality-time
+commit: cc47b42cf70b6968b22a3819bf0b9714135271c1
+source: python-ldap
+target: ldap3
+pair_id: python-ldap,ldap3
+filepath: components/server/src/routes/auth.py
+program_element: import
+cardinality: 1-n
+properties: full statement replacement
+source_version_line: '11'
+target_version_line: 13-14

@@ -1,0 +1,12 @@
+id: '253_1'
+repo: slackapi/python-slack-sdk
+commit: 5f4d92a8048814fc4938753594e74d7cfc74c27a
+source: slackclient
+target: slack-sdk
+pair_id: slackclient,slack-sdk
+filepath: tutorial/PythOnBoardingBot/app.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '4'
+target_version_line: '4'

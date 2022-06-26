@@ -1,0 +1,7 @@
+id: 047263b_flask-restful,flask-restplus
+source: flask-restful
+target: flask-restplus
+repo: kizniche/mycodo
+commit: 047263beb9e4301c30eef0f44d8d93c722b31f20
+pair_id: flask-restful,flask-restplus
+commit_message: Move from Flask_Restful to Flask_RestPlus (#705)

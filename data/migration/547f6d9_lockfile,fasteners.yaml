@@ -1,0 +1,7 @@
+id: 547f6d9_lockfile,fasteners
+source: lockfile
+target: fasteners
+repo: kizniche/mycodo
+commit: 547f6d9f22e569007c1066e36ee5142f5e1b533d
+pair_id: lockfile,fasteners
+commit_message: Replace deprecated LockFile with fasteners (#260)

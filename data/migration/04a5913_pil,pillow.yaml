@@ -1,0 +1,12 @@
+id: 04a5913_pil,pillow
+source: pil
+target: pillow
+repo: pculture/mirocommunity
+commit: 04a5913ad380cb7ec7bebdc490d672107f3ee82d
+pair_id: pil,pillow
+commit_message: 'fix PIL build issues
+
+
+  PIL doesn''t build correctly on recent versions of Debian; it can''t find the
+
+  ZLIB include files.  Pillow is a forked version which does build correctly.'

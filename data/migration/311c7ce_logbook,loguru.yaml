@@ -1,0 +1,7 @@
+id: 311c7ce_logbook,loguru
+source: logbook
+target: loguru
+repo: thombashi/sqlitebiter
+commit: 311c7ce50a89316d5cab9bb2daef05315175faf2
+pair_id: logbook,loguru
+commit_message: Replace the logging library

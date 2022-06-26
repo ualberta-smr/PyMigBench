@@ -1,0 +1,7 @@
+id: 7ba8676_logbook,loguru
+source: logbook
+target: loguru
+repo: thombashi/tcconfig
+commit: 7ba8676b3b9347ef15142bfeba30d611822c154d
+pair_id: logbook,loguru
+commit_message: Replace the logging library

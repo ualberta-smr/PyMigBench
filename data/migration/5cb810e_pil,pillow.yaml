@@ -1,0 +1,14 @@
+id: 5cb810e_pil,pillow
+source: pil
+target: pillow
+repo: getpelican/pelican-plugins
+commit: 5cb810ebbd5204b6d4dbb6f2a6161219364c7f19
+pair_id: pil,pillow
+commit_message: 'Fixed issue with images that had no alpha channel. New feature that
+  dynamically sizes image as part of watermark.
+
+
+  Refactored photos. Added watermark and blacklist. Fixed some bugs. Updated documentation
+
+
+  Updated documentation to include pillow'

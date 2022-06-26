@@ -1,0 +1,7 @@
+id: 22cc3f0_flask,quart
+source: flask
+target: quart
+repo: intel/stacks-usecase
+commit: 22cc3f007a3267ca09a3f53b84fdbfff1f045e88
+pair_id: flask,quart
+commit_message: switching flask to a high perf asyc server

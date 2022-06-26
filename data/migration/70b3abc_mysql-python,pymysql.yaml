@@ -1,0 +1,10 @@
+id: 70b3abc_mysql-python,pymysql
+source: mysql-python
+target: pymysql
+repo: rnacentral/rnacentral-webcode
+commit: 70b3abc581fa5dbaabe9ffa7727cccec5433634e
+pair_id: mysql-python,pymysql
+commit_message: 'Use PyMySQL driver instead of MySQLdb
+
+
+  because PyMySQL is written in pure python and is easier to install'

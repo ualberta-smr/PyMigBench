@@ -1,0 +1,7 @@
+id: 3abbc43_flask,fastapi
+source: flask
+target: fastapi
+repo: virtuber/openvtuber
+commit: 3abbc431e586218470f47eac10fa6d351c6fe907
+pair_id: flask,fastapi
+commit_message: flask to fastapi and uvicorn

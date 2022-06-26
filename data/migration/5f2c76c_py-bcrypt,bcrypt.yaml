@@ -1,0 +1,10 @@
+id: 5f2c76c_py-bcrypt,bcrypt
+source: py-bcrypt
+target: bcrypt
+repo: pwnlandia/mhn
+commit: 5f2c76c5a4d257ec46de8b653160d8a4549f657e
+pair_id: py-bcrypt,bcrypt
+commit_message: 'Upgrade py-bcrypt to bcrypt
+
+
+  Fixes issue #244 on GitHub.'

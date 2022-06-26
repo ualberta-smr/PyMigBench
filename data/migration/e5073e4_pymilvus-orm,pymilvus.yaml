@@ -1,0 +1,7 @@
+id: e5073e4_pymilvus-orm,pymilvus
+source: pymilvus-orm
+target: pymilvus
+repo: milvus-io/bootcamp
+commit: e5073e4c0c3e799822e939268d80c8f0601ea4cf
+pair_id: pymilvus-orm,pymilvus
+commit_message: update video analysis

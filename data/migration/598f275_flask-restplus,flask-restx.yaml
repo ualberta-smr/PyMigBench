@@ -1,0 +1,7 @@
+id: 598f275_flask-restplus,flask-restx
+source: flask-restplus
+target: flask-restx
+repo: pythondataintegrator/pythondataintegrator
+commit: 598f275f11bdb1796b4ea0f6b3676a45758c08c4
+pair_id: flask-restplus,flask-restx
+commit_message: requirements updated and restx integrated. some model updated

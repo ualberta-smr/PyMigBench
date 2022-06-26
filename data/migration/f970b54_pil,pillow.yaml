@@ -1,0 +1,7 @@
+id: f970b54_pil,pillow
+source: pil
+target: pillow
+repo: rcos/observatory-retired
+commit: f970b543dc349460492a32a11731738062bfcc09
+pair_id: pil,pillow
+commit_message: Go to Pillow for images since PIL isn't updated

@@ -1,0 +1,12 @@
+id: '54_1'
+repo: orchest/orchest
+commit: 6b629d0d0dc7d44113e75a8a3f97a1c68d2ee131
+source: flask-restplus
+target: flask-restx
+pair_id: flask-restplus,flask-restx
+filepath: services/orchest-api/app/app/apis/namespace_experiments.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '8'
+target_version_line: '8'

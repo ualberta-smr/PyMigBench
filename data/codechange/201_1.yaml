@@ -1,0 +1,12 @@
+id: '201_1'
+repo: raptor123471/dingolingo
+commit: 1d8923abae93915ad877774e0fdc812d6c53a70b
+source: requests
+target: aiohttp
+pair_id: requests,aiohttp
+filepath: musicbot/linkutils.py
+program_element: function call
+cardinality: 1-n
+properties: argument addition,making async
+source_version_line: '35'
+target_version_line: 36-37

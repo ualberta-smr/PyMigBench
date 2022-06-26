@@ -1,0 +1,7 @@
+id: d707ff6_gevent,eventlet
+source: gevent
+target: eventlet
+repo: duanhongyi/dwebsocket
+commit: d707ff652fd74c3420e83a50fc9b1b9026ed0d98
+pair_id: gevent,eventlet
+commit_message: add py3k support

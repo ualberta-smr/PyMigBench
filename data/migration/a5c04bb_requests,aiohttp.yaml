@@ -1,0 +1,7 @@
+id: a5c04bb_requests,aiohttp
+source: requests
+target: aiohttp
+repo: talkpython/async-techniques-python-course
+commit: a5c04bbd9b5614a8fc0317050c01e4c241b1b41d
+pair_id: requests,aiohttp
+commit_message: fully async flask app based on quart and aiohttp

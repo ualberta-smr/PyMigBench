@@ -1,0 +1,12 @@
+id: '192_4'
+repo: thespaghettidetective/thespaghettidetective
+commit: b86b375952cc3e965c32201caa8094998c56cde7
+source: raven
+target: sentry-sdk
+pair_id: raven,sentry-sdk
+filepath: web/app/notifications.py
+program_element: function call
+cardinality: 1-1
+properties: function name change
+source_version_line: '60'
+target_version_line: '60'

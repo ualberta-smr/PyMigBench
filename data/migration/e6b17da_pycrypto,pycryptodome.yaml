@@ -1,0 +1,8 @@
+id: e6b17da_pycrypto,pycryptodome
+source: pycrypto
+target: pycryptodome
+repo: jumpserver/jumpserver
+commit: e6b17da57dd2ef030d29894fde7e9340b324776d
+pair_id: pycrypto,pycryptodome
+commit_message: "perf: \u53BB\u6389pycrypto\u5E93\n\nperf: \u663E\u793A\u6DFB\u52A0\
+  pycryptodome"

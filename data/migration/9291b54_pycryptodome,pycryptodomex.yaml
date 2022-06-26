@@ -1,0 +1,14 @@
+id: 9291b54_pycryptodome,pycryptodomex
+source: pycryptodome
+target: pycryptodomex
+repo: malwaredllc/byob
+commit: 9291b54ed6a1c727030c571a6ebdf7b344781c8f
+pair_id: pycryptodome,pycryptodomex
+commit_message: 'Suggest change to pycryptodomex vs pycryptodome Crypto hooks
+
+
+  In preparation for pyinstaller or similar compilation tools as it would
+
+  be beneficial to migrate to the more explicit Cryptodome namespace due
+
+  to a notable lack of support for pycryptodome hooks in pyinstaller.'

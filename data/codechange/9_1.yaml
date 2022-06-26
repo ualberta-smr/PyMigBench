@@ -1,0 +1,12 @@
+id: '9_1'
+repo: thombashi/pingparsing
+commit: 45fac3cb38661f80fc8bd129ce633cfd15423835
+source: dataproperty
+target: typepy
+pair_id: dataproperty,typepy
+filepath: pingparsing/_pingtransmitter.py
+program_element: import
+cardinality: 1-n
+properties: full statement replacement
+source_version_line: '11'
+target_version_line: 11-12

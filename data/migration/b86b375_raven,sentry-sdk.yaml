@@ -1,0 +1,8 @@
+id: b86b375_raven,sentry-sdk
+source: raven
+target: sentry-sdk
+repo: thespaghettidetective/thespaghettidetective
+commit: b86b375952cc3e965c32201caa8094998c56cde7
+pair_id: raven,sentry-sdk
+commit_message: Upgrade to Python 3.8 so that sentry will work with django channels
+  2

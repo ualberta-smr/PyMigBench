@@ -1,0 +1,7 @@
+id: 26c8e74_dataproperty,typepy
+source: dataproperty
+target: typepy
+repo: thombashi/sqlitebiter
+commit: 26c8e7467fb764d6abca03d6830f7679cbfc3ea1
+pair_id: dataproperty,typepy
+commit_message: 'Replace a module: DataProperty to typepy'

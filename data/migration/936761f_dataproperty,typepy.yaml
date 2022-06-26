@@ -1,0 +1,7 @@
+id: 936761f_dataproperty,typepy
+source: dataproperty
+target: typepy
+repo: thombashi/datetimerange
+commit: 936761f779c4f7dc8c2d4c03c47b6e7b6e978a89
+pair_id: dataproperty,typepy
+commit_message: Add timestamp as support input value types

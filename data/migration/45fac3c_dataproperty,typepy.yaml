@@ -1,0 +1,7 @@
+id: 45fac3c_dataproperty,typepy
+source: dataproperty
+target: typepy
+repo: thombashi/pingparsing
+commit: 45fac3cb38661f80fc8bd129ce633cfd15423835
+pair_id: dataproperty,typepy
+commit_message: 'Replace a module: DataProperty to typepy'

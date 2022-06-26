@@ -1,0 +1,10 @@
+id: cec78f4_pil,pillow
+source: pil
+target: pillow
+repo: numenta/nupic
+commit: cec78f4f639b51c9b59050b68f2b014a299d7c33
+pair_id: pil,pillow
+commit_message: 'replace PIL with Pillow
+
+
+  Pillow is a fork of PIL, with newer features and more (pip) packaging friendly.'

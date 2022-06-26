@@ -1,0 +1,7 @@
+id: ab4e5fd_requests,aiohttp
+source: requests
+target: aiohttp
+repo: talkpython/async-techniques-python-course
+commit: ab4e5fdd32982c97e9701d3e1fdb8c39882d4250
+pair_id: requests,aiohttp
+commit_message: final code for web scraping with asyncio.

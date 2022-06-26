@@ -1,0 +1,12 @@
+id: '197_1'
+repo: weasyl/weasyl
+commit: ea23791cfdc36d614189418a01a57c78859fa5e8
+source: raven
+target: sentry-sdk
+pair_id: raven,sentry-sdk
+filepath: weasyl/middleware.py
+program_element: import
+cardinality: n-1
+properties: full statement replacement
+source_version_line: '8:9'
+target_version_line: '10'

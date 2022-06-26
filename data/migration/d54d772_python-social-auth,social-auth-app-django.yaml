@@ -1,0 +1,7 @@
+id: d54d772_python-social-auth,social-auth-app-django
+source: python-social-auth
+target: social-auth-app-django
+repo: cmjatai/cmj
+commit: d54d772e5ae033845381879baa84a7bbd3ebc727
+pair_id: python-social-auth,social-auth-app-django
+commit_message: Adiciona React ao projeto

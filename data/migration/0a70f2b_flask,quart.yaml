@@ -1,0 +1,7 @@
+id: 0a70f2b_flask,quart
+source: flask
+target: quart
+repo: pgjones/faster_than_flask_article
+commit: 0a70f2bddae90da13da5bce2b77ea56355ecc5d1
+pair_id: flask,quart
+commit_message: Quart version

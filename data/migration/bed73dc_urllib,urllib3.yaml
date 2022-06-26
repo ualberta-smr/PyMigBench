@@ -1,0 +1,7 @@
+id: bed73dc_urllib,urllib3
+source: urllib
+target: urllib3
+repo: cyberreboot/vent
+commit: bed73dc079dace87f73de7dc9fd59e4128b45cb6
+pair_id: urllib,urllib3
+commit_message: urllib3

@@ -1,0 +1,12 @@
+id: '20_1'
+repo: ziirish/burp-ui
+commit: 8ef3b624e52ac6a9420c533b0dd744a36d91c4d3
+source: flask-restful
+target: flask-restplus
+pair_id: flask-restful,flask-restplus
+filepath: burpui/api/clients.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '15'
+target_version_line: '15'

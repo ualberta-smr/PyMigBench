@@ -1,0 +1,7 @@
+id: cdaff15_pycrypto,cryptography
+source: pycrypto
+target: cryptography
+repo: freeopcua/opcua-asyncio
+commit: cdaff1575780a99ab035abb08a6ad13414cd4859
+pair_id: pycrypto,cryptography
+commit_message: completely remove dependency to pycrypto

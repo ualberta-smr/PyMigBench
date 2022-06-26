@@ -1,0 +1,7 @@
+id: 12e3e80_ruamel.yaml,pyyaml
+source: ruamel.yaml
+target: pyyaml
+repo: cloud-custodian/cloud-custodian
+commit: 12e3e8084ddb2e7f5ccbc5ea3c3bd3e4c7e9c207
+pair_id: ruamel.yaml,pyyaml
+commit_message: tools/c7n_mailer - switch ruamel dependency to pyyaml (#5521)

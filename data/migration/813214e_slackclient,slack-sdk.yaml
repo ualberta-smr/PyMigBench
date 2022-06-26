@@ -1,0 +1,7 @@
+id: 813214e_slackclient,slack-sdk
+source: slackclient
+target: slack-sdk
+repo: slackapi/python-slack-events-api
+commit: 813214e403c800722dd5a92449cb0a49b8b73abc
+pair_id: slackclient,slack-sdk
+commit_message: version 3.0.0

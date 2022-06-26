@@ -1,0 +1,39 @@
+id: 4ad53b5_py-bcrypt,bcrypt
+source: py-bcrypt
+target: bcrypt
+repo: weasyl/weasyl
+commit: 4ad53b59da2fd7452546f04025414780911190f2
+pair_id: py-bcrypt,bcrypt
+commit_message: 'Change out ''py-bcrypt'' for ''bcrypt''. (#80)
+
+
+  * Initial changeout of py-bcrypt for pyca''s bcrypt
+
+
+  Resolves Issue #52
+
+
+  * Fixed bcrypt implementation switchover
+
+
+  Removing inadvertantly added link file, and adding ''/vagrant/ to .gitignore
+
+
+  * Style fixes for bcrypt implementation
+
+
+  * Fixed spacing error for split line
+
+
+  Line 77-78, split parameter did not match starting location of above parameter;
+  PEP 8
+
+
+  * Remove unneeded parentheses; shift .encode() earlier in function to eliminate
+  two uses
+
+
+  * Pre .encode() remaining HASHSUMs
+
+
+  * Unwrap previously wrapped lines'

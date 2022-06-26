@@ -1,0 +1,12 @@
+id: '227_1'
+repo: intelai/inference-model-manager
+commit: 71aff3a0bd1ae2a7d7d91858dcbe721de152693e
+source: retrying
+target: tenacity
+pair_id: retrying,tenacity
+filepath: tests/conftest.py
+program_element: import
+cardinality: 1-1
+properties: full statement replacement
+source_version_line: '4'
+target_version_line: '4'

@@ -1,0 +1,12 @@
+id: '255_4'
+repo: slackapi/python-slack-sdk
+commit: 5f4d92a8048814fc4938753594e74d7cfc74c27a
+source: slackclient
+target: slack-sdk
+pair_id: slackclient,slack-sdk
+filepath: tutorial/PythOnBoardingBot/async_app.py
+program_element: annotation
+cardinality: 1-1
+properties: annotation name change
+source_version_line: '123'
+target_version_line: '124'

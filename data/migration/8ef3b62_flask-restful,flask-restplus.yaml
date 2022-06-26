@@ -1,0 +1,7 @@
+id: 8ef3b62_flask-restful,flask-restplus
+source: flask-restful
+target: flask-restplus
+repo: ziirish/burp-ui
+commit: 8ef3b624e52ac6a9420c533b0dd744a36d91c4d3
+pair_id: flask-restful,flask-restplus
+commit_message: use flask-restplus

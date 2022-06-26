@@ -1,0 +1,12 @@
+id: 6b10345_kafka-python,confluent-kafka
+source: kafka-python
+target: confluent-kafka
+repo: biznetgio/restknot
+commit: 6b10345398630fbb418f84ca7268d481ecad56ee
+pair_id: kafka-python,confluent-kafka
+commit_message: 'Update: migrate to `confluent-kafka-python`
+
+
+  Works out-of-the-box for multiple Kafka brokers.
+
+  Bonus: it''s faster and more maintained.'

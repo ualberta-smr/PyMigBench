@@ -1,0 +1,7 @@
+id: d15540f_gcloud-aio-core,aiohttp
+source: gcloud-aio-core
+target: aiohttp
+repo: talkiq/gcloud-aio
+commit: d15540f94ecdf468b1baf7fd9c025e4f862b3b69
+pair_id: gcloud-aio-core,aiohttp
+commit_message: 'feat(taskqueue): migrate to cloudtasks v2beta2 (#13)'

@@ -1,0 +1,4 @@
+id: django-registration,django-registration-redux
+source: django-registration
+target: django-registration-redux
+domain: Development framework/extension

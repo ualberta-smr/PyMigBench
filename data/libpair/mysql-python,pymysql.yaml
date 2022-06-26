@@ -1,0 +1,4 @@
+id: mysql-python,pymysql
+source: mysql-python
+target: pymysql
+domain: Database client

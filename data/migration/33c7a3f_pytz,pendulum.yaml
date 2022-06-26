@@ -1,0 +1,7 @@
+id: 33c7a3f_pytz,pendulum
+source: pytz
+target: pendulum
+repo: oddluck/limnoria-plugins
+commit: 33c7a3fc0878d87ee803db91c17523a9e61af3ed
+pair_id: pytz,pendulum
+commit_message: 'NHL/NBA: replace pytz dependency'

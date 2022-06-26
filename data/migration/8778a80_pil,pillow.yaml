@@ -1,0 +1,10 @@
+id: 8778a80_pil,pillow
+source: pil
+target: pillow
+repo: django-wiki/django-wiki
+commit: 8778a806c038dc4e1a602e3094b518896b3db112
+pair_id: pil,pillow
+commit_message: 'Replace PIL with Pillow
+
+
+  Somehow PIL is not making Travis very happy atm.'

@@ -1,0 +1,7 @@
+id: 472f336_xlsxwriter,openpyxl
+source: xlsxwriter
+target: openpyxl
+repo: bcgov/gwells
+commit: 472f336f5db32ead27b6f4e171c6b8f782da8a02
+pair_id: xlsxwriter,openpyxl
+commit_message: Fixed excel export (no more warnings), removed redundant code

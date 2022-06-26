@@ -1,0 +1,7 @@
+id: 5ded32a_pycrypto,pycryptodome
+source: pycrypto
+target: pycryptodome
+repo: cybercentrecanada/assemblyline-service-cuckoo
+commit: 5ded32a52c92e7f3b89602ca3600fec9ac5a1662
+pair_id: pycrypto,pycryptodome
+commit_message: Use pycryptodome instead of pycrypto

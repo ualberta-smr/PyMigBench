@@ -1,0 +1,10 @@
+id: 1476b62_python-social-auth,social-auth-app-django
+source: python-social-auth
+target: social-auth-app-django
+repo: onespacemedia/project-template
+commit: 1476b623632cb53d778b5c2d9899e905ba2ab9c6
+pair_id: python-social-auth,social-auth-app-django
+commit_message: 'Migrate to from python-social-auth to social-auth-app-django
+
+
+  Closes #110'

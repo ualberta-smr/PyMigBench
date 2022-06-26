@@ -1,0 +1,7 @@
+id: 58237dc_mysql-python,pymysql
+source: mysql-python
+target: pymysql
+repo: hustlzp/flask-boost
+commit: 58237dc1f7a1296630951179b78a29a77c730b85
+pair_id: mysql-python,pymysql
+commit_message: Use PyMySQL instead of MySQL-python to support Python3.

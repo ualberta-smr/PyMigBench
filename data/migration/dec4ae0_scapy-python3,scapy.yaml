@@ -1,0 +1,7 @@
+id: dec4ae0_scapy-python3,scapy
+source: scapy-python3
+target: scapy
+repo: tklab-tud/id2t
+commit: dec4ae016d18537f225dd3dac52c70ccdb973d58
+pair_id: scapy-python3,scapy
+commit_message: update scapy-python3 to scapy 2.4.2

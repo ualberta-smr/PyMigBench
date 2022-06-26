@@ -1,0 +1,11 @@
+id: e7d4fd5_fuzzywuzzy,rapidfuzz
+source: fuzzywuzzy
+target: rapidfuzz
+repo: nlpia/nlpia-bot
+commit: e7d4fd555779cd407fa5e09e1944b2ba56c5db12
+pair_id: fuzzywuzzy,rapidfuzz
+commit_message: 'use rapidfuzz instead of fuzzywuzzy
+
+
+
+  Former-commit-id: 53c3bce9c5f9bcec87475759fe040289d45ba1d6'

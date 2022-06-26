@@ -1,0 +1,8 @@
+id: 5393290_pil,pillow
+source: pil
+target: pillow
+repo: slav0nic/djangobb
+commit: 53932904f35c8d8f60628fdc33eb618e450abbe2
+pair_id: pil,pillow
+commit_message: update to requirements (using Pillow than PIL that is obsolete. Also
+  added new haystack and security fixes of django)

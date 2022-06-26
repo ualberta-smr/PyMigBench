@@ -1,0 +1,7 @@
+id: d6cd8df_pyqt5,pyside6
+source: pyqt5
+target: pyside6
+repo: toufool/auto-split
+commit: d6cd8dfdc93aff7e1ff8763a06a64e20a18a4a33
+pair_id: pyqt5,pyside6
+commit_message: Python 3.9 + PyQt6

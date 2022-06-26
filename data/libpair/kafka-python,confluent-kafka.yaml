@@ -1,0 +1,4 @@
+id: kafka-python,confluent-kafka
+source: kafka-python
+target: confluent-kafka
+domain: API wrapper

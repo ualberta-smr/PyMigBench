@@ -1,0 +1,7 @@
+id: 57d12c4_openpyxl,xlsxwriter
+source: openpyxl
+target: xlsxwriter
+repo: bcgov/gwells
+commit: 57d12c42941e0afb07ac46fb51f8316d6c5a0cea
+pair_id: openpyxl,xlsxwriter
+commit_message: openpyxl seems to cause pod to crash - maybe too much memory?

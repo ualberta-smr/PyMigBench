@@ -1,0 +1,7 @@
+id: d84b166_python-social-auth,social-auth-app-django
+source: python-social-auth
+target: social-auth-app-django
+repo: humanbrainproject/hbp_neuromorphic_platform
+commit: d84b1668c85c9b57f0a5269b7b5ff72f2ff73808
+pair_id: python-social-auth,social-auth-app-django
+commit_message: Updated from python-social-auth (deprecated) to social-auth-app-django

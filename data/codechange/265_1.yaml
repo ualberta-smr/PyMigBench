@@ -1,0 +1,12 @@
+id: '265_1'
+repo: bcgov/gwells
+commit: 472f336f5db32ead27b6f4e171c6b8f782da8a02
+source: xlsxwriter
+target: openpyxl
+pair_id: xlsxwriter,openpyxl
+filepath: app/backend/wells/management/commands/export.py
+program_element: function call
+cardinality: 1-1
+properties: function name change
+source_version_line: '53'
+target_version_line: '53'

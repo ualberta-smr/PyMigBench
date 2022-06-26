@@ -1,0 +1,7 @@
+id: 5924dc0_pycrypto,pycryptodome
+source: pycrypto
+target: pycryptodome
+repo: n1nj4sec/pupy
+commit: 5924dc061834370c0b0688ff21d86bcbcfbeb000
+pair_id: pycrypto,pycryptodome
+commit_message: Let's try to use pycryptodome instead of pycrypto

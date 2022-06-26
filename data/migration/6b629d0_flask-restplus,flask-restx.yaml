@@ -1,0 +1,15 @@
+id: 6b629d0_flask-restplus,flask-restx
+source: flask-restplus
+target: flask-restx
+repo: orchest/orchest
+commit: 6b629d0d0dc7d44113e75a8a3f97a1c68d2ee131
+pair_id: flask-restplus,flask-restx
+commit_message: 'Replace ''flask_restplus'' with ''flask_restx''
+
+
+  `flask_restplus'' is not longer actively maintained, whereas
+
+  `flask_restx` is an actively maintained fork.
+
+
+  Fixes: #23'

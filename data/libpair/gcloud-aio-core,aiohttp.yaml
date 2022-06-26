@@ -1,0 +1,4 @@
+id: gcloud-aio-core,aiohttp
+source: gcloud-aio-core
+target: aiohttp
+domain: HTTP client/server

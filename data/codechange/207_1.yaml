@@ -1,0 +1,12 @@
+id: '207_1'
+repo: talkpython/async-techniques-python-course
+commit: a5c04bbd9b5614a8fc0317050c01e4c241b1b41d
+source: requests
+target: aiohttp
+pair_id: requests,aiohttp
+filepath: src/10-async-web/acityscape_api/services/sun_service.py
+program_element: function call
+cardinality: 1-n
+properties: making async
+source_version_line: '21'
+target_version_line: 21-22

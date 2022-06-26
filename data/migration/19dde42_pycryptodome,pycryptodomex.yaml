@@ -1,0 +1,10 @@
+id: 19dde42_pycryptodome,pycryptodomex
+source: pycryptodome
+target: pycryptodomex
+repo: azure/aztk
+commit: 19dde429a702c29bdcf86a69805053ecfd02edee
+pair_id: pycryptodome,pycryptodomex
+commit_message: 'Fix: switch from pycryptodome to pycryptodomex (#564)
+
+
+  Fix: switch from pycryptodome to pycryptodomex'

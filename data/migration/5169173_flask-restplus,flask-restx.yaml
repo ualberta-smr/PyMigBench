@@ -1,0 +1,7 @@
+id: 5169173_flask-restplus,flask-restx
+source: flask-restplus
+target: flask-restx
+repo: kizniche/mycodo
+commit: 516917351d7d8341375db4481ac72910c9510a42
+pair_id: flask-restplus,flask-restx
+commit_message: Merge from Flask-RESTPlus to Flask-RESTX ([#742

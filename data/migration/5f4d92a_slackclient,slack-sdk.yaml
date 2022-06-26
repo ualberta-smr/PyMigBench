@@ -1,0 +1,7 @@
+id: 5f4d92a_slackclient,slack-sdk
+source: slackclient
+target: slack-sdk
+repo: slackapi/python-slack-sdk
+commit: 5f4d92a8048814fc4938753594e74d7cfc74c27a
+pair_id: slackclient,slack-sdk
+commit_message: Update the tutorial to be up-to-date with v3

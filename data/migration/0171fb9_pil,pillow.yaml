@@ -1,0 +1,11 @@
+id: 0171fb9_pil,pillow
+source: pil
+target: pillow
+repo: shoebot/shoebot
+commit: 0171fb9ff6ed2fed71dcfe82eef7ca723d609fcf
+pair_id: pil,pillow
+commit_message: 'Reorganise requirements
+
+  - Optional / difficult packages at the end.
+
+  - Use Pillow instead of PIL - change Img to work with this.'

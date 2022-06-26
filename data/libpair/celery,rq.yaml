@@ -1,0 +1,4 @@
+id: celery,rq
+source: celery
+target: rq
+domain: Multitasking/multiprocessing

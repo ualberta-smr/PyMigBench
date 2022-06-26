@@ -1,0 +1,12 @@
+id: '189_1'
+repo: habitissimo/myaas
+commit: 0a65bcc2ce97a2e3ad9b028b1cf9bcc58499f5d9
+source: raven
+target: sentry-sdk
+pair_id: raven,sentry-sdk
+filepath: src/runserver.py
+program_element: import
+cardinality: 1-n
+properties: full statement replacement
+source_version_line: '7'
+target_version_line: 6-7

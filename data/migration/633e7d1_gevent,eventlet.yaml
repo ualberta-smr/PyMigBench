@@ -1,0 +1,7 @@
+id: 633e7d1_gevent,eventlet
+source: gevent
+target: eventlet
+repo: iqtlabs/poseidon
+commit: 633e7d1b5b0c7f12a89bdb5504084f4f760a37eb
+pair_id: gevent,eventlet
+commit_message: use eventlet instead of gevent

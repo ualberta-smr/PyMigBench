@@ -1,0 +1,4 @@
+id: pillow,torchvision
+source: pillow
+target: torchvision
+domain: Image processing

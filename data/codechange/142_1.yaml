@@ -1,0 +1,12 @@
+id: '142_1'
+repo: camptocamp/c2cgeoportal
+commit: 14388c3d85ab164d7b36b1331534913a1c9d6c9a
+source: pycrypto
+target: pycryptodome
+pair_id: pycrypto,pycryptodome
+filepath: geoportal/c2cgeoportal_geoportal/scripts/urllogin.py
+program_element: function call
+cardinality: 1-1
+properties: function name change
+source_version_line: '53'
+target_version_line: '53'

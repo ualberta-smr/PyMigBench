@@ -1,0 +1,12 @@
+id: '86_1'
+repo: talkpython/async-techniques-python-course
+commit: aa607bd32a90d7693e91bd4a1be39baec2d889ba
+source: flask
+target: quart
+pair_id: flask,quart
+filepath: src/10-async-web/acityscape_api/views/city_api.py
+program_element: import
+cardinality: 1-1
+properties: module name change
+source_version_line: '1'
+target_version_line: '1'

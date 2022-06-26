@@ -1,0 +1,10 @@
+id: d3a9a16_requests,aiohttp
+source: requests
+target: aiohttp
+repo: ictu/quality-time
+commit: d3a9a16a72348cece48c9788cf10db6cc043ec7c
+pair_id: requests,aiohttp
+commit_message: 'Async collector (#1102)
+
+
+  Collector is now asynchronous.'

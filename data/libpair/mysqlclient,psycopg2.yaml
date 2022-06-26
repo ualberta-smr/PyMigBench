@@ -1,0 +1,4 @@
+id: mysqlclient,psycopg2
+source: mysqlclient
+target: psycopg2
+domain: Database client

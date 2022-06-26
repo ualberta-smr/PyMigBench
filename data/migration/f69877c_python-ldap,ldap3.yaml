@@ -1,0 +1,7 @@
+id: f69877c_python-ldap,ldap3
+source: python-ldap
+target: ldap3
+repo: thehive-project/cortex-analyzers
+commit: f69877cf2f81aa27b63e2c3c3f1072a6868aba4a
+pair_id: python-ldap,ldap3
+commit_message: use ldap3, add port/search_field, move templates

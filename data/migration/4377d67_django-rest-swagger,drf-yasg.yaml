@@ -1,0 +1,10 @@
+id: 4377d67_django-rest-swagger,drf-yasg
+source: django-rest-swagger
+target: drf-yasg
+repo: opengisch/qfieldcloud
+commit: 4377d67a99ed8b6680276cbf4585cbac18439b37
+pair_id: django-rest-swagger,drf-yasg
+commit_message: 'Replace the deprecated rest_framework_swagger with drf_yasg
+
+
+  using redoc'

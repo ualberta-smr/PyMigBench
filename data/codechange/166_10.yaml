@@ -1,0 +1,12 @@
+id: '166_10'
+repo: toufool/auto-split
+commit: 86244b6c190f48200826788fa6af4bd8d26b230f
+source: pyqt5
+target: pyside6
+pair_id: pyqt5,pyside6
+filepath: src/design.py
+program_element: attribute access
+cardinality: 1-1
+properties: attribute name change
+source_version_line: '109'
+target_version_line: '111'

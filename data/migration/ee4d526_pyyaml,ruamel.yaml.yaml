@@ -1,0 +1,7 @@
+id: ee4d526_pyyaml,ruamel.yaml
+source: pyyaml
+target: ruamel.yaml
+repo: cloud-custodian/cloud-custodian
+commit: ee4d52689e1f4965439b2d360c89eddf8767a935
+pair_id: pyyaml,ruamel.yaml
+commit_message: tools/c7n_mailer port to py36 (#1417)

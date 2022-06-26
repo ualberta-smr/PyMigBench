@@ -1,0 +1,7 @@
+id: 89c7afc_pymilvus-orm,pymilvus
+source: pymilvus-orm
+target: pymilvus
+repo: milvus-io/bootcamp
+commit: 89c7afc6548362e9bbf1dbf6142aabb02bc3bb93
+pair_id: pymilvus-orm,pymilvus
+commit_message: update benchmark test script for Milvus 2.0.0-rc5

@@ -1,0 +1,12 @@
+id: '6_2'
+repo: thombashi/sqlitebiter
+commit: 26c8e7467fb764d6abca03d6830f7679cbfc3ea1
+source: dataproperty
+target: typepy
+pair_id: dataproperty,typepy
+filepath: sqlitebiter/sqlitebiter.py
+program_element: function call
+cardinality: 1-1
+properties: function name change
+source_version_line: '136'
+target_version_line: '136'
