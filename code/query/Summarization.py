@@ -14,4 +14,4 @@ class Summarization(Query):
             options = DataTypeKeys
 
         for key in options:
-            print(f"{len(self.db.mapping[key])} {DataTypeName[key]}")
+            print(f"{len(self.db.get_list(key))} {DataTypeName[key]}")

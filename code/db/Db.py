@@ -13,7 +13,7 @@ class Db:
     code_changes: list[CodeChange]
     migrations: list[Migration]
     lib_pairs: list[LibPair]
-    mapping: dict[str, list]
+    _mapping: dict[str, list]
 
     def __init__(self, data_root: str):
         self.data_root = data_root
@@ -22,11 +22,14 @@ class Db:
         self.code_changes = self.load_list("codechange", CodeChange)
         self.migrations = self.load_list("migration", Migration)
         self.lib_pairs = self.load_list("libpair", LibPair)
-        self.mapping = {
+        self._mapping = {
             CodeChangeKey: self.code_changes,
             MigrationKey: self.migrations,
             LibPairKey: self.lib_pairs,
         }
+
+    def get_list(self, key: str):
+        return self._mapping[key]
 
     def load_list(self, data_folder, data_type):
         paths = Path(self.data_root, data_folder).glob("*.yaml")
