@@ -7,6 +7,8 @@ pair_id: dataproperty,typepy
 filepath: datetimerange/__init__.py
 program_element: function call
 cardinality: 1-n
-properties: argument addition,argument deletion
+properties:
+- argument addition
+- argument deletion
 source_version_line: 457-458
 target_version_line: 465-466

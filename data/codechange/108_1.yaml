@@ -7,6 +7,7 @@ pair_id: kafka-python,confluent-kafka
 filepath: oslo_messaging/_drivers/impl_kafka.py
 program_element: import
 cardinality: n-n
-properties: full statement replacement
+properties:
+- full statement replacement
 source_version_line: 26-28
 target_version_line: 18-19

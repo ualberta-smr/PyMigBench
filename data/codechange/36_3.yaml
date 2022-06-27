@@ -7,6 +7,7 @@ pair_id: flask-restplus,flask-restx
 filepath: mycodo/mycodo_flask/api/pid.py
 program_element: import
 cardinality: 1-1
-properties: module name change
+properties:
+- module name change
 source_version_line: '9'
 target_version_line: '9'

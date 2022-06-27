@@ -7,6 +7,8 @@ pair_id: ruamel.yaml,pyyaml
 filepath: test/nni_test/nnitest/utils.py
 program_element: function call
 cardinality: 1-1
-properties: argument deletion,function name change
+properties:
+- argument deletion
+- function name change
 source_version_line: '46'
 target_version_line: '46'

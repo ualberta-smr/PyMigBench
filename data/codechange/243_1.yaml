@@ -7,6 +7,7 @@ pair_id: ruamel.yaml,pyyaml
 filepath: nni/tools/package_utils/__init__.py
 program_element: function call
 cardinality: 1-1
-properties: function name change
+properties:
+- function name change
 source_version_line: '229'
 target_version_line: '229'

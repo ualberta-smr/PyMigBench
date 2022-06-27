@@ -7,6 +7,7 @@ pair_id: py-bcrypt,bcrypt
 filepath: weasyl/login.py
 program_element: function call
 cardinality: 1-1
-properties: argument transformation
+properties:
+- argument transformation
 source_version_line: '284'
 target_version_line: '285'

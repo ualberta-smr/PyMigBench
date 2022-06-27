@@ -7,6 +7,8 @@ pair_id: flask,uvicorn
 filepath: openvtuber-server/src/openvtuber/web/web.py
 program_element: function call
 cardinality: n-1
-properties: argument addition,argument deletion
+properties:
+- argument addition
+- argument deletion
 source_version_line: '6:17'
 target_version_line: '16'

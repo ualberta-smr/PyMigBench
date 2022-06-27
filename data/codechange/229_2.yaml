@@ -7,6 +7,7 @@ pair_id: retrying,tenacity
 filepath: tests/management_api_tests/context.py
 program_element: annotation
 cardinality: 1-1
-properties: argument transformation
+properties:
+- argument transformation
 source_version_line: '90'
 target_version_line: '90'

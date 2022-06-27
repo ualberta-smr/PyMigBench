@@ -7,6 +7,6 @@ pair_id: ruamel.yaml,pyyaml
 filepath: nni/experiment/config/common.py
 program_element: function call
 cardinality: n-1
-properties: '-'
+properties: []
 source_version_line: '121'
 target_version_line: '121'

@@ -7,6 +7,7 @@ pair_id: pyqt5,pyside6
 filepath: src/design.py
 program_element: attribute access
 cardinality: 1-1
-properties: attribute name change
+properties:
+- attribute name change
 source_version_line: '29'
 target_version_line: '31'

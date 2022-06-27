@@ -7,6 +7,7 @@ pair_id: python-ldap,ldap3
 filepath: tools/c7n_mailer/c7n_mailer/address.py
 program_element: import
 cardinality: 1-n
-properties: full statement replacement
+properties:
+- full statement replacement
 source_version_line: '19'
 target_version_line: 16-20

@@ -7,6 +7,8 @@ pair_id: gcloud-aio-core,aiohttp
 filepath: bigquery/gcloud/aio/bigquery/bigquery.py
 program_element: function call
 cardinality: 1-n
-properties: argument addition,argument transformation
+properties:
+- argument addition
+- argument transformation
 source_version_line: 96-100
 target_version_line: 91-94

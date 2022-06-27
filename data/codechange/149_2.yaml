@@ -7,6 +7,7 @@ pair_id: pycryptodome,pycryptodomex
 filepath: byob/core/security.py
 program_element: import
 cardinality: 1-1
-properties: module name change
+properties:
+- module name change
 source_version_line: '21'
 target_version_line: '21'

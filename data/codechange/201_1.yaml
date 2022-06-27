@@ -7,6 +7,8 @@ pair_id: requests,aiohttp
 filepath: musicbot/linkutils.py
 program_element: function call
 cardinality: 1-n
-properties: argument addition,making async
+properties:
+- argument addition
+- making async
 source_version_line: '35'
 target_version_line: 36-37

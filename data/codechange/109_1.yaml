@@ -7,6 +7,7 @@ pair_id: kafka-python,confluent-kafka
 filepath: agent/dnsagent/clis/start.py
 program_element: function call
 cardinality: 1-n
-properties: argument transformation
+properties:
+- argument transformation
 source_version_line: '35'
 target_version_line: 35-36

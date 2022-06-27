@@ -7,6 +7,8 @@ pair_id: requests,aiohttp
 filepath: components/collector/src/base_collectors/source_collector.py
 program_element: function call
 cardinality: 1-1
-properties: argument deletion,argument transformation
+properties:
+- argument deletion
+- argument transformation
 source_version_line: '106'
 target_version_line: '101'

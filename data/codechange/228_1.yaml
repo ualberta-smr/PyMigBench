@@ -7,6 +7,7 @@ pair_id: retrying,tenacity
 filepath: tests/management_api_tests/context.py
 program_element: import
 cardinality: 1-1
-properties: full statement replacement
+properties:
+- full statement replacement
 source_version_line: '1'
 target_version_line: '1'

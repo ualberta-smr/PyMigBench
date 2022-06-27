@@ -7,6 +7,7 @@ pair_id: eventlet,gevent
 filepath: web_app/server.py
 program_element: function call
 cardinality: 1-1
-properties: function name change
+properties:
+- function name change
 source_version_line: '29'
 target_version_line: '27'

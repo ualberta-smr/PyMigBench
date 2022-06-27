@@ -7,6 +7,7 @@ pair_id: requests,aiohttp
 filepath: src/04-asyncio/web_scraping/async_scrape/program.py
 program_element: function call
 cardinality: 1-n
-properties: making async
+properties:
+- making async
 source_version_line: '10'
 target_version_line: 13-14

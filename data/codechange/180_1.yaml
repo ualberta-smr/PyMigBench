@@ -7,6 +7,9 @@ pair_id: python-ldap,ldap3
 filepath: components/server/src/routes/auth.py
 program_element: function call
 cardinality: 1-1
-properties: argument addition,argument deletion,function name change
+properties:
+- argument addition
+- argument deletion
+- function name change
 source_version_line: 50-51
 target_version_line: '73'

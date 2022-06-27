@@ -7,6 +7,7 @@ pair_id: pymilvus-orm,pymilvus
 filepath: solutions/video_similarity_search/object_detection/server/src/milvus_helpers.py
 program_element: import
 cardinality: n-1
-properties: module name change
+properties:
+- module name change
 source_version_line: 2-5:7
 target_version_line: '3'

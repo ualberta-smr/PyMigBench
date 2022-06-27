@@ -7,6 +7,7 @@ pair_id: lockfile,fasteners
 filepath: mycodo/sensors/mh_z16.py
 program_element: import
 cardinality: 1-1
-properties: full statement replacement
+properties:
+- full statement replacement
 source_version_line: '22'
 target_version_line: '22'

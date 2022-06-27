@@ -7,6 +7,7 @@ pair_id: slackclient,slack-sdk
 filepath: zulip/integrations/bridge_with_slack/run-slack-bridge
 program_element: import
 cardinality: 1-n
-properties: full statement replacement
+properties:
+- full statement replacement
 source_version_line: '10'
 target_version_line: 10-11

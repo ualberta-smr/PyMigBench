@@ -7,6 +7,7 @@ pair_id: slackclient,slack-sdk
 filepath: tutorial/PythOnBoardingBot/async_app.py
 program_element: import
 cardinality: 1-n
-properties: full statement replacement
+properties:
+- full statement replacement
 source_version_line: '7'
 target_version_line: 7-8

@@ -7,6 +7,8 @@ pair_id: lockfile,fasteners
 filepath: mycodo/devices/atlas_scientific_i2c.py
 program_element: function call
 cardinality: 1-1
-properties: argument addition,argument deletion
+properties:
+- argument addition
+- argument deletion
 source_version_line: '81'
 target_version_line: '83'

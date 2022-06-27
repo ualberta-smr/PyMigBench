@@ -7,6 +7,9 @@ pair_id: flask,quart
 filepath: Python Server/app/server.py
 program_element: attribute access
 cardinality: 1-1
-properties: changing to function call,making await,attribute name change
+properties:
+- changing to function call
+- making await
+- attribute name change
 source_version_line: '154'
 target_version_line: '115'

@@ -7,6 +7,6 @@ pair_id: gevent,eventlet
 filepath: examples/run_eventlet.py
 program_element: function call
 cardinality: n-n
-properties: '-'
+properties: []
 source_version_line: 14-15
 target_version_line: '16'

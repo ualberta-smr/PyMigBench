@@ -7,6 +7,8 @@ pair_id: pycrypto,pycryptodome
 filepath: geoportal/c2cgeoportal_geoportal/scripts/urllogin.py
 program_element: function call
 cardinality: 1-1
-properties: argument addition,argument transformation
+properties:
+- argument addition
+- argument transformation
 source_version_line: '48'
 target_version_line: '48'

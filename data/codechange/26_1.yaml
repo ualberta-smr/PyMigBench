@@ -7,6 +7,7 @@ pair_id: flask-restful,flask-restplus
 filepath: services/users/project/api/ping.py
 program_element: function call
 cardinality: n-1
-properties: argument deletion
+properties:
+- argument deletion
 source_version_line: '8'
 target_version_line: '6'

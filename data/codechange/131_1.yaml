@@ -7,6 +7,6 @@ pair_id: logbook,loguru
 filepath: tcconfig/_logger.py
 program_element: function call
 cardinality: n-1
-properties: '-'
+properties: []
 source_version_line: '18:29'
 target_version_line: '20'

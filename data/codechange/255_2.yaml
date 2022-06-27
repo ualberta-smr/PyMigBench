@@ -7,6 +7,7 @@ pair_id: slackclient,slack-sdk
 filepath: tutorial/PythOnBoardingBot/async_app.py
 program_element: annotation
 cardinality: 1-1
-properties: annotation name change
+properties:
+- annotation name change
 source_version_line: '65'
 target_version_line: '66'

@@ -7,6 +7,7 @@ pair_id: argparse,configargparse
 filepath: pogom/utils.py
 program_element: function call
 cardinality: 1-1
-properties: argument deletion
+properties:
+- argument deletion
 source_version_line: '87'
 target_version_line: '48'

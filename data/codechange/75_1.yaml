@@ -7,6 +7,7 @@ pair_id: flask,quart
 filepath: github-issue-classification/python/rest.py
 program_element: import
 cardinality: 1-n
-properties: full statement replacement
+properties:
+- full statement replacement
 source_version_line: '19'
 target_version_line: '19:21'

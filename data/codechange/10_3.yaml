@@ -7,6 +7,7 @@ pair_id: dataproperty,typepy
 filepath: pingparsing/_pingtransmitter.py
 program_element: function call
 cardinality: 1-1
-properties: function name change
+properties:
+- function name change
 source_version_line: '110'
 target_version_line: '112'

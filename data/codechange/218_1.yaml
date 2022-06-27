@@ -7,6 +7,8 @@ pair_id: requests,aiohttp
 filepath: components/collector/src/collector_utilities/functions.py
 program_element: attribute access
 cardinality: 1-1
-properties: changing to function call,making await
+properties:
+- changing to function call
+- making await
 source_version_line: '18'
 target_version_line: '18'

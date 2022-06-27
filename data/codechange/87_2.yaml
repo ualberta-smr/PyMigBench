@@ -7,6 +7,7 @@ pair_id: flask,quart
 filepath: src/10-async-web/acityscape_api/views/city_api.py
 program_element: function call
 cardinality: 1-1
-properties: function name change
+properties:
+- function name change
 source_version_line: '11'
 target_version_line: '11'

@@ -7,6 +7,7 @@ pair_id: pyqt5,pyside6
 filepath: src/settings_file.py
 program_element: import
 cardinality: 1-1
-properties: module name change
+properties:
+- module name change
 source_version_line: '273'
 target_version_line: '276'

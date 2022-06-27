@@ -7,6 +7,7 @@ pair_id: ruamel.yaml,pyyaml
 filepath: tools/c7n_mailer/c7n_mailer/utils.py
 program_element: import
 cardinality: 1-1
-properties: full statement replacement
+properties:
+- full statement replacement
 source_version_line: '28'
 target_version_line: '22'

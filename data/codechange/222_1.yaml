@@ -7,6 +7,8 @@ pair_id: requests,aiohttp
 filepath: components/collector/src/source_collectors/api_source_collectors/azure_devops.py
 program_element: function call
 cardinality: 1-1
-properties: argument deletion,making await
+properties:
+- argument deletion
+- making await
 source_version_line: '31'
 target_version_line: '31'
