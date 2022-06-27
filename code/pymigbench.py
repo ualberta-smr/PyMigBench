@@ -2,7 +2,7 @@ import os.path
 import argparse
 
 from db.Db import Db
-from query.Summarize import Summarize
+from query.Summarize import Summarization
 
 
 def get_args():
@@ -20,7 +20,7 @@ def main():
     db.load()
 
     if args.summary:
-        summarize = Summarize(db, args.summary)
+        summarize = Summarization(db, args.summary)
         summarize.run()
 
 
