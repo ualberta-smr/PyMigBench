@@ -3,6 +3,7 @@ from pathlib import Path
 
 import yaml
 
+from core.Constants import CodeChangeKey, MigrationKey, LibPairKey
 from db.CodeChange import CodeChange
 from db.LibPair import LibPair
 from db.Migration import Migration
@@ -12,6 +13,7 @@ class Db:
     code_changes: list[CodeChange]
     migrations: list[Migration]
     lib_pairs: list[LibPair]
+    mapping: dict[str, list]
 
     def __init__(self, data_root: str):
         self.data_root = data_root
@@ -20,6 +22,11 @@ class Db:
         self.code_changes = self.load_list("codechange", CodeChange)
         self.migrations = self.load_list("migration", Migration)
         self.lib_pairs = self.load_list("libpair", LibPair)
+        self.mapping = {
+            CodeChangeKey: self.code_changes,
+            MigrationKey: self.migrations,
+            LibPairKey: self.lib_pairs,
+        }
 
     def load_list(self, data_folder, data_type):
         paths = Path(self.data_root, data_folder).glob("*.yaml")

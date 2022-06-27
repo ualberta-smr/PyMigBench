@@ -1,12 +1,17 @@
+from core.Constants import DataTypeName, DataTypeKeys
 from db.Db import Db
 from query.Query import Query
 
 
 class Summarize(Query):
-    def __init__(self, db: Db):
+    def __init__(self, db: Db, options: list[str]):
         self.db = db
+        self.options = options
 
     def run(self):
-        print(f"{len(self.db.lib_pairs)} library pairs")
-        print(f"{len(self.db.migrations)} migrations")
-        print(f"{len(self.db.code_changes)} code changes")
+        options = self.options
+        if "all" in options:
+            options = DataTypeKeys
+
+        for key in options:
+            print(f"{len(self.db.mapping[key])} {DataTypeName[key]}")
