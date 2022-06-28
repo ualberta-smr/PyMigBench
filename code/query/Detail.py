@@ -9,8 +9,11 @@ class Detail(Query):
         self.arguments = arguments
 
     def run(self):
-        item = self.db.get_item(self.arguments.data_types[0], self.arguments.filters["id"])
-        if not item:
+        items = self.db.filter_list(self.arguments.data_types[0], self.arguments.filters)
+        if not items:
             print("No items found")
-        else:
-            print(item.get_raw_content())
+            return
+        for i, item in enumerate(items, start=1):
+            print(f"== item {i} ==")
+            print(item.get_raw_content().strip())
+            print()
