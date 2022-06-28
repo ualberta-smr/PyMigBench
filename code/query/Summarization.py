@@ -10,7 +10,7 @@ class Summarization(Query):
 
     def run(self):
         options = self.options
-        if "all" in options:
+        if not options or "all" in options:
             options = DataTypeKeys
 
         for key in options:

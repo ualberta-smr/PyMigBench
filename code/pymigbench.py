@@ -1,34 +1,30 @@
-import os.path
 import argparse
+import os.path
 
 from db.Db import Db
-from query.Listing import Listing
 from query.Query import Query
-from query.Summarization import Summarization
+from query.QueryFactory import build_query
 
 
 def get_args():
     parser = argparse.ArgumentParser(description="query PyMigBench")
-    parser.add_argument("--summary", nargs='+', required=False,
-                        help="summaries of data. use 'all' to print all data. "
-                             "Or pass one or more of 'lp', 'mg' and 'cc'")
-    parser.add_argument("--list", required=False, help="list ids of all items of a data type")
+    parser.add_argument("query", nargs='?', default="s",
+                        help="One of 'summary' or 'list'. First few letters of the options are also valid.")
+    parser.add_argument("-f", "--filter", required=False, nargs='+',
+                        help="Filters to the query. Please check query specific documentation")
+
     return parser.parse_args()
 
 
 def main():
     args = get_args()
-    print(args)
     db = Db(os.path.abspath("../data"))
     db.load()
-    query: Query = None
-    if args.summary:
-        query = Summarization(db, args.summary)
-    elif args.list:
-        query = Listing(db, args.list)
-
+    query: Query = build_query(db, args.query, args.filter)
     if query:
         query.run()
+    else:
+        print("error building the query")
 
 
 if __name__ == '__main__':
