@@ -14,5 +14,5 @@ class Summarization(Query):
         if not data_types or "all" in data_types:
             data_types = DataTypeKeys
 
-        for key in data_types:
-            print(f"{len(self.db.get_list(key))} {DataTypeName[key]}")
+        for dt in data_types:
+            print(f"{len(self.db.get_list(dt))} {DataTypeName[dt]}")

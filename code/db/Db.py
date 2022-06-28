@@ -29,11 +29,11 @@ class Db:
             LibPairKey: self.lib_pairs,
         }
 
-    def get_list(self, type_key: str):
-        return self._mapping[type_key].values()
+    def get_list(self, data_type: str):
+        return self._mapping[data_type].values()
 
-    def get_item(self, type_key: str, id: str):
-        return self._mapping[type_key][id]
+    def get_item(self, data_type: str, id: str):
+        return self._mapping[data_type][id]
 
     def load_items(self, data_folder, data_type):
         paths = Path(self.data_root, data_folder).glob("*.yaml")
