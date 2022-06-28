@@ -1,17 +1,18 @@
+from core.Arguments import Arguments
 from core.Constants import DataTypeName, DataTypeKeys
 from db.Db import Db
 from query.Query import Query
 
 
 class Summarization(Query):
-    def __init__(self, db: Db, filters: list[str]):
+    def __init__(self, db: Db, arguments: Arguments):
         self.db = db
-        self.type_keys = filters
+        self.arguments = arguments
 
     def run(self):
-        options = self.type_keys
-        if not options or "all" in options:
-            options = DataTypeKeys
+        data_types = self.arguments.data_types
+        if not data_types or "all" in data_types:
+            data_types = DataTypeKeys
 
-        for key in options:
+        for key in data_types:
             print(f"{len(self.db.get_list(key))} {DataTypeName[key]}")

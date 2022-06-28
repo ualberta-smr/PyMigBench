@@ -8,9 +8,10 @@ from query.QueryFactory import build_query
 
 def main():
     args = build_arguments()
+    print(args)
     db = Db(os.path.abspath("../data"))
     db.load()
-    query: Query = build_query(db, args.query, args.filters)
+    query: Query = build_query(db, args)
     if query:
         query.run()
     else:
