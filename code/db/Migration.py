@@ -1,5 +1,7 @@
-class Migration:
-    id: str
+from db.DataItem import DataItem
+
+
+class Migration(DataItem):
     source: str
     target: str
     repo: str

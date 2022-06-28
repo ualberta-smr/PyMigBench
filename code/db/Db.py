@@ -5,6 +5,7 @@ import yaml
 
 from core.Constants import CodeChangeKey, MigrationKey, LibPairKey
 from db.CodeChange import CodeChange
+from db.DataItem import DataItem
 from db.LibPair import LibPair
 from db.Migration import Migration
 
@@ -31,15 +32,20 @@ class Db:
     def get_list(self, type_key: str):
         return self._mapping[type_key].values()
 
+    def get_item(self, type_key: str, id: str):
+        return self._mapping[type_key][id]
+
     def load_items(self, data_folder, data_type):
         paths = Path(self.data_root, data_folder).glob("*.yaml")
         items = (self.load_item(p, data_type) for p in paths)
         dict = {item.id: item for item in items}
         return dict
 
-    def load_item(self, yaml_path: Path, ctor: Type):
+    def load_item(self, yaml_path: Path, ctor: Type[DataItem]):
         with open(yaml_path) as f:
-            dict = yaml.safe_load(f)
+            content = f.read()
             obj = ctor()
+            obj._raw_content = content
+            dict = yaml.safe_load(content)
             obj.__dict__.update(dict)
             return obj

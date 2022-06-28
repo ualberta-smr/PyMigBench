@@ -1,5 +1,7 @@
-class CodeChange:
-    id: str
+from db.DataItem import DataItem
+
+
+class CodeChange(DataItem):
     repo: str
     commit: str
     source: str
