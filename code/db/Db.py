@@ -1,3 +1,4 @@
+import fnmatch
 from typing import Type
 from pathlib import Path
 
@@ -31,6 +32,12 @@ class Db:
 
     def get_list(self, data_type: str):
         return self._mapping[data_type].values()
+
+    def filter_list(self, data_type: str, filters: dict[str, str]):
+        list = self.get_list(data_type)
+        for k, v in filters.items():
+            list = [item for item in list if fnmatch.fnmatch(getattr(item, k), v)]
+        return list
 
     def get_item(self, data_type: str, id: str):
         return self._mapping[data_type][id]
