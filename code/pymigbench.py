@@ -1,26 +1,16 @@
-import argparse
 import os.path
 
+from core.Arguments import build_arguments
 from db.Db import Db
 from query.Query import Query
 from query.QueryFactory import build_query
 
 
-def get_args():
-    parser = argparse.ArgumentParser(description="query PyMigBench")
-    parser.add_argument("query", nargs='?', default="s",
-                        help="One of 'summary' or 'list'. First few letters of the options are also valid.")
-    parser.add_argument("-f", "--filter", required=False, nargs='+',
-                        help="Filters to the query. Please check query specific documentation")
-
-    return parser.parse_args()
-
-
 def main():
-    args = get_args()
+    args = build_arguments()
     db = Db(os.path.abspath("../data"))
     db.load()
-    query: Query = build_query(db, args.query, args.filter)
+    query: Query = build_query(db, args.query, args.filters)
     if query:
         query.run()
     else:
