@@ -52,7 +52,6 @@ class Db:
         with open(yaml_path) as f:
             content = f.read()
             obj = ctor()
-            obj._raw_content = content
             dict = yaml.safe_load(content)
             obj.__dict__.update(dict)
             return obj

@@ -1,3 +1,5 @@
+import json
+
 from core.Arguments import Arguments
 from db.Db import Db
 from query.Query import Query
@@ -15,5 +17,6 @@ class Detail(Query):
             return
         for i, item in enumerate(items, start=1):
             print(f"== item {i} ==")
-            print(item.get_raw_content().strip())
+            output = json.dumps(item.__dict__, indent=2, sort_keys=False)
+            print(output)
             print()
