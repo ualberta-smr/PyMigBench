@@ -4,12 +4,12 @@ from query.Query import Query
 
 
 class Summarization(Query):
-    def __init__(self, db: Db, options: list[str]):
+    def __init__(self, db: Db, filters: list[str]):
         self.db = db
-        self.options = options
+        self.type_keys = filters
 
     def run(self):
-        options = self.options
+        options = self.type_keys
         if not options or "all" in options:
             options = DataTypeKeys
 

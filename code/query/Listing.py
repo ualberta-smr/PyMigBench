@@ -3,12 +3,11 @@ from query.Query import Query
 
 
 class Listing(Query):
-    def __init__(self, db: Db, options: str):
+    def __init__(self, db: Db, filters: list[str]):
         self.db = db
-        self.options = options
+        self.type_key = filters[0]
 
     def run(self):
-        key = self.options
-        list = self.db.get_list(key)
+        list = self.db.get_list(self.type_key)
         for i, item in enumerate(list, start=1):
             print(f"{i} {item.id}")

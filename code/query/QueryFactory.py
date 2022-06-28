@@ -8,9 +8,12 @@ def build_query(db: Db, query_name: str, filters: list[str]):
     if not query_name:
         return None
     query_name = query_name.lower()
+    query = None
     if query_name.startswith("l"):
-        return Listing(db, filters[0])
+        query = Listing
     elif query_name.startswith("s"):
-        return Summarization(db, filters)
+        query = Summarization
     elif query_name.startswith("d"):
-        return Detail(db, filters[0], filters[1])
+        query = Detail
+        
+    return query(db, filters)
