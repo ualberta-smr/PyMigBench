@@ -14,7 +14,7 @@ class Db:
     code_changes: dict[str, CodeChange]
     migrations: dict[str, Migration]
     lib_pairs: dict[str, LibPair]
-    _mapping: dict[str, dict[str]]
+    _mapping: dict[str, dict[str, DataItem]]
 
     def __init__(self, data_root: str):
         self.data_root = data_root
