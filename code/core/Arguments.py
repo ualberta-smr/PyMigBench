@@ -1,5 +1,4 @@
 import argparse
-from dataclasses import dataclass
 
 
 class Arguments:
@@ -27,8 +26,9 @@ def parse_filters(filter_list: list[str]):
 
 def build_arguments() -> Arguments:
     parser = argparse.ArgumentParser(description="query PyMigBench")
-    parser.add_argument("query", nargs='?', default="s",
-                        help="One of 'summary' or 'list'. First few letters of the options are also valid.")
+    parser.add_argument("query", nargs='?', default="count",
+                        choices=["count", "list", "detail", "c", "l", "d"],
+                        help="The query you want to run")
     parser.add_argument("-d", "-dt", "--data-types", nargs='+',
                         help="The data types that you want to fetch. "
                              "Different queries accept different numbers of arguments.",

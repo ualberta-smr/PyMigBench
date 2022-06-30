@@ -2,7 +2,7 @@ from core.Arguments import Arguments
 from db.Db import Db
 from query.Detail import Detail
 from query.Listing import Listing
-from query.Summarization import Summarization
+from query.Count import Count
 
 
 def build_query(db: Db, arguments: Arguments):
@@ -13,8 +13,8 @@ def build_query(db: Db, arguments: Arguments):
     query = None
     if query_name.startswith("l"):
         query = Listing
-    elif query_name.startswith("s"):
-        query = Summarization
+    elif query_name.startswith("c"):
+        query = Count
     elif query_name.startswith("d"):
         query = Detail
 

@@ -4,7 +4,7 @@ from db.Db import Db
 from query.Query import Query
 
 
-class Summarization(Query):
+class Count(Query):
     def __init__(self, db: Db, arguments: Arguments):
         self.db = db
         self.arguments = arguments
