@@ -28,7 +28,7 @@ def build_arguments() -> Arguments:
     parser = argparse.ArgumentParser(description="query PyMigBench")
     parser.add_argument("query", nargs='?', default="s",
                         help="One of 'summary' or 'list'. First few letters of the options are also valid.")
-    parser.add_argument("-d", "--data-types", nargs='+',
+    parser.add_argument("-d", "-dt", "--data-types", nargs='+',
                         help="The data types that you want to fetch. "
                              "Different queries accept different numbers of arguments.",
                         choices=["all", "lp", "mg", "cc"])
