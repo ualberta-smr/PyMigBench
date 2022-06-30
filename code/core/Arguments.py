@@ -17,10 +17,11 @@ class Arguments:
 def parse_filters(filter_list: list[str]):
     if not filter_list:
         return {}
-    parts = filter_list[0].split("=")
-    dict = {
-        parts[0]: parts[1]
-    }
+    dict = {}
+    for filter in filter_list:
+        attr, value = filter.split("=")
+        dict[attr] = value
+
     return dict
 
 
