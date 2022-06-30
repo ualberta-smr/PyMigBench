@@ -48,7 +48,8 @@ class Db:
         dict = {item.id: item for item in items}
         return dict
 
-    def item_satisfies_filter(self, item: DataItem, filter_key: str, filter_value: str):
+    @staticmethod
+    def item_satisfies_filter(item: DataItem, filter_key: str, filter_value: str):
         prop = item[filter_key]
         if isinstance(prop, list):
             return any(fnmatch.fnmatch(prop_item, filter_value) for prop_item in prop)
@@ -56,7 +57,8 @@ class Db:
             return fnmatch.fnmatch(prop, filter_value)
         pass
 
-    def load_item(self, yaml_path: Path, ctor: Type[DataItem]):
+    @staticmethod
+    def load_item(yaml_path: Path, ctor: Type[DataItem]):
         with open(yaml_path) as f:
             content = f.read()
             obj = ctor()
