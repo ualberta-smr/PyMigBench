@@ -1,0 +1,18 @@
+diff --git a/tools/c7n_mailer/c7n_mailer/cli.py b/tools/c7n_mailer/c7n_mailer/cli.py
+        index 9f02c55e03a4ad372fdc9632b64491d93787dc94..12e3e8084ddb2e7f5ccbc5ea3c3bd3e4c7e9c207 100644
+        --- a/tools/c7n_mailer/c7n_mailer/cli.py
+        +++ b/tools/c7n_mailer/c7n_mailer/cli.py
+@@ -7,12 +7,12 @@ from os import path
+ 
+ import boto3
+ import jsonschema
++import yaml
+ from c7n_mailer import deploy, utils
+ from c7n_mailer.azure_mailer.azure_queue_processor import MailerAzureQueueProcessor
+ from c7n_mailer.azure_mailer import deploy as azure_deploy
+ from c7n_mailer.sqs_queue_processor import MailerSqsQueueProcessor
+ from c7n_mailer.utils import get_provider, Providers
+-from ruamel import yaml
+ 
+ AZURE_KV_SECRET_SCHEMA = {
+     'type': 'object',

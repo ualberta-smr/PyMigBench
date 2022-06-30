@@ -1,0 +1,12 @@
+diff --git a/petisco/extra/slack/is_slack_available.py b/petisco/extra/slack/is_slack_available.py
+        index 9e680d2d654faaffa1e233f911f77a7c0b779b0e..9abf7b1f6ef8c55bdddcb9a5c2eff513f6a93130 100644
+        --- a/petisco/extra/slack/is_slack_available.py
+        +++ b/petisco/extra/slack/is_slack_available.py
+@@ -1,6 +1,6 @@
+ def is_slack_available() -> bool:
+     try:
+-        import slack  # noqa
++        import slack_sdk  # noqa
+     except (RuntimeError, ImportError):
+         return False
+     return True

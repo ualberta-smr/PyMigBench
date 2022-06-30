@@ -1,0 +1,38 @@
+diff --git a/src/10-async-web/acityscape_api/services/location_service.py b/src/10-async-web/acityscape_api/services/location_service.py
+        index aa607bd32a90d7693e91bd4a1be39baec2d889ba..a5c04bbd9b5614a8fc0317050c01e4c241b1b41d 100644
+        --- a/src/10-async-web/acityscape_api/services/location_service.py
+        +++ b/src/10-async-web/acityscape_api/services/location_service.py
+@@ -1,7 +1,8 @@
+ import random
+ import time
+ from typing import Tuple
+-import requests
++
++import aiohttp
+ 
+ use_cached_data = False
+ 
+@@ -10,7 +11,7 @@ measured_latency_in_sec = [
+     0.535646, 0.527148, 0.533472, 0.53351, 0.523462]
+ 
+ 
+-def get_lat_long(zip_code: str, country: str) -> Tuple[float, float]:
++async def get_lat_long(zip_code: str, country: str) -> Tuple[float, float]:
+     key = f'{zip_code}, {country}'
+     url = f'http://www.datasciencetoolkit.org/street2coordinates/{key.replace(" ", "+")}'
+ 
+@@ -18,10 +19,11 @@ def get_lat_long(zip_code: str, country: str) -> Tuple[float, float]:
+         time.sleep(random.choice(measured_latency_in_sec))
+         return 45.50655, -122.733888
+     else:
+-        resp = requests.get(url)
+-        resp.raise_for_status()
++        async with aiohttp.ClientSession() as session:
++            async with session.get(url) as resp:
++                resp.raise_for_status()
+ 
+-        data = resp.json()
++                data = await resp.json()
+ 
+         city_data = data.get(f'{zip_code}, {country}', dict())
+         return city_data.get('latitude', 0.00), city_data.get('longitude', 0.00)

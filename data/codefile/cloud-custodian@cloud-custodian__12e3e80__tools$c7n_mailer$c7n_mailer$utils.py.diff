@@ -1,0 +1,19 @@
+diff --git a/tools/c7n_mailer/c7n_mailer/utils.py b/tools/c7n_mailer/c7n_mailer/utils.py
+        index 9f02c55e03a4ad372fdc9632b64491d93787dc94..12e3e8084ddb2e7f5ccbc5ea3c3bd3e4c7e9c207 100644
+        --- a/tools/c7n_mailer/c7n_mailer/utils.py
+        +++ b/tools/c7n_mailer/c7n_mailer/utils.py
+@@ -19,13 +19,13 @@ import functools
+ import json
+ import os
+ import time
++import yaml
+ 
+ import jinja2
+ import jmespath
+ from botocore.exceptions import ClientError
+ from dateutil import parser
+ from dateutil.tz import gettz, tzutc
+-from ruamel import yaml
+ 
+ 
+ class Providers(object):

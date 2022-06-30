@@ -1,0 +1,18 @@
+diff --git a/example/current_app/main.py b/example/current_app/main.py
+        index 9cac90d3a40897bad19dac49a05f2a183f9b10bb..813214e403c800722dd5a92449cb0a49b8b73abc 100644
+        --- a/example/current_app/main.py
+        +++ b/example/current_app/main.py
+@@ -1,12 +1,5 @@
+-# ------------------
+-# Only for running this script here
+-import sys
+-from os.path import dirname
+-sys.path.insert(1, f"{dirname(__file__)}/../..")
+-# ------------------
+-
+ import os
+-from slack import WebClient
++from slack_sdk.web import WebClient
+ import logging
+ logging.basicConfig(level=logging.DEBUG)
+ 
