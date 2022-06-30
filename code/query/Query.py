@@ -17,6 +17,8 @@ class ListQuery(Query):
             item_string = self.item_to_string(item, i)
             print(item_string)
 
+        print(f" {len(items)} results found:")
+
     @abstractmethod
     def apply_filter(self) -> list[DataItem]:
         pass
