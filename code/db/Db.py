@@ -36,7 +36,7 @@ class Db:
     def filter_list(self, data_type: str, filters: dict[str, str]):
         list = self.get_list(data_type)
         for k, v in filters.items():
-            list = [item for item in list if fnmatch.fnmatch(getattr(item, k), v)]
+            list = [item for item in list if self.item_satisfies_filter(item, k, v)]
         return list
 
     def get_item(self, data_type: str, id: str):
@@ -47,6 +47,14 @@ class Db:
         items = (self.load_item(p, data_type) for p in paths)
         dict = {item.id: item for item in items}
         return dict
+
+    def item_satisfies_filter(self, item: DataItem, filter_key: str, filter_value: str):
+        prop = item[filter_key]
+        if isinstance(prop, list):
+            return any(fnmatch.fnmatch(prop_item, filter_value) for prop_item in prop)
+        else:
+            return fnmatch.fnmatch(prop, filter_value)
+        pass
 
     def load_item(self, yaml_path: Path, ctor: Type[DataItem]):
         with open(yaml_path) as f:
