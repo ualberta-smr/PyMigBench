@@ -10,7 +10,6 @@ class Listing(Query):
 
     def run(self):
         list = self.db.filter_list(self.arguments.data_types[0], self.arguments.filters)
-        if not list:
-            print("no results found")
+        print(f"{len(list)} results found:")
         for i, item in enumerate(list, start=1):
-            print(f"{i} {item.id}")
+            print(item.id)
