@@ -1,0 +1,21 @@
+diff --git a/tools/c7n_mailer/c7n_mailer/cli.py b/tools/c7n_mailer/c7n_mailer/cli.py
+        index 00ac61b4840cc7bcbbc4304bc337ab2fd44f63e8..ee4d52689e1f4965439b2d360c89eddf8767a935 100644
+        --- a/tools/c7n_mailer/c7n_mailer/cli.py
+        +++ b/tools/c7n_mailer/c7n_mailer/cli.py
+@@ -5,7 +5,7 @@ import boto3
+ import functools
+ import jsonschema
+ import logging
+-import yaml
++from ruamel import yaml
+ 
+ from c7n_mailer import deploy, utils
+ from c7n_mailer.sqs_queue_processor import MailerSqsQueueProcessor
+@@ -22,6 +22,7 @@ CONFIG_SCHEMA = {
+         # Standard Lambda Function Config
+         'region': {'type': 'string'},
+         'role': {'type': 'string'},
++        'runtime': {'type': 'string'},
+         'memory': {'type': 'integer'},
+         'timeout': {'type': 'integer'},
+         'subnets': {'type': 'array', 'items': {'type': 'string'}},

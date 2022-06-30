@@ -1,0 +1,19 @@
+diff --git a/src/10-async-web/acityscape_api/app.py b/src/10-async-web/acityscape_api/app.py
+        index aedbb01c138b66b190f011db11ca232b84e0c148..aa607bd32a90d7693e91bd4a1be39baec2d889ba 100644
+        --- a/src/10-async-web/acityscape_api/app.py
+        +++ b/src/10-async-web/acityscape_api/app.py
+@@ -1,4 +1,4 @@
+-import flask
++import quart
+ from views import city_api
+ from views import home
+ from config import settings
+@@ -6,7 +6,7 @@ import services.weather_service
+ import services.sun_service
+ import services.location_service
+ 
+-app = flask.Flask(__name__)
++app = quart.Quart(__name__)
+ is_debug = True
+ 
+ app.register_blueprint(home.blueprint)

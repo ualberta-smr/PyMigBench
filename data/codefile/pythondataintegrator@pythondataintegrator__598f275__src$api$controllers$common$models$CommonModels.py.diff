@@ -1,0 +1,55 @@
+diff --git a/src/api/controllers/common/models/CommonModels.py b/src/api/controllers/common/models/CommonModels.py
+        index 4b218d2649130a1cce9bb48e838e9051996bbdef..598f275f11bdb1796b4ea0f6b3676a45758c08c4 100644
+        --- a/src/api/controllers/common/models/CommonModels.py
+        +++ b/src/api/controllers/common/models/CommonModels.py
+@@ -1,18 +1,44 @@
++import json
++import traceback
+ from datetime import datetime
+ 
+-from flask_restplus import fields
++from flask_restx import fields
+ 
+ from IocManager import IocManager
++from infrastructor.data.DatabaseSessionManager import DatabaseSessionManager
+ from infrastructor.exceptions.OperationalException import OperationalException
++from infrastructor.logging.SqlLogger import SqlLogger
+ 
+ 
+ @IocManager.api.errorhandler(OperationalException)
+-def handle_error(error):
+-    return CommonModels.get_error_response(message=error)
++def handle_operational_exception(exception):
++    separator = '|'
++    default_content_type = "application/json"
++    mime_type_string = "mimetype"
++    """Return JSON instead of HTML for HTTP errors."""
++    IocManager.injector.get(DatabaseSessionManager).rollback()
++    # start with the correct headers and status code from the error
++    exception_traceback = traceback.format_exc()
++    output = separator.join(exception.args)
++    # replace the body with JSON
++    # response = json.dumps()
++    output_message = "empty"
++    if output is not None and output != "":
++        output_message = output
++    trace_message = "empty"
++    if exception_traceback is not None and exception_traceback != "":
++        trace_message = exception_traceback
++    IocManager.injector.get(SqlLogger).error(f'Operational Exception Messsage:{output_message} - Trace:{trace_message}')
++    return {
++        "result": "",
++        "isSuccess": "false",
++        "message": output
++    }, 400, {mime_type_string: default_content_type}
+ 
+-@IocManager.api.errorhandler(Exception)
+-def handle_error(error):
+-    return CommonModels.get_error_response(message=error)
++
++# @IocManager.api.errorhandler(Exception)
++# def handle_error(error):
++#     return CommonModels.get_error_response(message=error)
+ 
+ class CommonModels:
+     SuccessModel = IocManager.api.model('SuccessModel', {

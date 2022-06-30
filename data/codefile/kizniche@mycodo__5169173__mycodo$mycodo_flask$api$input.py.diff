@@ -1,0 +1,17 @@
+diff --git a/mycodo/mycodo_flask/api/input.py b/mycodo/mycodo_flask/api/input.py
+        index 7e208d0c5c86d0d627c541ea4ec68e95e2b84870..516917351d7d8341375db4481ac72910c9510a42 100644
+        --- a/mycodo/mycodo_flask/api/input.py
+        +++ b/mycodo/mycodo_flask/api/input.py
+@@ -4,9 +4,9 @@ import traceback
+ 
+ import flask_login
+ from flask_accept import accept
+-from flask_restplus import Resource
+-from flask_restplus import abort
+-from flask_restplus import fields
++from flask_restx import Resource
++from flask_restx import abort
++from flask_restx import fields
+ 
+ from mycodo.databases.models import DeviceMeasurements
+ from mycodo.databases.models import Input

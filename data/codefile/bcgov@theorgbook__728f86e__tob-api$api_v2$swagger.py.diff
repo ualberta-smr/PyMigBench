@@ -1,0 +1,15 @@
+diff --git a/tob-api/api_v2/swagger.py b/tob-api/api_v2/swagger.py
+        index a3f37eac4a652844bc47e834970854349f1d4399..728f86e941dfb6bdbee27628d28425757af5f22d 100644
+        --- a/tob-api/api_v2/swagger.py
+        +++ b/tob-api/api_v2/swagger.py
+@@ -3,7 +3,9 @@ from rest_framework import permissions
+ from rest_framework.response import Response
+ from rest_framework.schemas import SchemaGenerator
+ from rest_framework.views import APIView
+-from rest_framework_swagger import renderers
++
++from drf_yasg.views import get_schema_view
++from drf_yasg import openapi
+ 
+ LOGGER = logging.getLogger(__name__)
+ 

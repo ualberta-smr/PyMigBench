@@ -1,0 +1,22 @@
+diff --git a/qary/skills/search_fuzzy_bots.py b/qary/skills/search_fuzzy_bots.py
+        index abd37ec277a246595abf78fc20775ae3d7af1f84..054d5d207cba12d9b5c4765454be1c51424ea4f3 100644
+        --- a/qary/skills/search_fuzzy_bots.py
+        +++ b/qary/skills/search_fuzzy_bots.py
+@@ -5,7 +5,7 @@ import os
+ 
+ import yaml
+ import pandas as pd
+-from fuzzywuzzy import process
++from rapidfuzz import process
+ from ..constants import DATA_DIR
+ 
+ log = logging.getLogger(__name__)
+@@ -83,7 +83,7 @@ class Bot:
+         return db
+ 
+     def reply(self, statement, db=None):
+-        """ Use fuzzywuzzy to find the closest key in the dictionary then return the value for that key
++        """ Use rapidfuzz to find the closest key in the dictionary then return the value for that key
+ 
+         >>> bot = MovieBot()
+         >>> reply = bot.reply

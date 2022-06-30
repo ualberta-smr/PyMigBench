@@ -1,0 +1,21 @@
+diff --git a/submission/tasks.py b/submission/tasks.py
+        index 84d390362bafc8a369cfa917b6ed43eabaddb610..b687d2067b28f6759a47ddcfe7bb575e8f83f679 100644
+        --- a/submission/tasks.py
+        +++ b/submission/tasks.py
+@@ -1,9 +1,9 @@
+ # coding=utf-8
+-from huey.djhuey import db_task
+-
++from __future__ import absolute_import
++from celery import shared_task
+ from judge_dispatcher.tasks import JudgeDispatcher
+ 
+ 
+-@db_task()
+-def _judge(submission, time_limit, memory_limit, test_case_id, is_waiting_task=False):
+-    JudgeDispatcher(submission, time_limit, memory_limit, test_case_id).judge(is_waiting_task)
+\ No newline at end of file
++@shared_task
++def _judge(submission, time_limit, memory_limit, test_case_id):
++    JudgeDispatcher(submission, time_limit, memory_limit, test_case_id).judge()
+\ No newline at end of file

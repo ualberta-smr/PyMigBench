@@ -1,0 +1,13 @@
+diff --git a/observatory/dashboard/models/Screenshot.py b/observatory/dashboard/models/Screenshot.py
+        index 9aa7fe2d1b18a8df9d38a53986e19229a817bcb6..f970b543dc349460492a32a11731738062bfcc09 100644
+        --- a/observatory/dashboard/models/Screenshot.py
+        +++ b/observatory/dashboard/models/Screenshot.py
+@@ -12,7 +12,7 @@
+ # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ 
+-import Image
++from PIL import Image
+ import os
+ from django.db import models
+ from settings import SCREENSHOT_URL, SCREENSHOT_PATH

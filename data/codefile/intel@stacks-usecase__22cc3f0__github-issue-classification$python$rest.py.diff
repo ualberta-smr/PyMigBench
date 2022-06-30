@@ -1,0 +1,72 @@
+diff --git a/github-issue-classification/python/rest.py b/github-issue-classification/python/rest.py
+        index ce8ab128833092a58c176083c2efb6bbfd65ed37..22cc3f007a3267ca09a3f53b84fdbfff1f045e88 100644
+        --- a/github-issue-classification/python/rest.py
+        +++ b/github-issue-classification/python/rest.py
+@@ -16,39 +16,46 @@
+ # limitations under the License.
+ #
+ """a rest api for github issue classification"""
+-import flask
+-from flask_cors import CORS
++import quart
++
++from quart import Quart
++from quart_cors import cors
++
+ from infer import infer
+ 
+-app = flask.Flask("github issue classifier")
+-CORS(app)
+ 
+-banner = {"what": "github issue classifier",
+-          "usage": {
+-              "client": "curl -i -X POST -d '{'issue':'use experimental_jit_scope to enable XLA:CPU.' }' http://localhost:5059/github_issues/infer",
+-              "server": "docker run -d -p 5000:5000 stacks_img_recog"
+-          }
+-          }
++app = Quart(__name__)
++cors(app)
++
++banner = {
++    "what": "github issue classifier",
++    "usage": {
++        "client": "curl -i -X POST -d '{'issue':'use experimental_jit_scope to enable XLA:CPU.' }' http://localhost:5059/github_issues/infer",
++        "server": "docker run -d -p 5000:5000 stacks_img_recog",
++    },
++}
+ 
+ 
+-@app.route('/github_issues/', methods=["GET"])
+-def index():
+-    return flask.jsonify(banner), 201
++@app.route("/", methods=["get"])
++@app.route("/index", methods=["get"])
++@app.route("/github_issues", methods=["get"])
++async def index():
++    return quart.jsonify(banner), 201
+ 
+ 
+-@app.route('/github_issues/infer', methods=["POST"])
+-def pred():
++@app.route("/github_issues/infer", methods=["POST"])
++async def pred():
+     issue = list()
+-    issue.append(flask.request.json["issue"])
+-    if not flask.request.json or not "issue" in flask.request.json:
+-        flask.abort(400)
++    issue.append(quart.request.json["issue"])
++    if not quart.request.json or not "issue" in quart.request.json:
++        quart.abort(400)
+     labels = infer(issue)
+-    return flask.jsonify({"label": labels}), 201
++    return quart.jsonify({"label": labels}), 201
+ 
+ 
+ @app.errorhandler(404)
+-def not_found(error):
+-    return flask.make_response(flask.jsonify({"error": "Not found"}), 404)
++async def not_found(error):
++    return quart.make_response(quart.jsonify({"error": "Not found"}), 404)
+ 
+ 
+ if __name__ == "__main__":

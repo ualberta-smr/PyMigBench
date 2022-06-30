@@ -1,0 +1,57 @@
+diff --git a/solutions/question_answering_system/quick_deploy/server/src/milvus_helpers.py b/solutions/question_answering_system/quick_deploy/server/src/milvus_helpers.py
+        index 89c7afc6548362e9bbf1dbf6142aabb02bc3bb93..a7f4c3f13e007116d88d9a2776f471a4e4f1fc81 100644
+        --- a/solutions/question_answering_system/quick_deploy/server/src/milvus_helpers.py
+        +++ b/solutions/question_answering_system/quick_deploy/server/src/milvus_helpers.py
+@@ -1,13 +1,11 @@
+ import sys
+-from pymilvus_orm import connections
+-from pymilvus_orm.types import DataType
+-from pymilvus_orm.schema import FieldSchema, CollectionSchema
+-from pymilvus_orm.collection import Collection
++from pymilvus import connections, FieldSchema, CollectionSchema, DataType, Collection, utility
++
+ from config import MILVUS_HOST, MILVUS_PORT, VECTOR_DIMENSION, METRIC_TYPE
+-from pymilvus_orm import utility
+ from logs import LOGGER
+ 
+ 
++
+ class MilvusHelper:
+     def __init__(self):
+         try:
+@@ -25,7 +23,7 @@ def set_collection(self, collection_name):
+             else:
+                 raise Exception("There has no collection named:{}".format(collection_name))
+         except Exception as e:
+-            LOGGER.error("Failed to load data to Milvus: {}".format(e))
++            LOGGER.error("ERROR: {}".format(e))
+             sys.exit(1)
+ 
+     # Return if Milvus has the collection
+@@ -33,7 +31,7 @@ def has_collection(self, collection_name):
+         try:
+             return utility.has_collection(collection_name)
+         except Exception as e:
+-            LOGGER.error("Failed to load data to Milvus: {}".format(e))
++            LOGGER.error("Failed: {}".format(e))
+             sys.exit(1)
+ 
+     # Create milvus collection if not exists
+@@ -46,6 +44,8 @@ def create_collection(self, collection_name):
+                 schema = CollectionSchema(fields=[field1, field2], description="collection description")
+                 self.collection = Collection(name=collection_name, schema=schema)
+                 LOGGER.debug("Create Milvus collection: {}".format(self.collection))
++            else:
++                self.collection = Collection(name=collection_name)
+             return "OK"
+         except Exception as e:
+             LOGGER.error("Failed to load data to Milvus: {}".format(e))
+@@ -55,7 +55,7 @@ def create_collection(self, collection_name):
+     def insert(self, collection_name, vectors):
+         try:
+             self.create_collection(collection_name)
+-            self.collection = Collection(name=collection_name)
++            # self.collection = Collection(name=collection_name)
+             data = [vectors]
+             mr = self.collection.insert(data)
+             ids = mr.primary_keys

@@ -1,0 +1,13 @@
+diff --git a/burpui/api/clients.py b/burpui/api/clients.py
+        index 66f580a4db8b186e9e8658c6ed487fa89cc4a4ec..8ef3b624e52ac6a9420c533b0dd744a36d91c4d3 100644
+        --- a/burpui/api/clients.py
+        +++ b/burpui/api/clients.py
+@@ -12,7 +12,7 @@ from . import api
+ from ..misc.utils import BUIserverException
+ 
+ from future.utils import iteritems
+-from flask.ext.restful import reqparse, Resource
++from flask.ext.restplus import reqparse, Resource
+ from flask.ext.login import current_user, login_required
+ from flask import jsonify
+ 
