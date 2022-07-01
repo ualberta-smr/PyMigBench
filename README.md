@@ -133,7 +133,86 @@ d15540f_gcloud-aio-core,aiohttp
 d3a9a16_requests,aiohttp
  11 results found
 ```
-#### Find all source libraries for the target library _pyyaml_: 
-currently, not supported.
 
-
+#### Get details of _code changes_ from _requests_ to _aiohttp_ having an argument change (add, delete or transform)
+```bash
+python pymigbench.py detail -dt cc -f source=requests target=aiohttp program_element="function call" properties="arg*"
+```
+In this query, we use the knowledge that attribute addition, attribute deletion and attribute transformation starts with
+`arg` and no other properties start with `arg`. 
+```json
+ 4 results found:
+== item 1 ==
+{
+  "id": "201_1",
+  "repo": "raptor123471/dingolingo",
+  "commit": "1d8923abae93915ad877774e0fdc812d6c53a70b",
+  "source": "requests",
+  "target": "aiohttp",
+  "pair_id": "requests,aiohttp",
+  "filepath": "musicbot/linkutils.py",
+  "program_element": "function call",
+  "cardinality": "1-n",
+  "properties": [
+    "argument addition",
+    "making async"
+  ],
+  "source_version_line": "35",
+  "target_version_line": "36-37"
+}
+== item 2 ==
+{
+  "id": "203_1",
+  "repo": "raptor123471/dingolingo",
+  "commit": "1d8923abae93915ad877774e0fdc812d6c53a70b",
+  "source": "requests",
+  "target": "aiohttp",
+  "pair_id": "requests,aiohttp",
+  "filepath": "musicbot/linkutils.py",
+  "program_element": "function call",
+  "cardinality": "1-n",
+  "properties": [
+    "argument transformation",
+    "making async"
+  ],
+  "source_version_line": "98",
+  "target_version_line": "100-101"
+}
+== item 3 ==
+{
+  "id": "216_1",
+  "repo": "ictu/quality-time",
+  "commit": "d3a9a16a72348cece48c9788cf10db6cc043ec7c",
+  "source": "requests",
+  "target": "aiohttp",
+  "pair_id": "requests,aiohttp",
+  "filepath": "components/collector/src/base_collectors/source_collector.py",
+  "program_element": "function call",
+  "cardinality": "1-1",
+  "properties": [
+    "argument deletion",
+    "argument transformation"
+  ],
+  "source_version_line": "106",
+  "target_version_line": "101"
+}
+== item 4 ==
+{
+  "id": "222_1",
+  "repo": "ictu/quality-time",
+  "commit": "d3a9a16a72348cece48c9788cf10db6cc043ec7c",
+  "source": "requests",
+  "target": "aiohttp",
+  "pair_id": "requests,aiohttp",
+  "filepath": "components/collector/src/source_collectors/api_source_collectors/azure_devops.py",
+  "program_element": "function call",
+  "cardinality": "1-1",
+  "properties": [
+    "argument deletion",
+    "making await"
+  ],
+  "source_version_line": "31",
+  "target_version_line": "31"
+}
+ 4 results found
+```
