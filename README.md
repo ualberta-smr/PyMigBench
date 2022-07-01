@@ -44,9 +44,12 @@ See the examples for better understanding the filters.
 
 # Examples
 1. Get a count of all data:
-```bash
-python pymigbench.py count -dt all` or `python pymigbench.py
+```shell
+python pymigbench.py count -dt all
 ```  
+or
+```shell
+python pymigbench.py
 ```
 59 library pair
 157 migration
