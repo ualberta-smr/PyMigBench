@@ -43,19 +43,15 @@ See the examples for better understanding the filters.
 * `-h`, `--help`: show help.
 
 # Examples
-1. Get a count of all data:
-```shell
-python pymigbench.py count -dt all
-```  
-or
-```shell
-python pymigbench.py
+#### Get a count of all data:  
+
+`python pymigbench.py count -dt all` or `python pymigbench.py`
 ```
 59 library pair
 157 migration
 436 code change
 ```
-2. Get count of _code changes_ and _migrations_:
+#### Get count of _code changes_ and _migrations_:
 ```bash
 python pymigbench.py -dt cc mg
 ```  
@@ -63,7 +59,7 @@ python pymigbench.py -dt cc mg
 436 code change
 157 migration
 ```
-3. List all _code changes_: 
+#### List all _code changes_: 
 ```bash
 python pymigbench.py list -dt cc
 ```
@@ -80,7 +76,7 @@ python pymigbench.py list -dt cc
 9_1
  436 results found
 ```
-4. List all _code changes_ having _function call_ replacement:   
+#### List all _code changes_ having _function call_ replacement:   
 ```bash 
 python pymigbench.py list -dt cc -f program_element="function call"
 ```
@@ -97,7 +93,7 @@ python pymigbench.py list -dt cc -f program_element="function call"
 97_1
  155 results found
 ```
-5. List all _code changes_ having _one-to-many_ _function call_ replacement:
+#### List all _code changes_ having _one-to-many_ _function call_ replacement:
 ```bash 
 python pymigbench.py list -dt cc -f program_element="function call" cardinality="1-n"
 ```
@@ -118,7 +114,7 @@ python pymigbench.py list -dt cc -f program_element="function call" cardinality=
 97_1
  13 results found
 ```
-6. Find all _migrations_ to target library _aiohttp_:
+#### Find all _migrations_ to target library _aiohttp_:
 ```bash
 python pymigbench.py list -dt mg -f target=aiohttp
 ```
@@ -137,6 +133,7 @@ d15540f_gcloud-aio-core,aiohttp
 d3a9a16_requests,aiohttp
  11 results found
 ```
-7. Find all source libraries for the target library _pyyaml_: currently not supported.
+#### Find all source libraries for the target library _pyyaml_: 
+currently, not supported.
 
 
