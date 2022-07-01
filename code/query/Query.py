@@ -1,28 +1,27 @@
 from abc import ABC, abstractmethod
 
+from core.Arguments import Arguments
 from db.DataItem import DataItem
+from db.Db import Db
+from query.Result import Result
 
 
 class Query(ABC):
+    def __init__(self, db: Db, arguments: Arguments):
+        self.db = db
+        self.arguments = arguments
+
     @abstractmethod
-    def run(self):
+    def run(self) -> Result:
         pass
 
 
 class ListQuery(Query):
-    def run(self):
-        items = self.apply_filter()
-        print(f" {len(items)} results found:")
-        for i, item in enumerate(items, start=1):
-            item_string = self.item_to_string(item, i)
-            print(item_string)
-
-        print(f" {len(items)} results found")
+    def run(self) -> Result:
+        items = self.db.filter_list(self.arguments.data_types[0], self.arguments.filters)
+        formatted_items = [self.format_item(item) for item in items]
+        return Result(formatted_items)
 
     @abstractmethod
-    def apply_filter(self) -> list[DataItem]:
-        pass
-
-    @abstractmethod
-    def item_to_string(self, item: DataItem, index: int) -> str:
+    def format_item(self, item: DataItem) -> object:
         pass
