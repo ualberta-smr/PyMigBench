@@ -8,7 +8,7 @@ filepath: musicbot/linkutils.py
 program_element: attribute access
 cardinality: 1-1
 properties:
-- changing to function call
+- changing to method call
 - making await
 - attribute name change
 source_version_line: '99'

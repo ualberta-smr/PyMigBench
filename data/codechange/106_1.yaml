@@ -5,9 +5,9 @@ source: huey
 target: celery
 pair_id: huey,celery
 filepath: submission/tasks.py
-program_element: annotation
+program_element: decorator
 cardinality: 1-1
 properties:
-- annotation name change
+- decorator name change
 source_version_line: '7'
 target_version_line: '7'

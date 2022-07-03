@@ -5,7 +5,7 @@ source: retrying
 target: tenacity
 pair_id: retrying,tenacity
 filepath: management/management_api/tenants/tenants_utils.py
-program_element: annotation
+program_element: decorator
 cardinality: 1-1
 properties:
 - argument transformation

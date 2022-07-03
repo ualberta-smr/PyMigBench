@@ -5,9 +5,9 @@ source: slackclient
 target: slack-sdk
 pair_id: slackclient,slack-sdk
 filepath: zulip/integrations/bridge_with_slack/run-slack-bridge
-program_element: annotation
+program_element: decorator
 cardinality: 1-1
 properties:
-- annotation name change
+- decorator name change
 source_version_line: '84'
 target_version_line: '85'
