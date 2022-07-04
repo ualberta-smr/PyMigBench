@@ -19,3 +19,11 @@ def build_query(db: Db, arguments: Arguments):
         query = Detail
 
     return query(db, arguments)
+
+
+def build_output_format(output_format: str):
+    output_format = output_format.lower()
+    if output_format == "yaml":
+        return None
+    if output_format == "json":
+        return None

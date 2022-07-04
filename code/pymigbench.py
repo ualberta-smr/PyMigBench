@@ -3,8 +3,9 @@ import os.path
 
 from core.Arguments import build_arguments
 from db.Db import Db
+from format.JSONFormat import JSONFormat
 from query.Query import Query
-from query.QueryFactory import build_query
+from core.Factory import build_query
 
 
 def main():
@@ -14,7 +15,7 @@ def main():
     query: Query = build_query(db, args)
     if query:
         result = query.run()
-        output = json.dumps(result, indent=2, sort_keys=False, default=vars)
+        output = JSONFormat().format(result)
         print(output)
     else:
         print("error building the query")

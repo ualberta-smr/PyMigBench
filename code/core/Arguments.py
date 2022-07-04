@@ -3,11 +3,13 @@ import argparse
 
 class Arguments:
     def __init__(self, query: str,
-                 data_types: list[str] = [],
-                 filters: list[str] = []):
+                 data_types: list[str] = None,
+                 filters: list[str] = None,
+                 output_format: str = None):
         self.query = query
-        self.data_types = data_types
+        self.data_types = data_types or []
         self.filters = parse_filters(filters)
+        self.output_format = output_format
 
     def __str__(self):
         return str(self.__dict__)
@@ -35,6 +37,9 @@ def build_arguments() -> Arguments:
                         choices=["all", "lp", "mg", "cc"])
     parser.add_argument("-f", "--filters", required=False, nargs='+',
                         help="Additional filters. The format varies based on the query.")
+    parser.add_argument("-o", "--output-format", required=False, default="yaml",
+                        choices=["yaml", "json"],
+                        help="Output format")
 
     dict = vars(parser.parse_args())
     return Arguments(**dict)
