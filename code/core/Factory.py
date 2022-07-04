@@ -1,5 +1,7 @@
 from core.Arguments import Arguments
 from db.Db import Db
+from format.JSONFormat import JSONFormat
+from format.YAMLFormat import YAMLFormat
 from query.Detail import Detail
 from query.Listing import Listing
 from query.Count import Count
@@ -24,6 +26,6 @@ def build_query(db: Db, arguments: Arguments):
 def build_output_format(output_format: str):
     output_format = output_format.lower()
     if output_format == "yaml":
-        return None
+        return YAMLFormat()
     if output_format == "json":
-        return None
+        return JSONFormat()

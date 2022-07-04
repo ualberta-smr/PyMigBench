@@ -5,7 +5,7 @@ from core.Arguments import build_arguments
 from db.Db import Db
 from format.JSONFormat import JSONFormat
 from query.Query import Query
-from core.Factory import build_query
+from core.Factory import build_query, build_output_format
 
 
 def main():
@@ -15,7 +15,8 @@ def main():
     query: Query = build_query(db, args)
     if query:
         result = query.run()
-        output = JSONFormat().format(result)
+        format = build_output_format(args.output_format)
+        output = format.format(result)
         print(output)
     else:
         print("error building the query")
