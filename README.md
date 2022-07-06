@@ -1,6 +1,25 @@
 # PyMigBench
-This repository contains the dataset of PyMigBench and the tools to explore the dataset.
-The dataset is in the `data` folder and the tool is in the `code` folder.
+Library migration is the process of replacing one library with another in a client project.
+_PyMigBench_ is a benchmark of Python Library Migration that we developed in the paper:
+> Mohayeminul Islam, Ajay Kumar Jha, Sarah Nadi.
+> PyMigBench and PyMigTax: A Benchmark and Taxonomy for Python Library Migration.
+> _arXiv preprint arXiv:2207.01124. 2022 July 3_.
+
+Other than the benchmark, we also developed _PyMigTax_,
+a taxonomy of the migration related code changes that we include in PyMigBench.
+Please read the [paper](https://arxiv.org/abs/2207.01124) to learn more about PyMigBench and PyMigTax.
+
+This repository contains the benchmark data and the tools to explore the data.
+
+
+## Dataset
+The data is in the [data](/../../tree/main/data) folder.
+There are three types of data: Analogous library pairs, valid migrations, migration-related code changes located in 
+[data/libpair](/../../tree/main/data/libpair), [data/migration](/../../tree/main/data/migration) 
+and [data/codechange](/../../tree/main/data/codechange) folders respectively.
+Each YAML files in these folders contain information about one item.
+For example, [0a65bcc_raven,sentry-sdk.yaml](/../../tree/main/data/migration) file include information about migration from _raven_ to _sentry-sdk_ in commit [0a65bcc](https://github.com/habitissimo/myaas/commit/0a65bcc).
+Additionally, [data/codefile](/../../tree/main/data/codefile) contains the diffs and the old and new version of Python files modified during migrations.
 
 # Install
 1. Install the latest version of Python from [here](https://www.python.org/)
