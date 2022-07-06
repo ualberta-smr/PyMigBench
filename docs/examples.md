@@ -1,8 +1,8 @@
 ---
 nav_order: 3
 ---
-# PyMigBench query examples and expected Output
-Below are some use cases of the tool and 
+# PyMigBench query examples
+Below are some use cases of the tool and the expected output
 ## Get a count of all data
 **Command:**
 ```bash
