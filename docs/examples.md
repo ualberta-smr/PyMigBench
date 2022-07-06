@@ -3,6 +3,10 @@ nav_order: 3
 ---
 # PyMigBench query examples
 Below are some use cases of the tool and the expected output
+<ol>
+  {:toc}
+</ol>
+
 ## Get a count of all data
 **Command:**
 ```bash
