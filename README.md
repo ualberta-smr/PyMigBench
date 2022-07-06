@@ -12,7 +12,7 @@ Please read the [paper](https://arxiv.org/abs/2207.01124) to learn more about Py
 This repository contains the benchmark data and the tools to explore the data.
 
 
-## Dataset
+## The dataset
 The data is in the [data](/../../tree/main/data) folder.
 There are three types of data: Analogous library pairs, valid migrations, migration-related code changes located in 
 [data/libpair](/../../tree/main/data/libpair), [data/migration](/../../tree/main/data/migration) 
@@ -21,16 +21,20 @@ Each YAML files in these folders contain information about one item.
 For example, [0a65bcc_raven,sentry-sdk.yaml](/../../tree/main/data/migration) file include information about migration from _raven_ to _sentry-sdk_ in commit [0a65bcc](https://github.com/habitissimo/myaas/commit/0a65bcc).
 Additionally, [data/codefile](/../../tree/main/data/codefile) contains the diffs and the old and new version of Python files modified during migrations.
 
-# Install
-1. Install the latest version of Python from [here](https://www.python.org/)
-2. You can either clone the repository or 
+## The tool
+The repository contains a command line tool to easily query the benchmark.
+The source code of the tool is in the [code](/../../tree/main/code) folder.
+
+### Install
+1. Install Python from [here](https://www.python.org/). We developed the tool in Python 3.10.0, but a later version should also work.
+2. Either clone the repository or 
 download it from [here](https://github.com/ualberta-smr/PyMigBench/archive/refs/heads/main.zip) 
 and extract it.
-3. Open command prompt and move to the `code` folder.
+3. Open a terminal and change the directory to the `code` folder.
 This is the folder where you will find a `requirements.txt` file.
 4. Install the dependencies. Run `pip install -r requirements.txt`
 
-If there is no error, run `python pymigbench.py`. You should see the following output:
+If there is no error, run `python pymigbench.py` to check if it is working. You should see the following output:
 ```yaml
 count: 1
 items:
@@ -39,7 +43,7 @@ items:
   code change: 436
 ```
 
-# Querying
+### Querying
 The syntax for querying PyMigBench is:
 ```bash
 python pymigbench.py <query> -dt <data-types> -f <filters> -o <output-format>
@@ -66,7 +70,7 @@ See the examples for better understanding the filters.
 
 The result is printed in JSON format.
 
-# Examples
+### Examples
 #### Get a count of all data:  
 
 `python pymigbench.py count -dt all` or `python pymigbench.py`
