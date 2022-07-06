@@ -1,3 +1,6 @@
+---
+nav_order: 3
+---
 # PyMigBench query examples and expected Output
 Below are some use cases of the tool and 
 ## Get a count of all data
