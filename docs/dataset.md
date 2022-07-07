@@ -1,7 +1,7 @@
 ---
 nav_order: 1
 ---
-# The PyMigBench dataset
+# PyMigBench dataset
 The data is in the [data]({{ site.vars.repo }}/tree/main/data) folder.
 There are three types of data: Analogous library pairs, valid migrations, migration-related code changes located in 
 [data/libpair]({{ site.vars.repo }}/tree/main/data/libpair), [data/migration]({{ site.vars.repo }}/tree/main/data/migration) 

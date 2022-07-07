@@ -1,7 +1,7 @@
 ---
 nav_order: 2
 ---
-# The PyMigBench tool
+# PyMigBench tool
 The repository contains a command line tool to easily query the benchmark.
 The source code of the tool is in the [code]({{ site.vars.repo }}/tree/main/code) folder.
 
