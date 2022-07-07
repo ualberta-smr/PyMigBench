@@ -9,4 +9,4 @@ Other than the benchmark, we also developed _PyMigTax_,
 a taxonomy of the migration related code changes that we include in PyMigBench.
 Please read the [paper](https://arxiv.org/abs/2207.01124) to learn more about PyMigBench and PyMigTax.
 
-This repository contains the benchmark data and the tools to explore the data. Please visit our [website](https://ualberta-smr.github.io/PyMigBench) to learn more about the dataset and the tool details.
+This repository contains the benchmark data and the tools to explore the data. Please visit our [website](https://ualberta-smr.github.io/PyMigBench) to learn more about the dataset and the tool.
