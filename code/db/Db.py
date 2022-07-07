@@ -52,6 +52,8 @@ class Db:
     def item_satisfies_filter(item: DataItem, filter_key: str, filter_value: str):
         prop = item[filter_key]
         if isinstance(prop, list):
+            if not filter_value and not prop:
+                return True  # If the user passes empty string and the list property is empty, consider it matching
             return any(fnmatch.fnmatch(prop_item, filter_value) for prop_item in prop)
         else:
             return fnmatch.fnmatch(prop, filter_value)
