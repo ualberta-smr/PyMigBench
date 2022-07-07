@@ -15,13 +15,13 @@ Please read the [paper](https://arxiv.org/abs/2207.01124) to learn more about Py
 This repository contains the benchmark data and the tools to explore the data.
 
 ## The dataset
-The dataset is in the `data` folder. There are three main types of data: 
+The dataset is in the [data]({{ site.vars.repo }}/tree/main/data) folder. There are three main types of data: 
 analogous library pairs, migrations and migration-related code changes.
 Details about the dataset is in the [dataset](dataset) page.
 
 ## The tool
 We provide a command line tool to easily access the dataset.
-The source code of the tool is in the `code` folder.
+The source code of the tool is in the [code]({{ site.vars.repo }}/tree/main/code) folder.
 The installation process and the syntax of the tool is in the [tool](tool) page.
 
 ## Examples
