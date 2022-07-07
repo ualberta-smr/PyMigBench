@@ -2,14 +2,16 @@
 nav_order: 1
 ---
 # PyMigBench dataset
-The data is in the [data]({{ site.vars.repo }}/tree/main/data) folder.
-There are three types of data: Analogous library pairs, valid migrations, migration-related code changes located in 
-[data/libpair]({{ site.vars.repo }}/tree/main/data/libpair), [data/migration]({{ site.vars.repo }}/tree/main/data/migration) 
-and [data/codechange]({{ site.vars.repo }}/tree/main/data/codechange) folders respectively.
-Each YAML files in these folders contain information about one item.
-Additionally, [data/codefile]({{ site.vars.repo }}/tree/main/data/codefile) contains the diffs and the old and new version of Python files modified during migrations. Below are examples of the data files.
+The data is in the [data]({{ site.vars.repo }}/tree/main/data){:target="_blank"} folder.
+There are three types of data: analogous library pairs, valid migrations, and migration-related code changes located in 
+[data/libpair]({{ site.vars.repo }}/tree/main/data/libpair){:target="_blank"},
+[data/migration]({{ site.vars.repo }}/tree/main/data/migration){:target="_blank"}
+and [data/codechange]({{ site.vars.repo }}/tree/main/data/codechange){:target="_blank"} folders respectively.
+Each YAML file in these folders contains information about one item.
+Additionally, [data/codefile]({{ site.vars.repo }}/tree/main/data/codefile){:target="_blank"}
+contains the diffs and the old and new version of Python files modified during migrations. Below are examples of the data files.
 
-Analogous library pair from flask to quart: [flask,quart.yaml]({{ site.vars.repo }}/blob/main/data/libpair/flask,quart.yaml)
+Analogous library pair from flask to quart: [flask,quart.yaml]({{ site.vars.repo }}/blob/main/data/libpair/flask,quart.yaml){:target="_blank"}
 
 ```yaml
 id: flask,quart
@@ -18,7 +20,7 @@ target: quart
 domain: Development framework/extension
 ```
 
-Migration from flask to quart at commit 7ea7ddb: [7ea7ddb_flask,quart.yaml]({{ site.vars.repo }}/blob/main/data/migration/7ea7ddb_flask,quart.yaml)
+Migration from flask to quart at commit 7ea7ddb: [7ea7ddb_flask,quart.yaml]({{ site.vars.repo }}/blob/main/data/migration/7ea7ddb_flask,quart.yaml){:target="_blank"}
 ```yaml
 id: 7ea7ddb_flask,quart
 source: flask
@@ -29,7 +31,7 @@ pair_id: flask,quart
 commit_message: Using quart for web interface
 ```
 
-A code change from flask to quart at commit 7ea7ddb: [80_1.yaml]({{ site.vars.repo }}/blob/main/data/codechange/80_1.yaml)
+A code change from flask to quart at commit 7ea7ddb: [80_1.yaml]({{ site.vars.repo }}/blob/main/data/codechange/80_1.yaml){:target="_blank"}
 ```yaml
 id: '80_1'
 repo: synesthesiam/voice2json
@@ -47,7 +49,7 @@ source_version_line: '20'
 target_version_line: '20'
 ```
 
-The part of the diff file showing the code change above: [synesthesiam@voice2json__7ea7ddb__web$app.py.diff]({{ site.vars.repo }}/blob/main/data/codefile/synesthesiam@voice2json__7ea7ddb__web$app.py.diff)
+The part of the diff file showing the code change above: [synesthesiam@voice2json__7ea7ddb__web$app.py.diff]({{ site.vars.repo }}/blob/main/data/codefile/synesthesiam@voice2json__7ea7ddb__web$app.py.diff){:target="_blank"}
 ```diff
 diff --git a/web/app.py b/web/app.py
         index 6917d188b5e3fa43fce79b44d4e1ec161e1443ab..7ea7ddb8400775282e82c1adcb17b013f27ede2b 100644

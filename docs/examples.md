@@ -2,10 +2,10 @@
 nav_order: 3
 ---
 # PyMigBench query examples
-Below are some use cases of the tool and the expected output
-<ol>
-  {:toc}
-</ol>
+{: .no_toc }
+Below are some use cases of the tool and the expected output.
+- TOC
+{:toc}
 
 ## Get a count of all data
 **Command:**

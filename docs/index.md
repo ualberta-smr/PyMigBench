@@ -7,11 +7,11 @@ Library migration is the process of replacing one library with another in a clie
 _PyMigBench_ is a benchmark of Python Library Migration that we developed in the paper:
 > Mohayeminul Islam, Ajay Kumar Jha, Sarah Nadi.
 > PyMigBench and PyMigTax: A Benchmark and Taxonomy for Python Library Migration.
-> _arXiv preprint arXiv:2207.01124. 2022 July 3_.
+> _Empirical Software Engineering (Under Review)_.
 
 Other than the benchmark, we also developed _PyMigTax_,
 a taxonomy of the migration related code changes that we include in PyMigBench.
-Please read the [paper](https://arxiv.org/abs/2207.01124) to learn more about PyMigBench and PyMigTax.
+Please read the [preprint version of the paper](https://arxiv.org/abs/2207.01124){:target="_blank"} to learn more about PyMigBench and PyMigTax.
 
 This repository contains the benchmark data and the tools to explore the data.
 
@@ -30,4 +30,4 @@ Please check the [examples](examples) page to find some use cases of the tool.
 
 ## Contributing
 If you have some Python library migration data and would like to add them to PyMigBench, submit it to us and we will review and add it.
-Please check the [contributor's guide]({{site.vars.repo}}//blob/main/CONTRIBUTING.md) for help.
+Please check the [contributor's guide]({{site.vars.repo}}//blob/main/CONTRIBUTING.md){:target="_blank"} for help.
