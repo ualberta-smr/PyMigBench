@@ -26,3 +26,7 @@ The installation process and the syntax of the tool is in the [tool](tool) page.
 
 ## Examples
 Please check the [examples](examples) page to find some use cases of the tool.
+
+## Contributing
+If you have some Python library migration data and would like to add them to PyMigBench, submit it to us and we will review and add it.
+Please check the [contributor's guide]({{site.vars.repo}}//blob/main/CONTRIBUTING.md) for help.
