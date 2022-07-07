@@ -1,8 +1,8 @@
 remote_theme: just-the-docs/just-the-docs
 aux_links:
   "Repository":
-    - "https://github.com/ualberta-smr/PyMigBench"
+    - "https://github.com/ualberta-smr/PyMigBench/"
   "Paper":
     - "https://arxiv.org/abs/2207.01124"
-
-    
+vars: 
+  repo: "https://github.com/ualberta-smr/PyMigBench/"
