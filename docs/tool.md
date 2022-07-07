@@ -3,7 +3,7 @@ nav_order: 2
 ---
 # PyMigBench tool
 The repository contains a command line tool to easily query the benchmark.
-The source code of the tool is in the [code]({{ site.vars.repo }}/tree/main/code) folder.
+The source code of the tool is in the [code]({{ site.vars.repo }}/tree/main/code){:target="_blank"} folder.
 
 ## Install
 1. Install Python from [here](https://www.python.org/). We developed the tool in Python 3.10.0, but a later version should also work.
