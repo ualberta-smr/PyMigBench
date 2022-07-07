@@ -8,4 +8,58 @@ There are three types of data: Analogous library pairs, valid migrations, migrat
 and [data/codechange]({{ site.vars.repo }}/tree/main/data/codechange) folders respectively.
 Each YAML files in these folders contain information about one item.
 For example, [0a65bcc_raven,sentry-sdk.yaml]({{ site.vars.repo }}/tree/main/data/migration) file include information about migration from _raven_ to _sentry-sdk_ in commit [0a65bcc](https://github.com/habitissimo/myaas/commit/0a65bcc).
-Additionally, [data/codefile]({{ site.vars.repo }}/tree/main/data/codefile) contains the diffs and the old and new version of Python files modified during migrations.
+Additionally, [data/codefile]({{ site.vars.repo }}/tree/main/data/codefile) contains the diffs and the old and new version of Python files modified during migrations. Below are examples of the data files.
+
+## Sample library pair data file
+Analogous library pair from flask to quart: [flask,quart.yaml]({{ site.vars.repo }}/blob/main/data/libpair/flask,quart.yaml)
+
+```yaml
+id: flask,quart
+source: flask
+target: quart
+domain: Development framework/extension
+```
+
+Migration from flask to quart at commit 7ea7ddb: [7ea7ddb_flask,quart.yaml]({{ site.vars.repo }}/blob/main/data/migration/7ea7ddb_flask,quart.yaml)
+```yaml
+id: 7ea7ddb_flask,quart
+source: flask
+target: quart
+repo: synesthesiam/voice2json
+commit: 7ea7ddb8400775282e82c1adcb17b013f27ede2b
+pair_id: flask,quart
+commit_message: Using quart for web interface
+```
+
+A code change from flask to quart at commit 7ea7ddb: [80_1.yaml]({{ site.vars.repo }}/blob/main/data/codechange/80_1.yaml)
+```yaml
+id: '80_1'
+repo: synesthesiam/voice2json
+commit: 7ea7ddb8400775282e82c1adcb17b013f27ede2b
+source: flask
+target: quart
+pair_id: flask,quart
+filepath: web/app.py
+program_element: import
+cardinality: 1-1
+properties:
+- module name change
+- object name change
+source_version_line: '20'
+target_version_line: '20'
+```
+
+The part of the diff file showing the code change above: [synesthesiam@voice2json__7ea7ddb__web$app.py.diff]({{ site.vars.repo }}/blob/main/data/codefile/synesthesiam@voice2json__7ea7ddb__web$app.py.diff)
+```diff
+diff --git a/web/app.py b/web/app.py
+        index 6917d188b5e3fa43fce79b44d4e1ec161e1443ab..7ea7ddb8400775282e82c1adcb17b013f27ede2b 100644
+        --- a/web/app.py
+        +++ b/web/app.py
+@@ -17,15 +17,15 @@ from pathlib import Path
+ from typing import Optional, Dict, Any, Tuple, BinaryIO, List
+ 
+ import pydash
+-from flask import Flask, request, render_template, send_from_directory, flash, send_file
++from quart import Quart, request, render_template, send_from_directory, flash, send_file
+ 
+```
