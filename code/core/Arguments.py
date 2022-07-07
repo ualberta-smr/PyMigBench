@@ -30,6 +30,7 @@ def build_arguments() -> Arguments:
     parser = argparse.ArgumentParser(description="query PyMigBench")
     parser.add_argument("query", nargs='?', default="count",
                         choices=["count", "list", "detail", "c", "l", "d"],
+                        type=str.lower,
                         help="The query you want to run")
     parser.add_argument("-d", "-dt", "--data-types", nargs='+',
                         help="The data types that you want to fetch. "
@@ -38,6 +39,7 @@ def build_arguments() -> Arguments:
     parser.add_argument("-f", "--filters", required=False, nargs='+',
                         help="Additional filters. The format varies based on the query.")
     parser.add_argument("-o", "--output-format", required=False, default="yaml",
+                        type=str.lower,
                         choices=["yaml", "json"],
                         help="Output format")
 
