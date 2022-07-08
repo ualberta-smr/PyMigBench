@@ -9,8 +9,41 @@ There are three types of data: analogous library pairs, valid migrations, and mi
 and [data/codechange]({{ site.vars.repo }}/tree/main/data/codechange){:target="_blank"} folders respectively.
 Each YAML file in these folders contains information about one item.
 Additionally, [data/codefile]({{ site.vars.repo }}/tree/main/data/codefile){:target="_blank"}
-contains the diffs and the old and new version of Python files modified during migrations. Below are examples of the data files.
+contains the diffs and the old and new version of Python files modified during migrations.
 
+## Schema
+All the properties single line text unless specified otherwise.
+### Data type: library pair (`lp`)
+- `id`: unique ID of the library pair
+- `source`: the source library
+- `target`: the target library
+- `domain`: the domain of the library pair
+
+### Data type: migration (`mg`)
+- `id`: unique ID of the migration
+- `source`: the source library
+- `target`: the target library
+- `repo`: the repository where the migration happened
+- `commit`: the hash of the commit where the migration happened
+- `pair_id`: the ID of the library pair in the migration
+- `commit_message` (type: multiline text): the commit message
+
+### Data type: Migration-related code change (`cc`)
+- `id`: unique ID of the code change
+- `repo`: the repository where the code change happened
+- `commit`: the hash of the commit where the code change happened
+- `source`: the source library
+- `target`: the target library
+- `pair_id`: the ID of the library pair in the code change
+- `filepath`: path of the file within the repository where the code change happened
+- `program_element`: the program element affected by the code change
+- `cardinality`: the cardinality of the code change
+- `properties` (type: array): additional properties of the code change
+- `source_version_line`: the lines in the old version of the code deleted during the migration
+- `target_version_line`: the lines in the new version of the code deleted during the migration
+
+
+## Sample YAML files
 Analogous library pair from flask to quart: [flask,quart.yaml]({{ site.vars.repo }}/blob/main/data/libpair/flask,quart.yaml){:target="_blank"}
 
 ```yaml
