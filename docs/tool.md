@@ -54,6 +54,7 @@ See the [examples](examples) for better understanding the filters.
 * `-h`, `--help`: show help.
 
 Visit the [Examples](examples) page to check some use cases of the tool.
+Feel free to [ask for help](https://github.com/ualberta-smr/PyMigBench/issues/new?template=query-help.md){:target="_blank"} in writing a query.
 
 
 ## <a name="property"></a> Property values
