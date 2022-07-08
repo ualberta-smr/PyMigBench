@@ -36,10 +36,8 @@ python pymigbench.py <query> -dt <data-types> -f <filters> -o <output-format>
     - `detail` returns the a list of data items that include all of its properties.
 * `-d`, `-dt`, `--data-types`: Specifies the data types on which to query. 
   It has four options: `all`, `lp` or `library-pair`, `mg` or `migration`, `cc` or `code-change`. 
-
 A `count` query allows multiple data types and `all` is default.
 The other queries accept just one mandatory data type, no defaults.
-The `list` query returns a list of IDs, and the `detail` returns the items in JSON format. 
 * `-f`, `--filters`: You can pass zero or more filters to all queries.
 Each filter must be in the format `<property>=<value>`.
 Here, `property` is a property of a data type.
@@ -49,7 +47,6 @@ The properties are of type string or array of string.
 The `value` is therefore any string that will be matched against the property.
 The value accepts matching by `!`, `?` and `*` through [fnmatch.fnmatch](https://docs.python.org/3/library/fnmatch.html#fnmatch.fnmatch){:target="_blank"}. 
 For array type properties, a data is returned if at least one of the list item satisfies the filter.
-See the [examples](examples) for better understanding the filters.
 * `-o`, `--output-format`: The format in which the result will be shown. Currently, supports YAML and JSON. Default YAML.
 * `-h`, `--help`: show help.
 
