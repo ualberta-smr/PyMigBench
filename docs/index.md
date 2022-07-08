@@ -16,9 +16,9 @@ The white boxes indicate automatic steps while grey boxes indicate manual steps.
 The output of steps 4 and 5 constitute PyMigBench and we use output of step 5 to build PyMigTax.
 Please read the [preprint version of the paper](https://arxiv.org/abs/2207.01124){:target="_blank"} to learn more about PyMigBench and PyMigTax.
 
-![Alt text](img/img-construction.svg "a title")
+![PyMigBench construction process](img/img-construction.svg "PyMigBench construction process")
 
-The [PyMigBench repository]({{site.vars.repo}}) contains the benchmark data and the tool to explore the data.
+The [PyMigBench repository]({{site.vars.repo}}){:target="_blank"} contains the benchmark data and the tool to explore the data.
 
 ## Dataset
 The PyMigBench dataset is in the [data]({{ site.vars.repo }}/tree/main/data){:target="_blank"} folder. There are three main types of data: 

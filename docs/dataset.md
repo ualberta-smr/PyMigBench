@@ -6,8 +6,10 @@ The PyMigBench dataset is in the [data]({{ site.vars.repo }}/tree/main/data){:ta
 There are three types of data: analogous library pairs, valid migrations, and migration-related code changes located in respective subdirectories.
 Each YAML file in these subdirectories contains information about one data item.
 
-## Data type: library pair
+## Library pair
 * Location: [data/libpair]({{ site.vars.repo }}/tree/main/data/libpair){:target="_blank"}
+
+
 ### Schema
 - `id`: unique ID of the library pair
 - `source`: the source library
@@ -23,7 +25,7 @@ target: quart
 domain: Development framework/extension
 ```
 
-## Data type: migration
+## Migration
 * Location: [data/migration]({{ site.vars.repo }}/tree/main/data/migration){:target="_blank"}
 
 ### Schema
@@ -47,12 +49,12 @@ pair_id: flask,quart
 commit_message: Using quart for web interface
 ```
 
-## Data type: Migration-related code change (`cc`)
+## Migration-related code change
 * Location: [data/codechange]({{ site.vars.repo }}/tree/main/data/codechange){:target="_blank"}.
 Additionally, [data/codefile]({{ site.vars.repo }}/tree/main/data/codefile){:target="_blank"}
 contains the diffs and the old and new version of Python files modified during migrations.
 
-### Schema
+### Schema  
 - `id`: unique ID of the code change
 - `repo`: the repository where the code change happened
 - `commit`: the hash of the commit where the code change happened
@@ -67,7 +69,7 @@ contains the diffs and the old and new version of Python files modified during m
 - `target_version_line`: the lines in the new version of the code deleted during the migration
 
 
-## Sample data file
+### Sample data file
 A code change from flask to quart at commit 7ea7ddb: [80_1.yaml]({{ site.vars.repo }}/blob/main/data/codechange/80_1.yaml){:target="_blank"}
 ```yaml
 id: '80_1'
