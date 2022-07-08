@@ -7,10 +7,10 @@ The source code of the tool is in the [code]({{ site.vars.repo }}/tree/main/code
 
 ## Install
 1. Install Python from [here](https://www.python.org/). We developed the tool in Python 3.10.0, but a later version should also work.
-2. Either clone the [repository]({{site.vars.repo}}){:target="_blank"} or 
-download it from [here](https://github.com/ualberta-smr/PyMigBench/archive/refs/heads/main.zip) 
+2. Clone the [repository]({{site.vars.repo}}){:target="_blank"}. Alternatively, 
+[download the zip](https://github.com/ualberta-smr/PyMigBench/archive/refs/heads/main.zip) 
 and extract it.
-3. Open a terminal and change the directory to the `code` folder.
+1. Open a terminal and change the directory to the `code` folder.
 This is the folder where you will find a `requirements.txt` file.
 4. Install the dependencies. Run `pip install -r requirements.txt`
 
@@ -23,7 +23,7 @@ items:
   code change: 436
 ```
 
-## Syntax
+## Query Syntax
 The syntax for querying PyMigBench is:
 ```bash
 python pymigbench.py <query> -dt <data-types> -f <filters> -o <output-format>
@@ -31,17 +31,22 @@ python pymigbench.py <query> -dt <data-types> -f <filters> -o <output-format>
 
 * _query_: There are three query options: `c` or `count`, `l` or `list` and `d` or `detail`.
   Default is `count`.
-* `-d`, `-dt`, `--data-types`: Four options: `all`,`lp` or `library-pair`,`mg` or `migration`,`cc` or `code-change`. 
-Specifies the data types on which to query. 
-A `count` allows multiple data types and `all` is default.
+    - `count` returns the number of data items for each specified data types.
+    - `list` returns the list if IDs.
+    - `detail` returns the a list of data items that include all of its properties.
+* `-d`, `-dt`, `--data-types`: Specifies the data types on which to query. 
+  It has four options: `all`, `lp` or `library-pair`, `mg` or `migration`, `cc` or `code-change`. 
+
+A `count` query allows multiple data types and `all` is default.
 The other queries accept just one mandatory data type, no defaults.
 The `list` query returns a list of IDs, and the `detail` returns the items in JSON format. 
 * `-f`, `--filters`: You can pass zero or more filters to all queries.
 Each filter must be in the format `<property>=<value>`.
 Here, `property` is a property of a data type.
-Please check the [property values](#property) section below for a list of possible property values.
-We assume all attributes to be string or array of string.
-The `value` is therefore any string that will be matched against the attribute.
+Please check the [property values](#property) section below for a list of frequently used properties and their possible values.
+Check the [dataset](dataset) page for the full schema of the dataset.
+The properties are of type string or array of string.
+The `value` is therefore any string that will be matched against the property.
 The value accepts matching by `!`, `?` and `*` through [fnmatch.fnmatch](https://docs.python.org/3/library/fnmatch.html#fnmatch.fnmatch){:target="_blank"}. 
 For array type properties, a data is returned if at least one of the list item satisfies the filter.
 See the [examples](examples) for better understanding the filters.
