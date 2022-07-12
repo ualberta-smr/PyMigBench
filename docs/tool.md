@@ -23,7 +23,7 @@ items:
   code change: 436
 ```
 
-## Query Syntax
+## Query PyMigBench
 The syntax for querying PyMigBench is:
 ```bash
 python pymigbench.py <query> -dt <data-types> -f <filters> -o <output-format>
