@@ -37,3 +37,5 @@ commit_message: 'Change out ''py-bcrypt'' for ''bcrypt''. (#80)
 
 
   * Unwrap previously wrapped lines'
+commit_url: https://github.com/weasyl/weasyl/commit/4ad53b59
+code_changes: []

@@ -14,3 +14,5 @@ commit_message: 'Replace pycrypto with pycryptodome
   them actually impact how we use it), so we might as well replace
 
   pycrypto with pycryptodome.'
+commit_url: https://github.com/quantopian/penguindome/commit/d8dedc77
+code_changes: []

@@ -5,3 +5,5 @@ repo: django-wiki/django-wiki
 commit: 2fc0f26aa3b7f86b79c477ed89fd0aff3a476567
 pair_id: pil,pillow
 commit_message: Switch to Pillow and the dev version of sorl v12
+commit_url: https://github.com/django-wiki/django-wiki/commit/2fc0f26a
+code_changes: []

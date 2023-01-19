@@ -9,3 +9,8 @@ commit_message: 'Reorganise requirements
   - Optional / difficult packages at the end.
 
   - Use Pillow instead of PIL - change Img to work with this.'
+commit_url: https://github.com/shoebot/shoebot/commit/0171fb9f
+code_changes:
+- filepath: shoebot/data/img.py
+  lines:
+  - '9:9'

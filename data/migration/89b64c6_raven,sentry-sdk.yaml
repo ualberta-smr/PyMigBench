@@ -9,3 +9,5 @@ commit_message: 'fix(Error logging): Upgrade to sentry-sdk; use message for migr
 
 
   Closes #336 and #350'
+commit_url: https://github.com/stencila/hub/commit/89b64c61
+code_changes: []

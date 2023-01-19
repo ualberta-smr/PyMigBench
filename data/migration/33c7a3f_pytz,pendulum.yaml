@@ -5,3 +5,11 @@ repo: oddluck/limnoria-plugins
 commit: 33c7a3fc0878d87ee803db91c17523a9e61af3ed
 pair_id: pytz,pendulum
 commit_message: 'NHL/NBA: replace pytz dependency'
+commit_url: https://github.com/oddluck/limnoria-plugins/commit/33c7a3fc
+code_changes:
+- filepath: NHL/plugin.py
+  lines:
+  - '35:26'
+- filepath: NBA/plugin.py
+  lines:
+  - '50:40'

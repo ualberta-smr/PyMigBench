@@ -7,3 +7,5 @@ pair_id: pil,pillow
 commit_message: Fixed formatting bug in ubuntu sysdef, now dad installs requirements
   only on initial setup, changed requirements.txt template to use pillow instead of
   PIL since PIL's packaging is messy and breaks under virtualenv
+commit_url: https://github.com/h3/python-dad/commit/4c3400a0
+code_changes: []

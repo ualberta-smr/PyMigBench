@@ -5,3 +5,5 @@ repo: n1nj4sec/pupy
 commit: 5924dc061834370c0b0688ff21d86bcbcfbeb000
 pair_id: pycrypto,pycryptodome
 commit_message: Let's try to use pycryptodome instead of pycrypto
+commit_url: https://github.com/n1nj4sec/pupy/commit/5924dc06
+code_changes: []

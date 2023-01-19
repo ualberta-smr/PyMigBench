@@ -5,3 +5,16 @@ repo: slackapi/python-slack-sdk
 commit: 5f4d92a8048814fc4938753594e74d7cfc74c27a
 pair_id: slackclient,slack-sdk
 commit_message: Update the tutorial to be up-to-date with v3
+commit_url: https://github.com/slackapi/python-slack-sdk/commit/5f4d92a8
+code_changes:
+- filepath: tutorial/PythOnBoardingBot/async_app.py
+  lines:
+  - 146:147
+  - '42:43'
+  - 65:66
+  - 94:95
+  - 123:124
+  - 7:7-8
+- filepath: tutorial/PythOnBoardingBot/app.py
+  lines:
+  - '4:4'

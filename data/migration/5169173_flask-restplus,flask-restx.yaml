@@ -5,3 +5,38 @@ repo: kizniche/mycodo
 commit: 516917351d7d8341375db4481ac72910c9510a42
 pair_id: flask-restplus,flask-restx
 commit_message: Merge from Flask-RESTPlus to Flask-RESTX ([#742
+commit_url: https://github.com/kizniche/mycodo/commit/51691735
+code_changes:
+- filepath: mycodo/mycodo_flask/api/daemon.py
+  lines:
+  - '7-9:7-9'
+- filepath: mycodo/mycodo_flask/api/__init__.py
+  lines:
+  - '6:6'
+- filepath: mycodo/mycodo_flask/api/output.py
+  lines:
+  - '7-9:7-9'
+- filepath: mycodo/mycodo_flask/api/math.py
+  lines:
+  - '7-9:7-9'
+- filepath: mycodo/mycodo_flask/api/measurement.py
+  lines:
+  - '8-10:8-10'
+- filepath: mycodo/mycodo_flask/api/sql_schema_fields.py
+  lines:
+  - '2:2'
+- filepath: mycodo/mycodo_flask/api/pid.py
+  lines:
+  - '7-9:7-9'
+- filepath: mycodo/mycodo_flask/api/input.py
+  lines:
+  - '7-9:7-9'
+- filepath: mycodo/mycodo_flask/api/choices.py
+  lines:
+  - '7-9:7-9'
+- filepath: mycodo/mycodo_flask/api/settings.py
+  lines:
+  - '7-9:7-9'
+- filepath: mycodo/mycodo_flask/api/controller.py
+  lines:
+  - '7-9:7-9'

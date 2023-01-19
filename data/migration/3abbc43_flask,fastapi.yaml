@@ -5,3 +5,9 @@ repo: virtuber/openvtuber
 commit: 3abbc431e586218470f47eac10fa6d351c6fe907
 pair_id: flask,fastapi
 commit_message: flask to fastapi and uvicorn
+commit_url: https://github.com/virtuber/openvtuber/commit/3abbc431
+code_changes:
+- filepath: openvtuber-server/src/openvtuber/web/web.py
+  lines:
+  - 3:4-5
+  - '6:8'

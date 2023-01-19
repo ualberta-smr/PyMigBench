@@ -16,3 +16,5 @@ commit_message: 'upgrade to new sentry sdk:
   TODO: add Vue integration (@cpritcha want to take the lead on this?)
 
   https://docs.sentry.io/platforms/javascript/vue/'
+commit_url: https://github.com/comses/comses.net/commit/0411d6a1
+code_changes: []

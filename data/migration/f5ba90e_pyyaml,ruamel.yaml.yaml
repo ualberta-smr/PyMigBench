@@ -5,3 +5,8 @@ repo: holgern/beem
 commit: f5ba90e2cc5bb88b29b173bae11ba46e06efecf7
 pair_id: pyyaml,ruamel.yaml
 commit_message: Switch to ruamel.yaml
+commit_url: https://github.com/holgern/beem/commit/f5ba90e2
+code_changes:
+- filepath: beem/utils.py
+  lines:
+  - '9:9'

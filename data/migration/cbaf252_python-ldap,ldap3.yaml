@@ -7,3 +7,8 @@ pair_id: python-ldap,ldap3
 commit_message: "replace Python-LDAP with ldap3 (#690)\n\n* fix args in mailer\u2019\
   s setup.py\n\n* switch mailer to ldap3\n\nclose #637\n\n* check that manager was\
   \ set"
+commit_url: https://github.com/cloud-custodian/cloud-custodian/commit/cbaf252f
+code_changes:
+- filepath: tools/c7n_mailer/c7n_mailer/address.py
+  lines:
+  - 19:16-20

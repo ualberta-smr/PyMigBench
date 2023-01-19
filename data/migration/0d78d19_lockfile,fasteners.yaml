@@ -23,3 +23,5 @@ commit_message: 'Add OwnerPrintingInterProcessFileLock and replace OwnerPrinting
 
 
   Reviewed at https://rbcommons.com/s/twitter/r/3633/'
+commit_url: https://github.com/pantsbuild/pants/commit/0d78d19f
+code_changes: []

@@ -8,3 +8,5 @@ commit_message: 'Use PyMySQL driver instead of MySQLdb
 
 
   because PyMySQL is written in pure python and is easier to install'
+commit_url: https://github.com/rnacentral/rnacentral-webcode/commit/70b3abc5
+code_changes: []

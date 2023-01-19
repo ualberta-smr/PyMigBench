@@ -5,3 +5,5 @@ repo: cycat-project/cycat-service
 commit: a6880349b111f7a111d6d9163dde664251eaa0e4
 pair_id: flask-restplus,flask-restx
 commit_message: 'fix: [requirements] flask-restx added'
+commit_url: https://github.com/cycat-project/cycat-service/commit/a6880349
+code_changes: []

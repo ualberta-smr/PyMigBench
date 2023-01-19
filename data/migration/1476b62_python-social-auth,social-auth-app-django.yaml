@@ -8,3 +8,5 @@ commit_message: 'Migrate to from python-social-auth to social-auth-app-django
 
 
   Closes #110'
+commit_url: https://github.com/onespacemedia/project-template/commit/1476b623
+code_changes: []

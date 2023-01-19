@@ -5,3 +5,5 @@ repo: anikalegal/clerk
 commit: df57533f6105b3ef513990ede61d8523a3674486
 pair_id: raven,sentry-sdk
 commit_message: Add staging environment
+commit_url: https://github.com/anikalegal/clerk/commit/df57533f
+code_changes: []

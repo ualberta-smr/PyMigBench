@@ -5,3 +5,20 @@ repo: synesthesiam/voice2json
 commit: 7ea7ddb8400775282e82c1adcb17b013f27ede2b
 pair_id: flask,quart
 commit_message: Using quart for web interface
+commit_url: https://github.com/synesthesiam/voice2json/commit/7ea7ddb8
+code_changes:
+- filepath: web/app.py
+  lines:
+  - 100:102
+  - 105:107
+  - 166:172
+  - 195:202
+  - 235:243
+  - 237:245
+  - 242:250
+  - '20:20'
+  - '28:28'
+  - '59:59'
+  - 95:96
+  - 188:194
+  - 212:219

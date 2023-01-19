@@ -14,3 +14,14 @@ commit_message: 'Fix rabbitmq bugs (connector argument position) (#167)
 
 
   * Fix typo (Uncontrolled Exception instead of Uncontroller Exception)'
+commit_url: https://github.com/alice-biometrics/petisco/commit/9abf7b1f
+code_changes:
+- filepath: petisco/legacy/notifier/infrastructure/slack/slack_notifier.py
+  lines:
+  - 1-2:1-2
+- filepath: petisco/extra/slack/is_slack_available.py
+  lines:
+  - '3:3'
+- filepath: petisco/extra/slack/application/notifier/slack_notifier.py
+  lines:
+  - 3-4:3-4

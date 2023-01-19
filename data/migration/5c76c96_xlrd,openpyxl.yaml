@@ -5,3 +5,5 @@ repo: asehmi/data-science-meetup-oxford
 commit: 5c76c96f1062ddf9be986f6b8416101aef88d0cd
 pair_id: xlrd,openpyxl
 commit_message: '[security fix] replacing xlrd default with explicit openpyxl in pd.read_excel()'
+commit_url: https://github.com/asehmi/data-science-meetup-oxford/commit/5c76c96f
+code_changes: []

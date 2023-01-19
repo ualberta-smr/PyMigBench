@@ -8,3 +8,8 @@ commit_message: 'Use drf-yasg instead of django_rest_swagger
 
 
   Signed-off-by: Nicholas Rempel <nbrempel@gmail.com>'
+commit_url: https://github.com/bcgov/theorgbook/commit/728f86e9
+code_changes:
+- filepath: tob-api/api_v2/swagger.py
+  lines:
+  - 6:7-8

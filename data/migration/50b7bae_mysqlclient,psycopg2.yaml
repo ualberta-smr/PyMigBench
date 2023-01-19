@@ -10,3 +10,5 @@ commit_message: 'BREAKING feat(dbapi): switch to postgres, fixes #430
   Migration instructions:
 
   https://github.com/desec-io/desec-stack/pull/432#issuecomment-680785746'
+commit_url: https://github.com/desec-io/desec-stack/commit/50b7baed
+code_changes: []

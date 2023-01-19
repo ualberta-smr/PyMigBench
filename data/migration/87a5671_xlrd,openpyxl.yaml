@@ -5,3 +5,5 @@ repo: oeg-upm/mapeathor
 commit: 87a5671e807b70b06dbb00dc8e297aee61b1632b
 pair_id: xlrd,openpyxl
 commit_message: xlrd bug fixed
+commit_url: https://github.com/oeg-upm/mapeathor/commit/87a5671e
+code_changes: []

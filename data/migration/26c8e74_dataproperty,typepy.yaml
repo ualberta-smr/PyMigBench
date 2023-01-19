@@ -5,3 +5,12 @@ repo: thombashi/sqlitebiter
 commit: 26c8e7467fb764d6abca03d6830f7679cbfc3ea1
 pair_id: dataproperty,typepy
 commit_message: 'Replace a module: DataProperty to typepy'
+commit_url: https://github.com/thombashi/sqlitebiter/commit/26c8e746
+code_changes:
+- filepath: sqlitebiter/sqlitebiter.py
+  lines:
+  - '13:17'
+  - '46:46'
+  - 136:136
+  - 227:227
+  - 239:239

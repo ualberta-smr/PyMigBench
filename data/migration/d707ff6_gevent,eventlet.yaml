@@ -5,3 +5,9 @@ repo: duanhongyi/dwebsocket
 commit: d707ff652fd74c3420e83a50fc9b1b9026ed0d98
 pair_id: gevent,eventlet
 commit_message: add py3k support
+commit_url: https://github.com/duanhongyi/dwebsocket/commit/d707ff65
+code_changes:
+- filepath: examples/run_eventlet.py
+  lines:
+  - 14-15:16
+  - 3-5:1-2+6

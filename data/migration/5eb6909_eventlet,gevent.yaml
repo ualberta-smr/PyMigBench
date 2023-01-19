@@ -7,3 +7,5 @@ pair_id: eventlet,gevent
 commit_message: 'Issue #249 - started on new scraper.
 
   Version version of Monitor and SearchCommands class'
+commit_url: https://github.com/sc3/cookcountyjail/commit/5eb69097
+code_changes: []

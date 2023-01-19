@@ -5,3 +5,9 @@ repo: milvus-io/bootcamp
 commit: 89c7afc6548362e9bbf1dbf6142aabb02bc3bb93
 pair_id: pymilvus-orm,pymilvus
 commit_message: update benchmark test script for Milvus 2.0.0-rc5
+commit_url: https://github.com/milvus-io/bootcamp/commit/89c7afc6
+code_changes:
+- filepath: benchmark_test/scripts/milvus_helpers.py
+  lines:
+  - '2-5+7:2'
+  - 98:96

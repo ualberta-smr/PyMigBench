@@ -5,3 +5,5 @@ repo: epsagon/epsagon-kubernetes
 commit: 6e7ee63ded228a139c4198bffb3f64675228f12e
 pair_id: requests,aiohttp
 commit_message: Watch based agent
+commit_url: https://github.com/epsagon/epsagon-kubernetes/commit/6e7ee63d
+code_changes: []

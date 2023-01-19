@@ -5,3 +5,30 @@ repo: microsoft/nni
 commit: b955ac99a46094d2d701d447e9df07509767cc32
 pair_id: ruamel.yaml,pyyaml
 commit_message: Use PyYAML instead of ruamel.yaml (#3702)
+commit_url: https://github.com/microsoft/nni/commit/b955ac99
+code_changes:
+- filepath: nni/tools/nnictl/common_utils.py
+  lines:
+  - '12:12'
+- filepath: test/nni_test/nnitest/utils.py
+  lines:
+  - '12:12'
+  - '46:46'
+  - '51:51'
+- filepath: nni/experiment/config/common.py
+  lines:
+  - '8:8'
+  - 121:121
+- filepath: test/nni_test/nnitest/run_tests.py
+  lines:
+  - '12:12'
+  - 83:83
+- filepath: nni/experiment/config/base.py
+  lines:
+  - '9:9'
+  - 75:75
+- filepath: nni/tools/package_utils/__init__.py
+  lines:
+  - '9:9'
+  - 218:218
+  - 229:229

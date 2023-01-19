@@ -57,3 +57,5 @@ commit_message: 'Fixes PIL dependency
   $ source env/bin/activate
 
   $ pip uninstall PIL'
+commit_url: https://github.com/learning-unlimited/esp-website/commit/85d50bbb
+code_changes: []

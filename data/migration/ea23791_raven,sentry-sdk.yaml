@@ -5,3 +5,9 @@ repo: agdsn/sipa
 commit: ea23791cfdc36d614189418a01a57c78859fa5e8
 pair_id: raven,sentry-sdk
 commit_message: Use sentry SDK instead of raven
+commit_url: https://github.com/agdsn/sipa/commit/ea23791c
+code_changes:
+- filepath: sipa/initialization.py
+  lines:
+  - 186-187:189-194
+  - 9-11:8+12

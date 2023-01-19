@@ -5,3 +5,11 @@ repo: milvus-io/bootcamp
 commit: e5073e4c0c3e799822e939268d80c8f0601ea4cf
 pair_id: pymilvus-orm,pymilvus
 commit_message: update video analysis
+commit_url: https://github.com/milvus-io/bootcamp/commit/e5073e4c
+code_changes:
+- filepath: solutions/video_similarity_search/quick_deploy/server/src/milvus_helpers.py
+  lines:
+  - 2-5+7:3
+- filepath: solutions/video_similarity_search/object_detection/server/src/milvus_helpers.py
+  lines:
+  - 2-5+7:3

@@ -5,3 +5,5 @@ repo: henrysky/astronn
 commit: fe6b4379c5d84495cb30af0ad50931c871129f0f
 pair_id: pil,pillow
 commit_message: pillow not PIL [ci skip]
+commit_url: https://github.com/henrysky/astronn/commit/fe6b4379
+code_changes: []

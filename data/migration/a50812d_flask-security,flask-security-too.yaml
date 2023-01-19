@@ -12,3 +12,5 @@ commit_message: 'Migrating dependency on flask-security to flask-security-too
   became abandonware. A fork mantained by jwag956 seems to handle the project''s continuity.
 
   I took a look in the source code and it seems to be properly maintained.'
+commit_url: https://github.com/italomaia/flask-empty/commit/a50812d3
+code_changes: []

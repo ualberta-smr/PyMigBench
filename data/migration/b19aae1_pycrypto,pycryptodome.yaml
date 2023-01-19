@@ -8,3 +8,5 @@ commit_message: 'pycryptodome & readme updates
 
 
   pycrypto has been depreciated & replaced with pycryptodome.'
+commit_url: https://github.com/bitshares/python-bitshares/commit/b19aae1a
+code_changes: []

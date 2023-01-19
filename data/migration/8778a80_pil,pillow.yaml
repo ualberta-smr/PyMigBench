@@ -8,3 +8,5 @@ commit_message: 'Replace PIL with Pillow
 
 
   Somehow PIL is not making Travis very happy atm.'
+commit_url: https://github.com/django-wiki/django-wiki/commit/8778a806
+code_changes: []

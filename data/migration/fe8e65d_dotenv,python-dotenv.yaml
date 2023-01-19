@@ -5,3 +5,5 @@ repo: kaveio/kavetoolbox
 commit: fe8e65df6d05e3818627638104d3ca0730753657
 pair_id: dotenv,python-dotenv
 commit_message: Changing dotenv to python-dotenv
+commit_url: https://github.com/kaveio/kavetoolbox/commit/fe8e65df
+code_changes: []

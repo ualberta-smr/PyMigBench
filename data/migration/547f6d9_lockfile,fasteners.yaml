@@ -5,3 +5,33 @@ repo: kizniche/mycodo
 commit: 547f6d9f22e569007c1066e36ee5142f5e1b533d
 pair_id: lockfile,fasteners
 commit_message: Replace deprecated LockFile with fasteners (#260)
+commit_url: https://github.com/kizniche/mycodo/commit/547f6d9f
+code_changes:
+- filepath: mycodo/sensors/mh_z16.py
+  lines:
+  - 155:156
+  - '22:22'
+  - 51:152
+- filepath: mycodo/sensors/k30.py
+  lines:
+  - 101:100
+  - '3:3'
+  - 95:96
+- filepath: mycodo/controller_sensor.py
+  lines:
+  - '31:26'
+- filepath: mycodo/sensors/mh_z19.py
+  lines:
+  - 101:102
+  - '3:3'
+  - 95:98
+- filepath: mycodo/devices/atlas_scientific_uart.py
+  lines:
+  - '5:3'
+  - '51:54'
+  - '55:58'
+- filepath: mycodo/devices/atlas_scientific_i2c.py
+  lines:
+  - '7:3'
+  - 77:79
+  - 81:83

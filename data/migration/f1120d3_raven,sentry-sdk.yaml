@@ -29,3 +29,9 @@ commit_message: 'Feat - Switch from SSM to outputs + SAM (#20)
 
 
   Co-authored-by: Laurent Jalbert-Simard <ljalbertsimard@poka.io>'
+commit_url: https://github.com/pokainc/cfn-cross-region-export/commit/f1120d34
+code_changes:
+- filepath: exporter/lambda/cross_region_import_replication.py
+  lines:
+  - 21-25:11
+  - 8-9:8-9

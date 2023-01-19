@@ -5,3 +5,10 @@ repo: raptor123471/dingolingo
 commit: 1d8923abae93915ad877774e0fdc812d6c53a70b
 pair_id: requests,aiohttp
 commit_message: Replace requests with aiohttp
+commit_url: https://github.com/raptor123471/dingolingo/commit/1d8923ab
+code_changes:
+- filepath: musicbot/linkutils.py
+  lines:
+  - '1:1'
+  - 35-36:36-38
+  - 98:100-102

@@ -5,3 +5,29 @@ repo: pythondataintegrator/pythondataintegrator
 commit: 598f275f11bdb1796b4ea0f6b3676a45758c08c4
 pair_id: flask-restplus,flask-restx
 commit_message: requirements updated and restx integrated. some model updated
+commit_url: https://github.com/pythondataintegrator/pythondataintegrator/commit/598f275f
+code_changes:
+- filepath: src/api/controllers/operation/models/DataOperationModels.py
+  lines:
+  - '5:5'
+- filepath: src/api/controllers/operation/models/JobSchedulerModels.py
+  lines:
+  - '5:5'
+- filepath: src/api/infrastructor/api/ResourceBase.py
+  lines:
+  - '1:1'
+- filepath: src/api/controllers/common/models/CommonModels.py
+  lines:
+  - '3:5'
+- filepath: src/api/IocManager.py
+  lines:
+  - '6:6'
+- filepath: src/api/controllers/integration/models/DataIntegrationModels.py
+  lines:
+  - '4:4'
+- filepath: src/api/controllers/job/models/JobModels.py
+  lines:
+  - '4:4'
+- filepath: src/api/controllers/connection/models/ConnectionModels.py
+  lines:
+  - '4:4'

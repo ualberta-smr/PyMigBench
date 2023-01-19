@@ -5,3 +5,5 @@ repo: lordofpolls/rule34-api-wrapper
 commit: 1c574c14c88c0cad7705c9b81b9b4b3f75ea7485
 pair_id: requests,aiohttp
 commit_message: Removed unused requirements, and added new ones
+commit_url: https://github.com/lordofpolls/rule34-api-wrapper/commit/1c574c14
+code_changes: []

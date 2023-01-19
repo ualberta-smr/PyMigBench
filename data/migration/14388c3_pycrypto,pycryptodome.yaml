@@ -5,3 +5,12 @@ repo: camptocamp/c2cgeoportal
 commit: 14388c3d85ab164d7b36b1331534913a1c9d6c9a
 pair_id: pycrypto,pycryptodome
 commit_message: Use pycryptodome instance of the unmaintained pycrypto
+commit_url: https://github.com/camptocamp/c2cgeoportal/commit/14388c3d
+code_changes:
+- filepath: geoportal/c2cgeoportal_geoportal/scripts/urllogin.py
+  lines:
+  - '48:48'
+  - '53:53'
+- filepath: geoportal/c2cgeoportal_geoportal/__init__.py
+  lines:
+  - 322-323:326-327
