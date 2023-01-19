@@ -10,4 +10,4 @@ commit_url: https://github.com/snemes/malware-analysis/commit/02b064b4
 code_changes:
 - filepath: trickbot/trickbot_artifact_decrypter.py
   lines:
-  - '11-14:11-14'
+  - 11-14:11-14

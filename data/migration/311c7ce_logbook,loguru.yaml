@@ -10,4 +10,4 @@ code_changes:
 - filepath: sqlitebiter/sqlitebiter.py
   lines:
   - 15-16:20
-  - 64+68:64
+  - 64,68:64

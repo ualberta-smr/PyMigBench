@@ -10,4 +10,4 @@ code_changes:
 - filepath: examples/run_eventlet.py
   lines:
   - 14-15:16
-  - 3-5:1-2+6
+  - 3-5:1-2,6

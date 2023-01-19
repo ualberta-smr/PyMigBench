@@ -9,4 +9,4 @@ commit_url: https://github.com/stefal/rtkbase/commit/a4c347a2
 code_changes:
 - filepath: web_app/server.py
   lines:
-  - '28-29:26-27'
+  - 28-29:26-27

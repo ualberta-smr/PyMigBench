@@ -10,4 +10,4 @@ code_changes:
 - filepath: sipa/initialization.py
   lines:
   - 186-187:189-194
-  - 9-11:8+12
+  - 9-11:8,12

@@ -9,5 +9,5 @@ commit_url: https://github.com/milvus-io/bootcamp/commit/89c7afc6
 code_changes:
 - filepath: benchmark_test/scripts/milvus_helpers.py
   lines:
-  - '2-5+7:2'
+  - 2-5,7:2
   - 98:96
