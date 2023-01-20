@@ -35,7 +35,7 @@ def build_arguments() -> Arguments:
     parser.add_argument("-d", "-dt", "--data-types", nargs='+',
                         help="The data types that you want to fetch. "
                              "Different queries accept different numbers of arguments.",
-                        choices=["all", "lp", "mg", "cc"])
+                        choices=["all", "lp", "mg"])
     parser.add_argument("-f", "--filters", required=False, nargs='+',
                         help="Additional filters. The format varies based on the query.")
     parser.add_argument("-o", "--output-format", required=False, default="yaml",

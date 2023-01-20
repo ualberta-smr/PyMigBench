@@ -1,11 +1,9 @@
 LibPairKey = "lp"
 MigrationKey = "mg"
-CodeChangeKey = "cc"
 
-DataTypeKeys = [LibPairKey, MigrationKey, CodeChangeKey]
+DataTypeKeys = [LibPairKey, MigrationKey]
 
 DataTypeName = {
     LibPairKey: "library pair",
-    MigrationKey: "migration",
-    CodeChangeKey: "code change"
+    MigrationKey: "migration"
 }
