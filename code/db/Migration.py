@@ -8,3 +8,9 @@ class Migration(DataItem):
     commit: str
     pair_id: str
     commit_message: str
+    code_changes: list
+
+
+class CodeChange:
+    filepath: str
+    lines: list[str]

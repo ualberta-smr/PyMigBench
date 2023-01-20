@@ -5,5 +5,5 @@ from query.Result import Result
 
 
 class JSONFormat(OutputFormat):
-    def format(self, result: Result):
-        return json.dumps(result, indent=2, sort_keys=False, default=vars)
+    def format_impl(self, result: Result):
+        return json.dumps(result.items, indent=2, sort_keys=False, default=vars)
