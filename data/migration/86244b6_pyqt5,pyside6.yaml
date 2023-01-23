@@ -19,14 +19,14 @@ code_changes:
 - filepath: src/resources_rc.py
   lines:
   - '9:6'
-- filepath: src/settings_file.py
+- filepath: src/settings_file.py #please check this
   lines:
   - 268:271
   - 273:276
 - filepath: src/error_messages.py
   lines:
   - '2:2'
-- filepath: src/about.py
+- filepath: src/about.py #please check this
   lines:
   - '9:9'
   - '32:32'
