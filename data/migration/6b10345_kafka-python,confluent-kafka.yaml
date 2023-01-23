@@ -17,6 +17,6 @@ code_changes:
   - 35:35-36
 - filepath: api/app/helpers/producer.py
   lines:
-  - 18-21:20 #18-21:18-20?
-  - '31:36' #31:35-36?
+  - 18-21:18-20
+  - 31:35-36
   - '5:5'

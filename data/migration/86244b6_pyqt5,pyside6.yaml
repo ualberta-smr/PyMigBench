@@ -19,19 +19,18 @@ code_changes:
 - filepath: src/resources_rc.py
   lines:
   - '9:6'
-- filepath: src/settings_file.py #please check this
+- filepath: src/settings_file.py
   lines:
-  - 268:271
-  - 273:276
+  - '2:2'
 - filepath: src/error_messages.py
   lines:
   - '2:2'
-- filepath: src/about.py #please check this
+- filepath: src/about.py
   lines:
   - '9:9'
-  - '32:32'
-  - '48:48'
-  - 77:79
+  - '32:34'
+  - '48:50'
+  - '77:79'
 - filepath: src/screen_region.py
   lines:
   - '1:1'

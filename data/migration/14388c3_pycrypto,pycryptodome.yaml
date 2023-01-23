@@ -10,7 +10,7 @@ code_changes:
 - filepath: geoportal/c2cgeoportal_geoportal/scripts/urllogin.py
   lines:
   - '48:48'
-  - '53:53' #53:53-54?
+  - 53:53-54
 - filepath: geoportal/c2cgeoportal_geoportal/__init__.py
   lines:
   - 322-323:326-327
