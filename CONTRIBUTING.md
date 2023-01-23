@@ -5,12 +5,9 @@ Please follow this document to find the best way you can contribute.
 ## Submit new migration data
 We will be happy to include manually validated Python library migration data in PyMigBench.
 Please [submit a data request](https://github.com/ualberta-smr/PyMigBench/issues/new?template=data-request.md) and attach your dataset to the issue.
-We currently support three types of data: library pairs, migrations and code changes.
-You can submit only library pairs or library pairs and migrations or all three types of data.
+We currently support two types of data: library pairs and migrations.
 The data should be in YAML format as described in our [dataset page](https://ualberta-smr.github.io/PyMigBench/dataset).
-Alternatively, you can submit one CSV file per dataset, where each row represents one item.
-The header should be same as the properties in the YAML files.
-Please leave the IDs blank.
+Please leave the IDs blank as we will assign them.
 
 We will review your data and add it to the benchmark, or contact you if there are any issues. 
 
