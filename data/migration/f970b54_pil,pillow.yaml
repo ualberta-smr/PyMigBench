@@ -5,3 +5,8 @@ repo: rcos/observatory-retired
 commit: f970b543dc349460492a32a11731738062bfcc09
 pair_id: pil,pillow
 commit_message: Go to Pillow for images since PIL isn't updated
+commit_url: https://github.com/rcos/observatory-retired/commit/f970b543
+code_changes:
+- filepath: observatory/dashboard/models/Screenshot.py
+  lines:
+  - '15:15'

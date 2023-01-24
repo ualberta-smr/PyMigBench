@@ -4,15 +4,13 @@ from pathlib import Path
 
 import yaml
 
-from core.Constants import CodeChangeKey, MigrationKey, LibPairKey
-from db.CodeChange import CodeChange
+from core.Constants import MigrationKey, LibPairKey
 from db.DataItem import DataItem
 from db.LibPair import LibPair
 from db.Migration import Migration
 
 
 class Db:
-    code_changes: dict[str, CodeChange]
     migrations: dict[str, Migration]
     lib_pairs: dict[str, LibPair]
     _mapping: dict[str, dict[str, DataItem]]
@@ -21,11 +19,9 @@ class Db:
         self.data_root = data_root
 
     def load(self):
-        self.code_changes = self.load_items("codechange", CodeChange)
         self.migrations = self.load_items("migration", Migration)
         self.lib_pairs = self.load_items("libpair", LibPair)
         self._mapping = {
-            CodeChangeKey: self.code_changes,
             MigrationKey: self.migrations,
             LibPairKey: self.lib_pairs,
         }

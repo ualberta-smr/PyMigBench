@@ -8,3 +8,5 @@ commit_message: 'Upgrade py-bcrypt to bcrypt
 
 
   Fixes issue #244 on GitHub.'
+commit_url: https://github.com/pwnlandia/mhn/commit/5f2c76c5
+code_changes: []

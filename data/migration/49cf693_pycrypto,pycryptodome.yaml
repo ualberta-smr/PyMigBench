@@ -7,3 +7,5 @@ pair_id: pycrypto,pycryptodome
 commit_message: 'Add option for password authentication with island
 
   Replace PyCrypto with Cryptodome'
+commit_url: https://github.com/guardicore/monkey/commit/49cf6931
+code_changes: []

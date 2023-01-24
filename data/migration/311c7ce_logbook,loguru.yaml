@@ -5,3 +5,9 @@ repo: thombashi/sqlitebiter
 commit: 311c7ce50a89316d5cab9bb2daef05315175faf2
 pair_id: logbook,loguru
 commit_message: Replace the logging library
+commit_url: https://github.com/thombashi/sqlitebiter/commit/311c7ce5
+code_changes:
+- filepath: sqlitebiter/sqlitebiter.py
+  lines:
+  - 15-16:20
+  - 64,68:64

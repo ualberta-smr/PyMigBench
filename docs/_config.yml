@@ -32,8 +32,6 @@ remote_theme: "just-the-docs/just-the-docs"
 aux_links:
   "Repository":
     - "https://github.com/ualberta-smr/PyMigBench/"
-  "Paper (Preprint)":
-    - "https://arxiv.org/abs/2207.01124"
 aux_links_new_tab: true
 vars:  # custom variables
   repo: "https://github.com/ualberta-smr/PyMigBench/"

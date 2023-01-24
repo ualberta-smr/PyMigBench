@@ -5,3 +5,5 @@ repo: wh1te909/tacticalrmm
 commit: 6b0f04a5b0b77d029cff0f16e0292d66116b9bdf
 pair_id: pycrypto,pycryptodome
 commit_message: replace pycrypto with newer pycryptodome
+commit_url: https://github.com/wh1te909/tacticalrmm/commit/6b0f04a5
+code_changes: []

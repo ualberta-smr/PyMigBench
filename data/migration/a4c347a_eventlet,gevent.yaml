@@ -5,3 +5,8 @@ repo: stefal/rtkbase
 commit: a4c347a2ede5fba1d0e787193b7dc4079ab4fd6f
 pair_id: eventlet,gevent
 commit_message: 'Temporary workaround to #22'
+commit_url: https://github.com/stefal/rtkbase/commit/a4c347a2
+code_changes:
+- filepath: web_app/server.py
+  lines:
+  - 28-29:26-27

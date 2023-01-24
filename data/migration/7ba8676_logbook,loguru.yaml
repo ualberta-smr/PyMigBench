@@ -5,3 +5,9 @@ repo: thombashi/tcconfig
 commit: 7ba8676b3b9347ef15142bfeba30d611822c154d
 pair_id: logbook,loguru
 commit_message: Replace the logging library
+commit_url: https://github.com/thombashi/tcconfig/commit/7ba8676b
+code_changes:
+- filepath: tcconfig/_logger.py
+  lines:
+  - 18,29:20
+  - '6:10'

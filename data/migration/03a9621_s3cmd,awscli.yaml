@@ -8,3 +8,5 @@ commit_message: 'Update to awscli so Python 3 works
 
 
   Closes #23'
+commit_url: https://github.com/drivendata/cookiecutter-data-science/commit/03a96219
+code_changes: []

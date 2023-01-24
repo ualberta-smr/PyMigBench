@@ -12,3 +12,5 @@ commit_message: 'Update scapy
 
   Migrates to original and up-to-date scapy, which now supports both python 2 and
   3'
+commit_url: https://github.com/plizonczyk/noiseprotocol/commit/f0761b88
+code_changes: []

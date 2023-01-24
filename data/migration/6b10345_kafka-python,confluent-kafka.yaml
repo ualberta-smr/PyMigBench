@@ -10,3 +10,13 @@ commit_message: 'Update: migrate to `confluent-kafka-python`
   Works out-of-the-box for multiple Kafka brokers.
 
   Bonus: it''s faster and more maintained.'
+commit_url: https://github.com/biznetgio/restknot/commit/6b103453
+code_changes:
+- filepath: agent/dnsagent/clis/start.py
+  lines:
+  - 35:35-36
+- filepath: api/app/helpers/producer.py
+  lines:
+  - 18-21:18-20
+  - 31:35-36
+  - '5:5'

@@ -5,3 +5,9 @@ repo: talkiq/gcloud-aio
 commit: 45d94ddaf969648d5479ff480a92b16d537716f9
 pair_id: gcloud-aio-core,aiohttp
 commit_message: 'refactor(bigquery): remove core.http dependency'
+commit_url: https://github.com/talkiq/gcloud-aio/commit/45d94dda
+code_changes:
+- filepath: bigquery/gcloud/aio/bigquery/bigquery.py
+  lines:
+  - '6:5'
+  - 96-100:91-94

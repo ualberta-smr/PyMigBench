@@ -5,3 +5,22 @@ repo: thombashi/pingparsing
 commit: 45fac3cb38661f80fc8bd129ce633cfd15423835
 pair_id: dataproperty,typepy
 commit_message: 'Replace a module: DataProperty to typepy'
+commit_url: https://github.com/thombashi/pingparsing/commit/45fac3cb
+code_changes:
+- filepath: pingparsing/_pingtransmitter.py
+  lines:
+  - 86:87
+  - 154:159
+  - 100:101
+  - 110:112
+  - 122:125
+  - 144:148
+  - 154:159
+  - 11:11-12
+- filepath: pingparsing/_pingparsing.py
+  lines:
+  - '10:11'
+  - 134:135
+  - 156:157
+  - 186:187
+  - 233:234

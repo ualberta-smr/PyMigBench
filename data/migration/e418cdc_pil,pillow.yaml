@@ -5,3 +5,5 @@ repo: pyav-org/pyav
 commit: e418cdc8034dc2dac3379fa28087e739449c1c7d
 pair_id: pil,pillow
 commit_message: Test using Pillow instead of PIL
+commit_url: https://github.com/pyav-org/pyav/commit/e418cdc8
+code_changes: []

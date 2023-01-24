@@ -6,3 +6,5 @@ commit: 0911992301d30bb315df4e9bab3b83254c3036fa
 pair_id: pycrypto,pycryptodome
 commit_message: 'ST-1307: Switch from pycrypto to pycryptodome and update to a modern
   version'
+commit_url: https://github.com/confluentinc/ducktape/commit/09119923
+code_changes: []

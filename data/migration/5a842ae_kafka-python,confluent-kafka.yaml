@@ -36,3 +36,10 @@ commit_message: 'Switch driver to confluent-kafka client library
   Depends-On: Ice374dca539b8ed1b1965b75379bad5140121483
 
   Change-Id: Idfb9fe3700d882c8285c6dc56b0620951178eba2'
+commit_url: https://github.com/openstack/oslo.messaging/commit/5a842ae1
+code_changes:
+- filepath: oslo_messaging/_drivers/impl_kafka.py
+  lines:
+  - 220-232:231-248
+  - 288-297:316-326
+  - 26-28:18-19

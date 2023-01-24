@@ -5,3 +5,93 @@ repo: toufool/auto-split
 commit: 86244b6c190f48200826788fa6af4bd8d26b230f
 pair_id: pyqt5,pyside6
 commit_message: Python 3.9 + PyQt6
+commit_url: https://github.com/toufool/auto-split/commit/86244b6c
+code_changes:
+- filepath: src/AutoSplit.py
+  lines:
+  - '4:4'
+  - 139:141
+  - 164:166
+  - 617:619
+  - 680:682
+  - 881:883
+  - 968:961
+- filepath: src/resources_rc.py
+  lines:
+  - '9:6'
+- filepath: src/settings_file.py
+  lines:
+  - '2:2'
+- filepath: src/error_messages.py
+  lines:
+  - '2:2'
+- filepath: src/about.py
+  lines:
+  - '9:9'
+  - '32:34'
+  - '48:50'
+  - '77:79'
+- filepath: src/screen_region.py
+  lines:
+  - '1:1'
+  - 224:227
+  - 229-230:232-233
+  - 257-258:260-261
+  - 268:271
+  - 273:276
+  - 277:280
+- filepath: src/menu_bar.py
+  lines:
+  - '2:2'
+- filepath: src/design.py
+  lines:
+  - '9:9'
+  - '29:31'
+  - '37:39'
+  - '40:42'
+  - '52:54'
+  - 77:79
+  - 90:92
+  - 94:96
+  - 98:100
+  - 102:104
+  - 109:111
+  - 155:157
+  - 172:174
+  - 176:178
+  - 180:182
+  - 184:186
+  - 188:190
+  - 192:194
+  - 194:196
+  - 198:200
+  - 200:202
+  - 204:206
+  - 206:208
+  - 210:212
+  - 212:214
+  - 216:218
+  - 218:220
+  - 222:224
+  - 224:226
+  - 228:230
+  - 230:232
+  - 234:236
+  - 236:238
+  - 240:242
+  - 242:244
+  - 249:251
+  - 251:253
+  - 262:264
+  - 308:310
+  - 312:314
+  - 317:319
+  - 326:328
+  - 365:367
+  - 373:375
+  - 456:458
+  - 458:460
+  - 460:462
+  - 462:464
+  - 464:466
+  - 561:563

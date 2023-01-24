@@ -5,3 +5,5 @@ repo: uclapi/uclapi
 commit: f7d2ea4679405d7693ca8cd00992f11f1a2202ae
 pair_id: raven,sentry-sdk
 commit_message: ':sparkles: Migrate to Sentry'
+commit_url: https://github.com/uclapi/uclapi/commit/f7d2ea46
+code_changes: []

@@ -11,3 +11,5 @@ commit_message: 'Move away from gevent again (#433)
 
 
   * add dnspython'
+commit_url: https://github.com/teamsempo/sempoblockchain/commit/51f26884
+code_changes: []

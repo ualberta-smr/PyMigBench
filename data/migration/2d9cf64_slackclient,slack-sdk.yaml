@@ -5,3 +5,11 @@ repo: zulip/python-zulip-api
 commit: 2d9cf64db860ab5e5eabb8151254b0f3dab609bd
 pair_id: slackclient,slack-sdk
 commit_message: 'slack-bridge: Use slack_sdk instead of the deprecated slackclient.'
+commit_url: https://github.com/zulip/python-zulip-api/commit/2d9cf64d
+code_changes:
+- filepath: zulip/integrations/bridge_with_slack/run-slack-bridge
+  lines:
+  - 10:10-11
+  - '47:48'
+  - '50:51'
+  - 84:85

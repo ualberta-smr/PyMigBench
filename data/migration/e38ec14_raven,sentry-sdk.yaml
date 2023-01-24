@@ -5,3 +5,5 @@ repo: hypothesis/bouncer
 commit: e38ec148f5bad94648d338eea691d44abd4bdf5d
 pair_id: raven,sentry-sdk
 commit_message: Replace the raven dependency with `h_pyramid_sentry`
+commit_url: https://github.com/hypothesis/bouncer/commit/e38ec148
+code_changes: []

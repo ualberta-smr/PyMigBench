@@ -12,3 +12,5 @@ commit_message: 'Fixed issue with images that had no alpha channel. New feature 
 
 
   Updated documentation to include pillow'
+commit_url: https://github.com/getpelican/pelican-plugins/commit/5cb810eb
+code_changes: []

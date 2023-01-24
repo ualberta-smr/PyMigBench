@@ -5,3 +5,5 @@ repo: tklab-tud/id2t
 commit: dec4ae016d18537f225dd3dac52c70ccdb973d58
 pair_id: scapy-python3,scapy
 commit_message: update scapy-python3 to scapy 2.4.2
+commit_url: https://github.com/tklab-tud/id2t/commit/dec4ae01
+code_changes: []

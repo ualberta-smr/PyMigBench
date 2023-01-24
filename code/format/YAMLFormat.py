@@ -6,5 +6,5 @@ from query.Result import Result
 
 
 class YAMLFormat(OutputFormat):
-    def format(self, result: Result):
-        return yaml.safe_dump(to_dict(result), sort_keys=False)
+    def format_impl(self, result: Result):
+        return yaml.safe_dump(to_dict(result.items), sort_keys=False)

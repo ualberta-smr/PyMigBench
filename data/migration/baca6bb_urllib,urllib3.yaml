@@ -5,3 +5,5 @@ repo: thehive-project/cortex-analyzers
 commit: baca6bbf601ae74d188cf8b483ccf4864f300d9c
 pair_id: urllib,urllib3
 commit_message: changed requirements to urllib3
+commit_url: https://github.com/thehive-project/cortex-analyzers/commit/baca6bbf
+code_changes: []

@@ -5,3 +5,5 @@ repo: tracim/tracim
 commit: 56e3253fe473d1a9d18f197bad11399259958d5e
 pair_id: python-ldap,ldap3
 commit_message: Use pyramid_ldap3 instead of pyramid_ldap
+commit_url: https://github.com/tracim/tracim/commit/56e3253f
+code_changes: []

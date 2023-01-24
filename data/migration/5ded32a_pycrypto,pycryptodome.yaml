@@ -5,3 +5,5 @@ repo: cybercentrecanada/assemblyline-service-cuckoo
 commit: 5ded32a52c92e7f3b89602ca3600fec9ac5a1662
 pair_id: pycrypto,pycryptodome
 commit_message: Use pycryptodome instead of pycrypto
+commit_url: https://github.com/cybercentrecanada/assemblyline-service-cuckoo/commit/5ded32a5
+code_changes: []

@@ -7,3 +7,12 @@ pair_id: raven,sentry-sdk
 commit_message: "Upgrade Sentry client from raven to sentry-sdk\n\nThe API isn\u2019\
   t great and there\u2019s already a workaround for a bug/glaring omission, but the\
   \ library is actively maintained and the new performance/tracing features are nice."
+commit_url: https://github.com/weasyl/weasyl/commit/d10cb162
+code_changes:
+- filepath: weasyl/middleware.py
+  lines:
+  - 316:305
+  - 8-9:10
+- filepath: weasyl/define.py
+  lines:
+  - 988:979

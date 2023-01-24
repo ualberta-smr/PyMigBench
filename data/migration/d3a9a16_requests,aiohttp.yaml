@@ -8,3 +8,26 @@ commit_message: 'Async collector (#1102)
 
 
   Collector is now asynchronous.'
+commit_url: https://github.com/ictu/quality-time/commit/d3a9a16a
+code_changes:
+- filepath: components/collector/src/base_collectors/source_collector.py
+  lines:
+  - 106:101
+  - '13:13'
+- filepath: components/collector/src/collector_utilities/functions.py
+  lines:
+  - '18:18'
+- filepath: components/collector/src/collector_utilities/type.py
+  lines:
+  - '15:16'
+  - '5:5'
+- filepath: components/collector/src/source_collectors/api_source_collectors/azure_devops.py
+  lines:
+  - '12:12'
+  - '31:31'
+  - '40:41'
+  - '52:53'
+  - 93:93
+  - 122:122
+  - 133:133
+  - 157:158

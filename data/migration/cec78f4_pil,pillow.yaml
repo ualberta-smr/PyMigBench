@@ -8,3 +8,5 @@ commit_message: 'replace PIL with Pillow
 
 
   Pillow is a fork of PIL, with newer features and more (pip) packaging friendly.'
+commit_url: https://github.com/numenta/nupic/commit/cec78f4f
+code_changes: []

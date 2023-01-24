@@ -6,3 +6,12 @@ commit: 002f5bde5d5d5f2eaaf6999e41e4619817c10400
 pair_id: flask,quart
 commit_message: 'feat: Faster and more reliable thanks to switching to an async based
   server with Quart and more.'
+commit_url: https://github.com/elblogbruno/notionai-mymind/commit/002f5bde
+code_changes:
+- filepath: Python Server/app/server.py
+  lines:
+  - 149:110
+  - 154:115
+  - '20:14'
+  - 4-6:3
+  - 80:55-57

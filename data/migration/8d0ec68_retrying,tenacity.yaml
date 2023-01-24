@@ -6,3 +6,8 @@ commit: 8d0ec687838ea69612d7b1236e2341198aef7937
 pair_id: retrying,tenacity
 commit_message: 'Fix: Add retry logic to prevent throttling issue when listing exports
   (#13)'
+commit_url: https://github.com/pokainc/cfn-cross-region-export/commit/8d0ec687
+code_changes:
+- filepath: importer/lambda/cross_region_importer.py
+  lines:
+  - '10:10'

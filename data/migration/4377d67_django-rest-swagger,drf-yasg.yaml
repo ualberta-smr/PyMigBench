@@ -8,3 +8,8 @@ commit_message: 'Replace the deprecated rest_framework_swagger with drf_yasg
 
 
   using redoc'
+commit_url: https://github.com/opengisch/qfieldcloud/commit/4377d67a
+code_changes:
+- filepath: web-app/qfieldcloud/urls.py
+  lines:
+  - 18:20-21

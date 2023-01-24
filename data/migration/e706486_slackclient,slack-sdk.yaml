@@ -20,3 +20,5 @@ commit_message: 'updates the implementation of the slack backend for notificatio
 
 
   Signed-off-by: Daniel Ziegenberg <daniel@ziegenberg.at>'
+commit_url: https://github.com/ansible/awx/commit/e7064868
+code_changes: []

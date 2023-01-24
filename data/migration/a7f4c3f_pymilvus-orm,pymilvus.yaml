@@ -5,3 +5,8 @@ repo: milvus-io/bootcamp
 commit: a7f4c3f13e007116d88d9a2776f471a4e4f1fc81
 pair_id: pymilvus-orm,pymilvus
 commit_message: update qa-chatbot to Milvus2.0.0-rc5
+commit_url: https://github.com/milvus-io/bootcamp/commit/a7f4c3f1
+code_changes:
+- filepath: solutions/question_answering_system/quick_deploy/server/src/milvus_helpers.py
+  lines:
+  - 2-5,7:2
