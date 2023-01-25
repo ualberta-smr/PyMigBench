@@ -26,16 +26,16 @@ The syntax for querying PyMigBench is:
 python pymigbench.py <query> -dt <data-types> -f <filters> -o <output-format>
 ```
 
-* _query_: There are three query options: `c` or `count`, `l` or `list` and `d` or `detail`.
-  Default is `count`.
+* _query_: There are four query options: `s` or `summary`,  `c` or `count`, `l` or `list` and `d` or `detail`.
+  Default is `summary`.
+    - `summary` returns the summary of the dataset.
     - `count` returns the number of data items for each specified data types.
     - `list` returns the list if IDs.
     - `detail` returns the a list of data items that include all of its properties.
-* `-d`, `-dt`, `--data-types`: Specifies the data types on which to query. 
-  It has three options: `all`, `lp` or `library-pair`, `mg` or `migration`. 
-A `count` query allows multiple data types and `all` is default.
-The other queries accept just one mandatory data type, there is no default and do not accept `all`.
-* `-f`, `--filters`: You can pass zero or more filters to all queries.
+* `-d`, `-dt`, `--data-types`: Specifies the data types on which to query. Can be either `lp` or `library-pair` OR `mg` or `migration`. 
+A `summary` query does not accept any data types.
+The other queries accept one mandatory data type.
+* `-f`, `--filters`: You can pass zero or more filters to all queries except for summary.
 Each filter must be in the format `<property>=<value>`.
 Here, `property` is a property of a data type.
 Please check the [property values](#property) section below for a list of frequently used properties and their possible values.
@@ -44,6 +44,7 @@ The properties are of type string, list of string, or list of objects.
 The `value` is therefore any string that will be matched against the property.
 The value accepts matching by `!`, `?` and `*` through [fnmatch.fnmatch](https://docs.python.org/3/library/fnmatch.html#fnmatch.fnmatch){:target="_blank"}. 
 For array type properties, a data is returned if at least one of the list item satisfies the filter.
+Summary ignores the filters.
 * `-o`, `--output-format`: The format in which the result will be shown. Currently, supports YAML and JSON. Default YAML.
 * `-h`, `--help`: show help.
 

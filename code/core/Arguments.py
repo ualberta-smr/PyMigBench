@@ -28,16 +28,18 @@ def parse_filters(filter_list: list[str]):
 
 def build_arguments() -> Arguments:
     parser = argparse.ArgumentParser(description="query PyMigBench")
-    parser.add_argument("query", nargs='?', default="count",
-                        choices=["count", "list", "detail", "c", "l", "d"],
+    parser.add_argument("query", nargs='?', default="summary",
+                        choices=["summary", "count", "list", "detail", "s", "c", "l", "d"],
                         type=str.lower,
                         help="The query you want to run")
-    parser.add_argument("-d", "-dt", "--data-types", nargs='+',
+    parser.add_argument("-d", "-dt", "--data-types",
                         help="The data types that you want to fetch. "
-                             "Different queries accept different numbers of arguments.",
-                        choices=["all", "lp", "mg"])
+                             "Summary does not accept any data type."
+                             "Other queries accept exactly one data type.",
+                        choices=["lp", "mg"])
     parser.add_argument("-f", "--filters", required=False, nargs='+',
-                        help="Additional filters. The format varies based on the query.")
+                        help="Additional filters. You can pass zero or more filters in <property>=<value>."
+                             "Summary query ignores all filters")
     parser.add_argument("-o", "--output-format", required=False, default="yaml",
                         type=str.lower,
                         choices=["yaml", "json"],

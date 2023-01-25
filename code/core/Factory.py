@@ -5,6 +5,7 @@ from format.YAMLFormat import YAMLFormat
 from query.Detail import Detail
 from query.Listing import Listing
 from query.Count import Count
+from query.Summary import Summary
 
 
 def build_query(db: Db, arguments: Arguments):
@@ -19,6 +20,8 @@ def build_query(db: Db, arguments: Arguments):
         query = Count
     elif query_name.startswith("d"):
         query = Detail
+    elif query_name.startswith("s"):
+        query = Summary
 
     return query(db, arguments)
 
