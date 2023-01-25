@@ -7,12 +7,12 @@ Below are some use cases of the tool and the expected output.
 - TOC
 {:toc}
 
-## Get a count of all data
+## Get a summary of the benchmark
 **Command:**
 ```bash
-python pymigbench.py count -dt all
+python pymigbench.py summary
 ```
-`count` is the default query and for count `all` is the default data type. Therefore the above command is equivalent to the one below.
+`summary` is the default query and does not accept any data type or filters. Therefore the above command is equivalent to the one below.
 ```bash
 python pymigbench.py
 ```
@@ -22,16 +22,15 @@ python pymigbench.py
 - library pair: 59
   migration: 157
 ```
-## Get count of _lib pairs_ and _migrations_
+## Get count of _lib pairs_ in `File reader/writer` domain
 **Command:**
 ```bash
-python pymigbench.py -dt lp mg
+python pymigbench.py count -dt lp -f domain="File reader/writer"
 ```  
 
 **Result:**
-```yaml
-- library pair: 59
-  migration: 157
+```
+6 items
 ```
 ## List all _migrations_
 **Command:**
@@ -41,6 +40,7 @@ python pymigbench.py list -dt mg
 
 **Result:**
 ```yaml
+157 items
 - 002f5bd_flask,quart
 - 0171fb9_pil,pillow
 - 02b064b_pycryptodome,pycryptodomex
@@ -48,6 +48,7 @@ python pymigbench.py list -dt mg
 - f970b54_pil,pillow
 - fe6b437_pil,pillow
 - fe8e65d_dotenv,python-dotenv
+157 items
 ```
 
 ## Find all _migrations_ to target library _aiohttp_
@@ -58,6 +59,7 @@ python pymigbench.py list -dt mg -f target=aiohttp
 
 **Result:**
 ```yaml
+11 items
 - 1c574c1_requests,aiohttp
 - 1d8923a_requests,aiohttp
 - 45d94dd_gcloud-aio-core,aiohttp
@@ -69,4 +71,5 @@ python pymigbench.py list -dt mg -f target=aiohttp
 - b2c9313_requests,aiohttp
 - d15540f_gcloud-aio-core,aiohttp
 - d3a9a16_requests,aiohttp
+11 items
 ```

@@ -26,12 +26,12 @@ The syntax for querying PyMigBench is:
 python pymigbench.py <query> -dt <data-types> -f <filters> -o <output-format>
 ```
 
-* _query_: There are four query options: `s` or `summary`,  `c` or `count`, `l` or `list` and `d` or `detail`.
+* _query_: There are four query options: `s` or `summary`, `l` or `list` and `d` or `detail`,  `c` or `count`.
   Default is `summary`.
     - `summary` returns the summary of the dataset.
-    - `count` returns the number of data items for each specified data types.
     - `list` returns the list if IDs.
     - `detail` returns the a list of data items that include all of its properties.
+    - `count` returns only the number of data items, no data.
 * `-d`, `-dt`, `--data-types`: Specifies the data types on which to query. Can be either `lp` or `library-pair` OR `mg` or `migration`. 
 A `summary` query does not accept any data types.
 The other queries accept one mandatory data type.
