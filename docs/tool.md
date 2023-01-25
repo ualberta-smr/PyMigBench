@@ -53,117 +53,136 @@ Feel free to [ask for help](https://github.com/ualberta-smr/PyMigBench/issues/ne
 
 
 ## <a name="property"></a> Property values
-1. `repo`
-    - agdsn/sipa
-    - alice-biometrics/petisco
-    - apryor6/flaskerize
-    - azure/aztk
-    - bcgov/gwells
-    - bcgov/theorgbook
-    - biznetgio/restknot
-    - bretttolbert/verbecc-svc
-    - camptocamp/c2cgeoportal
-    - cloud-custodian/cloud-custodian
-    - common-workflow-language/cwltool
-    - duanhongyi/dwebsocket
-    - elblogbruno/notionai-mymind
-    - freeopcua/opcua-asyncio
-    - habitissimo/myaas
-    - hhyo/archery
-    - holgern/beem
-    - ictu/quality-time
-    - intel/stacks-usecase
-    - intelai/inference-model-manager
-    - kizniche/mycodo
-    - learningorchestra/learningorchestra
-    - lonelam/onlinejudgeshu
-    - malwaredllc/byob
-    - microsoft/nni
-    - milvus-io/bootcamp
-    - nlpia/nlpia-bot
-    - oddluck/limnoria-plugins
-    - opengisch/qfieldcloud
-    - openstack/oslo.messaging
-    - orchest/orchest
-    - pgjones/faster_than_flask_article
-    - pokainc/cfn-cross-region-export
-    - pythondataintegrator/pythondataintegrator
-    - raptor123471/dingolingo
-    - rcos/observatory-retired
-    - rocketmap/rocketmap
-    - sapfir0/premier-eye
-    - shoebot/shoebot
-    - slackapi/python-slack-events-api
-    - slackapi/python-slack-sdk
-    - snemes/malware-analysis
-    - stefal/rtkbase
-    - synesthesiam/voice2json
-    - talkiq/gcloud-aio
-    - talkpython/async-techniques-python-course
-    - testdrivenio/flask-react-aws
-    - thespaghettidetective/thespaghettidetective
-    - thombashi/datetimerange
-    - thombashi/pingparsing
-    - thombashi/sqlitebiter
-    - thombashi/tcconfig
-    - toufool/auto-split
-    - virtuber/openvtuber
-    - weasyl/weasyl
-    - ziirish/burp-ui
-    - zulip/python-zulip-api
-2. `source` (source library) or `target` (target library)
-    - aiohttp
-    - argparse
-    - bcrypt
-    - celery
-    - configargparse
-    - confluent-kafka
-    - cryptography
-    - dataproperty
-    - django-rest-swagger
-    - drf-yasg
-    - eventlet
-    - fastapi
-    - fasteners
-    - flask
-    - flask-restful
-    - flask-restplus
-    - flask-restx
-    - fuzzywuzzy
-    - gcloud-aio-core
-    - gevent
-    - huey
-    - kafka-python
-    - ldap3
-    - lockfile
-    - logbook
-    - loguru
-    - openpyxl
-    - pendulum
-    - pil
-    - pillow
-    - py-bcrypt
-    - pycrypto
-    - pycryptodome
-    - pycryptodomex
-    - pymilvus
-    - pymilvus-orm
-    - pyqt5
-    - pyside6
-    - python-ldap
-    - pytz
-    - pyyaml
-    - quart
-    - rapidfuzz
-    - raven
-    - requests
-    - retrying
-    - rq
-    - ruamel.yaml
-    - sentry-sdk
-    - slack-sdk
-    - slackclient
-    - tenacity
-    - typepy
-    - uvicorn
-    - xlsxwriter
+### Property `repo` in migration data type
+- agdsn/sipa
+- alice-biometrics/petisco
+- apryor6/flaskerize
+- azure/aztk
+- bcgov/gwells
+- bcgov/theorgbook
+- biznetgio/restknot
+- bretttolbert/verbecc-svc
+- camptocamp/c2cgeoportal
+- cloud-custodian/cloud-custodian
+- common-workflow-language/cwltool
+- duanhongyi/dwebsocket
+- elblogbruno/notionai-mymind
+- freeopcua/opcua-asyncio
+- habitissimo/myaas
+- hhyo/archery
+- holgern/beem
+- ictu/quality-time
+- intel/stacks-usecase
+- intelai/inference-model-manager
+- kizniche/mycodo
+- learningorchestra/learningorchestra
+- lonelam/onlinejudgeshu
+- malwaredllc/byob
+- microsoft/nni
+- milvus-io/bootcamp
+- nlpia/nlpia-bot
+- oddluck/limnoria-plugins
+- opengisch/qfieldcloud
+- openstack/oslo.messaging
+- orchest/orchest
+- pgjones/faster_than_flask_article
+- pokainc/cfn-cross-region-export
+- pythondataintegrator/pythondataintegrator
+- raptor123471/dingolingo
+- rcos/observatory-retired
+- rocketmap/rocketmap
+- sapfir0/premier-eye
+- shoebot/shoebot
+- slackapi/python-slack-events-api
+- slackapi/python-slack-sdk
+- snemes/malware-analysis
+- stefal/rtkbase
+- synesthesiam/voice2json
+- talkiq/gcloud-aio
+- talkpython/async-techniques-python-course
+- testdrivenio/flask-react-aws
+- thespaghettidetective/thespaghettidetective
+- thombashi/datetimerange
+- thombashi/pingparsing
+- thombashi/sqlitebiter
+- thombashi/tcconfig
+- toufool/auto-split
+- virtuber/openvtuber
+- weasyl/weasyl
+- ziirish/burp-ui
+- zulip/python-zulip-api
+
+
+### Property `source` and `target` in migration and library pair data types
+- aiohttp
+- argparse
+- bcrypt
+- celery
+- configargparse
+- confluent-kafka
+- cryptography
+- dataproperty
+- django-rest-swagger
+- drf-yasg
+- eventlet
+- fastapi
+- fasteners
+- flask
+- flask-restful
+- flask-restplus
+- flask-restx
+- fuzzywuzzy
+- gcloud-aio-core
+- gevent
+- huey
+- kafka-python
+- ldap3
+- lockfile
+- logbook
+- loguru
+- openpyxl
+- pendulum
+- pil
+- pillow
+- py-bcrypt
+- pycrypto
+- pycryptodome
+- pycryptodomex
+- pymilvus
+- pymilvus-orm
+- pyqt5
+- pyside6
+- python-ldap
+- pytz
+- pyyaml
+- quart
+- rapidfuzz
+- raven
+- requests
+- retrying
+- rq
+- ruamel.yaml
+- sentry-sdk
+- slack-sdk
+- slackclient
+- tenacity
+- typepy
+- uvicorn
+- xlsxwriter
+
+
+### Property `domain` in library pair data type
+- API wrapper
+- Cryptography
+- Data processing
+- Database client
+- Development framework/extension
+- File reader/writer
+- HTTP client/server
+- Image processing
+- Logging/tracing
+- Machine learning
+- Multitasking/multiprocessing
+- Networking
+- Utilities
+
