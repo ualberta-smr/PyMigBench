@@ -34,7 +34,7 @@ python pymigbench.py <query> -dt <data-types> -f <filters> -o <output-format>
 * `-d`, `-dt`, `--data-types`: Specifies the data types on which to query. 
   It has three options: `all`, `lp` or `library-pair`, `mg` or `migration`. 
 A `count` query allows multiple data types and `all` is default.
-The other queries accept just one mandatory data type, no defaults.
+The other queries accept just one mandatory data type, there is no default and do not accept `all`.
 * `-f`, `--filters`: You can pass zero or more filters to all queries.
 Each filter must be in the format `<property>=<value>`.
 Here, `property` is a property of a data type.
@@ -110,7 +110,7 @@ Feel free to [ask for help](https://github.com/ualberta-smr/PyMigBench/issues/ne
     - weasyl/weasyl
     - ziirish/burp-ui
     - zulip/python-zulip-api
-2. `source`/`target`
+2. `source` (source library) or `target` (target library)
     - aiohttp
     - argparse
     - bcrypt
