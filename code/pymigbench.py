@@ -1,15 +1,12 @@
-import json
 import os.path
 
-from core.Arguments import build_arguments
-from db.Db import Db
-from format.JSONFormat import JSONFormat
-from query.Query import Query
+from core.Arguments import build_arguments, Arguments
 from core.Factory import build_query, build_output_format
+from db.Db import Db
+from query.Query import Query
 
 
-def main():
-    args = build_arguments()
+def run_query(args: Arguments):
     db = Db(os.path.abspath("../data"))
     db.load()
     query: Query = build_query(db, args)
@@ -23,4 +20,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    run_query(build_arguments())

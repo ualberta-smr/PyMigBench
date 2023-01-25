@@ -3,11 +3,11 @@ import argparse
 
 class Arguments:
     def __init__(self, query: str,
-                 data_types: list[str] = None,
+                 data_type: str = None,
                  filters: list[str] = None,
                  output_format: str = None):
         self.query = query
-        self.data_types = data_types or []
+        self.data_type = data_type
         self.filters = parse_filters(filters)
         self.output_format = output_format
 
@@ -32,8 +32,8 @@ def build_arguments() -> Arguments:
                         choices=["summary", "count", "list", "detail", "s", "c", "l", "d"],
                         type=str.lower,
                         help="The query you want to run")
-    parser.add_argument("-d", "-dt", "--data-types",
-                        help="The data types that you want to fetch. "
+    parser.add_argument("-d", "-dt", "--data-type",
+                        help="The type of data that you want to fetch. "
                              "Summary does not accept any data type."
                              "Other queries accept exactly one data type.",
                         choices=["lp", "mg"])

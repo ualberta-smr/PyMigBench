@@ -18,7 +18,7 @@ class Query(ABC):
 
 class ListQuery(Query):
     def run(self) -> Result:
-        items = self.db.filter_list(self.arguments.data_types[0], self.arguments.filters)
+        items = self.db.filter_list(self.arguments.data_type, self.arguments.filters)
         formatted_items = [self.format_item(item) for item in items]
         return Result(formatted_items)
 

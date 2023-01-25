@@ -5,7 +5,7 @@ from query.Result import Result
 
 class Count(Query):
     def run(self):
-        data_types = self.arguments.data_types
+        data_types = self.arguments.data_type
 
         if not data_types or "all" in data_types:
             data_types = DataTypeKeys
