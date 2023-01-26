@@ -19,8 +19,21 @@ python pymigbench.py
 
 **Result:**
 ```yaml
-- library pair: 59
-  migration: 157
+- analogous library pairs: 59
+  unique libraries: 99
+  unique source libraries: 55
+  unique target libraries: 56
+  unique library domains: 13
+  migrations: 157
+  client repositories having migrations: 127
+  library pairs having migrations: 49
+  migration commits: 155
+  migrations having code changes: 75
+  library pairs having code changes: 34
+  client repositories having code changes: 57
+  commits having code changes: 74
+  modified files: 161
+  modified code segments: 375
 ```
 ## Get count of _lib pairs_ in `File reader/writer` domain
 **Command:**

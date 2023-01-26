@@ -14,10 +14,23 @@ and extract it.
 This is the folder where you will find a `requirements.txt` file.
 4. Install the dependencies. Run `pip install -r requirements.txt`
 
-If there is no error, run `python pymigbench.py` to check if it is working. You should see the following output:
+If there is no error, run `python pymigbench.py` to check if it is working. You should see an output similar to the one below:
 ```yaml
-- library pair: 59
-  migration: 157
+- analogous library pairs: 59
+  unique libraries: 99
+  unique source libraries: 55
+  unique target libraries: 56
+  unique library domains: 13
+  migrations: 157
+  client repositories having migrations: 127
+  library pairs having migrations: 49
+  migration commits: 155
+  migrations having code changes: 75
+  library pairs having code changes: 34
+  client repositories having code changes: 57
+  commits having code changes: 74
+  modified files: 161
+  modified code segments: 375
 ```
 
 ## Query PyMigBench
