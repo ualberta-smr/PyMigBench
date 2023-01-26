@@ -1,26 +1,24 @@
 import fnmatch
-from typing import Type
 from pathlib import Path
 
 import yaml
 
 from core.Constants import MigrationKey, LibPairKey
-from db.DataItem import DataItem
-from db.LibPair import LibPair
-from db.Migration import Migration
+
+DataItem = dict[str, any]
 
 
 class Db:
-    migrations: dict[str, Migration]
-    lib_pairs: dict[str, LibPair]
+    migrations: dict[str, DataItem]
+    lib_pairs: dict[str, DataItem]
     _mapping: dict[str, dict[str, DataItem]]
 
     def __init__(self, data_root: str):
         self.data_root = data_root
 
     def load(self):
-        self.migrations = self.load_items("migration", Migration)
-        self.lib_pairs = self.load_items("libpair", LibPair)
+        self.migrations = self.load_items("migration")
+        self.lib_pairs = self.load_items("libpair")
         self._mapping = {
             MigrationKey: self.migrations,
             LibPairKey: self.lib_pairs,
@@ -38,10 +36,10 @@ class Db:
     def get_item(self, data_type: str, id: str):
         return self._mapping[data_type][id]
 
-    def load_items(self, data_folder, data_type):
+    def load_items(self, data_folder):
         paths = Path(self.data_root, data_folder).glob("*.yaml")
-        items = (self.load_item(p, data_type) for p in paths)
-        dict = {item.id: item for item in items}
+        items = (self.load_item(p) for p in paths)
+        dict = {item["id"]: item for item in items}
         return dict
 
     @staticmethod
@@ -56,10 +54,8 @@ class Db:
         pass
 
     @staticmethod
-    def load_item(yaml_path: Path, ctor: Type[DataItem]):
+    def load_item(yaml_path: Path):
         with open(yaml_path) as f:
             content = f.read()
-            obj = ctor()
-            dict = yaml.safe_load(content)
-            obj.__dict__.update(dict)
-            return obj
+            dict: DataItem = yaml.safe_load(content)
+            return dict

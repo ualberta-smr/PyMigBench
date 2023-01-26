@@ -1,21 +1,20 @@
-from core.Constants import DataTypeKeys, DataTypeName, MigrationKey, LibPairKey
-from db.LibPair import LibPair
-from db.Migration import Migration
+from core.Constants import MigrationKey, LibPairKey
+from db.Db import DataItem
 from query.Query import Query
 from query.Result import Result, ResultDisplayOption
 
 
 class Summary(Query):
     def run(self):
-        migs: list[Migration] = self.db.get_list(MigrationKey)
-        all_lib_pairs: list[LibPair] = self.db.get_list(LibPairKey)
-        sources = {lp.source for lp in all_lib_pairs}
-        targets = {lp.target for lp in all_lib_pairs}
+        migs: list[DataItem] = self.db.get_list(MigrationKey)
+        all_lib_pairs: list[DataItem] = self.db.get_list(LibPairKey)
+        sources = {lp["source"] for lp in all_lib_pairs}
+        targets = {lp["target"] for lp in all_lib_pairs}
         libs = sources.union(targets)
-        domains = {lp.domain for lp in all_lib_pairs}
-        repos = {mg.repo for mg in migs}
-        commits = {mg.commit for mg in migs}
-        lib_pairs_having_migs = {mg.pair_id for mg in migs}
+        domains = {lp["domain"] for lp in all_lib_pairs}
+        repos = {mg["repo"] for mg in migs}
+        commits = {mg["commit"] for mg in migs}
+        lib_pairs_having_migs = {mg["pair_id"] for mg in migs}
 
         migs_having_code_changes = set()
         lib_pairs_having_code_changes = set()
@@ -25,14 +24,14 @@ class Summary(Query):
         file_count = 0
         segments_count = 0
         for mg in migs:
-            cc_in_mig = len(mg.code_changes)
+            cc_in_mig = len(mg["code_changes"])
             if cc_in_mig:
-                migs_having_code_changes.add(mg.id)
-                lib_pairs_having_code_changes.add(mg.pair_id)
-                repos_having_code_changes.add(mg.repo)
-                commits_having_code_changes.add(mg.commit)
+                migs_having_code_changes.add(mg["id"])
+                lib_pairs_having_code_changes.add(mg["pair_id"])
+                repos_having_code_changes.add(mg["repo"])
+                commits_having_code_changes.add(mg["commit"])
                 file_count += cc_in_mig
-                segments_count += sum(len(cc["lines"]) for cc in mg.code_changes)
+                segments_count += sum(len(cc["lines"]) for cc in mg["code_changes"])
 
         result = {
             "analogous library pairs": len(all_lib_pairs),

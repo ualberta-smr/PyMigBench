@@ -1,8 +1,7 @@
 from abc import ABC, abstractmethod
 
 from core.Arguments import Arguments
-from db.DataItem import DataItem
-from db.Db import Db
+from db.Db import Db, DataItem
 from query.Result import Result, ResultDisplayOption
 
 

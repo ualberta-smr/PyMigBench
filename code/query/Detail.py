@@ -1,4 +1,4 @@
-from db.DataItem import DataItem
+from db.Db import DataItem
 from query.Query import ListQuery
 
 

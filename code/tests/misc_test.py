@@ -3,7 +3,18 @@ from pymigbench import run_query
 
 
 def test_detail_1():
-    args = Arguments(query="detail", data_type="mg", filters=["target=aiohttp"], output_format="json")
+    args = Arguments(query="detail", data_type="mg", filters=["target=aiohttp"], output_format="yaml")
+    run_query(args)
+
+
+def test_detail_2():
+    args = Arguments(query="detail", data_type="lp", filters=["target=aiohttp"], output_format="yaml")
+    run_query(args)
+
+
+def test_detail_multiple_filters():
+    args = Arguments(query="detail", data_type="mg", filters=["source=pyyaml", "target=ruamel.yaml"],
+                     output_format="yaml")
     run_query(args)
 
 
