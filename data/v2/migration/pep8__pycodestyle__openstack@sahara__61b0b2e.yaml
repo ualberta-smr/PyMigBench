@@ -1,0 +1,23 @@
+repo: openstack/sahara
+commit: 61b0b2e03846f3d743b8dafa604632e15ca47ea1
+source: pep8
+target: pycodestyle
+commit_url: https://github.com/openstack/sahara/commit/61b0b2e0
+domain: Codestyle
+files:
+- path: "sahara/utils/hacking/checks.py"
+  code_changes:
+  - lines: ["109:109"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [noqa]
+    target_apis: [noqa]
+  - lines: ["16:16"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pep8]
+    target_apis: [pycodestyle]

@@ -1,0 +1,16 @@
+repo: naver/claf
+commit: cffe4993564244545f085ede95eb848b94d07bde
+source: pytorch-pretrained-bert
+target: pytorch-transformers
+commit_url: https://github.com/naver/claf/commit/cffe4993
+domain: Deep Learning
+files:
+- path: "claf/tokens/embedding/bert_embedding.py"
+  code_changes:
+  - lines: ["4:4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_pretrained_bert.modeling.BertModel]
+    target_apis: [pytorch_transformers.BertModel]

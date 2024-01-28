@@ -1,0 +1,51 @@
+repo: lqez/hog
+commit: d722ade4be3cf05bf32def1e732a8e8d1b78a29b
+source: argparse
+target: click
+commit_url: https://github.com/lqez/hog/commit/d722ade4
+domain: Utility
+files:
+- path: "hog/hog.py"
+  code_changes:
+  - lines: ["143:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["147-148:199"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["149-150:190", "151-152:191"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["153-154:192", "155-156:193", "157-158:194", "159-160:195", "161-162:196", "163-164:197", "165-167:198"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument transformation, element name change]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["20:19"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: [":189"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [echo]

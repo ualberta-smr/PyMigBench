@@ -1,0 +1,23 @@
+repo: agdsn/sipa
+commit: ea23791cfdc36d614189418a01a57c78859fa5e8
+source: raven
+target: sentry-sdk
+commit_url: https://github.com/agdsn/sipa/commit/ea23791c
+domain: Logging/tracing
+files:
+- path: "sipa/initialization.py"
+  code_changes:
+  - lines: ["186-187:189-194"]
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [Sentry, init_app]
+    target_apis: [init, FlaskIntegration]
+  - lines: ["9-11:8,12"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [raven.setup_logging, raven.contrib.flask.Sentry, raven.handlers.logging.SentryHandler]
+    target_apis: [sentry_sdk, sentry_sdk.integrations.flask.FlaskIntegration]

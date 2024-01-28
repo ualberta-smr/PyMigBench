@@ -1,0 +1,16 @@
+repo: sapfir0/premier-eye
+commit: a7375ccc40885f04faf4a05852591e6de4ba676d
+source: celery
+target: rq
+commit_url: https://github.com/sapfir0/premier-eye/commit/a7375ccc
+domain: Multitasking/multiprocessing
+files:
+- path: "pyfront/app/__init__.py"
+  code_changes:
+  - lines: ["2:3"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [celery.Celery]
+    target_apis: [rq]

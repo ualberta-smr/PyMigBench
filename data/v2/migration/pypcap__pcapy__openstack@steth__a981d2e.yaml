@@ -1,0 +1,23 @@
+repo: openstack/steth
+commit: a981d2eff81eec01d3663c5530e79852619e9d7e
+source: pypcap
+target: pcapy
+commit_url: https://github.com/openstack/steth/commit/a981d2ef
+domain: HTTP Clients&Filesystem
+files:
+- path: "steth/agent/drivers/pcap_driver.py"
+  code_changes:
+  - lines: ["16:16"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pypcap]
+    target_apis: [pcapy]
+  - lines: ["16:16"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pypcap]
+    target_apis: [pcapy]

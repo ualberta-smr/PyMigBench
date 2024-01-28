@@ -1,0 +1,44 @@
+repo: keselekpermen69/userbutt
+commit: a2dd44e191e6539011d3ff3a38535cb167ceb2e5
+source: requests
+target: aiohttp
+commit_url: https://github.com/keselekpermen69/userbutt/commit/a2dd44e1
+domain: HTTP Clients
+files:
+- path: "userbot/modules/heroku.py"
+  code_changes:
+  - lines: ["14:14"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [requests]
+    target_apis: [aiohttp]
+  - lines: ["155:155-156"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [async transformation, element name change]
+    source_apis: [get]
+    target_apis: [ClientSession, get]
+  - lines: ["156:157"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [status_code]
+    target_apis: [status]
+  - lines: ["159:160"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [reason]
+    target_apis: [reason]
+  - lines: ["163:165"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [json]
+    target_apis: [json]

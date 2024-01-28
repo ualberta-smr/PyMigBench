@@ -1,0 +1,44 @@
+repo: walletconnect/py-walletconnect-bridge
+commit: c2d3db2aa64cccab96d71f8786981fdbb82a2773
+source: redis
+target: aioredis
+commit_url: https://github.com/walletconnect/py-walletconnect-bridge/commit/c2d3db2a
+domain: Database
+files:
+- path: "balance_bridge/keystore.py"
+  code_changes:
+  - lines: ["10:8"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, argument transformation, async transformation, element name change]
+    source_apis: [StrictRedis]
+    target_apis: [create_redis]
+  - lines: ["1:1"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [redis]
+    target_apis: [aioredis]
+  - lines: ["24:62"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, async transformation]
+    source_apis: [set]
+    target_apis: [set]
+  - lines: ["44:29", "59:44"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [get]
+    target_apis: [get]
+  - lines: ["46:31", "63:48"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [delete]
+    target_apis: [delete]

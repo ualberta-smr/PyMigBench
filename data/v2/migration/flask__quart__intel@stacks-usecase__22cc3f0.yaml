@@ -1,0 +1,51 @@
+repo: intel/stacks-usecase
+commit: 22cc3f007a3267ca09a3f53b84fdbfff1f045e88
+source: flask
+target: quart
+commit_url: https://github.com/intel/stacks-usecase/commit/22cc3f00
+domain: Development framework/extension
+files:
+- path: "github-issue-classification/python/rest.py"
+  code_changes:
+  - lines: ["19:19,21"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask]
+    target_apis: [quart, quart.Quart]
+  - lines: ["23:27"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Flask]
+    target_apis: [Quart]
+  - lines: ["42:49", "43:50", "43:50"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [json]
+    target_apis: [json]
+  - lines: ["44:51"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [abort]
+    target_apis: [abort]
+  - lines: ["46:53", "51:58"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [jsonify]
+    target_apis: [jsonify]
+  - lines: ["51:58"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [make_response]
+    target_apis: [make_response]

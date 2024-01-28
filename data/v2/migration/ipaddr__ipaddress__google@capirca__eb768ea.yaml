@@ -1,0 +1,118 @@
+repo: google/capirca
+commit: eb768ea7e8cb33ab16786ddeb52b53122c740c65
+source: ipaddr
+target: ipaddress
+commit_url: https://github.com/google/capirca/commit/eb768ea7
+domain: HTTP Clients
+files:
+- path: "capirca/lib/cisco.py"
+  code_changes:
+  - lines: ["166:468-469"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [IPv4Network]
+    target_apis: [IPv4Network]
+  - lines: ["28:28"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [ipaddress]
+  - lines: ["472:475-476"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [IPv6Network]
+    target_apis: [IPv6Network]
+- path: "capirca/lib/ciscoasa.py"
+  code_changes:
+  - lines: ["222:224-225", "227:230-231"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [IPv4Network]
+    target_apis: [IPv4Network]
+  - lines: ["233:237-238", "238:243-244"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [IPv6Network]
+    target_apis: [IPv6Network]
+  - lines: ["30:30"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [ipaddress]
+- path: "capirca/lib/nacaddr.py"
+  code_changes:
+  - lines: ["101:120"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [IPv6Network]
+    target_apis: [IPv6Network]
+  - lines: ["130:168", "93:112"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [supernet]
+    target_apis: [supernet]
+  - lines: ["25:24"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [ipaddress]
+  - lines: ["311:350"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [network]
+    target_apis: [network_address]
+  - lines: ["317:356", "324:363"]
+    cardinality: one-to-one
+    source_program_elements: [function reference]
+    target_program_elements: [function reference]
+    properties: [element name change]
+    source_apis: [_get_networks_key]
+    target_apis: [get_mixed_type_key]
+  - lines: ["378:417"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [NetmaskValueError]
+    target_apis: [NetmaskValueError]
+  - lines: ["42:42"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [IPNetwork]
+    target_apis: [ip_network]
+  - lines: ["43:43", "45:45"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [version]
+    target_apis: [version]
+  - lines: ["49:49"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [IPv4Network]
+    target_apis: [IPv4Network]

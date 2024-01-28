@@ -1,0 +1,136 @@
+repo: noisyboiler/wampy
+commit: f87f7bee3363567132240caac62c8a3f8148a8fe
+source: eventlet
+target: gevent
+commit_url: https://github.com/noisyboiler/wampy/commit/f87f7bee
+domain: Utility
+files:
+- path: "test/helpers.py"
+  code_changes:
+  - lines: ["13:13"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [Timeout]
+    target_apis: [Timeout]
+  - lines: ["19:19"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [sleep]
+    target_apis: [sleep]
+  - lines: ["5:5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [eventlet]
+    target_apis: [gevent]
+- path: "wampy/__init__.py"
+  code_changes:
+  - lines: ["25:25"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [monkey_patch]
+    target_apis: [patch_all]
+  - lines: ["8:8"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [eventlet]
+    target_apis: [gevent.monkey]
+- path: "wampy/session.py"
+  code_changes:
+  - lines: ["118:119"]
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [Timeout]
+    target_apis: [Empty]
+  - lines: ["171:167-168", "178:175"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [spawn]
+    target_apis: [spawn]
+  - lines: ["68:69"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [Queue]
+    target_apis: [Queue]
+  - lines: ["8:8-9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [eventlet]
+    target_apis: [gevent, gevent.queue]
+- path: "wampy/testing/helpers.py"
+  code_changes:
+  - lines: ["13:13", "22:22", "31:31", "40:40"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [Timeout]
+    target_apis: [Timeout]
+  - lines: ["18:18", "27:27", "33:33", "42:42"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [sleep]
+    target_apis: [sleep]
+  - lines: ["5:5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [eventlet]
+    target_apis: [gevent.monkey]
+- path: "wampy/transports/websocket/connection.py"
+  code_changes:
+  - lines: ["12:12"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [eventlet]
+    target_apis: [gevent.monkey]
+  - lines: ["153:153"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [Timeout]
+    target_apis: [Timeout]
+  - lines: ["155:155"]
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: []
+    source_apis: [Timeout]
+    target_apis: [Timeout]
+  - lines: ["211:211"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [sleep]
+    target_apis: [sleep]
+  - lines: ["72:72"]
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: []
+    source_apis: [GreenletExit]
+    target_apis: [GreenletExit]

@@ -1,0 +1,37 @@
+repo: cloudve/cloudbridge
+commit: 27b217e070e5711a7fd21c76663d64918fcd9c6e
+source: pycryptodome
+target: cryptography
+commit_url: https://github.com/cloudve/cloudbridge/commit/27b217e0
+domain: Crypto
+files:
+- path: "cloudbridge/cloud/providers/gce/helpers.py"
+  code_changes:
+  - lines: ["2:2-4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.PublicKey.RSA]
+    target_apis: [cryptography.hazmat.primitives.serialization, cryptography.hazmat.primitives.asymmetric.rsa, cryptography.hazmat.backends.default_backend]
+  - lines: ["6:8-11"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [generate]
+    target_apis: [generate_private_key]
+  - lines: ["7:16-18"]
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [publickey, exportKey]
+    target_apis: [public_key, public_bytes]
+  - lines: ["8:12-15"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [exportKey]
+    target_apis: [private_bytes]

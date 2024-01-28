@@ -1,0 +1,51 @@
+repo: jorgecarleitao/public-contracts
+commit: 70a229cb5a3be1a56bdfa4f6df8019456276bf3f
+source: mechanize
+target: requests
+commit_url: https://github.com/jorgecarleitao/public-contracts/commit/70a229cb
+domain: HTTP Clients
+files:
+- path: "contracts/crawler.py"
+  code_changes:
+  - lines: ["12:12"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [mechanize]
+    target_apis: [mechanize]
+  - lines: ["152:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [Browser]
+    target_apis: []
+  - lines: ["154:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [set_handle_robots]
+    target_apis: []
+  - lines: ["157-159:"]
+    cardinality: one-to-zero
+    source_program_elements: [attribute]
+    target_program_elements: []
+    properties: []
+    source_apis: [addheaders]
+    target_apis: []
+  - lines: ["163:157"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [open]
+    target_apis: [get]
+  - lines: ["164:158"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [read]
+    target_apis: [text]

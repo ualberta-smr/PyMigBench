@@ -1,0 +1,23 @@
+repo: tiiiger/bert_score
+commit: 04376e1e50d452f698b454a074d526d5ecd6a76b
+source: pytorch-pretrained-bert
+target: transformers
+commit_url: https://github.com/tiiiger/bert_score/commit/04376e1e
+domain: Deep Learning
+files:
+- path: "bert_score/score.py"
+  code_changes:
+  - lines: ["33:72", "85:134"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation]
+    source_apis: [from_pretrained]
+    target_apis: [from_pretrained]
+  - lines: ["6:10"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_pretrained_bert.BertTokenizer, pytorch_pretrained_bert.BertModel, pytorch_pretrained_bert.BertForMaskedLM]
+    target_apis: [transformers.AutoModel, transformers.AutoTokenizer]

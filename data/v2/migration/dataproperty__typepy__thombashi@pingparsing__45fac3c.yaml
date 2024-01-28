@@ -1,0 +1,67 @@
+repo: thombashi/pingparsing
+commit: 45fac3cb38661f80fc8bd129ce633cfd15423835
+source: dataproperty
+target: typepy
+commit_url: https://github.com/thombashi/pingparsing/commit/45fac3cb
+domain: Utilities
+files:
+- path: "pingparsing/_pingparsing.py"
+  code_changes:
+  - lines: ["10:11"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [dataproperty]
+    target_apis: [typepy]
+  - lines: ["134:135", "186: 187", "233: 234"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [is_empty_string]
+    target_apis: [is_null_string]
+  - lines: ["156:157"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [is_empty_sequence]
+    target_apis: [is_empty_sequence]
+- path: "pingparsing/_pingtransmitter.py"
+  code_changes:
+  - lines: ["100:101"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [is_empty_string]
+    target_apis: [is_null_string]
+  - lines: ["110:112", "122: 125", "144: 148", "154: 159"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [IntegerType]
+    target_apis: [Integer]
+  - lines: ["110:112", "122: 125", "144: 148", "154: 159"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change, output transformation]
+    source_apis: [try_convert]
+    target_apis: [convert]
+  - lines: ["11:11-12"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [dataproperty]
+    target_apis: [typepy, typepy.type.Integer]
+  - lines: ["86:87"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [is_not_empty_string]
+    target_apis: [is_not_null_string]

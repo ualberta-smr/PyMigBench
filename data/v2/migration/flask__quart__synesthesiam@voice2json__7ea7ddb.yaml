@@ -1,0 +1,51 @@
+repo: synesthesiam/voice2json
+commit: 7ea7ddb8400775282e82c1adcb17b013f27ede2b
+source: flask
+target: quart
+commit_url: https://github.com/synesthesiam/voice2json/commit/7ea7ddb8
+domain: Development framework/extension
+files:
+- path: "web/app.py"
+  code_changes:
+  - lines: ["100:102", "105:107", "235:243", "237:245"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [flash]
+    target_apis: [flash]
+  - lines: ["166:172", "195:202", "242:250"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [render_template]
+    target_apis: [render_template]
+  - lines: ["20:20"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.Flask]
+    target_apis: [quart.Quart]
+  - lines: ["28:28"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Flask]
+    target_apis: [Quart]
+  - lines: ["188:194", "212:219", "59:59"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [async transformation]
+    source_apis: [form]
+    target_apis: [form]
+  - lines: ["95:96"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [async transformation]
+    source_apis: [files]
+    target_apis: [files]

@@ -1,0 +1,37 @@
+repo: openstack/wsme
+commit: 002473c0eaff5bde539e6f6980c387d3817f7063
+source: ipaddr
+target: netaddr
+commit_url: https://github.com/openstack/wsme/commit/002473c0
+domain: HTTP Clients
+files:
+- path: "wsme/types.py"
+  code_changes:
+  - lines: ["15:6"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [netaddr]
+  - lines: ["237:233"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [IPv4Address]
+    target_apis: [IPAddress]
+  - lines: ["238:234", "258:254"]
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [AddressValueError]
+    target_apis: [AddrFormatError]
+  - lines: ["257:253"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [IPv6Address]
+    target_apis: [IPAddress]

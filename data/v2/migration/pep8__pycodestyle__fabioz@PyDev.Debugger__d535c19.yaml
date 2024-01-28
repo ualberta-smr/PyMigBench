@@ -1,0 +1,72 @@
+repo: fabioz/PyDev.Debugger
+commit: d535c190c06df3fa968cdf55154359cbd3b0d828
+source: pep8
+target: pycodestyle
+commit_url: https://github.com/fabioz/PyDev.Debugger/commit/d535c190
+domain: Codestyle
+files:
+- path: "third_party/pep8/autopep8.py"
+  code_changes:
+  - lines: ["177:178", "179:180"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [match]
+    target_apis: [match]
+  - lines: ["189:192", "374:384"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [register_check]
+    target_apis: [register_check]
+  - lines: ["2412:2554"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [BaseReport]
+    target_apis: [BaseReport]
+  - lines: ["2439:2584"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [Checker]
+    target_apis: [Checker]
+  - lines: ["247:250", "368:373"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [expand_indent]
+    target_apis: [expand_indent]
+  - lines: ["3556:3592"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [ARITHMETIC_OP]
+    target_apis: [ARITHMETIC_OP]
+  - lines: ["61:60"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pep8]
+    target_apis: [pycodestyle]
+  - lines: [":1316"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [noqa]
+  - lines: [":3185"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: []
+    target_apis: [__version__]

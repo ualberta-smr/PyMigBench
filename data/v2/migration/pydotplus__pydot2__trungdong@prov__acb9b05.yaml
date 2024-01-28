@@ -1,0 +1,16 @@
+repo: trungdong/prov
+commit: acb9b05f0bd99b3fbd58e5f1a684d1cfc28961f8
+source: pydotplus
+target: pydot2
+commit_url: https://github.com/trungdong/prov/commit/acb9b05f
+domain: Graphic
+files:
+- path: "prov/dot.py"
+  code_changes:
+  - lines: ["25:22"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pydotplus]
+    target_apis: [pydot]

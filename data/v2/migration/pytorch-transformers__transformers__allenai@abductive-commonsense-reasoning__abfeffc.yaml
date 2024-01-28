@@ -1,0 +1,16 @@
+repo: allenai/abductive-commonsense-reasoning
+commit: abfeffc58f4d5ccfccbadedcb70dea6fab981f82
+source: pytorch-transformers
+target: transformers
+commit_url: https://github.com/allenai/abductive-commonsense-reasoning/commit/abfeffc5
+domain: Deep Learning
+files:
+- path: "anlg/tokenizers.py"
+  code_changes:
+  - lines: ["2:2"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers]
+    target_apis: [transformers]

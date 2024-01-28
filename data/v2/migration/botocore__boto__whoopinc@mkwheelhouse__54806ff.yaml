@@ -1,0 +1,23 @@
+repo: whoopinc/mkwheelhouse
+commit: 54806ffc8eddb19cb4b603a380a2f1126eaae84e
+source: botocore
+target: boto
+commit_url: https://github.com/whoopinc/mkwheelhouse/commit/54806ffc
+domain: HTTP Clients
+files:
+- path: "mkwheelhouse.py"
+  code_changes:
+  - lines: ["12:13-14"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [botocore.session]
+    target_apis: [boto, boto.s3.connection]
+  - lines: ["19:25-27"]
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [get_service, get_session]
+    target_apis: [OrdinaryCallingFormat, connect_to_region]

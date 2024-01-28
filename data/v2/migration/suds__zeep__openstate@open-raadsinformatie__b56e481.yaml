@@ -1,0 +1,23 @@
+repo: openstate/open-raadsinformatie
+commit: b56e48128d3551841287efdeebfb3a11f378eb6e
+source: suds
+target: zeep
+commit_url: https://github.com/openstate/open-raadsinformatie/commit/b56e4812
+domain: HTTP Clients
+files:
+- path: "ocd_backend/extractors/ibabs.py"
+  code_changes:
+  - lines: ["35:37-39"]
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, element name change]
+    source_apis: [Client, set_options]
+    target_apis: [Client, Settings]
+  - lines: ["4:4-5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [suds.client.Client]
+    target_apis: [zeep.client.Client, zeep.client.Settings, zeep.helpers.serialize_object]

@@ -1,0 +1,46 @@
+repo: evgeni/bley
+commit: dcc428536d19b0f43604d4052ecaadabadef5e64
+source: ipaddr
+target: py2-ipaddress
+commit_url: https://github.com/evgeni/bley/commit/dcc42853
+domain: HTTP Clients
+files:
+- path: "test/test_bley.py"
+  code_changes:
+  - lines: ["53:", "55:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [IPNetwork]
+    target_apis: []
+  - lines: ["54:", "56:", "62:", "69:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [iterhosts]
+    target_apis: []
+  - lines: ["7:7"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [ipaddress]
+- path: "test/test_bleyhelpers.py"
+  code_changes:
+  - lines: ["3:3"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [ipaddress]
+  - lines: ["88:89", "97:98"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [IPAddress]
+    target_apis: [ip_address]

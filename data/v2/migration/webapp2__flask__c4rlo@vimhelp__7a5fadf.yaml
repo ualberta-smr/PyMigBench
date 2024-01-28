@@ -1,0 +1,37 @@
+repo: c4rlo/vimhelp
+commit: 7a5fadfd129ab995e783101a7e6a91c3702832c2
+source: webapp2
+target: flask
+commit_url: https://github.com/c4rlo/vimhelp/commit/7a5fadfd
+domain: Web Framework
+files:
+- path: "update.py"
+  code_changes:
+  - lines: ["16:19-20"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [webapp2]
+    target_apis: [flask, flask.views]
+  - lines: ["59:63"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [RequestHandler]
+    target_apis: [MethodView]
+  - lines: ["63:67"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [body]
+    target_apis: [data]
+  - lines: ["515:491", "69:69"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [query_string]
+    target_apis: [query_string]

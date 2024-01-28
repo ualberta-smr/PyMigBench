@@ -1,0 +1,37 @@
+repo: heyman/locust
+commit: 4067b929fab7691a12ad91bf70e3738d715e860e
+source: bottle
+target: flask
+commit_url: https://github.com/heyman/locust/commit/4067b929
+domain: Web Framework
+files:
+- path: "locust/web.py"
+  code_changes:
+  - lines: ["18:17"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: [route]
+    target_apis: [route]
+  - lines: ["2,6:9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bottle.route, bottle.run, bottle.send_file, bottle]
+    target_apis: [flask.Flask, flask.make_response]
+  - lines: ["20:19-21"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [attribute, function call]
+    properties: [argument transformation, element name change]
+    source_apis: [send_file]
+    target_apis: [header, make_response]
+  - lines: ["47:10"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [default_app]
+    target_apis: [Flask]

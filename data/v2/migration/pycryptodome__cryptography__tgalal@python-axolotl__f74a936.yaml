@@ -1,0 +1,51 @@
+repo: tgalal/python-axolotl
+commit: f74a936745db2c2f04575bd63308d6b6c0cc91ce
+source: pycryptodome
+target: cryptography
+commit_url: https://github.com/tgalal/python-axolotl/commit/f74a9367
+domain: Crypto
+files:
+- path: "axolotl/sessioncipher.py"
+  code_changes:
+  - lines: ["230:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [new]
+    target_apis: []
+  - lines: ["236:278"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [new]
+    target_apis: [Cipher]
+  - lines: ["254:244"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [new]
+    target_apis: [Cipher]
+  - lines: ["274:263,265"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [element name change]
+    source_apis: [encrypt]
+    target_apis: [encryptor, update, finalize]
+  - lines: ["279:270-271"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [element name change]
+    source_apis: [decrypt]
+    target_apis: [decryptor, update, finalize]
+  - lines: ["5-6:6-7"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Cipher.AES, Crypto.Util.Counter]
+    target_apis: [cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes, cryptography.hazmat.backends.default_backend]

@@ -1,0 +1,79 @@
+repo: nodepy/nodepy
+commit: 715142ce26bf8ced33b9fb07fd951ab650f9c236
+source: click
+target: argparse
+commit_url: https://github.com/nodepy/nodepy/commit/715142ce
+domain: Utility
+files:
+- path: "nodepy.py"
+  code_changes:
+  - lines: ["44:33"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [click]
+    target_apis: [argparse]
+  - lines: ["497:"]
+    cardinality: one-to-zero
+    source_program_elements: [decorator]
+    target_program_elements: []
+    properties: []
+    source_apis: [command]
+    target_apis: []
+  - lines: ["498:499"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument transformation, element name change]
+    source_apis: [argument]
+    target_apis: [add_argument]
+  - lines: ["499-500:500-502", "503-504:505-506"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [option]
+    target_apis: [add_argument]
+  - lines: ["501-502:509-510", "507:503-504"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [option]
+    target_apis: [add_argument]
+  - lines: ["505-506:507-508"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [option]
+    target_apis: [add_argument]
+  - lines: [":498"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ArgumentParser]
+  - lines: [":511"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [parse_args]
+  - lines: [":517"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: []
+    target_apis: [arguments]
+  - lines: [":523", ":523", ":523"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: []
+    target_apis: [exec_]

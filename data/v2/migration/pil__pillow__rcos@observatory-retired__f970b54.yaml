@@ -1,0 +1,16 @@
+repo: rcos/observatory-retired
+commit: f970b543dc349460492a32a11731738062bfcc09
+source: pil
+target: pillow
+commit_url: https://github.com/rcos/observatory-retired/commit/f970b543
+domain: Image processing
+files:
+- path: "observatory/dashboard/models/Screenshot.py"
+  code_changes:
+  - lines: ["15:15"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Image]
+    target_apis: [PIL.Image]

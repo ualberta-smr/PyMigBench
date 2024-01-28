@@ -1,0 +1,51 @@
+repo: projectcalico/felix
+commit: 657e727468c6c6c7ee13ce93fb88643339572440
+source: gevent
+target: eventlet
+commit_url: https://github.com/projectcalico/felix/commit/657e7274
+domain: Utility
+files:
+- path: "calico/election.py"
+  code_changes:
+  - lines: ["136:", "155:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [acquire]
+    target_apis: []
+  - lines: ["138:", "157:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [release]
+    target_apis: []
+  - lines: ["142:192", "142:192", "67:108"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [sleep]
+    target_apis: [sleep]
+  - lines: ["26-27:25"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [gevent, lock]
+    target_apis: [eventlet]
+  - lines: ["56:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [Semaphore]
+    target_apis: []
+  - lines: ["58:77"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [spawn]
+    target_apis: [spawn]

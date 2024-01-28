@@ -1,0 +1,30 @@
+repo: etalab/udata
+commit: 9bc0f731c23bb6fc45765bb312aabf94e697de3c
+source: raven
+target: sentry-sdk
+commit_url: https://github.com/etalab/udata/commit/9bc0f731
+domain: HTTP Clients
+files:
+- path: "udata/sentry.py"
+  code_changes:
+  - lines: ["34-36:45-47"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [raven.contrib.celery.register_signal, raven.contrib.celery.register_logger_signal]
+    target_apis: [sentry_sdk, sentry_sdk.integrations.flask.FlaskIntegration, sentry_sdk.integrations.celery.CeleryIntegration]
+  - lines: ["42,66:49-63"]
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [Sentry, init_app]
+    target_apis: [init, FlaskIntegration, CeleryIntegration]
+  - lines: ["48-49:69"]
+    cardinality: many-to-one
+    source_program_elements: [attribute, attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [logging, level]
+    target_apis: [set_level]

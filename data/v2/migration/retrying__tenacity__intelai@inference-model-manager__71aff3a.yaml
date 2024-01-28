@@ -1,0 +1,71 @@
+repo: intelai/inference-model-manager
+commit: 71aff3a0bd1ae2a7d7d91858dcbe721de152693e
+source: retrying
+target: tenacity
+commit_url: https://github.com/intelai/inference-model-manager/commit/71aff3a0
+domain: Utilities
+files:
+- path: "management/management_api/tenants/tenants_utils.py"
+  code_changes:
+  - lines: ["109:108", "129:128"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - lines: ["5:5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying.retry]
+    target_apis: [tenacity.retry, tenacity.stop_after_attempt, tenacity.wait_fixed]
+- path: "tests/conftest.py"
+  code_changes:
+  - lines: ["120:120"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - lines: ["4:4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying.retry]
+    target_apis: [tenacity.retry, tenacity.stop_after_attempt, tenacity.wait_fixed]
+- path: "tests/management_api_tests/context.py"
+  code_changes:
+  - lines: ["1:1"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying.retry]
+    target_apis: [tenacity.retry, tenacity.stop_after_attempt, tenacity.wait_fixed]
+  - lines: ["107:107", "70:70", "90:90"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+- path: "tests/management_api_tests/endpoints/endpoint_utils.py"
+  code_changes:
+  - lines: ["108:108"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - lines: ["3:3"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying.retry]
+    target_apis: [tenacity.retry, tenacity.stop_after_attempt]

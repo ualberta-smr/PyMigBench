@@ -1,0 +1,318 @@
+repo: aiortc/aiortc
+commit: 270edaf4237cba1942fc0b8cc98f3ae4dfc3f0e1
+source: attrs
+target: dataclasses
+commit_url: https://github.com/aiortc/aiortc/commit/270edaf4
+domain: Utility
+files:
+- path: "src/aiortc/events.py"
+  code_changes:
+  - lines: ["15:", "17:", "19:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["1:1"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+  - lines: ["8:8"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+- path: "src/aiortc/rtcconfiguration.py"
+  code_changes:
+  - lines: ["15:5", "4:25"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["1:1"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+  - lines: ["23:", "28:", "30:", "32:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+- path: "src/aiortc/rtcdatachannel.py"
+  code_changes:
+  - lines: ["12:12"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["19:", "22:", "25:", "28:", "31:", "34:", "39:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["4:2"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+- path: "src/aiortc/rtcdtlstransport.py"
+  code_changes:
+  - lines: ["11:9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass, dataclasses.field]
+  - lines: ["144:144", "238:238"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["151:", "154:", "248:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["245:245"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+- path: "src/aiortc/rtcicetransport.py"
+  code_changes:
+  - lines: ["24:24", "46:46"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["32:", "33:", "34:", "35:", "36:", "37:", "38:", "39:", "40:", "41:", "42:", "43:", "53:", "56:", "59:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["6:4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+- path: "src/aiortc/rtcrtpparameters.py"
+  code_changes:
+  - lines: ["100:", "102:", "127:", "128:", "137:", "139:", "141:", "14:", "158:", "16:", "18:", "35:", "37:", "39:", "41:", "61:", "66:", "67:", "68:", "88:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["106:103", "131:128", "145:142", "164:161", "169:166", "28:27", "59:58", "64:63", "7:6", "81:78", "92:89"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["113:110", "115:112", "152:149", "154:151", "160:157", "166:163", "171:168", "20:19", "43:42", "45:44"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - lines: ["4:2"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass, dataclasses.field]
+  - lines: ["71:", "76:"]
+    cardinality: one-to-zero
+    source_program_elements: [decorator]
+    target_program_elements: []
+    properties: []
+    source_apis: [s]
+    target_apis: []
+- path: "src/aiortc/rtcrtpreceiver.py"
+  code_changes:
+  - lines: ["10:8"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+  - lines: ["208:208", "221:221"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["215:", "217:", "228:", "230:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+- path: "src/aiortc/rtcsctptransport.py"
+  code_changes:
+  - lines: ["24:9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass, dataclasses.field]
+  - lines: ["436:436", "465:465", "480:480", "578:578"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["438:", "439:", "440:", "467:", "468:", "482:", "483:", "585:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["441:441"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+- path: "src/aiortc/rtcsessiondescription.py"
+  code_changes:
+  - lines: ["11:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["1:1"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+  - lines: ["4:4"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+- path: "src/aiortc/rtp.py"
+  code_changes:
+  - lines: ["307:306", "339:338", "34:33", "366:365", "391:390", "416:415", "441:440", "486:485", "528:527"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["309:", "310:", "311:", "312:", "313:", "314:", "315:", "341:", "342:", "343:", "344:", "36:", "372:", "374:", "37:", "38:", "397:", "398:", "399:", "39:", "400:", "40:", "418:", "41:", "42:", "447:", "448:", "449:", "530:", "531:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["419:418", "452:451", "488:487", "532:531"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - lines: ["5:2"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass, dataclasses.field]
+- path: "src/aiortc/sdp.py"
+  code_changes:
+  - lines: ["131:130", "146:145"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["133:", "134:", "148:", "149:", "150:", "151:", "152:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["6:4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+- path: "src/aiortc/stats.py"
+  code_changes:
+  - lines: ["12:", "14:", "15:", "20:", "21:", "22:", "27:", "28:", "29:", "34:", "36:", "57:", "58:", "68:", "78:", "83:", "85:", "87:", "89:", "91:", "93:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - lines: ["18:18", "25:25", "32:32", "40:40", "50:50", "61:61", "6:6", "71:71", "81:81"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - lines: ["3:2"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]

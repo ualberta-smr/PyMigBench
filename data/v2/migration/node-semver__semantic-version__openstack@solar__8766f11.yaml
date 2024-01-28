@@ -1,0 +1,37 @@
+repo: openstack/solar
+commit: 8766f11d9618c45f397a989eef67a800da166a21
+source: node-semver
+target: semantic-version
+commit_url: https://github.com/openstack/solar/commit/8766f11d
+domain: HTTP Clients
+files:
+- path: "solar/core/resource/repository.py"
+  code_changes:
+  - lines: ["105:103", "127:124", "84:83"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change, output transformation]
+    source_apis: [parse]
+    target_apis: [validate]
+  - lines: ["20:20"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [semver]
+    target_apis: [semantic_version]
+  - lines: ["302:299", "315-316:309-310"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [compare]
+    target_apis: [compare]
+  - lines: ["312:309", "319:318"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [match]
+    target_apis: [match]

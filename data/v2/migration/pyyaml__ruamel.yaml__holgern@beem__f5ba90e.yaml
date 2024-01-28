@@ -1,0 +1,16 @@
+repo: holgern/beem
+commit: f5ba90e2cc5bb88b29b173bae11ba46e06efecf7
+source: pyyaml
+target: ruamel.yaml
+commit_url: https://github.com/holgern/beem/commit/f5ba90e2
+domain: File reader/writer
+files:
+- path: "beem/utils.py"
+  code_changes:
+  - lines: ["9:9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [yaml]
+    target_apis: [ruamel.yaml.YAML]

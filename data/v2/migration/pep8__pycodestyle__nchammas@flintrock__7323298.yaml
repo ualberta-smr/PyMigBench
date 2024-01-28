@@ -1,0 +1,23 @@
+repo: nchammas/flintrock
+commit: 7323298d4a7827887d12f20787385255fccaaca4
+source: pep8
+target: pycodestyle
+commit_url: https://github.com/nchammas/flintrock/commit/7323298d
+domain: Codestyle
+files:
+- path: "tests/test_static.py"
+  code_changes:
+  - lines: ["35:35"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [StyleGuide]
+    target_apis: [StyleGuide]
+  - lines: ["5:5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pep8]
+    target_apis: [pycodestyle]

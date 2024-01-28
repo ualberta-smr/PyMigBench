@@ -1,0 +1,23 @@
+repo: kinto/kinto
+commit: 951dd25ca87f6e4b47a87d254cc187331c4d031c
+source: ujson
+target: rapidjson
+commit_url: https://github.com/kinto/kinto/commit/951dd25c
+domain: Serialization
+files:
+- path: "kinto/core/utils.py"
+  code_changes:
+  - lines: ["12:38"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [dumps]
+    target_apis: [dumps]
+  - lines: ["14:14"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ujson]
+    target_apis: [rapidjso]

@@ -1,0 +1,16 @@
+repo: htrc/htrc-feature-reader
+commit: 7eae68aa368f3e1bc41b36a4f504f8bbe6ff46c8
+source: ujson
+target: rapidjson
+commit_url: https://github.com/htrc/htrc-feature-reader/commit/7eae68aa
+domain: Serialization
+files:
+- path: "htrc_features/feature_reader.py"
+  code_changes:
+  - lines: ["16:16"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ujson]
+    target_apis: [rapidjson]

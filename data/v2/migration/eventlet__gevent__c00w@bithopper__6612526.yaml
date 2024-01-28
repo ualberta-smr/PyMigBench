@@ -1,0 +1,69 @@
+repo: c00w/bithopper
+commit: 66125263ad3224e85cfe38682fe586f72747492b
+source: eventlet
+target: gevent
+commit_url: https://github.com/c00w/bithopper/commit/66125263
+domain: Utility
+files:
+- path: "getwork_store.py"
+  code_changes:
+  - lines: ["19:18"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [spawn_n]
+    target_apis: [spawn]
+  - lines: ["37:36"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [sleep]
+    target_apis: [sleep]
+  - lines: ["6-8:6"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [eventlet, eventlet.green.threading, eventlet.green.time, eventlet.green.socket]
+    target_apis: [gevent]
+- path: "lp_callback.py"
+  code_changes:
+  - lines: ["8-9:8"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [eventlet.event, eventlet.green.threading, eventlet.green.socket]
+    target_apis: [gevent.event]
+- path: "speed.py"
+  code_changes:
+  - lines: ["29:29"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [spawn_n]
+    target_apis: [spawn]
+  - lines: ["47:47"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [sleep]
+    target_apis: [sleep]
+  - lines: ["59:60"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, element name change]
+    source_apis: [monkey_patch]
+    target_apis: [patch_all]
+  - lines: ["6-7:6,59"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [eventlet, eventlet.green.threading, eventlet.green.time, eventlet.green.socket]
+    target_apis: [gevent, gevent.monkey]

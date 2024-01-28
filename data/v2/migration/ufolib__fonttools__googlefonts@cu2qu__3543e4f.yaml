@@ -1,0 +1,32 @@
+repo: googlefonts/cu2qu
+commit: 3543e4f24e3b6246deb206ca53c03e00d003497b
+source: ufolib
+target: fonttools
+commit_url: https://github.com/googlefonts/cu2qu/commit/3543e4f2
+domain: Filesystem
+files:
+- path: "Lib/cu2qu/pens.py"
+  code_changes:
+  - lines: ["5:5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ufoLib.pointPen.BasePointToSegmentPen]
+    target_apis: [fontTools.pens.pointPen.BasePointToSegmentPen]
+  - lines: ["6:6"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ufoLib.pointPen.ReverseContourPointPen]
+    target_apis: [fontTools.pens.pointPen.ReverseContourPointPen]
+- path: "tests/__init__.py"
+  code_changes:
+  - lines: ["2:2"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ufoLib.glifLib.GlyphSet]
+    target_apis: [fontTools.ufoLib.glifLib.GlyphSet]

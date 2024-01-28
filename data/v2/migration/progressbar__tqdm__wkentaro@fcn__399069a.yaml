@@ -1,0 +1,16 @@
+repo: wkentaro/fcn
+commit: 399069ac568af1d295a5ac2d3b61b531af998898
+source: progressbar
+target: tqdm
+commit_url: https://github.com/wkentaro/fcn/commit/399069ac
+domain: Utility
+files:
+- path: "scripts/fcn_train.py"
+  code_changes:
+  - lines: ["13:13"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [progressbar]
+    target_apis: [tqdm]

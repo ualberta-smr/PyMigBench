@@ -1,0 +1,30 @@
+repo: rocketmap/rocketmap
+commit: 2960ec68f85274c37068e2577f28c44eecc4ff26
+source: argparse
+target: configargparse
+commit_url: https://github.com/rocketmap/rocketmap/commit/2960ec68
+domain: Utilities
+files:
+- path: "pogom/utils.py"
+  code_changes:
+  - lines: ["6:6"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [configargparse]
+  - lines: ["70:33"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [ArgumentParser]
+    target_apis: [ArgParser]
+  - lines: ["73:35", "74:36", "75:37", "77:39", "86:47", "87:48", "88:49"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion]
+    source_apis: [add_argument]
+    target_apis: [add_argument]

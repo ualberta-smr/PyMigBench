@@ -1,0 +1,51 @@
+repo: openstack/glance
+commit: 5ebde9079b34544cc6642a73b40ec865bcef8580
+source: pycryptodome
+target: cryptography
+commit_url: https://github.com/openstack/glance/commit/5ebde907
+domain: Crypto
+files:
+- path: "glance/common/crypt.py"
+  code_changes:
+  - lines: ["22-24:24-27"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Cipher.AES, Crypto.Random, Crypto.Random.random]
+    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.modes]
+  - lines: ["47:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [StrongRandom]
+    target_apis: []
+  - lines: ["56:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [get_random_bytes]
+    target_apis: []
+  - lines: ["57:63", "79:89"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [new]
+    target_apis: [Cipher]
+  - lines: ["58:65-67"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [element name change]
+    source_apis: [encrypt]
+    target_apis: [encryptor, update, finalize]
+  - lines: ["80:91-92"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [element name change]
+    source_apis: [decrypt]
+    target_apis: [decryptor, update, finalize]

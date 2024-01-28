@@ -1,0 +1,92 @@
+repo: glue-viz/glue
+commit: 5b2d7f925fd49aac3654c7f288e87e9b6df347cf
+source: pyfits
+target: astropy
+commit_url: https://github.com/glue-viz/glue/commit/5b2d7f92
+domain: Filesystem&Scientific
+files:
+- path: "glue/core/coordinates.py"
+  code_changes:
+  - lines: ["148:148"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [Header]
+    target_apis: [Header]
+  - lines: ["6:47"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pyfits.core]
+    target_apis: [astropy.io.fits]
+- path: "glue/core/data.py"
+  code_changes:
+  - lines: ["5:675"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pyfits]
+    target_apis: [io]
+  - lines: ["677:677"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [open]
+    target_apis: [open]
+- path: "glue/core/io.py"
+  code_changes:
+  - lines: ["10:10"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pyfits]
+    target_apis: [fits]
+  - lines: ["13:13"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [open]
+    target_apis: [open]
+  - lines: ["21:21"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [PrimaryHDU]
+    target_apis: [PrimaryHDU]
+  - lines: ["22:22"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [ImageHDU]
+    target_apis: [ImageHDU]
+- path: "glue/core/subset.py"
+  code_changes:
+  - lines: ["197:197"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [writeto]
+    target_apis: [writeto]
+  - lines: ["203:204"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [open]
+    target_apis: [open]
+  - lines: ["3:196"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pyfits]
+    target_apis: [fits]

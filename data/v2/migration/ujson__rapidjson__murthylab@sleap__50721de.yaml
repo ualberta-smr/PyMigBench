@@ -1,0 +1,23 @@
+repo: murthylab/sleap
+commit: 50721de04719ea3064650cacba3ffba6456e69b7
+source: ujson
+target: rapidjson
+commit_url: https://github.com/murthylab/sleap/commit/50721de0
+domain: Serialization
+files:
+- path: "sleap/io/dataset.py"
+  code_changes:
+  - lines: ["20:20"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ujson]
+    target_apis: [rapidjson]
+  - lines: ["21:46"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [loads]
+    target_apis: [loads]

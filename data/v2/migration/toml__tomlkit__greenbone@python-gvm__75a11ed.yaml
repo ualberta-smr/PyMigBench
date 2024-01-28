@@ -1,0 +1,23 @@
+repo: greenbone/python-gvm
+commit: 75a11ed482b70b5ffceaac939294ebaad2d7fe58
+source: toml
+target: tomlkit
+commit_url: https://github.com/greenbone/python-gvm/commit/75a11ed4
+domain: Filesystem
+files:
+- path: "gvm/version.py"
+  code_changes:
+  - lines: ["27:27"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [toml]
+    target_apis: [tomlkit]
+  - lines: ["74:74"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [loads]
+    target_apis: [parse]

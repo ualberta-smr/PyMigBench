@@ -1,0 +1,16 @@
+repo: markovmodel/msmtools
+commit: a3a152ea77d571a6087149540350e3826ad92ab0
+source: multiprocess
+target: multiprocessing
+commit_url: https://github.com/markovmodel/msmtools/commit/a3a152ea
+domain: Utility
+files:
+- path: "msmtools/estimation/sparse/effective_counts.py"
+  code_changes:
+  - lines: ["203:202"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Pool, MapResult]
+    target_apis: [Pool, MapResult]

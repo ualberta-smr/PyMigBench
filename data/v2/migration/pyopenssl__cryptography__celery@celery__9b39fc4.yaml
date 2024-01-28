@@ -1,0 +1,106 @@
+repo: celery/celery
+commit: 9b39fc41998c708c6612f0c7bf4393bf48f72e9b
+source: pyopenssl
+target: cryptography
+commit_url: https://github.com/celery/celery/commit/9b39fc41
+domain: HTTP Clients&Crypto
+files:
+- path: "celery/security/__init__.py"
+  code_changes:
+  - lines: ["44:41"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [OpenSSL.crypto]
+    target_apis: [cryptography]
+- path: "celery/security/certificate.py"
+  code_changes:
+  - lines: ["13:10-12"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [utils.crypto]
+    target_apis: [cryptography.x509.load_pem_x509_certificate, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding]
+  - lines: ["24:30-31"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [load_certificate]
+    target_apis: [load_pem_x509_certificate]
+  - lines: ["28:35"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [has_expired]
+    target_apis: [not_valid_after]
+  - lines: ["32:43"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [get_serial_number]
+    target_apis: [serial_number]
+  - lines: ["37:47"]
+    cardinality: many-to-one
+    source_program_elements: [function call, function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [get_issuer, get_components]
+    target_apis: [issuer]
+  - lines: ["46:57-62"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, argument transformation]
+    source_apis: [verify]
+    target_apis: [verify]
+  - lines: [":39"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [public_key]
+- path: "celery/security/key.py"
+  code_changes:
+  - lines: ["17:22-25"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [load_privatekey]
+    target_apis: [load_pem_private_key]
+  - lines: ["22:31-35"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion]
+    source_apis: [sign]
+    target_apis: [sign]
+  - lines: ["7:6-8"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [utils.crypto]
+    target_apis: [cryptography.hazmat.primitives.serialization, cryptography.hazmat.primitives.asymmetric.padding, cryptography.hazmat.backends.default_backend]
+- path: "celery/security/utils.py"
+  code_changes:
+  - lines: ["12:8-9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [OpenSSL.crypto]
+    target_apis: [cryptography.hazmat.primitives.hashes, cryptography.exceptions]
+  - lines: ["23:26"]
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [Error]
+    target_apis: [exceptions]

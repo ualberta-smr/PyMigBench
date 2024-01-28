@@ -1,0 +1,30 @@
+repo: openstack/deb-nova
+commit: 346d9419a6aeb3c1277fa0ad2c539045be571d30
+source: httplib2
+target: requests
+commit_url: https://github.com/openstack/deb-nova/commit/346d9419
+domain: HTTP Clients
+files:
+- path: "nova/tests/test_wsgi.py"
+  code_changes:
+  - lines: ["122:121", "128:127"]
+    cardinality: many-to-one
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call]
+    properties: [element name change, output transformation]
+    source_apis: [Http, request]
+    target_apis: [get]
+  - lines: ["124:123", "130:129"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [status]
+    target_apis: [status_code]
+  - lines: ["26:26"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [httplib2]
+    target_apis: [requests]

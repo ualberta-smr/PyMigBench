@@ -1,0 +1,44 @@
+repo: himkt/pyner
+commit: 76106a9a4202497de9719b5a5563cadd697bd3d0
+source: argparse
+target: click
+commit_url: https://github.com/himkt/pyner/commit/76106a9a
+domain: Utility
+files:
+- path: "pyner/tool/corpus/parse_CoNLL2003.py"
+  code_changes:
+  - lines: ["22:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["23:15", "24:16", "25:17"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["26:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - lines: ["7:4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: [":14"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]

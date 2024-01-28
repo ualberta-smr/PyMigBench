@@ -1,0 +1,23 @@
+repo: zalando/spilo
+commit: a83681c756fe8dfc8e5117c690bde16319e3e943
+source: botocore
+target: boto
+commit_url: https://github.com/zalando/spilo/commit/a83681c7
+domain: HTTP Clients
+files:
+- path: "postgres-appliance/callback_aws.py"
+  code_changes:
+  - lines: ["22:18"]
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [ClientError]
+    target_apis: [BotoServerError]
+  - lines: ["9:3-4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [botocore.exceptions.ClientError]
+    target_apis: [boto.utils, boto.ec2]

@@ -1,0 +1,16 @@
+repo: common-workflow-language/cwltool
+commit: b9b65c0f4d7531c8a97690356ecf1a34214eaac2
+source: pyyaml
+target: ruamel.yaml
+commit_url: https://github.com/common-workflow-language/cwltool/commit/b9b65c0f
+domain: File reader/writer
+files:
+- path: "draft-4/salad/schema_salad/jsonld_context.py"
+  code_changes:
+  - lines: ["3:4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [yaml]
+    target_apis: [ruamel.yaml]
