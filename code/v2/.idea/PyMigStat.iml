@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/pymigstat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pymigstat_test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/repos" />
+      <excludeFolder url="file://$MODULE_DIR$/results" />
+      <excludeFolder url="file://$MODULE_DIR$/tools" />
+      <excludeFolder url="file://$MODULE_DIR$/sample_data" />
+      <excludeFolder url="file://$MODULE_DIR$/labeling" />
+      <excludeFolder url="file://$MODULE_DIR$/labeling/repo" />
+      <excludeFolder url="file://$MODULE_DIR$/taxonomy-data" />
+      <excludeFolder url="file://$MODULE_DIR$/report" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.10 (scripts)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="py.test" />
+  </component>
+</module>

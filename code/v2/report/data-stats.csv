@@ -1,0 +1,12 @@
+Round,Dataset,# Migs,# LPs,# Libs,# Repos,# Commits
+0,\migbench,75,34,55,57,74
+1,\salm,13,12,21,13,13
+2,\salm,19,14,28,19,19
+3,\salm,20,12,24,20,20
+4,\salm,258,116,174,249,253
+Labeled data,\migbench,75 (100%),34 (100%),55 (100%),57 (100%),74 (100%)
+Labeled data,\salm,310 (13%),131 (57%),193 (67%),298 (16%),303 (12%)
+Labeled data,all,385 (16%),159 (62%),229 (72%),355 (18%),377 (17%)
+Full data,\migbench,75,34,55,57,74
+Full data,\salm,2335,231,288,1876,2462
+Full data,all,2405,256,319,1923,2231

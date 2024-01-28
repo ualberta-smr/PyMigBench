@@ -1,0 +1,44 @@
+,program element,property,# migrations,# code changes
+0,import,not applicable,180,370
+1,import,,180,370
+2,function,no properties,51,114
+3,function,argument deletion,30,63
+4,function,await deletion,1,2
+5,function,argument addition,50,87
+6,function,element name change,74,166
+7,function,argument addition to decorated function,4,19
+8,function,argument name change,4,11
+9,function,argument transformation,34,55
+10,function,output transformation,7,9
+11,function,making await,7,13
+12,function,making async,3,5
+13,function,,120,357
+14,attribute,element name change,15,21
+15,attribute,argument deletion,1,2
+16,attribute,await deletion,1,2
+17,attribute,argument transformation,2,2
+18,attribute,no properties,10,32
+19,attribute,making await,4,6
+20,attribute,argument addition,2,3
+21,attribute,output transformation,2,2
+22,attribute,,25,62
+23,exception,element name change,5,6
+24,exception,no properties,4,6
+25,exception,,7,12
+26,no program element,no properties,23,63
+27,no program element,not applicable,4,9
+28,no program element,,25,72
+29,decorator,argument addition,9,20
+30,decorator,no properties,11,15
+31,decorator,argument addition to decorated function,4,19
+32,decorator,argument deletion,8,37
+33,decorator,argument name change,2,6
+34,decorator,element name change,9,40
+35,decorator,argument transformation,7,17
+36,decorator,,19,66
+37,type,element name change,6,13
+38,type,no properties,4,10
+39,type,,8,23
+40,callable,element name change,2,3
+41,callable,,2,3
+42,,,183,827
