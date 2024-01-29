@@ -13,9 +13,10 @@ We will update the citation information once available.
 
 ## PyMigBench v1
 The 2023 version of the dataset includes 375 migration-related code changes from 75 migrations between 34 analogous library pairs.
-The data and relevant code can be found in the [v1](/v1) directory of this repository.
-Please visit [the PyMigBench website](https://ualberta-smr.github.io/PyMigBench) for detailed instructions on using the dataset. 
-We recommend using [PyMigBench v2](#pymigbench-v2),
+[Release 1.3](/releases/tag/v1.0.3) is the latest release pointing to this version of the dataset. 
+The data is also available in the [v1](/v1) directory.
+Please visit [the PyMigBench website](https://ualberta-smr.github.io/PyMigBench) for detailed instructions on using PyMigBench v1. 
+We recommend using [PyMigBench v2](#pymigbench-v2) for any new research,
 however, if you are going to use this version, please cite the [MSR 2023 paper](https://ieeexplore.ieee.org/abstract/document/10174111):
 
 ```
