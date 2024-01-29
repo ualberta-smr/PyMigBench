@@ -1,4 +1,0 @@
-id: jwt,pyjwt
-source: jwt
-target: pyjwt
-domain: Cryptography

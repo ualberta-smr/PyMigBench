@@ -1,4 +1,0 @@
-id: mysql-python,mysqlclient
-source: mysql-python
-target: mysqlclient
-domain: Database client

@@ -1,9 +1,0 @@
-id: 31212eb_pil,pillow
-source: pil
-target: pillow
-repo: wikibook/flask
-commit: 31212eb04c86443fb12a29850ae9d17ecbfada21
-pair_id: pil,pillow
-commit_message: Modify library dependency PIL to pillow.
-commit_url: https://github.com/wikibook/flask/commit/31212eb0
-code_changes: []

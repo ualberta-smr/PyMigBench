@@ -1,9 +1,0 @@
-id: 902b66d_pil,pillow
-source: pil
-target: pillow
-repo: gml16/rl-medical
-commit: 902b66dfcb506bae0c9f4ac4a69dc4a1f22cec9e
-pair_id: pil,pillow
-commit_message: Fixed requirement from PIL to pillow
-commit_url: https://github.com/gml16/rl-medical/commit/902b66df
-code_changes: []

@@ -1,9 +1,0 @@
-id: 432afa4_jwt,pyjwt
-source: jwt
-target: pyjwt
-repo: dcos/dcos
-commit: 432afa46d1e1fc5043f9c7a111858cbdde61f239
-pair_id: jwt,pyjwt
-commit_message: 'test-e2e: use the correct jwt library'
-commit_url: https://github.com/dcos/dcos/commit/432afa46
-code_changes: []

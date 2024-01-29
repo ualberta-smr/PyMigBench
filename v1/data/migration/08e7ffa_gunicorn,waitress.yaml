@@ -1,9 +1,0 @@
-id: 08e7ffa_gunicorn,waitress
-source: gunicorn
-target: waitress
-repo: pbacterio/cookiecutter-django-paas
-commit: 08e7ffa9b64b25a2b539b5b9ccf757c9b11a370c
-pair_id: gunicorn,waitress
-commit_message: Replaces gunicorn for waitress. http://blog.etianen.com/blog/2014/01/19/gunicorn-heroku-django/
-commit_url: https://github.com/pbacterio/cookiecutter-django-paas/commit/08e7ffa9
-code_changes: []

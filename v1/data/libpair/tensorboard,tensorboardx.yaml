@@ -1,4 +1,0 @@
-id: tensorboard,tensorboardx
-source: tensorboard
-target: tensorboardx
-domain: Machine learning

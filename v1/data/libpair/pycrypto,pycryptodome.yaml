@@ -1,4 +1,0 @@
-id: pycrypto,pycryptodome
-source: pycrypto
-target: pycryptodome
-domain: Cryptography

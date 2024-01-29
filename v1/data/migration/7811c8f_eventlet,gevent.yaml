@@ -1,9 +1,0 @@
-id: 7811c8f_eventlet,gevent
-source: eventlet
-target: gevent
-repo: teamsempo/sempoblockchain
-commit: 7811c8f9c0c4d75e6c7a24d597f613fb85b46361
-pair_id: eventlet,gevent
-commit_message: swapping to gevent (#389)
-commit_url: https://github.com/teamsempo/sempoblockchain/commit/7811c8f9
-code_changes: []

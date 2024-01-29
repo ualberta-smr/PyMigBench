@@ -1,9 +1,0 @@
-id: 9c85d66_pil,pillow
-source: pil
-target: pillow
-repo: thunder-project/thunder
-commit: 9c85d66c14f1c7b39e8efd39dd7fba9163d7efca
-pair_id: pil,pillow
-commit_message: Replaced PIL with pillow
-commit_url: https://github.com/thunder-project/thunder/commit/9c85d66c
-code_changes: []

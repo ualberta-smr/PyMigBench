@@ -1,9 +1,0 @@
-id: cdb6679_pil,pillow
-source: pil
-target: pillow
-repo: fantomas42/django-blog-zinnia
-commit: cdb667907dc2aa943955df49c4d4a604b4ecd195
-pair_id: pil,pillow
-commit_message: using Pillow 2.0 for Python 2 & 3 compatibility
-commit_url: https://github.com/fantomas42/django-blog-zinnia/commit/cdb66790
-code_changes: []

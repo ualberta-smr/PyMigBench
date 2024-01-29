@@ -1,9 +1,0 @@
-id: 0df86b5_logbook,loguru
-source: logbook
-target: loguru
-repo: thombashi/pingparsing
-commit: 0df86b5934719de7ab7eab71f1a5006996bc5337
-pair_id: logbook,loguru
-commit_message: Replace the logging library
-commit_url: https://github.com/thombashi/pingparsing/commit/0df86b59
-code_changes: []

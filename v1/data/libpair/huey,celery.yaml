@@ -1,4 +1,0 @@
-id: huey,celery
-source: huey
-target: celery
-domain: Multitasking/multiprocessing

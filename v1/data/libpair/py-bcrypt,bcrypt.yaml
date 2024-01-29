@@ -1,4 +1,0 @@
-id: py-bcrypt,bcrypt
-source: py-bcrypt
-target: bcrypt
-domain: Cryptography

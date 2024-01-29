@@ -1,4 +1,0 @@
-id: pyyaml,ruamel.yaml
-source: pyyaml
-target: ruamel.yaml
-domain: File reader/writer

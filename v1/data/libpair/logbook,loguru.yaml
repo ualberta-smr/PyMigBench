@@ -1,4 +1,0 @@
-id: logbook,loguru
-source: logbook
-target: loguru
-domain: Logging/tracing

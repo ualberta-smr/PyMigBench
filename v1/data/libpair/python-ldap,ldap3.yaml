@@ -1,4 +1,0 @@
-id: python-ldap,ldap3
-source: python-ldap
-target: ldap3
-domain: Utilities

@@ -1,4 +1,0 @@
-id: urllib,urllib3
-source: urllib
-target: urllib3
-domain: HTTP client/server

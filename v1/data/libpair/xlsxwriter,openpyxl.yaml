@@ -1,4 +1,0 @@
-id: xlsxwriter,openpyxl
-source: xlsxwriter
-target: openpyxl
-domain: File reader/writer

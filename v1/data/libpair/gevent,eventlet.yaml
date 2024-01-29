@@ -1,4 +1,0 @@
-id: gevent,eventlet
-source: gevent
-target: eventlet
-domain: Networking

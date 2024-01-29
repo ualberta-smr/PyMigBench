@@ -1,4 +1,0 @@
-id: requests,aiohttp
-source: requests
-target: aiohttp
-domain: HTTP client/server

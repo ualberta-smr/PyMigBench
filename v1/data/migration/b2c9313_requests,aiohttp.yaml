@@ -1,9 +1,0 @@
-id: b2c9313_requests,aiohttp
-source: requests
-target: aiohttp
-repo: sabeechen/hassio-google-drive-backup
-commit: b2c93130aee27ab377460ed9375b5cd89c35a44c
-pair_id: requests,aiohttp
-commit_message: Add asyncio requirements
-commit_url: https://github.com/sabeechen/hassio-google-drive-backup/commit/b2c93130
-code_changes: []

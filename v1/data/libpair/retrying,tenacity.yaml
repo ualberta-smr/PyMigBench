@@ -1,4 +1,0 @@
-id: retrying,tenacity
-source: retrying
-target: tenacity
-domain: Utilities

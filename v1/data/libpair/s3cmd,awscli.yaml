@@ -1,4 +1,0 @@
-id: s3cmd,awscli
-source: s3cmd
-target: awscli
-domain: API wrapper

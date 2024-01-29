@@ -1,9 +1,0 @@
-id: dac43f8_gunicorn,waitress
-source: gunicorn
-target: waitress
-repo: covidzero/hummingbird-v2
-commit: dac43f81346d1b23752698cf53d8fb9be721993b
-pair_id: gunicorn,waitress
-commit_message: change from gunicorn to waitress (#85)
-commit_url: https://github.com/covidzero/hummingbird-v2/commit/dac43f81
-code_changes: []

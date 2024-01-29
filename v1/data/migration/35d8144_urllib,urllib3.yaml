@@ -1,9 +1,0 @@
-id: 35d8144_urllib,urllib3
-source: urllib
-target: urllib3
-repo: hail-is/hail
-commit: 35d8144a61a788095f6a63fab5f28bcd3cb17a98
-pair_id: urllib,urllib3
-commit_message: fix-maste6 (#5954)
-commit_url: https://github.com/hail-is/hail/commit/35d8144a
-code_changes: []

@@ -1,9 +1,0 @@
-id: c7c5a13_raven,sentry-sdk
-source: raven
-target: sentry-sdk
-repo: line/promgen
-commit: c7c5a138e4592aa1f0fa182ca1f8b971afaf7156
-pair_id: raven,sentry-sdk
-commit_message: '[INTERNAL] Switch from raven to sentry_sdk'
-commit_url: https://github.com/line/promgen/commit/c7c5a138
-code_changes: []

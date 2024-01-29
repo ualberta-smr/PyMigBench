@@ -1,9 +1,0 @@
-id: 356ce56_raven,sentry-sdk
-source: raven
-target: sentry-sdk
-repo: fnp/wolnelektury
-commit: 356ce56229b7439ae6f35f8f80e480bdfa8bff56
-pair_id: raven,sentry-sdk
-commit_message: Migrate from raven to sentry-sdk.
-commit_url: https://github.com/fnp/wolnelektury/commit/356ce562
-code_changes: []

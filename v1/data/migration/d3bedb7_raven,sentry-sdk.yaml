@@ -1,9 +1,0 @@
-id: d3bedb7_raven,sentry-sdk
-source: raven
-target: sentry-sdk
-repo: rafalp/misago_docker
-commit: d3bedb763bb0d021c7c629423335daaa32b70152
-pair_id: raven,sentry-sdk
-commit_message: Update Sentry to SDK
-commit_url: https://github.com/rafalp/misago_docker/commit/d3bedb76
-code_changes: []
