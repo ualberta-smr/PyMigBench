@@ -14,14 +14,21 @@ files:
     properties: []
     source_apis: [aiohttp]
     target_apis: [httpx]
-  - lines: ["33:37-38", "37:44-45"]
+  - lines: ["33:37-38"]
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, element name change]
     source_apis: [request]
     target_apis: [get, AsyncClient]
-  - lines: ["34:41", "38:47-48"]
+  - lines: ["37:44-45"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, element name change]
+    source_apis: [request]
+    target_apis: [post, AsyncClient]
+  - lines: ["34:40-41", "38:47-48"]
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [attribute, function call]
