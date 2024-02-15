@@ -7,7 +7,7 @@ domain: HTTP Clients
 files:
 - path: "ocd_backend/extractors/ibabs.py"
   code_changes:
-  - lines: ["35:37-39"]
+  - lines: ["35-36:36-39"]
     cardinality: many-to-many
     source_program_elements: [function call, function call]
     target_program_elements: [function call, function call]

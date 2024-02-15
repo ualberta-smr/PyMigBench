@@ -37,7 +37,7 @@ files:
     properties: [argument addition, element name change]
     source_apis: [construct]
     target_apis: [RSAPublicNumbers, public_key]
-  - lines: ["128:138"]
+  - lines: ["128:138-147"]
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]

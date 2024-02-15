@@ -104,13 +104,20 @@ files:
     properties: []
     source_apis: [ipaddr]
     target_apis: [ipaddress]
-  - lines: ["83:83", "96:96"]
+  - lines: ["83:83"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
     properties: [argument transformation, element name change]
     source_apis: [IPNetwork]
     target_apis: [ip_interface]
+  - lines: ["96:96"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [IPNetwork]
+    target_apis: [ip_network]
   - lines: ["87:87"]
     cardinality: one-to-one
     source_program_elements: [function call]

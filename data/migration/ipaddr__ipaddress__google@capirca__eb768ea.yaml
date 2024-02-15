@@ -7,7 +7,7 @@ domain: HTTP Clients
 files:
 - path: "capirca/lib/cisco.py"
   code_changes:
-  - lines: ["166:468-469"]
+  - lines: ["466:468-469"]
     cardinality: one-to-one
     source_program_elements: [type]
     target_program_elements: [type]

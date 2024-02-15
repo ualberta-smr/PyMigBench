@@ -14,7 +14,7 @@ files:
     properties: []
     source_apis: [ujson]
     target_apis: [rapidjson]
-  - lines: ["21:46"]
+  - lines: ["45:46"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]

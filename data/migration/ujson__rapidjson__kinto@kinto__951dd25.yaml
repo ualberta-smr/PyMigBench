@@ -7,7 +7,7 @@ domain: Serialization
 files:
 - path: "kinto/core/utils.py"
   code_changes:
-  - lines: ["12:38"]
+  - lines: ["36:38"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]

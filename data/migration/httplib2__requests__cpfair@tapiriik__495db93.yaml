@@ -7,7 +7,14 @@ domain: HTTP Clients
 files:
 - path: "tapiriik/services/RunKeeper/runkeeper.py"
   code_changes:
-  - lines: ["121-122:124", "161,164:165", "75-76:74", "85-86:89", "92-93:95"]
+  - lines: ["121-122:124", "75-76:74", "85-86:89", "92-93:95"]
+    cardinality: many-to-one
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Http, request]
+    target_apis: [get]
+  - lines: ["161,164:165"]
     cardinality: many-to-one
     source_program_elements: [function call, function call]
     target_program_elements: [function call]

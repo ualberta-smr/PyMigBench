@@ -17,10 +17,10 @@ files:
   - lines: ["530-532:531-536"]
     cardinality: many-to-many
     source_program_elements: [function call, function call, function call, function call]
-    target_program_elements: [function call, function call, function call, function call, function call]
+    target_program_elements: [function call, function call, function call, function call]
     properties: [argument transformation, element name change]
     source_apis: [SHA256, PKCS1_v1_5, urlsafe_b64encode, sign]
-    target_apis: [load_pem_private_key, sign, urlsafe_b64encode, PKCS1v15, SHA256]
+    target_apis: [sign, urlsafe_b64encode, PKCS1v15, SHA256]
   - lines: ["92-96:92-95"]
     cardinality: not applicable
     source_program_elements: [import]

@@ -14,13 +14,13 @@ files:
     properties: [argument deletion, element name change, output transformation]
     source_apis: [Http, request]
     target_apis: [get, status_code, text]
-  - lines: ["175:175"]
+  - lines: ["175:175-176"]
     cardinality: many-to-many
     source_program_elements: [function call, function call]
     target_program_elements: [function call, attribute, attribute]
     properties: [argument deletion, argument name change, element name change, output transformation]
     source_apis: [Http, request]
-    target_apis: [get, status_code, text]
+    target_apis: [post, status_code, text]
   - lines: ["28:28"]
     cardinality: not applicable
     source_program_elements: [import]

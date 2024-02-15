@@ -21,7 +21,14 @@ files:
     properties: []
     source_apis: [semver]
     target_apis: [semantic_version]
-  - lines: ["302:299", "315-316:309-310"]
+  - lines: ["302:299"]
+    cardinality: one-to-one
+    source_program_elements: [function reference]
+    target_program_elements: [function reference]
+    properties: []
+    source_apis: [compare]
+    target_apis: [compare]
+  - lines: ["315-316:313-315"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
