@@ -35,10 +35,3 @@ files:
     properties: [element name change]
     source_apis: [ClientConnectorError]
     target_apis: [ConnectError]
-  - lines: ["60:60"]
-    cardinality: one-to-one
-    source_program_elements: [exception]
-    target_program_elements: [exception]
-    properties: [element name change]
-    source_apis: [TimeoutError]
-    target_apis: [ConnectTimeout]
