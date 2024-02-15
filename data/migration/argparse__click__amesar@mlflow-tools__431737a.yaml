@@ -132,7 +132,7 @@ files:
     properties: []
     source_apis: [ArgumentParser]
     target_apis: []
-  - lines: ["27:27"]
+  - lines: ["27:26"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [decorator]

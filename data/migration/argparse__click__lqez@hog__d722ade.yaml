@@ -48,4 +48,4 @@ files:
     target_program_elements: [function call]
     properties: []
     source_apis: []
-    target_apis: [echo]
+    target_apis: [command]

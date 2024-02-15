@@ -34,7 +34,7 @@ files:
     target_program_elements: [decorator, function call]
     properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [option, File]
+    target_apis: [option, Path]
   - lines: ["189:"]
     cardinality: one-to-zero
     source_program_elements: [function call]
@@ -56,13 +56,20 @@ files:
     properties: []
     source_apis: [ArgumentParser]
     target_apis: []
-  - lines: ["173-178:47-48", "179-181:51", "182-187:49-50", "79-81:17"]
+  - lines: ["173-178:47-48", "182-187:49-50", "79-81:17"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [decorator]
     properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
     target_apis: [option]
+  - lines: ["179-181:51"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
   - lines: ["95-102:18-19"]
     cardinality: one-to-many
     source_program_elements: [function call]

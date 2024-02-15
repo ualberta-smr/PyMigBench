@@ -42,7 +42,7 @@ files:
     properties: [argument deletion, element name change]
     source_apis: [add_parser]
     target_apis: [command]
-  - lines: ["26:34"]
+  - lines: ["26:34-35"]
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [decorator, function call]

@@ -49,13 +49,20 @@ files:
     properties: [argument name change, argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
     target_apis: [option, Choice]
-  - lines: ["166-167:139-140", "170-171:142"]
+  - lines: ["166-167:139-140"]
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [decorator, function call]
     properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
     target_apis: [option, Choice]
+  - lines: ["170-171:142"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
   - lines: ["219:"]
     cardinality: one-to-zero
     source_program_elements: [function call]

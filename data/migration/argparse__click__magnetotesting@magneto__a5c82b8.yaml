@@ -21,7 +21,14 @@ files:
     properties: []
     source_apis: [ArgumentParser]
     target_apis: []
-  - lines: ["70:72", "71:73"]
+  - lines: ["70:72"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["71:73"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [decorator]
