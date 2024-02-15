@@ -53,7 +53,7 @@ files:
     properties: []
     source_apis: [bunch.Bunch]
     target_apis: [munch.Munch]
-  - lines: ["162:162", "177:177"]
+  - lines: ["177:177"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
