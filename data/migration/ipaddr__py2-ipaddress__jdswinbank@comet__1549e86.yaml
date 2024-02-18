@@ -7,7 +7,7 @@ domain: HTTP Clients
 files:
 - path: "comet/service/broker.py"
   code_changes:
-  - lines: ["108,115:108,115"]
+  - lines: ["108:108","115:115"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -53,7 +53,7 @@ files:
     properties: []
     source_apis: [ipaddr.IPNetwork]
     target_apis: [ipaddress.ip_network]
-  - lines: ["25,32:25,32"]
+  - lines: ["25:25","32:32"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]

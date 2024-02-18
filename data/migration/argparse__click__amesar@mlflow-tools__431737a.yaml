@@ -58,7 +58,7 @@ files:
     properties: []
     source_apis: [ArgumentParser]
     target_apis: []
-  - lines: ["48:47", "49:50", "50:51", "51:53", "52:52", "53:53", "54:52"]
+  - lines: ["48:47", "49:48", "50:49", "51:50", "52:51", "53:53", "54:52"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [decorator]

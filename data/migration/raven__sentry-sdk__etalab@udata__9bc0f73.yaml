@@ -14,7 +14,7 @@ files:
     properties: []
     source_apis: [raven.contrib.celery.register_signal, raven.contrib.celery.register_logger_signal]
     target_apis: [sentry_sdk, sentry_sdk.integrations.flask.FlaskIntegration, sentry_sdk.integrations.celery.CeleryIntegration]
-  - lines: ["42,66:49-63"]
+  - lines: ["42,66:59-63"]
     cardinality: many-to-many
     source_program_elements: [function call, function call]
     target_program_elements: [function call, function call, function call]

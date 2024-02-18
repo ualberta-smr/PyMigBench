@@ -49,7 +49,7 @@ files:
     properties: []
     source_apis: []
     target_apis: [tqdm]
-  - lines: [":125,147,167,194,205,209,212,216"]
+  - lines: [":125", ":147", ":167", ":194", ":205", ":209", ":212", ":216"]
     cardinality: zero-to-one
     source_program_elements: []
     target_program_elements: [function call]

@@ -39,7 +39,7 @@ files:
     properties: []
     source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
     target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
-  - lines: ["238-240:238-240"]
+  - lines: ["238:238","239:239","240:240"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -55,7 +55,7 @@ files:
     properties: []
     source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
     target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
-  - lines: ["46-48:46-48"]
+  - lines: ["46:46", "47:47", "48:48"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -171,7 +171,7 @@ files:
     properties: []
     source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
     target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
-  - lines: ["30-32:30-32"]
+  - lines: ["30:30", "31:31", "32:32"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -187,7 +187,7 @@ files:
     properties: []
     source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
     target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
-  - lines: ["55-57:55-57"]
+  - lines: ["55:55", "56:56", "57:57"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -196,7 +196,7 @@ files:
     target_apis: [Signal]
 - path: "src/GridCal/Engine/Simulations/Stochastic/reliability_driver.py"
   code_changes:
-  - lines: ["153-155:153-155"]
+  - lines: ["153:153", "154:154", "155:155"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]

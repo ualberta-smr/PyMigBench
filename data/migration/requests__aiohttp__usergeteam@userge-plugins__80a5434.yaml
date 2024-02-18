@@ -7,7 +7,7 @@ domain: HTTP Clients
 files:
 - path: "plugins/info.py"
   code_changes:
-  - lines: ["62:64,69"]
+  - lines: ["62:64-69"]
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
