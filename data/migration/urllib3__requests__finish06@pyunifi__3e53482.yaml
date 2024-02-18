@@ -21,7 +21,7 @@ files:
     properties: [element name change]
     source_apis: [open]
     target_apis: [post]
-  - lines: [":279", ":85"]
+  - lines: [":279"]
     cardinality: zero-to-one
     source_program_elements: []
     target_program_elements: [function call]
