@@ -28,10 +28,3 @@ files:
     properties: []
     source_apis: [start_subscribe]
     target_apis: []
-  - lines: ["63:"]
-    cardinality: one-to-zero
-    source_program_elements: [function call]
-    target_program_elements: []
-    properties: []
-    source_apis: [subscribe]
-    target_apis: []
