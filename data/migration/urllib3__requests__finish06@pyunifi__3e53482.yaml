@@ -14,7 +14,14 @@ files:
     properties: []
     source_apis: [urllib3]
     target_apis: [requests]
-  - lines: [":124", ":279", ":85"]
+  - lines: ["165:124"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [open]
+    target_apis: [post]
+  - lines: [":279", ":85"]
     cardinality: zero-to-one
     source_program_elements: []
     target_program_elements: [function call]
