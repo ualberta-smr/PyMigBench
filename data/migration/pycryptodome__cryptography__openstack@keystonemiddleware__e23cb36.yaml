@@ -7,13 +7,13 @@ domain: Crypto
 files:
 - path: "keystonemiddleware/auth_token/_memcache_crypt.py"
   code_changes:
-  - lines: ["119:221", "128:140"]
-    cardinality: one-to-one
-    source_program_elements: [function call]
-    target_program_elements: [function call]
+  - lines: ["119:121-124", "128:140-143"]
+    cardinality: many-to-many
+    source_program_elements: [function call, attribute]
+    target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
-    source_apis: [new]
-    target_apis: [Cipher]
+    source_apis: [new, MODE_CBC]
+    target_apis: [Cipher, AES, CBC, default_backend]
   - lines: ["121:133-134"]
     cardinality: one-to-many
     source_program_elements: [function call]
@@ -35,7 +35,7 @@ files:
     properties: []
     source_apis: [Crypto.Cipher.AES]
     target_apis: [cryptography.hazmat.backends, cryptography.hazmat.primitives.ciphers, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes, cryptography.hazmat.primitives.padding]
-  - lines: ["46,80:47,82"]
+  - lines: ["46:47","80:82"]
     cardinality: one-to-one
     source_program_elements: [type]
     target_program_elements: [type]

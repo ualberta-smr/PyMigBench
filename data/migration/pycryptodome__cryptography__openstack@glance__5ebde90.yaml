@@ -28,13 +28,13 @@ files:
     properties: []
     source_apis: [get_random_bytes]
     target_apis: []
-  - lines: ["57:63", "79:89"]
-    cardinality: one-to-one
-    source_program_elements: [function call]
-    target_program_elements: [function call]
+  - lines: ["57:62-63", "79:89"]
+    cardinality: many-to-many
+    source_program_elements: [function call, attribute]
+    target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
-    source_apis: [new]
-    target_apis: [Cipher]
+    source_apis: [new, MODE_CBC]
+    target_apis: [Cipher, AES, CBC, default_backend]
   - lines: ["58:65-67"]
     cardinality: one-to-many
     source_program_elements: [function call]

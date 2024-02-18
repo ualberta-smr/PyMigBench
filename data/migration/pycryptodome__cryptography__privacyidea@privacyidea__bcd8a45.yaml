@@ -8,12 +8,12 @@ files:
 - path: "privacyidea/lib/crypto.py"
   code_changes:
   - lines: ["118:119-120"]
-    cardinality: one-to-many
-    source_program_elements: [function call]
-    target_program_elements: [function call, function call]
+    cardinality: many-to-many
+    source_program_elements: [function call, attribute]
+    target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
-    source_apis: [new]
-    target_apis: [Cipher, default_backend]
+    source_apis: [new, MODE_ECB]
+    target_apis: [Cipher, AES, ECB, default_backend]
   - lines: ["119:121-122", "364:371-372"]
     cardinality: one-to-many
     source_program_elements: [function call]
@@ -24,10 +24,10 @@ files:
   - lines: ["363:368-370", "385:395-397"]
     cardinality: one-to-many
     source_program_elements: [function call]
-    target_program_elements: [function call, function call, function call]
+    target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
     source_apis: [new]
-    target_apis: [Cipher, default_backend, CBC]
+    target_apis: [Cipher, AES, default_backend, CBC]
   - lines: ["387:393"]
     cardinality: one-to-one
     source_program_elements: [attribute]

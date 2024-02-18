@@ -8,12 +8,12 @@ files:
 - path: "pyope/ope.py"
   code_changes:
   - lines: ["164:167-168"]
-    cardinality: one-to-many
-    source_program_elements: [function call]
-    target_program_elements: [function call, function call]
+    cardinality: many-to-many
+    source_program_elements: [function call, attribute, function call]
+    target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument deletion, argument transformation, element name change]
-    source_apis: [new]
-    target_apis: [AES, Cipher]
+    source_apis: [new, MODE_CTR, new]
+    target_apis: [AES, Cipher, CTR, default_backend]
   - lines: ["166:169,172"]
     cardinality: one-to-many
     source_program_elements: [function call]
