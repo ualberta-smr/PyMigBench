@@ -14,20 +14,6 @@ files:
     properties: []
     source_apis: [pytorch_transformers.XLNetConfig, pytorch_transformers.XLMConfig, pytorch_transformers.BertTokenizer, pytorch_transformers.BertConfig, pytorch_transformers.XLNetTokenizer, pytorch_transformers.XLMTokenizer, pytorch_transformers.AdamW, pytorch_transformers.WarmupLinearSchedule]
     target_apis: [transformers.AdamW, transformers.BertConfig, transformers.BertTokenizer, transformers.RobertaConfig, transformers.RobertaTokenizer, transformers.WarmupLinearSchedule, transformers.XLMConfig, transformers.XLMTokenizer, transformers.XLNetConfig, transformers.XLNetTokenizer]
-  - lines: [":54"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [type]
-    properties: []
-    source_apis: []
-    target_apis: [RobertaConfig]
-  - lines: [":54"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [type]
-    properties: []
-    source_apis: []
-    target_apis: [RobertaTokenizer]
 - path: "nlp_architect/models/transformers/quantized_bert.py"
   code_changes:
   - lines: ["27-43:27-35"]
@@ -46,20 +32,6 @@ files:
     properties: []
     source_apis: [pytorch_transformers.BertForSequenceClassification, pytorch_transformers.XLMForSequenceClassification, pytorch_transformers.XLNetForSequenceClassification]
     target_apis: [transformers.BertForSequenceClassification, transformers.RobertaForSequenceClassification, transformers.XLMForSequenceClassification, transformers.XLNetForSequenceClassification]
-  - lines: ["53:55"]
-    cardinality: one-to-one
-    source_program_elements: [type]
-    target_program_elements: [type]
-    properties: []
-    source_apis: [XLMForSequenceClassification]
-    target_apis: [XLMForSequenceClassification]
-  - lines: [":56"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [type]
-    properties: []
-    source_apis: []
-    target_apis: [RobertaForSequenceClassification]
 - path: "nlp_architect/models/transformers/token_classification.py"
   code_changes:
   - lines: ["19:23-26"]

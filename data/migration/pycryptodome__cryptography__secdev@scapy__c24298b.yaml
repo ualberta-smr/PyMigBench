@@ -99,13 +99,6 @@ files:
     properties: [element name change]
     source_apis: [XCBCMAC]
     target_apis: [CMAC]
-  - lines: [":367"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [exception]
-    properties: []
-    source_apis: []
-    target_apis: [InvalidTag]
 - path: "scapy/layers/tls/__init__.py"
   code_changes:
   - lines: ["11:11"]

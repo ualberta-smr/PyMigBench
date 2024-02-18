@@ -14,13 +14,6 @@ files:
     properties: []
     source_apis: [flask_restful.Api, flask_restful.Resource]
     target_apis: [flask_restplus.Namespace, flask_restplus.Resource]
-  - lines: ["7-8:6"]
-    cardinality: one-to-one
-    source_program_elements: [function call]
-    target_program_elements: [function call]
-    properties: [argument transformation, element name change]
-    source_apis: [Api]
-    target_apis: [Namespace]
 - path: "services/users/project/api/users/views.py"
   code_changes:
   - lines: ["5:5"]

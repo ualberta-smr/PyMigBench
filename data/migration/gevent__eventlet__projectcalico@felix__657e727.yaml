@@ -7,20 +7,6 @@ domain: Utility
 files:
 - path: "calico/election.py"
   code_changes:
-  - lines: ["136:", "155:"]
-    cardinality: one-to-zero
-    source_program_elements: [function call]
-    target_program_elements: []
-    properties: []
-    source_apis: [acquire]
-    target_apis: []
-  - lines: ["138:", "157:"]
-    cardinality: one-to-zero
-    source_program_elements: [function call]
-    target_program_elements: []
-    properties: []
-    source_apis: [release]
-    target_apis: []
   - lines: ["142:192", "142:192", "67:108"]
     cardinality: one-to-one
     source_program_elements: [function call]
@@ -35,13 +21,6 @@ files:
     properties: []
     source_apis: [gevent, lock]
     target_apis: [eventlet]
-  - lines: ["56:"]
-    cardinality: one-to-zero
-    source_program_elements: [function call]
-    target_program_elements: []
-    properties: []
-    source_apis: [Semaphore]
-    target_apis: []
   - lines: ["58:77"]
     cardinality: one-to-one
     source_program_elements: [function call]

@@ -14,13 +14,6 @@ files:
     properties: []
     source_apis: [progressbar.ProgressBar]
     target_apis: [assigner.progress.Progress]
-  - lines: ["42:42"]
-    cardinality: one-to-one
-    source_program_elements: [function call]
-    target_program_elements: [function call]
-    properties: [argument deletion, element name change]
-    source_apis: [ProgressBar]
-    target_apis: [Progress]
   - lines: ["44:"]
     cardinality: one-to-zero
     source_program_elements: [function call]

@@ -14,10 +14,4 @@ files:
     properties: []
     source_apis: [botocore.session]
     target_apis: [boto, boto.s3.connection]
-  - lines: ["19:25-27"]
-    cardinality: many-to-many
-    source_program_elements: [function call, function call]
-    target_program_elements: [function call, function call]
-    properties: [argument addition, argument deletion, element name change]
-    source_apis: [get_service, get_session]
-    target_apis: [OrdinaryCallingFormat, connect_to_region]
+

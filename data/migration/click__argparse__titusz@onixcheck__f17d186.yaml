@@ -56,13 +56,6 @@ files:
     properties: []
     source_apis: []
     target_apis: [ArgumentParser]
-  - lines: [":36"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [function call]
-    properties: []
-    source_apis: []
-    target_apis: [set_defaults]
 - path: "tests/test_onixcheck.py"
   code_changes:
   - lines: ["17:", "25:", "33:", "40:"]

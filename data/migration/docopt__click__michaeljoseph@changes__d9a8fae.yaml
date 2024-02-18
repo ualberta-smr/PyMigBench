@@ -7,13 +7,6 @@ domain: Utility
 files:
 - path: "changes/changelog.py"
   code_changes:
-  - lines: [":11"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [function call]
-    properties: []
-    source_apis: []
-    target_apis: [make_pass_decorator]
   - lines: [":4"]
     cardinality: not applicable
     source_program_elements: []
@@ -28,13 +21,6 @@ files:
     properties: []
     source_apis: []
     target_apis: [command]
-  - lines: [":55"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [decorator]
-    properties: []
-    source_apis: []
-    target_apis: [pass_changes]
 - path: "changes/cli.py"
   code_changes:
   - lines: ["50:50"]

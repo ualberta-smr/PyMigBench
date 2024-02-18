@@ -109,20 +109,6 @@ files:
     properties: []
     source_apis: [bytes_to_long]
     target_apis: []
-  - lines: [":187"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [function call]
-    properties: []
-    source_apis: []
-    target_apis: [Cipher]
-  - lines: [":304"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [exception]
-    properties: []
-    source_apis: []
-    target_apis: [UnsupportedAlgorithm]
 - path: "twisted/conch/test/test_agent.py"
   code_changes:
   - lines: ["14:14"]

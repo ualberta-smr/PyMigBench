@@ -21,13 +21,6 @@ files:
     properties: []
     source_apis: [StrongRandom]
     target_apis: []
-  - lines: ["56:"]
-    cardinality: one-to-zero
-    source_program_elements: [function call]
-    target_program_elements: []
-    properties: []
-    source_apis: [get_random_bytes]
-    target_apis: []
   - lines: ["57:62-63", "79:89"]
     cardinality: many-to-many
     source_program_elements: [function call, attribute]

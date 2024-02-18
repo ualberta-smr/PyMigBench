@@ -58,13 +58,6 @@ files:
     properties: [argument addition, argument deletion, argument transformation]
     source_apis: [verify]
     target_apis: [verify]
-  - lines: [":39"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [function call]
-    properties: []
-    source_apis: []
-    target_apis: [public_key]
 - path: "celery/security/key.py"
   code_changes:
   - lines: ["17:22-25"]
