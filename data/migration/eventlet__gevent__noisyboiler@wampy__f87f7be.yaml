@@ -7,7 +7,7 @@ domain: Utility
 files:
 - path: "test/helpers.py"
   code_changes:
-  - lines: ["13:13"]
+  - lines: ["11:11"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
