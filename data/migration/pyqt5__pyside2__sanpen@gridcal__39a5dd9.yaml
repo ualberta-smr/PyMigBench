@@ -16,7 +16,7 @@ files:
     target_apis: [PySide2.QtCore]
 - path: "src/GridCal/Engine/IO/file_handler.py"
   code_changes:
-  - lines: ["245-247:245-247", "296-298:296-298"]
+  - lines: ["245:245", "246:246", "247:247", "296:296", "297:297", "298:298"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -80,7 +80,7 @@ files:
     properties: []
     source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
     target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
-  - lines: ["231-233:231-233"]
+  - lines: ["231:231", "232:232", "233:233"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -89,7 +89,7 @@ files:
     target_apis: [Signal]
 - path: "src/GridCal/Engine/Simulations/Optimization/optimization_driver.py"
   code_changes:
-  - lines: ["123-125:123-125"]
+  - lines: ["123:123", "124:124", "125:125"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -121,7 +121,7 @@ files:
     properties: []
     source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
     target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
-  - lines: ["339-341:339-341"]
+  - lines: ["339:339", "340:340", "341:341"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -155,7 +155,7 @@ files:
     properties: []
     source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
     target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
-  - lines: ["95-97:95-97"]
+  - lines: ["95:95", "96:96", "97:97"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -219,7 +219,7 @@ files:
     properties: []
     source_apis: [PySide2.QtCore.QThread, PySide2.QtCore.QRunnable, PySide2.QtCore.pyqtSignal]
     target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.QRunnable, PySide2.QtCore.Signal]
-  - lines: ["166-168:166-168"]
+  - lines: ["166:166", "167:167", "168:168"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -334,7 +334,7 @@ files:
     properties: []
     source_apis: [PyQt5.QtCore, PyQt5.QtGui, PyQt5.QtWidgets]
     target_apis: [PySide2.QtCore, PySide2.QtGui, PySide2.QtWidgets]
-  - lines: [":848,899,959,1015,1109,1142,1171,1265,1307,1360,1426,1484,1515,1568,1635,1679,1718"]
+  - lines: [":848",":899",":959",":1015",":1109",":1142",":1171",":1265",":1307",":1360",":1426",":1484",":1515",":1568",":1635",":1679",":1718"]
     cardinality: zero-to-one
     source_program_elements: []
     target_program_elements: [function call]

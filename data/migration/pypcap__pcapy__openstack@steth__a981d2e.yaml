@@ -14,7 +14,7 @@ files:
     properties: []
     source_apis: [pypcap]
     target_apis: [pcapy]
-  - lines: ["16:16"]
+  - lines: ["27:27"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]

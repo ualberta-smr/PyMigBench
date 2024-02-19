@@ -14,7 +14,7 @@ files:
     properties: []
     source_apis: [httplib2]
     target_apis: [requests]
-  - lines: ["28:28"]
+  - lines: ["188:194-195"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]

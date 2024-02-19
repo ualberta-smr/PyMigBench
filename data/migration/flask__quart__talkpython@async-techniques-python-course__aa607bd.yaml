@@ -67,7 +67,7 @@ files:
     properties: []
     source_apis: [flask]
     target_apis: [quart]
-  - lines: ["15:15", "3:3"]
+  - lines: ["3:3"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]

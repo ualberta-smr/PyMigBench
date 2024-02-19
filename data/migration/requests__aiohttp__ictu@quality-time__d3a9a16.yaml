@@ -62,7 +62,7 @@ files:
     properties: [argument deletion, async transformation]
     source_apis: [post]
     target_apis: [post]
-  - lines: ["122:122", "133:133", "157:158", "40:41", "52:53", "93:93"]
+  - lines: ["122:122", "133:134", "157:158", "40:41", "52:53", "93:93"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
