@@ -130,13 +130,20 @@ files:
     properties: []
     source_apis: [ArgumentParser]
     target_apis: []
-  - lines: ["223-224:223", "226-227:224", "228:225"]
+  - lines: ["223-224:223", "226-227:224"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [decorator]
     properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
     target_apis: [option]
+  - lines: ["228:225"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
   - lines: ["225:"]
     cardinality: one-to-zero
     source_program_elements: [function call]

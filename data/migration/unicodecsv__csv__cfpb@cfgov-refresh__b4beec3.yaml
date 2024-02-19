@@ -55,7 +55,7 @@ files:
     target_apis: [unicodecsv]
 - path: "cfgov/data_research/scripts/export_public_csvs.py"
   code_changes:
-  - lines: ["160:161", "43:43"]
+  - lines: ["160:161"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -78,6 +78,13 @@ files:
     properties: []
     source_apis: [unicodecsv]
     target_apis: [unicodecsv]
+  - lines: ["43:43"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation]
+    source_apis: [writer]
+    target_apis: [writer]
 - path: "cfgov/scripts/export_enforcement_actions.py"
   code_changes:
   - lines: ["105:100"]
