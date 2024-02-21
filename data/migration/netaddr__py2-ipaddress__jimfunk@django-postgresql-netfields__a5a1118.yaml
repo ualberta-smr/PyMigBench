@@ -72,13 +72,6 @@ files:
     properties: []
     source_apis: [AddrFormatError]
     target_apis: []
-  - lines: ["47:", "69:"]
-    cardinality: one-to-zero
-    source_program_elements: [exception]
-    target_program_elements: []
-    properties: []
-    source_apis: [TypeError]
-    target_apis: []
   - lines: ["64:64"]
     cardinality: one-to-one
     source_program_elements: [type]
