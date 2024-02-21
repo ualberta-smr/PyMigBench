@@ -21,7 +21,7 @@ files:
     properties: [element name change]
     source_apis: [Flask]
     target_apis: [Quart]
-  - lines: ["42:49", "43:50", "43:50"]
+  - lines: ["42:49", "43:50"]
     cardinality: one-to-one
     source_program_elements: [attribute]
     target_program_elements: [attribute]
