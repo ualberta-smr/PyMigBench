@@ -14,7 +14,7 @@ files:
     properties: []
     source_apis: [dataproperty]
     target_apis: [typepy]
-  - lines: ["134:135", "186: 187", "233: 234"]
+  - lines: ["134:135", "186:187", "233:234"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -37,14 +37,14 @@ files:
     properties: [element name change]
     source_apis: [is_empty_string]
     target_apis: [is_null_string]
-  - lines: ["110:112", "122: 125", "144: 148", "154: 159"]
+  - lines: ["110:112", "122:125", "144:148", "154:159"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
     properties: [element name change]
     source_apis: [IntegerType]
     target_apis: [Integer]
-  - lines: ["110:112", "122: 125", "144: 148", "154: 159"]
+  - lines: ["110:112", "122:125", "144:148", "154:159"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]

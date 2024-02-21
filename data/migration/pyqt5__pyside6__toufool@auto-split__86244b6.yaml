@@ -165,7 +165,7 @@ files:
     properties: [element name change]
     source_apis: [QAction]
     target_apis: [QWidgetAction]
-  - lines: ["102: 104", "109: 111", "172:174", "176:178", "180:182", "184:186", "188:190", "312:314", "365:367", "373:375", "52:54", "77: 79", "90: 92", "94: 96", "98: 100"]
+  - lines: ["102:104", "109:111", "172:174", "176:178", "180:182", "184:186", "188:190", "312:314", "365:367", "373:375", "52:54", "77:79", "90:92", "94:96", "98:100"]
     cardinality: one-to-one
     source_program_elements: [attribute]
     target_program_elements: [attribute]

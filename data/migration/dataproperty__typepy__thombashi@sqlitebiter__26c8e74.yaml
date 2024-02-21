@@ -7,7 +7,7 @@ domain: Utilities
 files:
 - path: "sqlitebiter/sqlitebiter.py"
   code_changes:
-  - lines: ["136:136", "227: 227"]
+  - lines: ["136:136", "227:227"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
@@ -21,7 +21,7 @@ files:
     properties: []
     source_apis: [dataproperty]
     target_apis: [typepy]
-  - lines: ["239: 239", "46:46"]
+  - lines: ["239:239", "46:46"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
