@@ -2,7 +2,7 @@ PyMigBench is a benchmark of Python Library Migrations.
 This repository contains the data and code for the dataset.
 
 ## PyMigBench v2
-The current version, PyMigBench-2.0, includes 3,096 migration-related code changes from 335 migrations between 141 analogous library pairs.
+The current version, PyMigBench-2.1 ([Release 2.1.0](https://github.com/ualberta-smr/PyMigBench/releases/v2.1.0)), includes 3,076 migration-related code changes from 334 migrations between 141 analogous library pairs.
 This includes all migrations from [PyMigBench v1](#pymigbench-v1) and additional migrations borrowed from the [SALM dataset](https://ieeexplore.ieee.org/document/10123560).
 The data also includes additional information per migration-related code change compared to v1.
 
