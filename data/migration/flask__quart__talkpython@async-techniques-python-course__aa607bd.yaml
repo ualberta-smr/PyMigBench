@@ -23,14 +23,14 @@ files:
     target_apis: [Quart]
 - path: "src/10-async-web/acityscape_api/views/city_api.py"
   code_changes:
-  - lines: ["11:11", "20: 20"]
+  - lines: ["11:11", "20:20"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
     properties: []
     source_apis: [abort]
     target_apis: [abort]
-  - lines: ["12:12", "21: 21"]
+  - lines: ["12:12", "21:21"]
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]

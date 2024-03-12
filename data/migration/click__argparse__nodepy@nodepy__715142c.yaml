@@ -70,10 +70,4 @@ files:
     properties: []
     source_apis: []
     target_apis: [arguments]
-  - lines: [":523", ":523", ":523"]
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [attribute]
-    properties: []
-    source_apis: []
-    target_apis: [exec_]
+
