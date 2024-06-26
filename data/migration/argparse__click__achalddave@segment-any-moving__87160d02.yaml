@@ -1,0 +1,79 @@
+repo: achalddave/segment-any-moving
+commit: 87160d02c8652eebf2d8a5dce572e26fa2d1ca61
+source: argparse
+target: click
+commit_url: https://github.com/achalddave/segment-any-moving/commit/87160d02
+domain: Utility
+files:
+- path: "flow/compute_flow_sequences.py"
+  code_changes:
+  - line: "267-269:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - line: "270-273:25-28"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - line: "274:29"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - line: "284:41"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - line: "291-299:48-56"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - line: "275-276:30-33"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument name change, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option, Choice]
+  - line: "277-283:34-40"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - line: "285-289:42-46"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - line: "290:47"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - line: "3:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]

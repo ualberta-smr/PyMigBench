@@ -1,0 +1,16 @@
+repo: blaze/distributed
+commit: 6dc1f3f202fbef0e530b7e89c300e4f4d59dbc30
+source: dill
+target: cloudpickle
+commit_url: https://github.com/blaze/distributed/commit/6dc1f3f2
+domain: Serialization&Filesystem
+files:
+- path: "distributed/core.py"
+  code_changes:
+  - line: "10-11:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [dill.loads, dill.dumps, dill]
+    target_apis: [pickle]

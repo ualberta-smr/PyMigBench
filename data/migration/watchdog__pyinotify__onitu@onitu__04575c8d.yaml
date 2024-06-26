@@ -1,0 +1,16 @@
+repo: onitu/onitu
+commit: 04575c8dab8d632acc40fc30fd42046cdfca36db
+source: watchdog
+target: pyinotify
+commit_url: https://github.com/onitu/onitu/commit/04575c8d
+domain: Filesystem
+files:
+- path: "onitu/drivers/local_storage/local_storage.py"
+  code_changes:
+  - line: "4-5:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [watchdog.observers.Observer, watchdog.events.FileSystemEventHandler]
+    target_apis: [pyinotify]

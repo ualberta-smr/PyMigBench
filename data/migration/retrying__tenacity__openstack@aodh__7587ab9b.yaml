@@ -1,0 +1,46 @@
+repo: openstack/aodh
+commit: 7587ab9bf362f3ed26c392e89aa4626429d95e7a
+source: retrying
+target: tenacity
+commit_url: https://github.com/openstack/aodh/commit/7587ab9b
+domain: Utility
+files:
+- path: "aodh/coordination.py"
+  code_changes:
+  - line: "175-179:164-169"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "221-222:211-215"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "22:23"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity]
+- path: "aodh/storage/__init__.py"
+  code_changes:
+  - line: "22:24"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity]
+  - line: "65-66:64-67"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]

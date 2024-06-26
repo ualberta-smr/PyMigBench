@@ -1,0 +1,39 @@
+repo: hxlstandard/libhxl-python
+commit: 0babff28e04c7da97cae91de78e86295bc42b118
+source: jsonpath-rw
+target: jsonpath-rw-ext
+commit_url: https://github.com/hxlstandard/libhxl-python/commit/0babff28
+domain: Serialization
+files:
+- path: "hxl/filters.py"
+  code_changes:
+  - line: "2100:2100"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [parse]
+    target_apis: [parse]
+  - line: "41:41"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [jsonpath_rw]
+    target_apis: [jsonpath_rw_ext]
+- path: "hxl/io.py"
+  code_changes:
+  - line: "10:10"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [jsonpath_rw]
+    target_apis: [jsonpath_rw_ext]
+  - line: "678:678"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [parse]
+    target_apis: [parse]

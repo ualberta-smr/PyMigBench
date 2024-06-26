@@ -1,0 +1,44 @@
+repo: openstack/deb-designate
+commit: eb16b1e1be8da26193fd3482c8f5eb55eebfcbc2
+source: ipaddr
+target: netaddr
+commit_url: https://github.com/openstack/deb-designate/commit/eb16b1e1
+domain: HTTP Clients
+files:
+- path: "designate/schema.py"
+  code_changes:
+  - line: "104:104"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [IPv4Address]
+    target_apis: [IPAddress]
+  - line: "116:116"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [IPv4Address]
+    target_apis: [IPAddress]
+  - line: "105:105"
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [AddressValueError]
+    target_apis: [AddrFormatError]
+  - line: "117:117"
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [AddressValueError]
+    target_apis: [AddrFormatError]
+  - line: "18:18"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [netaddr]

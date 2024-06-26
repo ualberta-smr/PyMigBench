@@ -1,0 +1,23 @@
+repo: learningorchestra/learningorchestra
+commit: db7f1321e13b5386f94670537aa49943f0f0cec9
+source: flask
+target: quart
+commit_url: https://github.com/learningorchestra/learningorchestra/commit/db7f1321
+domain: Development framework/extension
+files:
+- path: "microservices/projection_image/server.py"
+  code_changes:
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.jsonify, flask.request, flask.Flask]
+    target_apis: [quart.jsonify, quart.request, quart.Quart]
+  - line: "33:33"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Flask]
+    target_apis: [Quart]

@@ -1,0 +1,39 @@
+repo: biznetgio/restknot
+commit: 6b10345398630fbb418f84ca7268d481ecad56ee
+source: kafka-python
+target: confluent-kafka
+commit_url: https://github.com/biznetgio/restknot/commit/6b103453
+domain: API wrapper
+files:
+- path: "agent/dnsagent/clis/start.py"
+  code_changes:
+  - line: "35:35-36"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument transformation, element name change]
+    source_apis: [get_kafka_consumer]
+    target_apis: [Consumer, suscribe]
+- path: "api/app/helpers/producer.py"
+  code_changes:
+  - line: "18-21:20"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument transformation, element name change]
+    source_apis: [KafkaProducer]
+    target_apis: [Producer]
+  - line: "31:36"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [send]
+    target_apis: [produce]
+  - line: "5:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [kafka.KafkaProducer]
+    target_apis: [confluent_kafka.Producer]

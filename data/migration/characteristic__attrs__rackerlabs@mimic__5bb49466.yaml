@@ -1,0 +1,1706 @@
+repo: rackerlabs/mimic
+commit: 5bb494665ce21b645f273bb4597f6dfae861c573
+source: characteristic
+target: attrs
+commit_url: https://github.com/rackerlabs/mimic/commit/5bb49466
+domain: Utility
+files:
+- path: "mimic/model/clb_objects.py"
+  code_changes:
+  - line: "15:"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: []
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: []
+  - line: "160:158"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "168:175"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "627-628:642"
+    cardinality: many-to-one
+    source_program_elements: [decorator, function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes, Attribute]
+    target_apis: [s]
+- path: "mimic/model/customer_objects.py"
+  code_changes:
+  - line: "10-12:10"
+    cardinality: many-to-one
+    source_program_elements: [decorator, function call, function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes, Attribute, Attribute]
+    target_apis: [s]
+  - line: "75:78"
+    cardinality: many-to-one
+    source_program_elements: [decorator, function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes, Attribute]
+    target_apis: [s]
+  - line: "7:7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+- path: "mimic/model/flavor_collections.py"
+  code_changes:
+  - line: "19-22:19"
+    cardinality: many-to-one
+    source_program_elements: [decorator, function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes, Attribute]
+    target_apis: [s]
+  - line: "90-91:92"
+    cardinality: many-to-one
+    source_program_elements: [decorator, function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes, Attribute]
+    target_apis: [s]
+  - line: "9:9"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+- path: "mimic/model/flavors.py"
+  code_changes:
+  - line: "10:10"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "7:7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes]
+    target_apis: [attr]
+- path: "mimic/model/heat_objects.py"
+  code_changes:
+  - line: "12-17:12"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "202-208:203"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "305-306:306"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "13:19"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "15:20"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "16:21"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "17:22"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "204:210"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "205-208:211-212"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "306:312"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "5:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: ":17"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":18"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":208"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":209"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":311"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/model/ironic_objects.py"
+  code_changes:
+  - line: "15-28:15"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "181:181"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "16:23"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "17:24"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "18:25"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "19:26"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "20:27"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "21:28"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "22:29"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "23:30"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "24:31"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "25:32"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "26:33"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "27:34"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "181:186"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "7:7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: ":22"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/model/keypair_objects.py"
+  code_changes:
+  - line: "12:12"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "34-37:37"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "85-86:89"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "36:46"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "86:98"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "9:9"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: ":17"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":18"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":43"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":44"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":45"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":96"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":97"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/model/mailgun_objects.py"
+  code_changes:
+  - line: "11-12:11"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "79:84"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "12:23"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "79:89"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "8:7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: ":18"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":19"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":20"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":21"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":22"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/model/nova_image_collection.py"
+  code_changes:
+  - line: "15-16:15"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "52-53:56"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "53:65"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "7:7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: ":20"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":21"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":22"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":23"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":63"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":64"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/model/nova_objects.py"
+  code_changes:
+  - line: "122-123:142"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, instance_of]
+  - line: "118-123:120"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "31:31"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "342:355"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "355:369"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "38:39"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "653-659:668"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "976-977:991"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "655:676"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "656-658:677-678"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "977:1001"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "9:9"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: ":1000"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":127"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":128"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":129"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":130"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":131"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":132"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":133"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":134"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":135"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":136"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":137"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":138"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":139"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":140"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":141"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":36"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":360"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":374"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":44"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":673"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":674"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":675"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":999"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/model/rackspace_image_store.py"
+  code_changes:
+  - line: "22:22"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "22:28"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "5:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+- path: "mimic/model/rackspace_images.py"
+  code_changes:
+  - line: "141-142:146"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "26-37:26"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "657:675"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "31:56"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "32:57"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "33:58"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "34:59"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "35:60"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "36:61"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "7:7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: ":151"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":152"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":153"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":154"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":155"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":156"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":157"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":158"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":159"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":160"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":161"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":162"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":163"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":47"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":48"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":49"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":50"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":51"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":52"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":680"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":681"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":682"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":683"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":684"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":685"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/model/valkyrie_objects.py"
+  code_changes:
+  - line: "70:70"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "70:88"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "7:7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+- path: "mimic/rest/cloudfeeds.py"
+  code_changes:
+  - line: "17:17"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes]
+    target_apis: [attr]
+  - line: "60:60"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "92:94"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: ":100"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":101"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":102"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":66"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":99"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/rest/loadbalancer_api.py"
+  code_changes:
+  - line: "26:26"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes]
+    target_apis: [attr]
+  - line: "111:113"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "81:81"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: ":118"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":119"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":120"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":121"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":87"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/rest/maas_api.py"
+  code_changes:
+  - line: "1665:1664"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "1696:1697"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: ":1669"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":1702"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":1703"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":1704"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/rest/nova_api.py"
+  code_changes:
+  - line: "11:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes]
+    target_apis: [attr]
+  - line: "131:132"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "90:90"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: ":137"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":138"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":139"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":140"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":95"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/rest/rackconnect_v3_api.py"
+  code_changes:
+  - line: "144-150:142"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "205-206:204"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "392:399"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "14:14"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: "235:239"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "75-85:75"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "145-146:171-172"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory, instance_of]
+  - line: "76-77:95-96"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory, instance_of]
+  - line: "82-83:101-102"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory, instance_of]
+  - line: "84:103"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory, instance_of]
+  - line: "148-149:174"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, instance_of]
+  - line: "78:97"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, instance_of]
+  - line: "79:98"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, instance_of]
+  - line: "80:99"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, instance_of]
+  - line: "147:173"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "150:175"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: "81:100"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument name change, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib]
+  - line: ":168"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":169"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":170"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":209"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":210"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":211"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":212"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":213"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":245"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":246"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":405"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/rest/swift_api.py"
+  code_changes:
+  - line: "121:133"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "12:12"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: "102:105"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "121:127"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "82:82"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: ":111"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":112"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":113"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":132"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":133"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":88"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":89"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":90"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+- path: "mimic/session.py"
+  code_changes:
+  - line: "13:13"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [characteristic.attributes, characteristic.Attribute]
+    target_apis: [attr]
+  - line: "16-18:16"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "49-50:53"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [attributes]
+    target_apis: [s]
+  - line: "17:26"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "18:27"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, Factory]
+  - line: "49:58"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [Attribute]
+    target_apis: [ib, instance_of]
+  - line: ":22"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":23"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":24"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":25"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]
+  - line: ":59"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ib]

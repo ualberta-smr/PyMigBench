@@ -1,0 +1,116 @@
+repo: secdev/scapy
+commit: c24298b9569bd8b46114882cf404b03d8682cba3
+source: pycryptodome
+target: cryptography
+commit_url: https://github.com/secdev/scapy/commit/c24298b9
+domain: Crypto
+files:
+- path: "scapy/layers/ipsec.py"
+  code_changes:
+  - line: "149-154:146-152"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Cipher.AES, Crypto.Cipher.DES, Crypto.Cipher.DES3, Crypto.Cipher.CAST, Crypto.Cipher.Blowfish, Crypto.Util.Counter]
+    target_apis: [cryptography.exceptions.InvalidTag, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes]
+  - line: "204,206:205"
+    cardinality: many-to-one
+    source_program_elements: [attribute, attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [MODE_GCM, MODE_CCM]
+    target_apis: [ModeWithAuthenticationTag]
+  - line: "275-276:264-268"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [new]
+    target_apis: [Cipher]
+  - line: "278-279:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [new]
+    target_apis: []
+  - line: "281:270-274"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [new]
+    target_apis: [Cipher]
+  - line: "330-332:324,327-329"
+    cardinality: many-to-many
+    source_program_elements: [function call, function call, function call]
+    target_program_elements: [function call, function call, function call, function call]
+    properties: [element name change]
+    source_apis: [update, encrypt, digest]
+    target_apis: [encryptor, authenticate_additional_data, update, finalize]
+  - line: "334:332"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [element name change]
+    source_apis: [encrypt]
+    target_apis: [update, finalize]
+  - line: "361,363:357,361,366"
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call, function call, function call, function call]
+    properties: [element name change]
+    source_apis: [decrypt, update]
+    target_apis: [decryptor, authenticate_additional_data, update, finalize]
+  - line: "392:397"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [AES]
+    target_apis: [AES]
+  - line: "397:400"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [AES]
+    target_apis: [AES]
+  - line: "393:398"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [MODE_CBC]
+    target_apis: [CBC]
+  - line: "398:401"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [MODE_CTR]
+    target_apis: [CTR]
+  - line: "439-444,453:434-436"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Hash.HMAC, Crypto.Hash.SHA, Crypto.Hash.MD5, Crypto.Hash.SHA256, Crypto.Hash.SHA384, Crypto.Hash.SHA512, Crypto.Hash.XCBCMAC]
+    target_apis: [cryptography.hazmat.primitives.hmac.HMAC, cryptography.hazmat.primitives.cmac.CMAC, cryptography.hazmat.primitives.hashes]
+  - line: "500:486"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [XCBCMAC]
+    target_apis: [CMAC]
+- path: "scapy/layers/tls/__init__.py"
+  code_changes:
+  - line: "11:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto]
+    target_apis: [cryptography]

@@ -1,0 +1,23 @@
+repo: openstack/neutron-lbaas
+commit: bb34d71c7772d1728d6ceaa04333856f8b6ea4d4
+source: pyopenssl
+target: cryptography
+commit_url: https://github.com/openstack/neutron-lbaas/commit/bb34d71c
+domain: HTTP Clients&Crypto
+files:
+- path: "neutron_lbaas/common/tls_utils/cert_parser.py"
+  code_changes:
+  - line: "172-173:175-176"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [load_certificate]
+    target_apis: [load_pem_x509_certificate]
+  - line: "19-20:18"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [OpenSSL.crypto, OpenSSL.SSL]
+    target_apis: [cryptography.x509]

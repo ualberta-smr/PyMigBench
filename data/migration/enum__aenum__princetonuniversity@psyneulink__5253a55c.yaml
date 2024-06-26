@@ -1,0 +1,53 @@
+repo: princetonuniversity/psyneulink
+commit: 5253a55c46d529b69397fc1d54d3f8e7262c337b
+source: enum
+target: aenum
+commit_url: https://github.com/princetonuniversity/psyneulink/commit/5253a55c
+domain: Deep Learning
+files:
+- path: "psyneulink/globals/context.py"
+  code_changes:
+  - line: "122:122"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [IntEnum]
+    target_apis: [IntFlag]
+  - line: "267:267"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [IntEnum]
+    target_apis: [IntFlag]
+  - line: "98:95"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [enum.IntEnum]
+    target_apis: [aenum]
+- path: "psyneulink/globals/log.py"
+  code_changes:
+  - line: "387:383"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [enum.IntEnum]
+    target_apis: [aenum]
+  - line: "404:404"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [IntEnum]
+    target_apis: [IntFlag]
+  - line: "939:939"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [IntEnum]
+    target_apis: [IntFlag]

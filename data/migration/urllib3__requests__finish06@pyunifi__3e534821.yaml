@@ -1,0 +1,51 @@
+repo: finish06/pyunifi
+commit: 3e534821de914f023995719060a8723f6186bef6
+source: urllib3
+target: requests
+commit_url: https://github.com/finish06/pyunifi/commit/3e534821
+domain: HTTP Clients
+files:
+- path: "pyunifi/controller.py"
+  code_changes:
+  - line: "26:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [urllib3]
+    target_apis: [requests]
+  - line: "165:124"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [open]
+    target_apis: [post]
+  - line: ":279"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [post]
+  - line: ":294"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [get]
+  - line: ":59"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [disable_warnings]
+  - line: ":61"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [Session]

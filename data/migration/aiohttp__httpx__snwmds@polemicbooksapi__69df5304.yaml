@@ -1,0 +1,30 @@
+repo: snwmds/polemicbooksapi
+commit: 69df5304ad4280033c0a01ac6631e69ba276d973
+source: aiohttp
+target: httpx
+commit_url: https://github.com/snwmds/polemicbooksapi/commit/69df5304
+domain: HTTP Clients
+files:
+- path: "application.py"
+  code_changes:
+  - line: "1337:1337"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [get]
+    target_apis: [stream]
+  - line: "16:16"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [aiohttp]
+    target_apis: [httpx]
+  - line: "2590-2592:2590"
+    cardinality: many-to-one
+    source_program_elements: [function call, function call, function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [AsyncResolver, ClientSession, TCPConnector]
+    target_apis: [AsyncClient]

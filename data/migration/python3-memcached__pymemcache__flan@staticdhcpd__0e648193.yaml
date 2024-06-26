@@ -1,0 +1,23 @@
+repo: flan/staticdhcpd
+commit: 0e648193ba476780ff951ede0cbbf9c871bc1aca
+source: python3-memcached
+target: pymemcache
+commit_url: https://github.com/flan/staticdhcpd/commit/0e648193
+domain: HTTP Clients
+files:
+- path: "staticDHCPd/staticdhcpdlib/databases/_caching.py"
+  code_changes:
+  - line: "168:168"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [memcache]
+    target_apis: [pymemcache.client.base]
+  - line: "170:169-172"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation]
+    source_apis: [Client]
+    target_apis: [Client]

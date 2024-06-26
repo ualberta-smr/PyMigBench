@@ -1,0 +1,217 @@
+repo: twisted/twisted
+commit: e31995c9894c04b916191913107943caef1f48e8
+source: pycryptodome
+target: cryptography
+commit_url: https://github.com/twisted/twisted/commit/e31995c9
+domain: Crypto
+files:
+- path: "twisted/conch/ssh/common.py"
+  code_changes:
+  - line: "19:15"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Util]
+    target_apis: [cryptography.utils.int_from_bytes, cryptography.utils.int_to_bytes]
+  - line: "51:72"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [long_to_bytes]
+    target_apis: [int_to_bytes]
+  - line: "70:91"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [bytes_to_long]
+    target_apis: [int_from_bytes]
+- path: "twisted/conch/ssh/keys.py"
+  code_changes:
+  - line: "125:135"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, element name change]
+    source_apis: [construct]
+    target_apis: [RSAPublicNumbers, public_key]
+  - line: "128:138-147"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [construct]
+    target_apis: [DSAPublicNumbers, public_key]
+  - line: "19-21:15-18,20,23,26"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Cipher.DES3, Crypto.Cipher.AES, Crypto.PublicKey.RSA, Crypto.PublicKey.DSA, Crypto.Util]
+    target_apis: [cryptography.exceptions.InvalidSignature, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.hashes, cryptography.hazmat.primitives.asymmetric.dsa, cryptography.hazmat.primitives.asymmetric.rsa, cryptography.hazmat.primitives.asymmetric.padding, cryptography.hazmat.primitives.asymmetric.utils.encode_dss_signature, cryptography.hazmat.primitives.asymmetric.utils.ecode_dss_signature, cryptography.hazmat.primitives.asymmetric.utils.encode_rfc6979_signature, cryptography.hazmat.primitives.asymmetric.utils.decode_rfc6979_signature, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes]
+  - line: "233:256"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [AES]
+    target_apis: [AES]
+  - line: "238:261"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [DES3]
+    target_apis: [TripleDES]
+  - line: "252:276"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [new]
+    target_apis: [Cipher]
+  - line: "254:280-281"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [element name change]
+    source_apis: [decrypt]
+    target_apis: [decryptor, update, finalize]
+  - line: "276:307-315"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [construct]
+    target_apis: [RSAPrivateNumbers, private_key]
+  - line: "281:322-332"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [construct]
+    target_apis: [DSAPrivateNumbers, private_key]
+- path: "twisted/conch/ssh/transport.py"
+  code_changes:
+  - line: "22:21-23"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Util]
+    target_apis: [cryptography.exceptions.UnsupportedAlgorithm, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes, cryptography.hazmat.primitives.ciphers.Cipher]
+  - line: "50:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [bytes_to_long]
+    target_apis: []
+- path: "twisted/conch/test/test_agent.py"
+  code_changes:
+  - line: "14:14"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [DES3]
+    target_apis: [cryptography]
+  - line: "16:16"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Crypto]
+    target_apis: [cryptography]
+  - line: "23:23"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Crypto]
+    target_apis: [cryptography]
+- path: "twisted/conch/test/test_cftp.py"
+  code_changes:
+  - line: "14:19"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [twisted.conch.test.test_ssh.Crypto, twisted.conch.test.test_ssh.pyasn1]
+    target_apis: [cryptography]
+  - line: "17:24"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Crypto]
+    target_apis: [cryptography]
+  - line: ":21"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [type]
+    properties: []
+    source_apis: []
+    target_apis: [cryptography]
+- path: "twisted/conch/test/test_tap.py"
+  code_changes:
+  - line: "11:11"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Crypto]
+    target_apis: [cryptography]
+  - line: "23:23"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Crypto]
+    target_apis: [cryptography]
+  - line: "41:41"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Crypto]
+    target_apis: [cryptography]
+  - line: "9:9"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [DES3]
+    target_apis: [cryptography]
+- path: "twisted/conch/test/test_transport.py"
+  code_changes:
+  - line: "16:16"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [DES3]
+    target_apis: [cryptography]
+  - line: "18:18"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Crypto]
+    target_apis: [cryptography]
+  - line: "20:20"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Crypto]
+    target_apis: [cryptography]
+  - line: "27:27"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Crypto]
+    target_apis: [cryptography]

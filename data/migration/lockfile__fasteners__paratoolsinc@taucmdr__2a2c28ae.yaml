@@ -1,0 +1,53 @@
+repo: paratoolsinc/taucmdr
+commit: 2a2c28aeee469c514196ec5ca68592c9bf354146
+source: lockfile
+target: fasteners
+commit_url: https://github.com/paratoolsinc/taucmdr/commit/2a2c28ae
+domain: Filesystem&Crypto
+files:
+- path: "packages/tau/cf/software/installation.py"
+  code_changes:
+  - line: "214:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [acquire]
+    target_apis: []
+  - line: "220:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [release]
+    target_apis: []
+  - line: "221:"
+    cardinality: one-to-zero
+    source_program_elements: [exception]
+    target_program_elements: []
+    properties: []
+    source_apis: [NotLocked]
+    target_apis: []
+  - line: "34:34"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [lockfile.LockFile, lockfile.NotLocked]
+    target_apis: [fasteners]
+- path: "packages/tau/cf/software/tau_installation.py"
+  code_changes:
+  - line: ":37"
+    cardinality: not applicable
+    source_program_elements: []
+    target_program_elements: [import]
+    properties: []
+    source_apis: []
+    target_apis: [fasteners]
+  - line: ":499"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [interprocess_locked]

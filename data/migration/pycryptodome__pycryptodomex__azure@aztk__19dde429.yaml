@@ -1,0 +1,64 @@
+repo: azure/aztk
+commit: 19dde429a702c29bdcf86a69805053ecfd02edee
+source: pycryptodome
+target: pycryptodomex
+commit_url: https://github.com/azure/aztk/commit/19dde429
+domain: Cryptography
+files:
+- path: "aztk/client.py"
+  code_changes:
+  - line: "15:15"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.PublicKey.RSA]
+    target_apis: [Cryptodome.PublicKey.RSA]
+- path: "aztk/node_scripts/install/create_user.py"
+  code_changes:
+  - line: "4:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.PublicKey.RSA]
+    target_apis: [Cryptodome.PublicKey.RSA]
+  - line: "5:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Cipher.AES, Crypto.Cipher.PKCS1_OAEP]
+    target_apis: [Crypto.Cipher.AES, Crypto.Cipher.PKCS1_OAEP]
+- path: "aztk/spark/models/models.py"
+  code_changes:
+  - line: "2:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.PublicKey.RSA]
+    target_apis: [Cryptodome.PublicKey.RSA]
+- path: "aztk/utils/secure_utils.py"
+  code_changes:
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.PublicKey.RSA]
+    target_apis: [Cryptodome.PublicKey.RSA]
+  - line: "2:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Random.get_random_bytes]
+    target_apis: [Cryptodome.Random.get_random_bytes]
+  - line: "3:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Cipher.AES, Crypto.Cipher.PKCS1_OAEP]
+    target_apis: [Cryptodome.Cipher.AES, Cryptodome.Cipher.PKCS1_OAEP]

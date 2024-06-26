@@ -1,0 +1,37 @@
+repo: activitywatch/aw-watcher-afk
+commit: 297b58cb7e65a05744dbf9aa30b2e179cd653e11
+source: pyuserinput
+target: pynput
+commit_url: https://github.com/activitywatch/aw-watcher-afk/commit/297b58cb
+domain: Utility
+files:
+- path: "aw_watcher_afk/listeners.py"
+  code_changes:
+  - line: "23:27-28"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [__init__]
+    target_apis: [Listener, start]
+  - line: "57:66-69"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [__init__]
+    target_apis: [Listener, start]
+  - line: "6:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pykeyboard.PyKeyboardEvent]
+    target_apis: [pymouse.PyMouseEvent]
+  - line: "7:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pymouse.PyMouseEvent]
+    target_apis: [pynput.mouse]

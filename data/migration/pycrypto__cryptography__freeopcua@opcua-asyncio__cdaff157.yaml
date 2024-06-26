@@ -1,0 +1,16 @@
+repo: freeopcua/opcua-asyncio
+commit: cdaff1575780a99ab035abb08a6ad13414cd4859
+source: pycrypto
+target: cryptography
+commit_url: https://github.com/freeopcua/opcua-asyncio/commit/cdaff157
+domain: Cryptography
+files:
+- path: "opcua/uacrypto.py"
+  code_changes:
+  - line: "8-15:3-7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Signature.PKCS1_v1_5, Crypto.Hash.SHA256, Crypto.Hash.SHA, Crypto.PublicKey.RSA, Crypto.Cipher.AES, Crypto.Cipher.PKCS1_OAEP, Crypto.Hash, Crypto.Random]
+    target_apis: [cryptography.x509, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.serialization, cryptography.hazmat.primitives.hashes, cryptography.hazmat.primitives.asymmetric.padding]

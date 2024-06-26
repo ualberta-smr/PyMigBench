@@ -1,0 +1,25 @@
+repo: nlesc/xtas
+commit: 0dbf3884e1a63065efc1523505348a343a1c2764
+source: toolz
+target: cytoolz
+commit_url: https://github.com/nlesc/xtas/commit/0dbf3884
+domain: Utility
+files:
+- path: "xtas/tasks/cluster.py"
+  code_changes:
+  - line: "11:10"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [toolz]
+    target_apis: [cytoolz]
+- path: "xtas/tasks/single.py"
+  code_changes:
+  - line: "18:16"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [toolz.identity, toolz.pipe]
+    target_apis: [cytoolz.identity, cytoolz.pipe]

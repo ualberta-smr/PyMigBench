@@ -1,0 +1,37 @@
+repo: idan/telostats
+commit: f73354ab6a11c665921a25d9bdfdbd74a33b55fb
+source: pyquery
+target: beautifulsoup4
+commit_url: https://github.com/idan/telostats/commit/f73354ab
+domain: HTTP Clients&HTML
+files:
+- path: "telostats/stations/tasks.py"
+  code_changes:
+  - line: "18:20"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [dom]
+    target_apis: [find_all]
+  - line: "2:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pyquery]
+    target_apis: [bs4.BeautifulSoup]
+  - line: "34:37"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [dom]
+    target_apis: [find_all]
+  - line: "34:37"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [text_content]
+    target_apis: [get_text]

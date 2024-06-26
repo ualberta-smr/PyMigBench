@@ -1,0 +1,16 @@
+repo: posativ/isso
+commit: f1a4478272395c5a4c110c7e564cfb444c4ec63f
+source: html5lib
+target: bleach
+commit_url: https://github.com/posativ/isso/commit/f1a44782
+domain: HTML
+files:
+- path: "isso/utils/html.py"
+  code_changes:
+  - line: "12-14:9"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [html5lib, html5lib.sanitizer.HTMLSanitizer, html5lib.serializer.HTMLSerializer]
+    target_apis: [bleach]

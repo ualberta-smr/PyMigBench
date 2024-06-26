@@ -1,0 +1,44 @@
+repo: kevoreilly/capev2
+commit: abf58a7deb32893febb4151f579d8428ffca3b8e
+source: m2crypto
+target: cryptography
+commit_url: https://github.com/kevoreilly/capev2/commit/abf58a7d
+domain: Crypto
+files:
+- path: "modules/processing/static.py"
+  code_changes:
+  - line: "47:48-51"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [M2Crypto.m2, M2Crypto.BIO, M2Crypto.X509, M2Crypto.SMIME]
+    target_apis: [cryptography, cryptography.hazmat.backends.openssl.backend.backend, cryptography.hazmat.backends.openssl.x509, cryptography.hazmat.primitives.hashes]
+  - line: "770:774"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [MemoryBuffer]
+    target_apis: [_bytes_to_bio]
+  - line: "775:779"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [bio_ptr]
+    target_apis: [bio]
+  - line: "775:779"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [argument addition, element name change]
+    source_apis: [pkcs7_read_bio_der]
+    target_apis: [d2i_PKCS7_bio]
+  - line: "779:783"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [argument addition, element name change]
+    source_apis: [PKCS7]
+    target_apis: [PKCS7_get0_signers]

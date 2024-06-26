@@ -1,0 +1,44 @@
+repo: wikimedia/pywikibot
+commit: 952665acaa9ab2dd1a78cb4a935f3b5743941913
+source: httplib2
+target: requests
+commit_url: https://github.com/wikimedia/pywikibot/commit/952665ac
+domain: HTTP Clients
+files:
+- path: "scripts/version.py"
+  code_changes:
+  - line: "21:22"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [httplib2]
+    target_apis: [requests]
+  - line: "39:42"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [CA_CERTS]
+    target_apis: [where]
+  - line: "41:44"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [CA_CERTS]
+    target_apis: [where]
+  - line: "42:45"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [CA_CERTS]
+    target_apis: [where]
+  - line: "44:47"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [CA_CERTS]
+    target_apis: [where]

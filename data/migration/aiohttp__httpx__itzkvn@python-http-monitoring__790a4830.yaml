@@ -1,0 +1,37 @@
+repo: itzkvn/python-http-monitoring
+commit: 790a4830785a2dd03686c57f5ec70a4bb1a41f22
+source: aiohttp
+target: httpx
+commit_url: https://github.com/itzkvn/python-http-monitoring/commit/790a4830
+domain: HTTP Clients
+files:
+- path: "app/targets.py"
+  code_changes:
+  - line: "10-11:9-10"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [aiohttp.ClientSession, aiohttp.client_exceptions.ClientConnectorError]
+    target_apis: [httpx, httpx.ConnectTimeout, httpx.ConnectError]
+  - line: "53-55:52-55"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [element name change]
+    source_apis: [get]
+    target_apis: [get, AsyncClient]
+  - line: "56:56"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [status]
+    target_apis: [status_code]
+  - line: "57:57"
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [ClientConnectorError]
+    target_apis: [ConnectError]

@@ -1,0 +1,48 @@
+repo: michaeljoseph/changes
+commit: d9a8faec7953abfcbf3ffd9b12d6a4be6b71444f
+source: docopt
+target: click
+commit_url: https://github.com/michaeljoseph/changes/commit/d9a8faec
+domain: Utility
+files:
+- path: "changes/changelog.py"
+  code_changes:
+  - line: ":4"
+    cardinality: not applicable
+    source_program_elements: []
+    target_program_elements: [import]
+    properties: []
+    source_apis: []
+    target_apis: [click]
+  - line: ":54"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]
+- path: "changes/cli.py"
+  code_changes:
+  - line: "50:50"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [docopt.docopt]
+    target_apis: [click]
+  - line: "66:64-73"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, decorator, decorator, decorator]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [docopt]
+    target_apis: [group, argument, option, pass_context]
+- path: "tests/test_changelog.py"
+  code_changes:
+  - line: ":1"
+    cardinality: not applicable
+    source_program_elements: []
+    target_program_elements: [import]
+    properties: []
+    source_apis: []
+    target_apis: [click.testing.CliRunner]

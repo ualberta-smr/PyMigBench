@@ -1,0 +1,58 @@
+repo: RIPE-NCC/ripe-atlas-sagan
+commit: f6fc10c8f55b73a3229f4f5f5beea4d771994913
+source: pyopenssl
+target: cryptography
+commit_url: https://github.com/RIPE-NCC/ripe-atlas-sagan/commit/f6fc10c8
+domain: HTTP Clients&Crypto
+files:
+- path: "ripe/atlas/sagan/ssl.py"
+  code_changes:
+  - line: "123:67"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [get_notBefore]
+    target_apis: [not_valid_before]
+  - line: "124:68"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [get_notAfter]
+    target_apis: [not_valid_after]
+  - line: "24:23-25"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [OpenSSL]
+    target_apis: [cryptography.x509, cryptography.hazmat.backends.openssl, cryptography.hazmat.primitives.hashes]
+  - line: "62-65:60"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [load_certificate]
+    target_apis: [load_pem_x509_certificate]
+  - line: "78:63"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument transformation, element name change, output transformation]
+    source_apis: [digest]
+    target_apis: [fingerprint, MD5]
+  - line: "79:64"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument transformation, element name change, output transformation]
+    source_apis: [digest]
+    target_apis: [fingerprint, SHA1]
+  - line: "80:65"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument transformation, element name change, output transformation]
+    source_apis: [digest]
+    target_apis: [fingerprint, SHA256]

@@ -1,0 +1,30 @@
+repo: ictu/quality-time
+commit: cc47b42cf70b6968b22a3819bf0b9714135271c1
+source: python-ldap
+target: ldap3
+commit_url: https://github.com/ictu/quality-time/commit/cc47b42c
+domain: Utilities
+files:
+- path: "components/server/src/routes/auth.py"
+  code_changes:
+  - line: "11:13-14"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ldap]
+    target_apis: [ldap3.Server, ldap3.Connection, ldap3.ALL, ldap3.core.exceptions]
+  - line: "47:66"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [initialize]
+    target_apis: [Server]
+  - line: "50-51:73"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [search_s]
+    target_apis: [search]

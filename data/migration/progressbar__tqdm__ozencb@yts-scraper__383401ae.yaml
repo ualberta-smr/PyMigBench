@@ -1,0 +1,44 @@
+repo: ozencb/yts-scraper
+commit: 383401ae9f95fed9132d26b4b9aed8e4c44d47b5
+source: progressbar
+target: tqdm
+commit_url: https://github.com/ozencb/yts-scraper/commit/383401ae
+domain: Utility
+files:
+- path: "ytsscraper/scraper.py"
+  code_changes:
+  - line: "165:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [update]
+    target_apis: []
+  - line: "43:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [wrap_stderr]
+    target_apis: []
+  - line: "45:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [flush]
+    target_apis: []
+  - line: "47-48:106"
+    cardinality: many-to-one
+    source_program_elements: [function call, function call, function call, function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [Timer, ETA, Bar, ProgressBar]
+    target_apis: [tqdm]
+  - line: "8:8"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [progressbar]
+    target_apis: [tqdm.tqdm]

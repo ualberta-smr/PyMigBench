@@ -1,0 +1,58 @@
+repo: magnetotesting/magneto
+commit: a5c82b8f76b8e4f97c122da9726a99f4c591ffcc
+source: argparse
+target: click
+commit_url: https://github.com/magnetotesting/magneto/commit/a5c82b8f
+domain: Utility
+files:
+- path: "magneto/main.py"
+  code_changes:
+  - line: "2:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - line: "69:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - line: "70:72"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - line: "71:73"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - line: "73:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_unknown_args]
+    target_apis: []
+  - line: ":68"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]
+  - line: ":74"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [pass_context]

@@ -1,0 +1,23 @@
+repo: thenetcircle/dino
+commit: 119d922a1c7c86cf6f6b3d8589df461bfe6abb2a
+source: gevent
+target: eventlet
+commit_url: https://github.com/thenetcircle/dino/commit/119d922a
+domain: Utility
+files:
+- path: "app.py"
+  code_changes:
+  - line: "1:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [gevent.monkey]
+    target_apis: [eventlet]
+  - line: "5:8"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [patch_all]
+    target_apis: [monkey_patch]

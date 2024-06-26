@@ -1,0 +1,30 @@
+repo: talkpython/async-techniques-python-course
+commit: ab4e5fdd32982c97e9701d3e1fdb8c39882d4250
+source: requests
+target: aiohttp
+commit_url: https://github.com/talkpython/async-techniques-python-course/commit/ab4e5fdd
+domain: HTTP client/server
+files:
+- path: "src/04-asyncio/web_scraping/async_scrape/program.py"
+  code_changes:
+  - line: "10:13-14"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [async transformation, element name change]
+    source_apis: [get]
+    target_apis: [ClientSession, get]
+  - line: "13:17"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [text]
+    target_apis: [text]
+  - line: "1:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [requests]
+    target_apis: [aiohttp]

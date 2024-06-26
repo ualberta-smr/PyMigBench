@@ -1,0 +1,44 @@
+repo: ansible-community/molecule
+commit: b7d7740db482624182dd6c31600ca1c09669cfc5
+source: argparse
+target: click
+commit_url: https://github.com/ansible-community/molecule/commit/b7d7740d
+domain: Utility
+files:
+- path: "contrib/convert.py"
+  code_changes:
+  - line: "23:28"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - line: "37:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - line: "38:114"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, element name change]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - line: "39:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - line: ":113"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]

@@ -1,0 +1,60 @@
+repo: slackapi/python-slack-sdk
+commit: 5f4d92a8048814fc4938753594e74d7cfc74c27a
+source: slackclient
+target: slack-sdk
+commit_url: https://github.com/slackapi/python-slack-sdk/commit/5f4d92a8
+domain: API wrapper
+files:
+- path: "tutorial/PythOnBoardingBot/app.py"
+  code_changes:
+  - line: "4:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [slack.WebClient]
+    target_apis: [slack_sdk.web.WebClient]
+- path: "tutorial/PythOnBoardingBot/async_app.py"
+  code_changes:
+  - line: "146:147"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [RTMClient]
+    target_apis: [RTMClient]
+  - line: "123:124"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: [run_on]
+    target_apis: [run_on]
+  - line: "42:43"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: [run_on]
+    target_apis: [run_on]
+  - line: "65:66"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: [run_on]
+    target_apis: [run_on]
+  - line: "94:95"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: [run_on]
+    target_apis: [run_on]
+  - line: "7:7-8"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [slack]
+    target_apis: [slack_sdk.web.WebClient, slack_sdk.rtm.RTMClient]

@@ -1,0 +1,1424 @@
+repo: aiortc/aiortc
+commit: 270edaf4237cba1942fc0b8cc98f3ae4dfc3f0e1
+source: attrs
+target: dataclasses
+commit_url: https://github.com/aiortc/aiortc/commit/270edaf4
+domain: Utility
+files:
+- path: "src/aiortc/events.py"
+  code_changes:
+  - line: "15:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "17:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "19:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+  - line: "8:8"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+- path: "src/aiortc/rtcconfiguration.py"
+  code_changes:
+  - line: "15:5"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "4:25"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+  - line: "23:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "28:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "30:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "32:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+- path: "src/aiortc/rtcdatachannel.py"
+  code_changes:
+  - line: "12:12"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "19:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "22:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "25:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "28:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "31:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "34:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "39:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "4:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+- path: "src/aiortc/rtcdtlstransport.py"
+  code_changes:
+  - line: "11:9"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass, dataclasses.field]
+  - line: "144:144"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "238:238"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "151:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "154:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "248:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "245:245"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+- path: "src/aiortc/rtcicetransport.py"
+  code_changes:
+  - line: "24:24"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "46:46"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "32:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "33:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "34:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "35:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "36:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "37:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "38:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "39:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "40:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "41:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "42:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "43:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "53:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "56:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "59:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "6:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+- path: "src/aiortc/rtcrtpparameters.py"
+  code_changes:
+  - line: "100:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "102:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "127:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "128:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "137:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "139:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "141:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "14:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "158:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "16:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "18:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "35:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "37:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "39:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "41:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "61:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "66:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "67:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "68:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "88:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "106:103"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "131:128"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "145:142"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "164:161"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "169:166"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "28:27"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "59:58"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "64:63"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "7:6"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "81:78"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "92:89"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "113:110"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "115:112"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "152:149"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "154:151"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "160:157"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "166:163"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "171:168"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "20:19"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "43:42"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "45:44"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "4:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass, dataclasses.field]
+  - line: "71:"
+    cardinality: one-to-zero
+    source_program_elements: [decorator]
+    target_program_elements: []
+    properties: []
+    source_apis: [s]
+    target_apis: []
+  - line: "76:"
+    cardinality: one-to-zero
+    source_program_elements: [decorator]
+    target_program_elements: []
+    properties: []
+    source_apis: [s]
+    target_apis: []
+- path: "src/aiortc/rtcrtpreceiver.py"
+  code_changes:
+  - line: "10:8"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+  - line: "208:208"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "221:221"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "215:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "217:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "228:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "230:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+- path: "src/aiortc/rtcsctptransport.py"
+  code_changes:
+  - line: "24:9"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass, dataclasses.field]
+  - line: "436:436"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "465:465"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "480:480"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "578:578"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "438:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "439:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "440:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "467:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "468:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "482:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "483:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "585:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "441:441"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+- path: "src/aiortc/rtcsessiondescription.py"
+  code_changes:
+  - line: "11:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+  - line: "4:4"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+- path: "src/aiortc/rtp.py"
+  code_changes:
+  - line: "307:306"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "339:338"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "34:33"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "366:365"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "391:390"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "416:415"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "441:440"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "486:485"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "528:527"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "309:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "310:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "311:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "312:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "313:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "314:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "315:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "341:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "342:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "343:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "344:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "36:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "372:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "374:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "37:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "38:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "397:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "398:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "399:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "39:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "400:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "40:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "418:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "41:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "42:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "447:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "448:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "449:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "530:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "531:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "419:418"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "452:451"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "488:487"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "532:531"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ib]
+    target_apis: [field]
+  - line: "5:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass, dataclasses.field]
+- path: "src/aiortc/sdp.py"
+  code_changes:
+  - line: "131:130"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "146:145"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "133:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "134:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "148:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "149:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "150:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "151:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "152:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "6:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]
+- path: "src/aiortc/stats.py"
+  code_changes:
+  - line: "12:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "14:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "15:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "20:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "21:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "22:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "27:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "28:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "29:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "34:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "36:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "57:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "58:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "68:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "78:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "83:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "85:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "87:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "89:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "91:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "93:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ib]
+    target_apis: []
+  - line: "18:18"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "25:25"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "32:32"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "40:40"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "50:50"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "61:61"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "6:6"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "71:71"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "81:81"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "3:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses.dataclass]

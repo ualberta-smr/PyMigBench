@@ -1,0 +1,58 @@
+repo: kittenparry/meituri-downloader
+commit: 422d73beace31a95a817d9befa860ca932df4596
+source: click
+target: argparse
+commit_url: https://github.com/kittenparry/meituri-downloader/commit/422d73be
+domain: Utility
+files:
+- path: "meituri.py"
+  code_changes:
+  - line: "13:"
+    cardinality: one-to-zero
+    source_program_elements: [decorator]
+    target_program_elements: []
+    properties: []
+    source_apis: [command]
+    target_apis: []
+  - line: "14-16:14-16"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [option]
+    target_apis: [add_argument]
+  - line: "17-19:17-19"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [option]
+    target_apis: [add_argument]
+  - line: "5:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [click]
+    target_apis: [argparse]
+  - line: ":12"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ArgumentParser]
+  - line: ":13"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [add_argument_group]
+  - line: ":20"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [parse_args]

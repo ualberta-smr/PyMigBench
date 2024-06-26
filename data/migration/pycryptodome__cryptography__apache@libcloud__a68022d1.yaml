@@ -1,0 +1,30 @@
+repo: apache/libcloud
+commit: a68022d1dff4daebafccff15106ba6988c9464d8
+source: pycryptodome
+target: cryptography
+commit_url: https://github.com/apache/libcloud/commit/a68022d1
+domain: Crypto
+files:
+- path: "libcloud/common/google.py"
+  code_changes:
+  - line: "529:526-530"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [importKey]
+    target_apis: [load_pem_private_key]
+  - line: "530-532:531-536"
+    cardinality: many-to-many
+    source_program_elements: [function call, function call, function call, function call]
+    target_program_elements: [function call, function call, function call, function call]
+    properties: [argument transformation, element name change]
+    source_apis: [SHA256, PKCS1_v1_5, urlsafe_b64encode, sign]
+    target_apis: [sign, urlsafe_b64encode, PKCS1v15, SHA256]
+  - line: "92-96:92-95"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [SHA256, RSA, PKCS1_v1_5, Random]
+    target_apis: [default_backend, serialization, SHA256, PKCS1v15]

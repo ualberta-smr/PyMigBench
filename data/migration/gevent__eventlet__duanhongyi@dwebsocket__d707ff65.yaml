@@ -1,0 +1,30 @@
+repo: duanhongyi/dwebsocket
+commit: d707ff652fd74c3420e83a50fc9b1b9026ed0d98
+source: gevent
+target: eventlet
+commit_url: https://github.com/duanhongyi/dwebsocket/commit/d707ff65
+domain: Networking
+files:
+- path: "examples/run_eventlet.py"
+  code_changes:
+  - line: "14-15:16"
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call, function call]
+    properties: [element name change]
+    source_apis: [WSGIServer, serve_forever]
+    target_apis: [server, listen]
+  - line: "3,5:1,6"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [gevent.monkey, gevent.pywsgi.WSGIServer]
+    target_apis: [eventlet.wsgi, eventlet.patcher, eventlet.wsgi, eventlet.patcher]
+  - line: "4:2"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [patch_all]
+    target_apis: [monkey_patch]

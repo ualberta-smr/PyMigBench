@@ -1,0 +1,76 @@
+repo: talkpython/async-techniques-python-course
+commit: a5c04bbd9b5614a8fc0317050c01e4c241b1b41d
+source: requests
+target: aiohttp
+commit_url: https://github.com/talkpython/async-techniques-python-course/commit/a5c04bbd
+domain: HTTP client/server
+files:
+- path: "src/10-async-web/acityscape_api/services/location_service.py"
+  code_changes:
+  - line: "21:22-23"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [async transformation, element name change]
+    source_apis: [get]
+    target_apis: [ClientSession, get]
+  - line: "24:26"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [json]
+    target_apis: [json]
+  - line: "4:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [requests]
+    target_apis: [aiohttp]
+- path: "src/10-async-web/acityscape_api/services/sun_service.py"
+  code_changes:
+  - line: "21:21-22"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [async transformation, element name change]
+    source_apis: [get]
+    target_apis: [ClientSession, get]
+  - line: "24:24"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [json]
+    target_apis: [json]
+  - line: "5:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [requests]
+    target_apis: [aiohttp]
+- path: "src/10-async-web/acityscape_api/services/weather_service.py"
+  code_changes:
+  - line: "13:13-14"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [async transformation, element name change]
+    source_apis: [get]
+    target_apis: [ClientSession, get]
+  - line: "16:17"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [json]
+    target_apis: [json]
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [requests]
+    target_apis: [aiohttp]

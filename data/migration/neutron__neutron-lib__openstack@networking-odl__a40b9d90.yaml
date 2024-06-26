@@ -1,0 +1,61 @@
+repo: openstack/networking-odl
+commit: a40b9d90d28d086b82f110d8e53d42ed13465ad7
+source: neutron
+target: neutron-lib
+commit_url: https://github.com/openstack/networking-odl/commit/a40b9d90
+domain: Utility
+files:
+- path: "networking_odl/common/exceptions.py"
+  code_changes:
+  - line: "16:16"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [neutron.common.exceptions]
+    target_apis: [neutron_lib.exceptions]
+- path: "networking_odl/l3/l3_odl.py"
+  code_changes:
+  - line: "22:29"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [neutron.common.constants]
+    target_apis: [neutron_lib.constants]
+- path: "networking_odl/l3/l3_odl_v2.py"
+  code_changes:
+  - line: "19:26"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [neutron.common.constants]
+    target_apis: [neutron_lib.constants]
+- path: "networking_odl/ml2/legacy_port_binding.py"
+  code_changes:
+  - line: "19:22"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [py]
+    target_apis: [neutron_lib.constants]
+- path: "networking_odl/ml2/mech_driver.py"
+  code_changes:
+  - line: "26:32"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [neutron.common.exceptions]
+    target_apis: [neutron_lib.exceptions]
+- path: "networking_odl/ml2/ovsdb_topology.py"
+  code_changes:
+  - line: "24:27"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [neutron.common.constants]
+    target_apis: [neutron.common.constants]

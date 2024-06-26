@@ -1,0 +1,23 @@
+repo: shoopio/shoop
+commit: 639e3b5ff5a2359583e5bacd0a8c45fd0a6457c6
+source: csv
+target: unicodecsv
+commit_url: https://github.com/shoopio/shoop/commit/639e3b5f
+domain: Filesystem
+files:
+- path: "shuup/admin/modules/products/mass_actions.py"
+  code_changes:
+  - line: "44:44"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [writer]
+    target_apis: [writer]
+  - line: "7:8"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [csv]
+    target_apis: [unicodecsv]

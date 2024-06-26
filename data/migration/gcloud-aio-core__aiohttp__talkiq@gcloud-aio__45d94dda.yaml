@@ -1,0 +1,23 @@
+repo: talkiq/gcloud-aio
+commit: 45d94ddaf969648d5479ff480a92b16d537716f9
+source: gcloud-aio-core
+target: aiohttp
+commit_url: https://github.com/talkiq/gcloud-aio/commit/45d94dda
+domain: HTTP client/server
+files:
+- path: "bigquery/gcloud/aio/bigquery/bigquery.py"
+  code_changes:
+  - line: "6:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [gcloud.aio.core.http.post]
+    target_apis: [aiohttp]
+  - line: "96-100:91-94"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [post]
+    target_apis: [ClientSession, post, json]

@@ -1,0 +1,205 @@
+repo: skoczen/will
+commit: 437f8be397b864dc83c67af8942467907ccf1c21
+source: fabric3
+target: invoke
+commit_url: https://github.com/skoczen/will/commit/437f8be3
+domain: Utility
+files:
+- path: "fabfile.py"
+  code_changes:
+  - line: "101:101"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "108:109"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "115:116"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "121:122"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "122:123"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "123:124"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "124:125"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "42:42"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "43:43"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "47:47"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "61:62"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "62:63"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "65:66"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "67:68"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "68:69"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "71:72"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "91:92"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "96:96"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "97:97"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "98:98"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [local]
+    target_apis: [run]
+  - line: "106:107"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [lcd]
+    target_apis: [cd]
+  - line: "113:114"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [lcd]
+    target_apis: [cd]
+  - line: "120:121"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [lcd]
+    target_apis: [cd]
+  - line: "4:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: ["fabric.api.*"]
+    target_apis: [invoke.task]
+  - line: "92-93:93"
+    cardinality: many-to-one
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [settings, local]
+    target_apis: [run]
+  - line: ":104"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [task]
+  - line: ":128"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [task]
+  - line: ":50"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [task]

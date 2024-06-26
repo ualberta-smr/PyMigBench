@@ -1,0 +1,25 @@
+repo: testdrivenio/flask-react-aws
+commit: d4119a0f609b151df99b2250e419c168e688a0c6
+source: flask-restful
+target: flask-restplus
+commit_url: https://github.com/testdrivenio/flask-react-aws/commit/d4119a0f
+domain: Development framework/extension
+files:
+- path: "services/users/project/api/ping.py"
+  code_changes:
+  - line: "5:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restful.Api, flask_restful.Resource]
+    target_apis: [flask_restplus.Namespace, flask_restplus.Resource]
+- path: "services/users/project/api/users/views.py"
+  code_changes:
+  - line: "5:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restful.Api, flask_restful.Resource]
+    target_apis: [flask_restplus.Resource, flask_restplus.fields, flask_restplus.Namespace]

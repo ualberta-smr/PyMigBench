@@ -1,0 +1,67 @@
+repo: sk-415/harukabot
+commit: 0611d16a4cdc3f472b2c5fb265b8728e9a505d74
+source: aiohttp
+target: httpx
+commit_url: https://github.com/sk-415/harukabot/commit/0611d16a
+domain: HTTP Clients
+files:
+- path: "src/plugins/haruka_bot/login.py"
+  code_changes:
+  - line: "1:6"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [aiohttp]
+    target_apis: [httpx]
+  - line: "33:37-38"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, element name change]
+    source_apis: [request]
+    target_apis: [get, AsyncClient]
+  - line: "37:44-45"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, element name change]
+    source_apis: [request]
+    target_apis: [post, AsyncClient]
+  - line: "34:40-41"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [attribute, function call]
+    properties: [argument deletion, async transformation, element name change]
+    source_apis: [json]
+    target_apis: [encoding, json]
+  - line: "38:47-48"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [attribute, function call]
+    properties: [argument deletion, async transformation, element name change]
+    source_apis: [json]
+    target_apis: [encoding, json]
+- path: "src/plugins/haruka_bot/utils.py"
+  code_changes:
+  - line: "111:111-112"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument deletion, element name change]
+    source_apis: [request]
+    target_apis: [get, AsyncClient]
+  - line: "112:113-114"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [attribute, function call]
+    properties: [argument deletion, async transformation, element name change]
+    source_apis: [json]
+    target_apis: [encoding, json]
+  - line: "11:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [aiohttp]
+    target_apis: [httpx]
