@@ -1,0 +1,291 @@
+repo: keepsafe/aiohttp
+commit: e51fb1ff1ebdde566b96af0090c5c63cf1a62b1b
+source: attrs
+target: dataclasses
+commit_url: https://github.com/keepsafe/aiohttp/commit/e51fb1ff
+domain: Utility
+files:
+- path: "aiohttp/client.py"
+  code_changes:
+  - line: "139:139"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "31:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses]
+  - line: "704:704"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [evolve]
+    target_apis: [replace]
+- path: "aiohttp/client_reqrep.py"
+  code_changes:
+  - line: "148:144"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "89:89"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "96:96"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "26:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses]
+- path: "aiohttp/client_ws.py"
+  code_changes:
+  - line: "30:30"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "7:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses]
+- path: "aiohttp/connector.py"
+  code_changes:
+  - line: "1073:1072"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [evolve]
+    target_apis: [replace]
+  - line: "31:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses]
+- path: "aiohttp/helpers.py"
+  code_changes:
+  - line: "235:235"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "272:272"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "45:7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses]
+- path: "aiohttp/tracing.py"
+  code_changes:
+  - line: "220:220"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "229:229"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "238:238"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "247:247"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "257:257"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "267:267"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "277:277"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "282:282"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "287:287"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "292:292"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "297:297"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "302:302"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "309:309"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "316:316"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "323:323"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "330:330"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "4:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses]
+- path: "aiohttp/web_request.py"
+  code_changes:
+  - line: "27:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses]
+  - line: "69:69"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+- path: "aiohttp/web_routedef.py"
+  code_changes:
+  - line: "18:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses]
+  - line: "60:59"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "85:84"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+- path: "aiohttp/web_ws.py"
+  code_changes:
+  - line: "44:44"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [s]
+    target_apis: [dataclass]
+  - line: "9:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [attr]
+    target_apis: [dataclasses]

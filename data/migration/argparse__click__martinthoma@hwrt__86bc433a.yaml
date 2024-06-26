@@ -1,0 +1,162 @@
+repo: martinthoma/hwrt
+commit: 86bc433a047454b7ede27e4c0fb4bc53f381941c
+source: argparse
+target: click
+commit_url: https://github.com/martinthoma/hwrt/commit/86bc433a
+domain: Utility
+files:
+- path: "bin/convert.py"
+  code_changes:
+  - line: "190:15"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse.ArgumentDefaultsHelpFormatter, argparse.ArgumentParser]
+    target_apis: [click]
+  - line: "192-194:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - line: "193:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentDefaultsHelpFormatter]
+    target_apis: []
+  - line: "195-203:186"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [command]
+  - line: "208:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+- path: "bin/merge.py"
+  code_changes:
+  - line: "66:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse.ArgumentDefaultsHelpFormatter, argparse.ArgumentParser]
+    target_apis: [click]
+  - line: "68-70:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - line: "69:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentDefaultsHelpFormatter]
+    target_apis: []
+  - line: "71-78:67-72"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [Path, option]
+  - line: "79-86:73-78"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [Path, option]
+  - line: "87-89:79-84"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [Path, option]
+  - line: "94:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - line: ":66"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]
+- path: "hwrt/datasets/crohme_convert.py"
+  code_changes:
+  - line: "162:16"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse.ArgumentDefaultsHelpFormatter, argparse.ArgumentParser]
+    target_apis: [click]
+  - line: "164-166:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - line: "165:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentDefaultsHelpFormatter]
+    target_apis: []
+  - line: "167-175:160-166"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [Path, option]
+  - line: "180:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - line: ":159"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]
+- path: "hwrt/selfcheck.py"
+  code_changes:
+  - line: "111:111"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - line: "113:113"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [__version__]
+    target_apis: [__version__]

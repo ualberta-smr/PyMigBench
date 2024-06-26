@@ -1,0 +1,67 @@
+repo: mixpanel/mixpanel-python
+commit: e8a9330448f8fd4ec2cdb1ab35e0de9a05d9717f
+source: urllib3
+target: requests
+commit_url: https://github.com/mixpanel/mixpanel-python/commit/e8a93304
+domain: HTTP Clients
+files:
+- path: "mixpanel/__init__.py"
+  code_changes:
+  - line: "568:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [disable_warnings]
+    target_apis: []
+  - line: "571-574:570-571"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, element name change]
+    source_apis: [PoolManager]
+    target_apis: [HTTPAdapter]
+  - line: "614:612"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [make_headers]
+    target_apis: [HTTPBasicAuth]
+  - line: "617-622:615-620"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [request]
+    target_apis: [post]
+  - line: ":24-25"
+    cardinality: not applicable
+    source_program_elements: []
+    target_program_elements: [import]
+    properties: []
+    source_apis: []
+    target_apis: [requests, requests.auth.HTTPBasicAuth]
+  - line: ":574"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [Session]
+  - line: ":575"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [mount]
+- path: "test_mixpanel.py"
+  code_changes:
+  - line: "13:"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: []
+    properties: []
+    source_apis: [urllib3]
+    target_apis: []

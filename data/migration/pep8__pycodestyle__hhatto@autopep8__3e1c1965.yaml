@@ -1,0 +1,86 @@
+repo: hhatto/autopep8
+commit: 3e1c196570204482d1376d4050633b8de6565533
+source: pep8
+target: pycodestyle
+commit_url: https://github.com/hhatto/autopep8/commit/3e1c1965
+domain: Codestyle
+files:
+- path: "autopep8.py"
+  code_changes:
+  - line: "1207:1208"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [noqa]
+    target_apis: [noqa]
+  - line: "170:170"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [match]
+    target_apis: [match]
+  - line: "172:172"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [match]
+    target_apis: [match]
+  - line: "182:182"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [register_check]
+    target_apis: [register_check]
+  - line: "370:370"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [register_check]
+    target_apis: [register_check]
+  - line: "240:240"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [expand_indent]
+    target_apis: [expand_indent]
+  - line: "361:361"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [expand_indent]
+    target_apis: [expand_indent]
+  - line: "2469-2470:2470-2471"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [Checker]
+    target_apis: [Checker]
+  - line: "3443:3444"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: []
+    source_apis: [ARITHMETIC_OP]
+    target_apis: [ARITHMETIC_OP]
+  - line: "369:369"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [_checks]
+    target_apis: [_checks]
+  - line: "60:60"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pep8]
+    target_apis: [pycodestyle]

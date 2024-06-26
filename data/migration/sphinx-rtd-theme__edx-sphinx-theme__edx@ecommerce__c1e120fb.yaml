@@ -1,0 +1,23 @@
+repo: edx/ecommerce
+commit: c1e120fbdbbf99c9d591698d585af802a2079b69
+source: sphinx-rtd-theme
+target: edx-sphinx-theme
+commit_url: https://github.com/edx/ecommerce/commit/c1e120fb
+domain: Documentation
+files:
+- path: "docs/conf.py"
+  code_changes:
+  - line: "21:17"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [sphinx_rtd_theme]
+    target_apis: [edx_theme]
+  - line: "23:111"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [get_html_theme_path]
+    target_apis: [get_html_theme_path]

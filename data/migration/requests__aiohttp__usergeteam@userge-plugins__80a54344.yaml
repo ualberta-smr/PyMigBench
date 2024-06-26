@@ -1,0 +1,30 @@
+repo: usergeteam/userge-plugins
+commit: 80a54344d8a36252079661cb3486f4a3c33aa092
+source: requests
+target: aiohttp
+commit_url: https://github.com/usergeteam/userge-plugins/commit/80a54344
+domain: HTTP Clients
+files:
+- path: "plugins/info.py"
+  code_changes:
+  - line: "62:64-69"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [async transformation, element name change]
+    source_apis: [get]
+    target_apis: [ClientSession, get]
+  - line: "62:70"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [async transformation, element name change]
+    source_apis: [json]
+    target_apis: [text]
+  - line: "6:6"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [requests]
+    target_apis: [aiohttp]

@@ -1,0 +1,30 @@
+repo: tasmota/decode-config
+commit: 5be614174b1e282440fa0166e48c0d39bafb3ff1
+source: pycurl
+target: requests
+commit_url: https://github.com/tasmota/decode-config/commit/5be61417
+domain: HTTP Clients
+files:
+- path: "decode-config.py"
+  code_changes:
+  - line: "1635-1641,1643-1646:1634-1635,1637-1638"
+    cardinality: many-to-one
+    source_program_elements: [function call, function call, function call, function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [BytesIO, Curl, HTTPHeader, setopt]
+    target_apis: [get]
+  - line: "1660:1643"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [argument transformation, element name change]
+    source_apis: [contenttype]
+    target_apis: [headers]
+  - line: "201:202"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pycurl]
+    target_apis: [requests]

@@ -1,0 +1,2982 @@
+repo: sanpen/gridcal
+commit: 39a5dd91e4f42ccab5d18efbf899293f18330ec7
+source: pyqt5
+target: pyside2
+commit_url: https://github.com/sanpen/gridcal/commit/39a5dd91
+domain: Utility
+files:
+- path: "src/GridCal/Engine/Devices/wire.py"
+  code_changes:
+  - line: "16:16"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore]
+    target_apis: [PySide2.QtCore]
+- path: "src/GridCal/Engine/IO/file_handler.py"
+  code_changes:
+  - line: "245:245"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "246:246"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "247:247"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "296:296"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "297:297"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "298:298"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "36:36"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+- path: "src/GridCal/Engine/Simulations/ContinuationPowerFlow/voltage_collapse_driver.py"
+  code_changes:
+  - line: "21:21"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+  - line: "238:238"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "239:239"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "240:240"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+- path: "src/GridCal/Engine/Simulations/Dynamics/transient_stability_driver.py"
+  code_changes:
+  - line: "17:17"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+  - line: "46:46"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "47:47"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "48:48"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+- path: "src/GridCal/Engine/Simulations/OPF/opf_driver.py"
+  code_changes:
+  - line: "16:16"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QRunnable]
+    target_apis: [PySide2.QtCore.QRunnable]
+- path: "src/GridCal/Engine/Simulations/OPF/opf_time_series_driver.py"
+  code_changes:
+  - line: "21:21"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+  - line: "231:231"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "232:232"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "233:233"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+- path: "src/GridCal/Engine/Simulations/Optimization/optimization_driver.py"
+  code_changes:
+  - line: "123:123"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "124:124"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "125:125"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "17:17"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+- path: "src/GridCal/Engine/Simulations/PowerFlow/power_flow_driver.py"
+  code_changes:
+  - line: "22:22"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QRunnable]
+    target_apis: [PySide2.QtCore.QRunnable]
+- path: "src/GridCal/Engine/Simulations/PowerFlow/time_series_driver.py"
+  code_changes:
+  - line: "22:22"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+  - line: "339:339"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "340:340"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "341:341"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+- path: "src/GridCal/Engine/Simulations/ShortCircuit/short_circuit_driver.py"
+  code_changes:
+  - line: "20:20"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QRunnable]
+    target_apis: [PySide2.QtCore.QRunnable]
+- path: "src/GridCal/Engine/Simulations/StateEstimation/state_stimation_driver.py"
+  code_changes:
+  - line: "17:17"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QRunnable]
+    target_apis: [PySide2.QtCore.QRunnable]
+- path: "src/GridCal/Engine/Simulations/Stochastic/blackout_driver.py"
+  code_changes:
+  - line: "19:19"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+  - line: "95:95"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "96:96"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "97:97"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+- path: "src/GridCal/Engine/Simulations/Stochastic/lhs_driver.py"
+  code_changes:
+  - line: "18:18"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+  - line: "30:30"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "31:31"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "32:32"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+- path: "src/GridCal/Engine/Simulations/Stochastic/monte_carlo_driver.py"
+  code_changes:
+  - line: "18:18"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+  - line: "55:55"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "56:56"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "57:57"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+- path: "src/GridCal/Engine/Simulations/Stochastic/reliability_driver.py"
+  code_changes:
+  - line: "153:153"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "154:154"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "155:155"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "18:18"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore.QThread, PyQt5.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+- path: "src/GridCal/Engine/Simulations/Topology/topology_driver.py"
+  code_changes:
+  - line: "10:10"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PySide2.QtCore.QRunnable, PySide2.QtCore.QThread, PySide2.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QRunnable, PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+  - line: "166:166"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "167:167"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "168:168"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+- path: "src/GridCal/Gui/Analysis/gui.py"
+  code_changes:
+  - line: "66:66"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "67:67"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "68:68"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "9:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore, PyQt5.QtGui, PyQt5.QtWidgets]
+    target_apis: [PySide2.QtCore, PySide2.QtGui, PySide2.QtWidgets]
+- path: "src/GridCal/Gui/GridEditorWidget.py"
+  code_changes:
+  - line: "18-19:18-19"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: ["PyQt5.QtCore.*", PyQt5.QtSvg.QSvgGenerator]
+    target_apis: ["PySide2.QtCore.*", PySide2.QtSvg.QSvgGenerator]
+- path: "src/GridCal/Gui/GuiFunctions.py"
+  code_changes:
+  - line: "1049:1049"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [clipboard]
+    target_apis: [clipboard]
+  - line: "1110:1110"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [clipboard]
+    target_apis: [clipboard]
+  - line: "107:107"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [pyqtSlot]
+    target_apis: [Slot]
+  - line: "141:141"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [pyqtSlot]
+    target_apis: [Slot]
+  - line: "175:175"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [pyqtSlot]
+    target_apis: [Slot]
+  - line: "210:210"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [pyqtSlot]
+    target_apis: [Slot]
+  - line: "46:46"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [element name change]
+    source_apis: [pyqtSlot]
+    target_apis: [Slot]
+  - line: "1186:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [QVariant]
+    target_apis: []
+  - line: "1193:1193"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [QStandardItemModel]
+    target_apis: [QStandardItemModel]
+  - line: "1213:1213"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [QStandardItemModel]
+    target_apis: [QStandardItemModel]
+  - line: "1198:1198"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [QStandardItem]
+    target_apis: [QStandardItem]
+  - line: "1204:1204"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [QStandardItem]
+    target_apis: [QStandardItem]
+  - line: "129:129"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "161:161"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "198:198"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "29:29"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "87:87"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [pyqtSignal]
+    target_apis: [Signal]
+  - line: "18-20:18-20"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore, "PyQt5.QtGui.*", "PyQt5.QtWidgets.*"]
+    target_apis: [PySide2.QtCore, PySide2.QtGui, "PySide2.QtGui.*", PySide2.QtWidgets, "PySide2.QtWidgets.*"]
+- path: "src/GridCal/Gui/Main/GridCalMain.py"
+  code_changes:
+  - line: "57:57"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtWidgets]
+    target_apis: [PySide2.QtWidgets]
+- path: "src/GridCal/Gui/Main/MainWindow.py"
+  code_changes:
+  - line: "2033:2051"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2034:2052"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2035:2053"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2036:2054"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2037:2055"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2038:2056"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2039:2057"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2040:2058"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2041:2059"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2042:2060"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2043:2061"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2044:2062"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2045:2063"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2046:2064"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2047:2065"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2048:2066"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2049:2067"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2050:2068"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2051:2069"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2052:2070"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2053:2071"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2054:2072"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2055:2073"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2056:2074"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2057:2075"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2058:2076"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2059:2077"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2060:2078"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2061:2079"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2062:2080"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2063:2081"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2064:2082"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2065:2083"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2066:2084"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2067:2085"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2068:2086"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2069:2087"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2070:2088"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2071:2089"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2072:2090"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2073:2091"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2074:2092"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2075:2093"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2076:2094"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2077:2095"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2078:2096"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2079:2097"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2080:2098"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2081:2099"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2082:2100"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2083:2101"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2084:2102"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2085:2103"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2086:2104"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2087:2105"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2088:2106"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2089:2107"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2090:2108"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2091:2109"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2092:2110"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2093:2111"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2094:2112"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2095:2113"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2096:2114"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2097:2115"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2098:2116"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2099:2117"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2100:2118"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2101:2119"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2102:2120"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2103:2121"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2104:2122"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2105:2123"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2106:2124"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2107:2125"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2108:2126"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2109:2127"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2110:2128"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2111:2129"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2112:2130"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2113:2131"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2114:2132"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2115:2133"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2116:2134"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2117:2135"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2118:2136"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2119:2137"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2120:2138"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2121:2139"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2122:2140"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2123:2141"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2124:2142"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2125:2143"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2126:2144"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2127:2145"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2128:2146"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2129:2147"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2130:2148"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2131:2149"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2132:2150"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2133:2151"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2134:2152"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2135:2153"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2136:2154"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2137:2155"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2138:2156"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2139:2157"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2140:2158"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2141:2159"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2142:2160"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2143:2161"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2144:2162"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2145:2163"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2146:2164"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2147:2165"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2148:2166"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2149:2167"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2150:2168"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2151:2169"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2152:2170"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2153:2171"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2154:2172"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2155:2173"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2156:2174"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2157:2175"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2158:2176"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2159:2177"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2160:2178"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2161:2179"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2162:2180"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2163:2181"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2164:2182"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2165:2183"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2166:2184"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2167:2185"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2168:2186"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2169:2187"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2170:2188"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2171:2189"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2172:2190"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2173:2191"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2174:2192"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2175:2193"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2176:2194"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2177:2195"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2178:2196"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2179:2197"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2180:2198"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2181:2199"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2182:2200"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2183:2201"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2184:2202"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2185:2203"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2186:2204"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2187:2205"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2188:2206"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2189:2207"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2190:2208"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2191:2209"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2192:2210"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2193:2211"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2194:2212"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2195:2213"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2196:2214"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2197:2215"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2198:2216"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2199:2217"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2200:2218"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2201:2219"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2202:2220"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2203:2221"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2204:2222"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2205:2223"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2206:2224"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2207:2225"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2208:2226"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2209:2227"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2210:2228"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2211:2229"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2212:2230"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2213:2231"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2214:2232"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2215:2233"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2216:2234"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2217:2235"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2218:2236"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2219:2237"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2220:2238"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2221:2239"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2222:2240"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2223:2241"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2224:2242"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2225:2243"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2226:2244"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2227:2245"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2228:2246"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2229:2247"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2230:2248"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2231:2249"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2232:2250"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2233:2251"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2234:2252"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2235:2253"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2236:2254"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2237:2255"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2238:2256"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2239:2257"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2240:2258"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2241:2259"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2242:2260"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2243:2261"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2244:2262"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2245:2263"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2246:2264"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2247:2265"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2248:2266"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2249:2267"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2250:2268"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2251:2269"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2252:2270"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2253:2271"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2254:2272"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2255:2273"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2256:2274"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2257:2275"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2258:2276"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2259:2277"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2260:2278"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2261:2279"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2262:2280"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2263:2281"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2264:2282"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2265:2283"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2266:2284"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2267:2285"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2268:2286"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2269:2287"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2270:2288"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2271:2289"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2272:2290"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2273:2291"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2274:2292"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2275:2293"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2276:2294"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2277:2295"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2278:2296"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2279:2297"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2280:2298"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2281:2299"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2282:2300"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2283:2301"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2284:2302"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2285:2303"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2286:2304"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2287:2305"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2288:2306"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2289:2307"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2290:2308"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2291:2309"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2292:2310"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2293:2311"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2294:2312"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2295:2313"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2296:2314"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2297:2315"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "2298:2316"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "33:36"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [setContentsMargins]
+    target_apis: [setContentsMargins]
+  - line: "9:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore, PyQt5.QtGui, PyQt5.QtWidgets]
+    target_apis: [PySide2.QtCore, PySide2.QtGui, PySide2.QtWidgets]
+  - line: ":848"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":899"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":959"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1015"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1109"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1142"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1171"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1265"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1307"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1360"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1426"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1484"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1515"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1568"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1635"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1679"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+  - line: ":1718"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [setFrameShadow]
+- path: "src/GridCal/Gui/Main/icons_rc.py"
+  code_changes:
+  - line: "184:184"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "185:185"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "186:186"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "187:187"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "188:188"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "189:189"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "190:190"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "191:191"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "192:192"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "193:193"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "194:194"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "195:195"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "196:196"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "197:197"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "9:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore, PyQt5.QtGui, PyQt5.QtWidgets]
+    target_apis: [PySide2.QtCore, PySide2.QtGui, PySide2.QtWidgets]
+- path: "src/GridCal/Gui/ProfilesInput/gui.py"
+  code_changes:
+  - line: "184:184"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "185:185"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "186:186"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "187:187"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "188:188"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "189:189"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "190:190"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "191:191"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "192:192"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "193:193"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "194:194"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "195:195"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "196:196"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "197:197"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "9:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore, PyQt5.QtGui, PyQt5.QtWidgets]
+    target_apis: [PySide2.QtCore, PySide2.QtGui, PySide2.QtWidgets]
+- path: "src/GridCal/Gui/ProfilesInput/icons_rc.py"
+  code_changes:
+  - line: "1502:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [qVersion]
+    target_apis: []
+  - line: "9:10"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore]
+    target_apis: [PySide2.QtCore]
+- path: "src/GridCal/Gui/TowerBuilder/LineBuilderDialogue.py"
+  code_changes:
+  - line: "18:18"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: ["PyQt5.QtWidgets.*"]
+    target_apis: ["PySide2.QtWidgets.*"]
+- path: "src/GridCal/Gui/TowerBuilder/gui.py"
+  code_changes:
+  - line: "225:225"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "226:226"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "227:227"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "228:228"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "229:229"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "230:230"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "231:231"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "232:232"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "233:233"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "234:234"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "235:235"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "236:236"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "237:237"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "238:238"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "239:239"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "240:240"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "241:241"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "242:242"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "243:243"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [translate]
+    target_apis: [translate]
+  - line: "9:11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore, PyQt5.QtGui, PyQt5.QtWidgets]
+    target_apis: [PySide2.QtCore, PySide2.QtGui, PySide2.QtWidgets]
+- path: "src/GridCal/Gui/TowerBuilder/icons_rc.py"
+  code_changes:
+  - line: "915:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [qVersion]
+    target_apis: []
+  - line: "9:10"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore]
+    target_apis: [PySide2.QtCore]
+- path: "src/GridCal/Gui/TowerBuilder/tower_model.py"
+  code_changes:
+  - line: "18:18"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PyQt5.QtCore]
+    target_apis: [PySide2.QtCore]

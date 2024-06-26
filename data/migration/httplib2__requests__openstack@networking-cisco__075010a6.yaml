@@ -1,0 +1,37 @@
+repo: openstack/networking-cisco
+commit: 075010a677ff2427799634b6fc4f7ed3a90bbda2
+source: httplib2
+target: requests
+commit_url: https://github.com/openstack/networking-cisco/commit/075010a6
+domain: HTTP Clients
+files:
+- path: "neutron/plugins/cisco/n1kv/n1kv_client.py"
+  code_changes:
+  - line: "21:22"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [httplib2]
+    target_apis: [requests]
+  - line: "454-458:436-440"
+    cardinality: many-to-one
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument name change, argument transformation, element name change]
+    source_apis: [Http, request]
+    target_apis: [request]
+  - line: "461:443"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [status]
+    target_apis: [status_code]
+  - line: "462:443"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [status]
+    target_apis: [status_code]

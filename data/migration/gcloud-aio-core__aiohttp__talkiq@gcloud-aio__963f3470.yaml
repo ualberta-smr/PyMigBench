@@ -1,0 +1,23 @@
+repo: talkiq/gcloud-aio
+commit: 963f34706918757ab7d3cbad70c363b9a48b9d40
+source: gcloud-aio-core
+target: aiohttp
+commit_url: https://github.com/talkiq/gcloud-aio/commit/963f3470
+domain: HTTP client/server
+files:
+- path: "datastore/gcloud/aio/datastore/datastore.py"
+  code_changes:
+  - line: "142:154-157"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [post]
+    target_apis: [ClientSession, json, post]
+  - line: "5:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [gcloud.aio.core.http.post]
+    target_apis: [aiohttp]

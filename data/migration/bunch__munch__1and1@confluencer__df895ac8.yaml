@@ -1,0 +1,34 @@
+repo: 1and1/confluencer
+commit: df895ac8e75c13e32e2369bc4d9c88aa036ab9d4
+source: bunch
+target: munch
+commit_url: https://github.com/1and1/confluencer/commit/df895ac8
+domain: Graphic
+files:
+- path: "src/confluencer/__main__.py"
+  code_changes:
+  - line: "24:24"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bunch.Bunch]
+    target_apis: [munch.Munch]
+- path: "src/confluencer/commands/stats.py"
+  code_changes:
+  - line: "23:23"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bunch.Bunch]
+    target_apis: [munch.Munch]
+- path: "src/confluencer/tools/content.py"
+  code_changes:
+  - line: "29:29"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bunch.bunchify]
+    target_apis: [munch.munchify]

@@ -1,0 +1,50 @@
+repo: apryor6/flaskerize
+commit: 59d8319355bf95f26949fe13ac3d6be5b5282fb6
+source: flask-restplus
+target: flask-restx
+commit_url: https://github.com/apryor6/flaskerize/commit/59d83193
+domain: Development framework/extension
+files:
+- path: "flaskerize/generate.py"
+  code_changes:
+  - line: "152:152"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus.Namespace, flask_restplus.Resource]
+    target_apis: [flask_restx.Namespace, flask_restx.Resource]
+- path: "flaskerize/schematics/entity/files/{{ name }}.template/controller.py.template"
+  code_changes:
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus.Resource]
+    target_apis: [flask_restplus.Resource]
+  - line: "3:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus.Namespace]
+    target_apis: [flask_restx.Namespace]
+- path: "flaskerize/schematics/flask-api/files/{{ name }}.template/app/__init__.py"
+  code_changes:
+  - line: "3:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus.Api]
+    target_apis: [flask_restx.Api]
+- path: "flaskerize/schematics/flask-api/files/{{ name }}.template/app/widget/controller.py"
+  code_changes:
+  - line: "3:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus.Namespace, flask_restplus.Resource]
+    target_apis: [flask_restx.Namespace, flask_restx.Resource]

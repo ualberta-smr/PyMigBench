@@ -1,0 +1,51 @@
+repo: nicolas-van/pygreen
+commit: 843c8cfe9af68b9029235a229c838f519049ab0e
+source: bottle
+target: flask
+commit_url: https://github.com/nicolas-van/pygreen/commit/843c8cfe
+domain: Web Framework
+files:
+- path: "pygreen.py"
+  code_changes:
+  - line: "27:27"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bottle]
+    target_apis: [flask]
+  - line: "47:47"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [Bottle]
+    target_apis: [Flask]
+  - line: "93:93"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [static_file]
+    target_apis: [send_from_directory]
+  - line: "94:94"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, element name change]
+    source_apis: [HTTPError]
+    target_apis: [abort]
+  - line: "98:98"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [route]
+    target_apis: [add_url_rule]
+  - line: "99:99"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [route]
+    target_apis: [add_url_rule]

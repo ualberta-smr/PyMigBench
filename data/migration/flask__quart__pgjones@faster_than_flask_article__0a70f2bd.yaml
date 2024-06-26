@@ -1,0 +1,48 @@
+repo: pgjones/faster_than_flask_article
+commit: 0a70f2bddae90da13da5bce2b77ea56355ecc5d1
+source: flask
+target: quart
+commit_url: https://github.com/pgjones/faster_than_flask_article/commit/0a70f2bd
+domain: Development framework/extension
+files:
+- path: "app/films.py"
+  code_changes:
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.Blueprint, flask.abort, flask.current_app, flask.jsonify, flask.request]
+    target_apis: [quart.Blueprint, quart.abort, quart.current_app, quart.jsonify, quart.request]
+- path: "app/reviews.py"
+  code_changes:
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.Blueprint, flask.abort, flask.current_app, flask.jsonify, flask.request]
+    target_apis: [quart.Blueprint, quart.abort, quart.current_app, quart.jsonify, quart.request]
+  - line: "8:8"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [get_json]
+    target_apis: [get_json]
+- path: "app/run.py"
+  code_changes:
+  - line: "35:12"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Flask]
+    target_apis: [Quart]
+  - line: "4:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.Flask]
+    target_apis: [quart.Quart]

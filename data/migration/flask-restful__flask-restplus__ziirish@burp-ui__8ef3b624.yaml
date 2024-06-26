@@ -1,0 +1,70 @@
+repo: ziirish/burp-ui
+commit: 8ef3b624e52ac6a9420c533b0dd744a36d91c4d3
+source: flask-restful
+target: flask-restplus
+commit_url: https://github.com/ziirish/burp-ui/commit/8ef3b624
+domain: Development framework/extension
+files:
+- path: "burpui/api/__init__.py"
+  code_changes:
+  - line: "14:14"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.ext.restful.Api]
+    target_apis: [flask.ext.restplus.Api]
+- path: "burpui/api/client.py"
+  code_changes:
+  - line: "13:13"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.ext.restful.Resource, flask.ext.restful.reqparse]
+    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.reqparse]
+- path: "burpui/api/clients.py"
+  code_changes:
+  - line: "15:15"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.ext.restful.Resource, flask.ext.restful.reqparse]
+    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.reqparse]
+- path: "burpui/api/misc.py"
+  code_changes:
+  - line: "15:15"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.ext.restful.Resource, flask.ext.restful.abort, flask.ext.restful.reqparse]
+    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.abort, flask.ext.restplus.reqparse]
+- path: "burpui/api/restore.py"
+  code_changes:
+  - line: "18:18"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.ext.restful.Resource, flask.ext.restful.abort, flask.ext.restful.reqparse]
+    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.abort, flask.ext.restplus.reqparse]
+- path: "burpui/api/servers.py"
+  code_changes:
+  - line: "8:8"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.ext.restful.Resource, flask.ext.restful.reqparse]
+    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.reqparse]
+- path: "burpui/api/settings.py"
+  code_changes:
+  - line: "14:14"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.ext.restful.Resource, flask.ext.restful.abort, flask.ext.restful.reqparse]
+    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.abort, flask.ext.restplus.reqparse]

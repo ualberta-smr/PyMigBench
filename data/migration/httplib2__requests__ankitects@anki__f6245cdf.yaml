@@ -1,0 +1,146 @@
+repo: ankitects/anki
+commit: f6245cdfd1e81fecb581a17d3ee314ed0d72698d
+source: httplib2
+target: requests
+commit_url: https://github.com/ankitects/anki/commit/f6245cdf
+domain: HTTP Clients
+files:
+- path: "anki/sync.py"
+  code_changes:
+  - line: "12:8"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [httplib2]
+    target_apis: [requests]
+  - line: "25:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [RETRIES]
+    target_apis: []
+  - line: "29:"
+    cardinality: one-to-zero
+    source_program_elements: [function reference]
+    target_program_elements: []
+    properties: []
+    source_apis: [proxy_info_from_environment]
+    target_apis: []
+  - line: "30:"
+    cardinality: one-to-zero
+    source_program_elements: [function reference]
+    target_program_elements: []
+    properties: []
+    source_apis: [proxy_info_from_url]
+    target_apis: []
+  - line: "33:"
+    cardinality: one-to-zero
+    source_program_elements: [function reference]
+    target_program_elements: []
+    properties: []
+    source_apis: [from_environment]
+    target_apis: []
+  - line: "34:"
+    cardinality: one-to-zero
+    source_program_elements: [function reference]
+    target_program_elements: []
+    properties: []
+    source_apis: [from_url]
+    target_apis: []
+  - line: "51-54:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [Http]
+    target_apis: []
+  - line: ":463"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [Session]
+  - line: ":467"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [post]
+  - line: ":470"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [get]
+- path: "aqt/sync.py"
+  code_changes:
+  - line: "429:"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: []
+    properties: []
+    source_apis: [http.client, httplib2]
+    target_apis: []
+  - line: "470-471:"
+    cardinality: one-to-zero
+    source_program_elements: [exception]
+    target_program_elements: []
+    properties: []
+    source_apis: [ServerNotFoundError]
+    target_apis: []
+  - line: "472:"
+    cardinality: one-to-zero
+    source_program_elements: [exception]
+    target_program_elements: []
+    properties: []
+    source_apis: [ssl_SSLError]
+    target_apis: []
+  - line: "503:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [Response]
+    target_apis: []
+  - line: "505:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [_decompressContent]
+    target_apis: []
+- path: "aqt/update.py"
+  code_changes:
+  - line: ":40"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [post]
+  - line: ":41"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [raise_for_status]
+  - line: ":42"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [json]
+  - line: ":6"
+    cardinality: not applicable
+    source_program_elements: []
+    target_program_elements: [import]
+    properties: []
+    source_apis: []
+    target_apis: [requests]

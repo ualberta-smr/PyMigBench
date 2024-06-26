@@ -1,0 +1,37 @@
+repo: zulip/python-zulip-api
+commit: 2d9cf64db860ab5e5eabb8151254b0f3dab609bd
+source: slackclient
+target: slack-sdk
+commit_url: https://github.com/zulip/python-zulip-api/commit/2d9cf64d
+domain: API wrapper
+files:
+- path: "zulip/integrations/bridge_with_slack/run-slack-bridge"
+  code_changes:
+  - line: "10:10-11"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [slack]
+    target_apis: [slack_sdk, slack_sdk.rtm.RTMClient]
+  - line: "47:48"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [RTMClient]
+    target_apis: [RTMClient]
+  - line: "50:51"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [WebClient]
+    target_apis: [WebClient]
+  - line: "84:85"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: [run_on]
+    target_apis: [run_on]

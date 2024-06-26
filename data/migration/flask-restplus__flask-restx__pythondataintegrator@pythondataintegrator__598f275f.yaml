@@ -1,0 +1,79 @@
+repo: pythondataintegrator/pythondataintegrator
+commit: 598f275f11bdb1796b4ea0f6b3676a45758c08c4
+source: flask-restplus
+target: flask-restx
+commit_url: https://github.com/pythondataintegrator/pythondataintegrator/commit/598f275f
+domain: Development framework/extension
+files:
+- path: "src/api/IocManager.py"
+  code_changes:
+  - line: "6:6"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus]
+    target_apis: [flask_restx]
+- path: "src/api/controllers/common/models/CommonModels.py"
+  code_changes:
+  - line: "3:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus]
+    target_apis: [flask_restx]
+- path: "src/api/controllers/connection/models/ConnectionModels.py"
+  code_changes:
+  - line: "4:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus]
+    target_apis: [flask_restx]
+- path: "src/api/controllers/integration/models/DataIntegrationModels.py"
+  code_changes:
+  - line: "4:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus]
+    target_apis: [flask_restx]
+- path: "src/api/controllers/job/models/JobModels.py"
+  code_changes:
+  - line: "4:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus]
+    target_apis: [flask_restx]
+- path: "src/api/controllers/operation/models/DataOperationModels.py"
+  code_changes:
+  - line: "5:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus]
+    target_apis: [flask_restx]
+- path: "src/api/controllers/operation/models/JobSchedulerModels.py"
+  code_changes:
+  - line: "5:5"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus]
+    target_apis: [flask_restx]
+- path: "src/api/infrastructor/api/ResourceBase.py"
+  code_changes:
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask_restplus]
+    target_apis: [flask_restx]

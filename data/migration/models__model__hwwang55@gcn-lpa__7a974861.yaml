@@ -1,0 +1,16 @@
+repo: hwwang55/gcn-lpa
+commit: 7a974861900be4415113d84baf00c49b82b2d8d9
+source: models
+target: model
+commit_url: https://github.com/hwwang55/gcn-lpa/commit/7a974861
+domain: Database
+files:
+- path: "src/train.py"
+  code_changes:
+  - line: "3:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [models.GCN_LPA]
+    target_apis: [model.GCN_LPA]

@@ -1,0 +1,23 @@
+repo: phuks-co/throat
+commit: 9a2896095779bfc60d544d52c5c28c0187f31949
+source: eventlet
+target: gevent
+commit_url: https://github.com/phuks-co/throat/commit/9a289609
+domain: Utility
+files:
+- path: "throat.py"
+  code_changes:
+  - line: "3:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [eventlet]
+    target_apis: [gevent.monkey]
+  - line: "4:4"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [monkey_patch]
+    target_apis: [patch_all]

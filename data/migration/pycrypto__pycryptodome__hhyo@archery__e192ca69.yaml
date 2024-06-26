@@ -1,0 +1,16 @@
+repo: hhyo/archery
+commit: e192ca69e2d610bc59a9f10165c7fd1c8ab9b157
+source: pycrypto
+target: pycryptodome
+commit_url: https://github.com/hhyo/archery/commit/e192ca69
+domain: Cryptography
+files:
+- path: "sql/utils/aes_decryptor.py"
+  code_changes:
+  - line: "26:26"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation]
+    source_apis: [encrypt]
+    target_apis: [encrypt]

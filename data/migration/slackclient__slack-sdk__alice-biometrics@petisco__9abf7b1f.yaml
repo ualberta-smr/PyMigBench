@@ -1,0 +1,48 @@
+repo: alice-biometrics/petisco
+commit: 9abf7b1f6ef8c55bdddcb9a5c2eff513f6a93130
+source: slackclient
+target: slack-sdk
+commit_url: https://github.com/alice-biometrics/petisco/commit/9abf7b1f
+domain: API wrapper
+files:
+- path: "petisco/extra/slack/application/notifier/slack_notifier.py"
+  code_changes:
+  - line: "3:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [slack.WebClient]
+    target_apis: [slack.WebClient]
+  - line: "4:4"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [slack.errors.SlackApiError]
+    target_apis: [slack_sdk.errors.SlackApiError]
+- path: "petisco/extra/slack/is_slack_available.py"
+  code_changes:
+  - line: "3:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [slack]
+    target_apis: [slack_sdk]
+- path: "petisco/legacy/notifier/infrastructure/slack/slack_notifier.py"
+  code_changes:
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [slack.WebClient]
+    target_apis: [slack.WebClient]
+  - line: "2:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [slack.errors.SlackApiError]
+    target_apis: [slack_sdk.errors.SlackApiError]

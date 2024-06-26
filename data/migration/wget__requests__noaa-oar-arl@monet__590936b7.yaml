@@ -1,0 +1,55 @@
+repo: noaa-oar-arl/monet
+commit: 590936b7ab2e0aa49c04a5ecaed502eb1ab348b8
+source: wget
+target: requests
+commit_url: https://github.com/noaa-oar-arl/monet/commit/590936b7
+domain: HTTP Clients
+files:
+- path: "monet/obs/airnow.py"
+  code_changes:
+  - line: "148:153"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [wget]
+    target_apis: [requests]
+  - line: "154:159-160"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change, output transformation]
+    source_apis: [download]
+    target_apis: [get]
+- path: "monet/obs/aqs.py"
+  code_changes:
+  - line: "228:247"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [wget]
+    target_apis: [requests]
+  - line: "234:253-254"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change, output transformation]
+    source_apis: [download]
+    target_apis: [get]
+- path: "monet/obs/cems.py"
+  code_changes:
+  - line: "127:183"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [wget]
+    target_apis: [requests]
+  - line: "138:184-195"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change, output transformation]
+    source_apis: [download]
+    target_apis: [get]

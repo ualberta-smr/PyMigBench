@@ -1,0 +1,58 @@
+repo: sporteasy/python-poeditor
+commit: 571085905db10c4ddd07ce83f875ca711000f171
+source: restkit
+target: requests
+commit_url: https://github.com/sporteasy/python-poeditor/commit/57108590
+domain: HTTP Clients
+files:
+- path: "poeditor/client.py"
+  code_changes:
+  - line: "14:15"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [restkit.Resource, restkit.request]
+    target_apis: [requests]
+  - line: "378:381"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [request]
+    target_apis: [get]
+  - line: "77,80:79-83"
+    cardinality: many-to-one
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument name change, element name change]
+    source_apis: [Resource, post]
+    target_apis: [post]
+  - line: "82:85"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [status_int]
+    target_apis: [status_code]
+  - line: "85:88"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [status_int]
+    target_apis: [status_code]
+  - line: "86:89"
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [status]
+    target_apis: [reason]
+  - line: "89:92"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change, output transformation]
+    source_apis: [body_string]
+    target_apis: [text]

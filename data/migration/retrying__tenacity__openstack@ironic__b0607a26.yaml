@@ -1,0 +1,236 @@
+repo: openstack/ironic
+commit: b0607a26687c55548af111b128e49dd1e625ba9f
+source: retrying
+target: tenacity
+commit_url: https://github.com/openstack/ironic/commit/b0607a26
+domain: Utility
+files:
+- path: "ironic/common/glance_service/image_service.py"
+  code_changes:
+  - line: "115-120:115-120"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "28:30"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity]
+- path: "ironic/common/neutron.py"
+  code_changes:
+  - line: "19:19-20"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+  - line: "868-872:869-873"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "907-911:908-912"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+- path: "ironic/conductor/allocations.py"
+  code_changes:
+  - line: "190-193:190-196"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "21:21"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+- path: "ironic/conductor/task_manager.py"
+  code_changes:
+  - line: "111:111"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+  - line: "280-283:279-284"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+- path: "ironic/drivers/modules/agent_base.py"
+  code_changes:
+  - line: "1174-1178:1174-1179"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "25:25"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+- path: "ironic/drivers/modules/agent_client.py"
+  code_changes:
+  - line: "106-110:106-111"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "137-140:138-142"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "23:23"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+  - line: "303-306:305-310"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+- path: "ironic/drivers/modules/agent_power.py"
+  code_changes:
+  - line: "182-188:182-188"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "21:21"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+- path: "ironic/drivers/modules/ansible/deploy.py"
+  code_changes:
+  - line: "29:29"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+  - line: "630-634:630-636"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+- path: "ironic/drivers/modules/drac/job.py"
+  code_changes:
+  - line: "20:20"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+  - line: "94-97:94-98"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+- path: "ironic/drivers/modules/ibmc/utils.py"
+  code_changes:
+  - line: "136-139:136-140"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "24:24"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+- path: "ironic/drivers/modules/redfish/boot.py"
+  code_changes:
+  - line: "158-159:158-161"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+  - line: "18:18"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+- path: "ironic/drivers/modules/redfish/utils.py"
+  code_changes:
+  - line: "24:25"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+  - line: "303-307:303-308"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]
+- path: "ironic/drivers/modules/storage/cinder.py"
+  code_changes:
+  - line: "19:19"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [retrying]
+    target_apis: [tenacity, tenacity.retry]
+  - line: "310-313:310-314"
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [decorator]
+    properties: [argument transformation]
+    source_apis: [retry]
+    target_apis: [retry]

@@ -1,0 +1,37 @@
+repo: haiwen/seafdav
+commit: 5e1291f1cb8ed22e3ef5a78f46b1aa7534105764
+source: lxml
+target: defusedxml
+commit_url: https://github.com/haiwen/seafdav/commit/5e1291f1
+domain: Utility
+files:
+- path: "wsgidav/xml_tools.py"
+  code_changes:
+  - line: "23:24,29"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [lxml.etree]
+    target_apis: [defusedxml.ElementTree, defusedxml.lxml.etree]
+  - line: ":32"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [type]
+    properties: []
+    source_apis: []
+    target_apis: [Element]
+  - line: ":33"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [type]
+    properties: []
+    source_apis: []
+    target_apis: [SubElement]
+  - line: ":34"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function reference]
+    properties: []
+    source_apis: []
+    target_apis: [tostring]

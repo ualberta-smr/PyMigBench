@@ -1,0 +1,23 @@
+repo: stackstorm/st2
+commit: 4022aea911726ab98e376860cfba75987e4b3df4
+source: ipaddr
+target: py2-ipaddress
+commit_url: https://github.com/stackstorm/st2/commit/4022aea9
+domain: HTTP Clients
+files:
+- path: "st2common/st2common/util/ip_utils.py"
+  code_changes:
+  - line: "19:19"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [ipaddress]
+  - line: "43,59:43,59"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [IPAddress]
+    target_apis: [ip_address]

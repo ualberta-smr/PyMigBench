@@ -1,0 +1,16 @@
+repo: cloud-custodian/cloud-custodian
+commit: cbaf252ff1eb554511b0384392ea02387887ed6c
+source: python-ldap
+target: ldap3
+commit_url: https://github.com/cloud-custodian/cloud-custodian/commit/cbaf252f
+domain: Utilities
+files:
+- path: "tools/c7n_mailer/c7n_mailer/address.py"
+  code_changes:
+  - line: "19:16-20"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ldap]
+    target_apis: [ldap3.Connection, ldap3.Server, ldap3.core.exceptions.LDAPSocketOpenError]

@@ -1,0 +1,51 @@
+repo: cqmoe/python-cqhttp
+commit: f9f083ec6b1de67e4e128e2fdc85cb7bacadcf6b
+source: bottle
+target: flask
+commit_url: https://github.com/cqmoe/python-cqhttp/commit/f9f083ec
+domain: Web Framework
+files:
+- path: "cqhttp/__init__.py"
+  code_changes:
+  - line: "68:67"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [Bottle]
+    target_apis: [Flask]
+  - line: "69:68"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [post]
+    target_apis: [route]
+  - line: "7:6"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bottle.Bottle, bottle.abort, bottle.request]
+    target_apis: [flask.Flask, flask.abort, flask.jsonify, flask.request]
+  - line: "84:83"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [read]
+    target_apis: [get_data]
+  - line: "88:89"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [get]
+    target_apis: [get]
+  - line: "97:98"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [get]
+    target_apis: [get]

@@ -1,0 +1,16 @@
+repo: milvus-io/bootcamp
+commit: a7f4c3f13e007116d88d9a2776f471a4e4f1fc81
+source: pymilvus-orm
+target: pymilvus
+commit_url: https://github.com/milvus-io/bootcamp/commit/a7f4c3f1
+domain: Database client
+files:
+- path: "solutions/question_answering_system/quick_deploy/server/src/milvus_helpers.py"
+  code_changes:
+  - line: "2-5,7:2"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pymilvus_orm.collection.Collection, pymilvus_orm.connections, pymilvus_orm.schema.CollectionSchema, pymilvus_orm.schema.FieldSchema, pymilvus_orm.types.DataType, pymilvus_orm.utility]
+    target_apis: [pymilvus.Collection, pymilvus.CollectionSchema, pymilvus.DataType, pymilvus.FieldSchema, pymilvus.connections, pymilvus.utility]

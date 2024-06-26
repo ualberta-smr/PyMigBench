@@ -1,0 +1,58 @@
+repo: yubico/python-u2flib-server
+commit: 65c46657d50fb2d38036b4533806d36997cedac5
+source: m2crypto
+target: cryptography
+commit_url: https://github.com/yubico/python-u2flib-server/commit/65c46657
+domain: Crypto
+files:
+- path: "u2flib_server/attestation/resolvers.py"
+  code_changes:
+  - line: "30:35-39"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [M2Crypto.X509]
+    target_apis: [cryptography.exceptions.InvalidSignature, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding, cryptography.x509, cryptography.x509.oid.NameOID]
+  - line: "65:69"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [load_cert_der_string]
+    target_apis: [load_pem_x509_certificate]
+  - line: "66:70"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [get_subject]
+    target_apis: [subject]
+  - line: "66:70"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [attribute, function call]
+    properties: [argument addition, element name change, output transformation]
+    source_apis: [as_text]
+    target_apis: [get_attributes_for_oid, value]
+  - line: "73:94"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [attribute, function call]
+    properties: [argument addition, element name change, output transformation]
+    source_apis: [as_text]
+    target_apis: [get_attributes_for_oid, value]
+  - line: "73:94"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [get_issuer]
+    target_apis: [issuer]
+  - line: "74:97"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [get_pubkey]
+    target_apis: [public_key]

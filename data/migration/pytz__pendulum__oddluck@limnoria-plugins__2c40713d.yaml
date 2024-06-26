@@ -1,0 +1,16 @@
+repo: oddluck/limnoria-plugins
+commit: 2c40713d3a2778d6f729d896372c3bcd74302104
+source: pytz
+target: pendulum
+commit_url: https://github.com/oddluck/limnoria-plugins/commit/2c40713d
+domain: Utilities
+files:
+- path: "WorldTime/plugin.py"
+  code_changes:
+  - line: "12:13"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytz]
+    target_apis: [pendulum]

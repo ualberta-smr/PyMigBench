@@ -1,0 +1,51 @@
+repo: hbldh/pybankid
+commit: 79e424cef579d6bffc1e40048e46febbd53aded5
+source: suds
+target: zeep
+commit_url: https://github.com/hbldh/pybankid/commit/79e424ce
+domain: HTTP Clients
+files:
+- path: "bankid/client.py"
+  code_changes:
+  - line: "131:131"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [Collect]
+    target_apis: [Collect]
+  - line: "25-29:24-26"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [suds.WebFault, suds.client.Client, suds.sax.text.Text, suds.transport.Reply, suds.transport.http.HttpAuthenticated]
+    target_apis: [zeep.Client, zeep.exceptions.Error, zeep.transports.Transport]
+  - line: "66-67:67"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion]
+    source_apis: [Client]
+    target_apis: [Client]
+  - line: "113:113"
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [WebFault]
+    target_apis: [Error]
+  - line: "132:132"
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [WebFault]
+    target_apis: [Error]
+  - line: "87:87"
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [WebFault]
+    target_apis: [Error]

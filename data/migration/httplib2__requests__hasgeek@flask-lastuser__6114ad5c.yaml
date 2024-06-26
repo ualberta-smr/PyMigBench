@@ -1,0 +1,30 @@
+repo: hasgeek/flask-lastuser
+commit: 6114ad5cb27d16048a86f2a1eff85756cf438d34
+source: httplib2
+target: requests
+commit_url: https://github.com/hasgeek/flask-lastuser/commit/6114ad5c
+domain: HTTP Clients
+files:
+- path: "flask_lastuser/__init__.py"
+  code_changes:
+  - line: "17:16"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [httplib2]
+    target_apis: [requests]
+  - line: "272:"
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [Http]
+    target_apis: []
+  - line: "273-283:304-309"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [attribute, function call]
+    properties: [argument deletion, argument name change, argument transformation, element name change]
+    source_apis: [request]
+    target_apis: [json, post]

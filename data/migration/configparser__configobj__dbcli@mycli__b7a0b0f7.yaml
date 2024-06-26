@@ -1,0 +1,16 @@
+repo: dbcli/mycli
+commit: b7a0b0f7d05cc90c8e5b20c2203562fdffbd6add
+source: configparser
+target: configobj
+commit_url: https://github.com/dbcli/mycli/commit/b7a0b0f7
+domain: Filesystem
+files:
+- path: "mycli/config.py"
+  code_changes:
+  - line: "6:3"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [configparser.ConfigParser]
+    target_apis: [configobj.ConfigObj]

@@ -1,0 +1,37 @@
+repo: crossbario/autobahn-python
+commit: 9e00896d3601b965e58b21eaac233fc9b9509272
+source: msgpack
+target: u-msgpack-python
+commit_url: https://github.com/crossbario/autobahn-python/commit/9e00896d
+domain: Serialization
+files:
+- path: "autobahn/wamp/serializer.py"
+  code_changes:
+  - line: "250:251"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [msgpack]
+    target_apis: [umsgpack]
+  - line: "281:275"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion]
+    source_apis: [packb]
+    target_apis: [packb]
+  - line: "325-329:302"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion]
+    source_apis: [unpackb]
+    target_apis: [unpackb]
+  - line: "340-344:312"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion]
+    source_apis: [unpackb]
+    target_apis: [unpackb]

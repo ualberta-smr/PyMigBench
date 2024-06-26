@@ -1,0 +1,30 @@
+repo: rev112/pyope
+commit: 48c294a3fba2b424d75f0e7f541f31a1cc0421a6
+source: pycryptodome
+target: cryptography
+commit_url: https://github.com/rev112/pyope/commit/48c294a3
+domain: Crypto
+files:
+- path: "pyope/ope.py"
+  code_changes:
+  - line: "164:167-168"
+    cardinality: many-to-many
+    source_program_elements: [attribute, function call, function call]
+    target_program_elements: [function call, function call, function call, function call]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [MODE_CTR, new, new]
+    target_apis: [AES, CTR, Cipher, default_backend]
+  - line: "166:169,172"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [element name change]
+    source_apis: [encrypt]
+    target_apis: [encryptor, update]
+  - line: "4-5:5-7"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Cipher.AES, Crypto.Util.Counter]
+    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes.CTR]

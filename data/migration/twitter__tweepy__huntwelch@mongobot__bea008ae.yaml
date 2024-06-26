@@ -1,0 +1,23 @@
+repo: huntwelch/mongobot
+commit: bea008ae61e1ea8304f429623ad87b036ac3649a
+source: twitter
+target: tweepy
+commit_url: https://github.com/huntwelch/mongobot/commit/bea008ae
+domain: Utility
+files:
+- path: "brainmeats/twitting.py"
+  code_changes:
+  - line: "11-14:11,19-20"
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument name change, element name change]
+    source_apis: [Api]
+    target_apis: [API, OAuthHandler, set_access_token]
+  - line: "1:1"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [twitter]
+    target_apis: [tweepy]

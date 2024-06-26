@@ -1,0 +1,92 @@
+repo: intellabs/nlp-architect
+commit: 9f067f27667f622b94c71cf703716513d8a19ea8
+source: pytorch-transformers
+target: transformers
+commit_url: https://github.com/intellabs/nlp-architect/commit/9f067f27
+domain: Deep Learning
+files:
+- path: "nlp_architect/models/transformers/base_model.py"
+  code_changes:
+  - line: "22:24"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.AdamW, pytorch_transformers.BertConfig, pytorch_transformers.BertTokenizer, pytorch_transformers.WarmupLinearSchedule, pytorch_transformers.XLMConfig, pytorch_transformers.XLMTokenizer, pytorch_transformers.XLNetConfig, pytorch_transformers.XLNetTokenizer]
+    target_apis: [transformers.AdamW, transformers.BertConfig, transformers.BertTokenizer, transformers.RobertaConfig, transformers.RobertaTokenizer, transformers.WarmupLinearSchedule, transformers.XLMConfig, transformers.XLMTokenizer, transformers.XLNetConfig, transformers.XLNetTokenizer]
+- path: "nlp_architect/models/transformers/quantized_bert.py"
+  code_changes:
+  - line: "27-43:27-35"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.modeling_bert.ACT2FN, pytorch_transformers.modeling_bert.BertAttention, pytorch_transformers.modeling_bert.BertConfig, pytorch_transformers.modeling_bert.BertEmbeddings, pytorch_transformers.modeling_bert.BertEncoder, pytorch_transformers.modeling_bert.BertForQuestionAnswering, pytorch_transformers.modeling_bert.BertForSequenceClassification, pytorch_transformers.modeling_bert.BertForTokenClassification, pytorch_transformers.modeling_bert.BertIntermediate, pytorch_transformers.modeling_bert.BertLayer, pytorch_transformers.modeling_bert.BertLayerNorm, pytorch_transformers.modeling_bert.BertModel, pytorch_transformers.modeling_bert.BertOutput, pytorch_transformers.modeling_bert.BertPooler, pytorch_transformers.modeling_bert.BertPreTrainedModel, pytorch_transformers.modeling_bert.BertSelfAttention, pytorch_transformers.modeling_bert.BertSelfOutput]
+    target_apis: [transformers.modeling_bert.ACT2FN, transformers.modeling_bert.BertAttention, transformers.modeling_bert.BertConfig, transformers.modeling_bert.BertEmbeddings, transformers.modeling_bert.BertEncoder, transformers.modeling_bert.BertForQuestionAnswering, transformers.modeling_bert.BertForSequenceClassification, transformers.modeling_bert.BertForTokenClassification, transformers.modeling_bert.BertIntermediate, transformers.modeling_bert.BertLayer, transformers.modeling_bert.BertLayerNorm, transformers.modeling_bert.BertModel, transformers.modeling_bert.BertOutput, transformers.modeling_bert.BertPooler, transformers.modeling_bert.BertPreTrainedModel, transformers.modeling_bert.BertSelfAttention, transformers.modeling_bert.BertSelfOutput]
+- path: "nlp_architect/models/transformers/sequence_classification.py"
+  code_changes:
+  - line: "23-25:24-27"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.BertForSequenceClassification, pytorch_transformers.XLMForSequenceClassification, pytorch_transformers.XLNetForSequenceClassification]
+    target_apis: [transformers.BertForSequenceClassification, transformers.RobertaForSequenceClassification, transformers.XLMForSequenceClassification, transformers.XLNetForSequenceClassification]
+- path: "nlp_architect/models/transformers/token_classification.py"
+  code_changes:
+  - line: "19:23-26"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.BertForTokenClassification, pytorch_transformers.XLNetModel, pytorch_transformers.XLNetPreTrainedModel]
+    target_apis: [transformers.BertForTokenClassification, transformers.BertPreTrainedModel, transformers.ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP, transformers.RobertaConfig, transformers.RobertaModel, transformers.XLNetModel, transformers.XLNetPreTrainedModel]
+  - line: "50:61"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [BertForTokenClassification]
+    target_apis: [BertForTokenClassification]
+  - line: "82:95"
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [XLNetPreTrainedModel]
+    target_apis: [XLNetPreTrainedModel]
+  - line: ":135"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [type]
+    properties: []
+    source_apis: []
+    target_apis: [BertPreTrainedModel]
+  - line: ":143"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [type]
+    properties: []
+    source_apis: []
+    target_apis: [RobertaConfig]
+  - line: ":144"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [type]
+    properties: []
+    source_apis: []
+    target_apis: [ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP]
+  - line: ":151"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [RobertaModel]
+  - line: ":160"
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [roberta]

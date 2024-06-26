@@ -1,0 +1,46 @@
+repo: openshot/openshot-qt
+commit: 4349753e0eecae60c96768def773fa48189f06bf
+source: httplib2
+target: requests
+commit_url: https://github.com/openshot/openshot-qt/commit/4349753e
+domain: HTTP Clients
+files:
+- path: "src/classes/metrics.py"
+  code_changes:
+  - line: "155:155-156"
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [attribute, attribute, function call]
+    properties: [argument deletion, element name change, output transformation]
+    source_apis: [Http, request]
+    target_apis: [get, status_code, text]
+  - line: "175:175-176"
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [attribute, attribute, function call]
+    properties: [argument deletion, argument name change, element name change, output transformation]
+    source_apis: [Http, request]
+    target_apis: [post, status_code, text]
+  - line: "28:28"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [httplib2]
+    target_apis: [requests]
+- path: "src/classes/version.py"
+  code_changes:
+  - line: "28:28"
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [httplib2]
+    target_apis: [requests]
+  - line: "51:51-52,55"
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [attribute, function call, function call]
+    properties: [element name change, output transformation]
+    source_apis: [Http, request]
+    target_apis: [get, json, text]
