@@ -1,0 +1,23 @@
+repo: thespaghettidetective/thespaghettidetective
+commit: b86b375952cc3e965c32201caa8094998c56cde7
+source: raven
+target: sentry-sdk
+commit_url: https://github.com/thespaghettidetective/thespaghettidetective/commit/b86b3759
+domain: Logging/tracing
+files:
+- path: "web/app/notifications.py"
+  code_changes:
+  - lines: ["13:13"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [raven.contrib.django.raven_compat.models.client]
+    target_apis: [sentry_sdk.capture_exception]
+  - lines: ["250:250", "256:256", "262:262", "268:268", "44:44", "49:49", "54:54", "60:60", "66:66"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [captureException]
+    target_apis: [capture_exception]

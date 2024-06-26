@@ -1,0 +1,30 @@
+repo: raptor123471/dingolingo
+commit: 1d8923abae93915ad877774e0fdc812d6c53a70b
+source: requests
+target: aiohttp
+commit_url: https://github.com/raptor123471/dingolingo/commit/1d8923ab
+domain: HTTP client/server
+files:
+- path: "musicbot/linkutils.py"
+  code_changes:
+  - lines: ["1:1"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [requests]
+    target_apis: [aiohttp]
+  - lines: ["35:36-37", "98:100-101"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, async transformation, element name change]
+    source_apis: [get]
+    target_apis: [ClientSession, get]
+  - lines: ["36:38", "99:102"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [function call]
+    properties: [async transformation, element name change]
+    source_apis: [content]
+    target_apis: [text]

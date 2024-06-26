@@ -1,0 +1,135 @@
+repo: yubico/yubioath-desktop
+commit: 9d601b4fe39c6e37ef51ee9a1274909309d4286f
+source: argparse
+target: click
+commit_url: https://github.com/yubico/yubioath-desktop/commit/9d601b4f
+domain: Utility
+files:
+- path: "yubioath/cli/__main__.py"
+  code_changes:
+  - lines: ["117-118:90"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["119-120:91", "121-122:92", "123-124:93", "168-169:141", "65-67:75-76"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["159:134", "206:172"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["160-162:135"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option, IntRange]
+  - lines: ["163:136"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["164-165:137-138"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument name change, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option, Choice]
+  - lines: ["166-167:139-140"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option, Choice]
+  - lines: ["170-171:142"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["219:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [add_mutually_exclusive_group]
+    target_apis: []
+  - lines: ["220-221:194", "222-223:208", "224-225:220"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [add_argument]
+    target_apis: [command]
+  - lines: ["40:40"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: ["61:", "69:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["254-255:228-229", "62-64:73-74"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["74-75:73-74"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["77:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [add_subparsers]
+    target_apis: []
+  - lines: ["79-80:", "81-82:", "83-84:", "85-86:", "87-88:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [add_parser]
+    target_apis: []
+  - lines: [":187", ":72"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [group]
+  - lines: [":133", ":171", ":227", ":89"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]

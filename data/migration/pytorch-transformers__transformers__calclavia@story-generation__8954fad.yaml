@@ -1,0 +1,52 @@
+repo: calclavia/story-generation
+commit: 8954fad71993decf00cafa4407413a305ccd381c
+source: pytorch-transformers
+target: transformers
+commit_url: https://github.com/calclavia/story-generation/commit/8954fad7
+domain: Deep Learning
+files:
+- path: "analysis/eval_csr.py"
+  code_changes:
+  - lines: ["13:13"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]
+- path: "analysis/eval_ppl.py"
+  code_changes:
+  - lines: ["12:12"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]
+- path: "analysis/eval_prompt_rank.py"
+  code_changes:
+  - lines: ["13:13"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]
+- path: "analysis/generate.py"
+  code_changes:
+  - lines: ["10:10"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]
+- path: "train.py"
+  code_changes:
+  - lines: ["9:9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]

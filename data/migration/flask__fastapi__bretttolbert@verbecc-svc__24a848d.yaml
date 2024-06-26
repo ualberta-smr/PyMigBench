@@ -1,0 +1,16 @@
+repo: bretttolbert/verbecc-svc
+commit: 24a848d285ae2c6f3e5b06d1a8ee718cb3f17133
+source: flask
+target: fastapi
+commit_url: https://github.com/bretttolbert/verbecc-svc/commit/24a848d2
+domain: Development framework/extension
+files:
+- path: "python/verb_conjugate_fr/__init__.py"
+  code_changes:
+  - lines: ["2-3:2"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.Flask, flask_restful.Api]
+    target_apis: [fastapi.FastAPI]

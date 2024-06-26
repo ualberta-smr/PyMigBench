@@ -1,0 +1,16 @@
+repo: openstack/networking-bagpipe
+commit: 4bb14fa0be826184e4e9c85793af63a121453613
+source: neutron
+target: neutron-lib
+commit_url: https://github.com/openstack/networking-bagpipe/commit/4bb14fa0
+domain: Utility
+files:
+- path: "networking_bagpipe/db/migration/alembic_migrations/env.py"
+  code_changes:
+  - lines: ["18:18"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [neutron.db.model_base]
+    target_apis: [neutron_lib.db.model_base]

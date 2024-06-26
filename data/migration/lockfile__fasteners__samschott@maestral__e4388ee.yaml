@@ -1,0 +1,16 @@
+repo: samschott/maestral
+commit: e4388ee1a5ab8699e3a08055fb0d5e6485b9921d
+source: lockfile
+target: fasteners
+commit_url: https://github.com/samschott/maestral/commit/e4388ee1
+domain: Filesystem&Crypto
+files:
+- path: "maestral/daemon.py"
+  code_changes:
+  - lines: ["24:29"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [PIDLockFile, AlreadyLocked]
+    target_apis: [InterProcessLock]

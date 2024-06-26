@@ -1,0 +1,25 @@
+repo: canonical/cloud-init
+commit: 0fc887d97626132e9024490b271888bed162c867
+source: urllib3
+target: requests
+commit_url: https://github.com/canonical/cloud-init/commit/0fc887d9
+domain: HTTP Clients
+files:
+- path: "cloudinit/url_helper.py"
+  code_changes:
+  - lines: ["179:213"]
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [HTTPError]
+    target_apis: [RequestException]
+  - lines: ["28-30:25-26"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [urllib3.exceptions, urllib3.connectionpool, urllib3.util]
+    target_apis: [requests, requests.exceptions]
+
+

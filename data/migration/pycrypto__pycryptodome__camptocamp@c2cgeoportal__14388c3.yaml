@@ -1,0 +1,39 @@
+repo: camptocamp/c2cgeoportal
+commit: 14388c3d85ab164d7b36b1331534913a1c9d6c9a
+source: pycrypto
+target: pycryptodome
+commit_url: https://github.com/camptocamp/c2cgeoportal/commit/14388c3d
+domain: Cryptography
+files:
+- path: "geoportal/c2cgeoportal_geoportal/__init__.py"
+  code_changes:
+  - lines: ["322:326"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation]
+    source_apis: [new]
+    target_apis: [new]
+  - lines: ["323:327"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [decrypt]
+    target_apis: [decrypt_and_verify]
+- path: "geoportal/c2cgeoportal_geoportal/scripts/urllogin.py"
+  code_changes:
+  - lines: ["48:48"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation]
+    source_apis: [new]
+    target_apis: [new]
+  - lines: ["53:53"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [encrypt]
+    target_apis: [encrypt_and_digest]

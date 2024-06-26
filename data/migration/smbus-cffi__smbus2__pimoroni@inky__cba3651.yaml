@@ -1,0 +1,32 @@
+repo: pimoroni/inky
+commit: cba36514eb8c881f8bd1d92b0b6a5bf12b4b72fb
+source: smbus-cffi
+target: smbus2
+commit_url: https://github.com/pimoroni/inky/commit/cba36514
+domain: Utility
+files:
+- path: "library/inky/eeprom.py"
+  code_changes:
+  - lines: ["7:7"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [smbus]
+    target_apis: [smbus2.SMBus]
+  - lines: ["98:98"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [SMBus]
+    target_apis: [SMBus]
+- path: "library/inky/inky.py"
+  code_changes:
+  - lines: ["16:16"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [smbus]
+    target_apis: [smbus2.SMBus]

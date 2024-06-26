@@ -1,0 +1,16 @@
+repo: shoebot/shoebot
+commit: 0171fb9ff6ed2fed71dcfe82eef7ca723d609fcf
+source: pil
+target: pillow
+commit_url: https://github.com/shoebot/shoebot/commit/0171fb9f
+domain: Image processing
+files:
+- path: "shoebot/data/img.py"
+  code_changes:
+  - lines: ["9:9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Image]
+    target_apis: [PIL.Image]

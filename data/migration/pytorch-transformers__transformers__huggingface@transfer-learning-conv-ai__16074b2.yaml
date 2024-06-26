@@ -1,0 +1,59 @@
+repo: huggingface/transfer-learning-conv-ai
+commit: 16074b209c8a94c887c2b869d773ea5f56d8593b
+source: pytorch-transformers
+target: transformers
+commit_url: https://github.com/huggingface/transfer-learning-conv-ai/commit/16074b20
+domain: Deep Learning
+files:
+- path: "convai_evaluation.py"
+  code_changes:
+  - lines: ["20:20"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.OpenAIGPTDoubleHeadsModel, pytorch_transformers.OpenAIGPTLMHeadModel, pytorch_transformers.OpenAIGPTTokenizer, pytorch_transformers.GPT2DoubleHeadsModel, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer]
+    target_apis: [transformers.OpenAIGPTDoubleHeadsModel, transformers.OpenAIGPTLMHeadModel, transformers.OpenAIGPTTokenizer, transformers.GPT2DoubleHeadsModel, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer]
+- path: "interact.py"
+  code_changes:
+  - lines: ["15:15"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.OpenAIGPTLMHeadModel, pytorch_transformers.OpenAIGPTTokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer]
+    target_apis: [transformers.OpenAIGPTLMHeadModel, transformers.OpenAIGPTTokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer]
+- path: "test_special_tokens.py"
+  code_changes:
+  - lines: ["5:5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.OpenAIGPTTokenizer, pytorch_transformers.GPT2Tokenizer]
+    target_apis: [transformers.OpenAIGPTTokenizer, transformers.GPT2Tokenizer]
+- path: "train.py"
+  code_changes:
+  - lines: ["19:19"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.AdamW, pytorch_transformers.OpenAIGPTDoubleHeadsModel, pytorch_transformers.OpenAIGPTTokenizer, pytorch_transformers.GPT2DoubleHeadsModel, pytorch_transformers.GPT2Tokenizer, pytorch_transformers.WEIGHTS_NAME, pytorch_transformers.CONFIG_NAME]
+    target_apis: [transformers.AdamW, transformers.OpenAIGPTDoubleHeadsModel, transformers.OpenAIGPTTokenizer, transformers.GPT2DoubleHeadsModel, transformers.GPT2Tokenizer, transformers.WEIGHTS_NAME, transformers.CONFIG_NAME]
+  - lines: ["263:263"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: []
+    source_apis: [WEIGHTS_NAME]
+    target_apis: [WEIGHTS_NAME]
+- path: "utils.py"
+  code_changes:
+  - lines: ["14:14"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_transformers.cached_path]
+    target_apis: [transformers.cached_path]

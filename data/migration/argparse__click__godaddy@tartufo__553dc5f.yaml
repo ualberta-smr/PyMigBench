@@ -1,0 +1,86 @@
+repo: godaddy/tartufo
+commit: 553dc5fb7ddef597cafda451954fa4cba23acde6
+source: argparse
+target: click
+commit_url: https://github.com/godaddy/tartufo/commit/553dc5fb
+domain: Utility
+files:
+- path: "tartufo/cli.py"
+  code_changes:
+  - lines: ["103-112:20-23", "113-121:24-25", "122-130:26-27"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["131-136:28", "137-141:29-31", "143-145:32"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["146-155:33-38", "156-165:39-44"]
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument, FileType]
+    target_apis: [option, File]
+  - lines: ["166-172:45-46"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option, Path]
+  - lines: ["189:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - lines: ["3:6"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: ["76:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["173-178:47-48", "182-187:49-50", "79-81:17"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["179-181:51"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["95-102:18-19"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option, File]
+  - lines: [":15"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]

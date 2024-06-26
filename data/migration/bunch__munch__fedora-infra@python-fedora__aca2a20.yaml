@@ -1,0 +1,110 @@
+repo: fedora-infra/python-fedora
+commit: aca2a20a5c1a889eed655f36ef1bf28dd32c3145
+source: bunch
+target: munch
+commit_url: https://github.com/fedora-infra/python-fedora/commit/aca2a20a
+domain: Graphic
+files:
+- path: "fedora/client/__init__.py"
+  code_changes:
+  - lines: ["111:111"]
+    cardinality: one-to-one
+    source_program_elements: [type]
+    target_program_elements: [type]
+    properties: [element name change]
+    source_apis: [Bunch]
+    target_apis: [Munch]
+  - lines: ["116:116"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Bunch]
+    target_apis: [Munch]
+  - lines: ["33:33"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bunch.Bunch]
+    target_apis: [munch.Munch]
+- path: "fedora/client/fas2.py"
+  code_changes:
+  - lines: ["31:31"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bunch.Bunch]
+    target_apis: [munch.Munch]
+  - lines: ["403:403", "702:702", "741:741"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Bunch]
+    target_apis: [Munch]
+- path: "fedora/tg2/utils.py"
+  code_changes:
+  - lines: ["160:160", "39:39"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bunch.Bunch]
+    target_apis: [munch.Munch]
+  - lines: ["177:177"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Bunch]
+    target_apis: [Munch]
+- path: "fedora/wsgi/csrf.py"
+  code_changes:
+  - lines: ["150:150"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Bunch]
+    target_apis: [Munch]
+  - lines: ["34:34"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bunch.Bunch]
+    target_apis: [munch.Munch]
+- path: "fedora/wsgi/faswho/faswhoplugin.py"
+  code_changes:
+  - lines: ["231:231", "397:397"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Bunch]
+    target_apis: [Munch]
+  - lines: ["40:40"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bunch.Bunch]
+    target_apis: [munch.Munch]
+- path: "flask_fas_openid.py"
+  code_changes:
+  - lines: ["179:179", "180:180"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [fromDict]
+    target_apis: [fromDict]
+  - lines: ["31:31"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [bunch.Bunch]
+    target_apis: [munch.Munch]

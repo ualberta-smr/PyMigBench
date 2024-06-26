@@ -1,0 +1,135 @@
+repo: cloudbotirc/cloudbot
+commit: f82432236f86ae0139a4f910394e453d790c28c6
+source: twitter
+target: tweepy
+commit_url: https://github.com/cloudbotirc/cloudbot/commit/f8243223
+domain: Utility
+files:
+- path: "plugins/twitter.py"
+  code_changes:
+  - lines: ["100:102", "140:155", "78:78", "97:99"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [output transformation]
+    source_apis: [code]
+    target_apis: [code]
+  - lines: ["100:102", "78:78"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change, output transformation]
+    source_apis: [response_data]
+    target_apis: ["TweepError['message']"]
+  - lines: ["115:120"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument name change, element name change]
+    source_apis: [tweets]
+    target_apis: [search]
+  - lines: ["138:153"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument name change, element name change]
+    source_apis: [show]
+    target_apis: [get_user]
+  - lines: ["139:154", "55:45", "74:74", "96:98"]
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: [element name change]
+    source_apis: [TwitterHTTPError]
+    target_apis: [TweepError]
+  - lines: ["145:160"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [output transformation]
+    source_apis: [verified]
+    target_apis: [verified]
+  - lines: ["150:165", "151:166"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [output transformation]
+    source_apis: [location]
+    target_apis: [location]
+  - lines: ["155:170", "156:171"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [output transformation]
+    source_apis: [description]
+    target_apis: [description]
+  - lines: ["160-161:176-177"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [output transformation]
+    source_apis: [screen_name]
+    target_apis: [screen_name]
+  - lines: ["160-161:176-177"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [output transformation]
+    source_apis: [name]
+    target_apis: [name]
+  - lines: ["160-161:176-177"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [output transformation]
+    source_apis: [statuses_count]
+    target_apis: [statuses_count]
+  - lines: ["160-161:176-177"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [output transformation]
+    source_apis: [followers_count]
+    target_apis: [followers_count]
+  - lines: ["26:27-28,30"]
+    cardinality: many-to-many
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [element name change]
+    source_apis: [Twitter, OAuth]
+    target_apis: [OAuthHandler, set_access_token, API]
+  - lines: ["30:44"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [output transformation]
+    source_apis: [user]
+    target_apis: [user]
+  - lines: ["5-6:5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [twitter.Twitter, twitter.OAuth]
+    target_apis: [tweepy]
+  - lines: ["54:43", "73:73"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument name change, element name change]
+    source_apis: [show]
+    target_apis: [get_status]
+  - lines: ["75:75"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [element name change, output transformation]
+    source_apis: [code]
+    target_apis: ["TweepError['code']"]
+  - lines: ["95:105"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument name change, argument transformation]
+    source_apis: [user_timeline]
+    target_apis: [user_timeline]

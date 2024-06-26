@@ -1,0 +1,43 @@
+repo: openstack/python-searchlightclient
+commit: 0bc93d17f7d9c7251064de6c2616d70fc850c0c8
+source: openstackclient
+target: osc-lib
+commit_url: https://github.com/openstack/python-searchlightclient/commit/0bc93d17
+domain: HTTP Clients
+files:
+- path: "searchlightclient/osc/plugin.py"
+  code_changes:
+  - lines: ["16:16"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [common]
+    target_apis: [osc_lib]
+- path: "searchlightclient/osc/v1/facet.py"
+  code_changes:
+  - lines: ["20:20"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [common]
+    target_apis: [osc_lib]
+- path: "searchlightclient/osc/v1/resource_type.py"
+  code_changes:
+  - lines: ["19:19"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [common]
+    target_apis: [osc_lib]
+- path: "searchlightclient/osc/v1/search.py"
+  code_changes:
+  - lines: ["21:21"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [common]
+    target_apis: [osc_lib]

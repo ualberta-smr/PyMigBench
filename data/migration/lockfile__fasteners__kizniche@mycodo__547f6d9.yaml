@@ -1,0 +1,131 @@
+repo: kizniche/mycodo
+commit: 547f6d9f22e569007c1066e36ee5142f5e1b533d
+source: lockfile
+target: fasteners
+commit_url: https://github.com/kizniche/mycodo/commit/547f6d9f
+domain: Multitasking/multiprocessing
+files:
+- path: "mycodo/controller_sensor.py"
+  code_changes:
+  - lines: ["31:26"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [lockfile.LockFile]
+    target_apis: [fasteners]
+- path: "mycodo/devices/atlas_scientific_i2c.py"
+  code_changes:
+  - lines: ["77:79"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [LockFile]
+    target_apis: [InterProcessLock]
+  - lines: ["7:3"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [lockfile.LockFile]
+    target_apis: [fasteners]
+  - lines: ["81:83"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion]
+    source_apis: [acquire]
+    target_apis: [acquire]
+- path: "mycodo/devices/atlas_scientific_uart.py"
+  code_changes:
+  - lines: ["51:54"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [LockFile]
+    target_apis: [InterProcessLock]
+  - lines: ["55:58"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion]
+    source_apis: [acquire]
+    target_apis: [acquire]
+  - lines: ["5:3"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [lockfile.LockFile]
+    target_apis: [fasteners]
+- path: "mycodo/sensors/k30.py"
+  code_changes:
+  - lines: ["101:100"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion]
+    source_apis: [acquire]
+    target_apis: [acquire]
+  - lines: ["3:3"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [lockfile.LockFile]
+    target_apis: [fasteners]
+  - lines: ["95:96"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [LockFile]
+    target_apis: [InterProcessLock]
+- path: "mycodo/sensors/mh_z16.py"
+  code_changes:
+  - lines: ["155:156"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion]
+    source_apis: [acquire]
+    target_apis: [acquire]
+  - lines: ["22:22"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [lockfile.LockFile]
+    target_apis: [fasteners]
+  - lines: ["51:152"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [LockFile]
+    target_apis: [InterProcessLock]
+- path: "mycodo/sensors/mh_z19.py"
+  code_changes:
+  - lines: ["101:102"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion]
+    source_apis: [acquire]
+    target_apis: [acquire]
+  - lines: ["3:3"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [lockfile.LockFile]
+    target_apis: [fasteners]
+  - lines: ["95:98"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [LockFile]
+    target_apis: [InterProcessLock]

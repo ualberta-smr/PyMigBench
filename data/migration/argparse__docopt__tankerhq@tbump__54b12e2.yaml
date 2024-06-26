@@ -1,0 +1,23 @@
+repo: tankerhq/tbump
+commit: 54b12e29d860336593ff24a514f4d2c9c483b470
+source: argparse
+target: docopt
+commit_url: https://github.com/tankerhq/tbump/commit/54b12e29
+domain: Utility
+files:
+- path: "tbump/main.py"
+  code_changes:
+  - lines: ["2:6"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [docopt]
+  - lines: ["44-51:69"]
+    cardinality: many-to-one
+    source_program_elements: [function call, function call, function call, function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [ArgumentParser, add_argument, parse_args, parse_args]
+    target_apis: [docopt]

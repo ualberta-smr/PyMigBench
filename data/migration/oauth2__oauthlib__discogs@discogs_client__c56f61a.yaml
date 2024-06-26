@@ -1,0 +1,30 @@
+repo: discogs/discogs_client
+commit: c56f61aa1d190aa76db71005612a40540277e288
+source: oauth2
+target: oauthlib
+commit_url: https://github.com/discogs/discogs_client/commit/c56f61aa
+domain: Auth
+files:
+- path: "discogs_client/fetchers.py"
+  code_changes:
+  - lines: ["4:5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [oauth2]
+    target_apis: [oauthlib.oauth1]
+  - lines: ["52,56,58:53"]
+    cardinality: many-to-one
+    source_program_elements: [function call, function call, function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [Consumer, Token, Client]
+    target_apis: [Client]
+  - lines: ["74:71"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [set_verifier]
+    target_apis: [verifier]

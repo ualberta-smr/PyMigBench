@@ -1,0 +1,23 @@
+repo: milvus-io/bootcamp
+commit: 89c7afc6548362e9bbf1dbf6142aabb02bc3bb93
+source: pymilvus-orm
+target: pymilvus
+commit_url: https://github.com/milvus-io/bootcamp/commit/89c7afc6
+domain: Database client
+files:
+- path: "benchmark_test/scripts/milvus_helpers.py"
+  code_changes:
+  - lines: ["2-7:2"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pymilvus_orm.connections, pymilvus_orm.Index, pymilvus_orm.types.DataType, pymilvus_orm.schema.FieldSchema, pymilvus_orm.schema.CollectionSchema, pymilvus_orm.collection.Collection]
+    target_apis: [pymilvus.connections, pymilvus.FieldSchema, pymilvus.CollectionSchema, pymilvus.DataType, pymilvus.Collection, pymilvus.utility]
+  - lines: ["98:96"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [drop]
+    target_apis: [drop_collection]

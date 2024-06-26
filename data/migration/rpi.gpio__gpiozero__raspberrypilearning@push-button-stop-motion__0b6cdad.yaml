@@ -1,0 +1,30 @@
+repo: raspberrypilearning/push-button-stop-motion
+commit: 0b6cdadb424feee7d6259966bbc1f6994e30320b
+source: rpi.gpio
+target: gpiozero
+commit_url: https://github.com/raspberrypilearning/push-button-stop-motion/commit/0b6cdadb
+domain: Utility
+files:
+- path: "code/animation.py"
+  code_changes:
+  - lines: ["11:12"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, element name change]
+    source_apis: [wait_for_edge]
+    target_apis: [wait_for_press]
+  - lines: ["2:3"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [RPi.GPIO]
+    target_apis: [gpiozero.Button]
+  - lines: ["4-5:5"]
+    cardinality: many-to-one
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, element name change]
+    source_apis: [setmode, setup]
+    target_apis: [Button]

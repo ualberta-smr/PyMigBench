@@ -1,0 +1,34 @@
+repo: cloud-custodian/cloud-custodian
+commit: ee4d52689e1f4965439b2d360c89eddf8767a935
+source: pyyaml
+target: ruamel.yaml
+commit_url: https://github.com/cloud-custodian/cloud-custodian/commit/ee4d5268
+domain: File reader/writer
+files:
+- path: "tools/c7n_mailer/c7n_mailer/cli.py"
+  code_changes:
+  - lines: ["8:8"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [yaml]
+    target_apis: [ruamel.yaml]
+- path: "tools/c7n_mailer/c7n_mailer/replay.py"
+  code_changes:
+  - lines: ["21:21"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [yaml]
+    target_apis: [ruamel.yaml]
+- path: "tools/c7n_mailer/c7n_mailer/utils.py"
+  code_changes:
+  - lines: ["18:20"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [yaml]
+    target_apis: [ruamel.yaml]

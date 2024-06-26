@@ -1,0 +1,44 @@
+repo: sarumont/py-trello
+commit: ede0ceb10b1e08451767f2b709b52445ada72f37
+source: requests-oauth2
+target: requests-oauthlib
+commit_url: https://github.com/sarumont/py-trello/commit/ede0ceb1
+domain: Auth
+files:
+- path: "trello/__init__.py"
+  code_changes:
+  - lines: ["51:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [Consumer]
+    target_apis: []
+  - lines: ["52:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [Token]
+    target_apis: []
+  - lines: ["53:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [Client]
+    target_apis: []
+  - lines: ["6:4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [oauth2]
+    target_apis: [requests_oauthlib.OAuth1]
+  - lines: [":44"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [OAuth1]

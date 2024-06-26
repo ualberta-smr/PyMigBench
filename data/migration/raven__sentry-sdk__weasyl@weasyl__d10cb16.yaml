@@ -1,0 +1,25 @@
+repo: weasyl/weasyl
+commit: d10cb162447d9e3a9506b76054851863b10ff27a
+source: raven
+target: sentry-sdk
+commit_url: https://github.com/weasyl/weasyl/commit/d10cb162
+domain: Logging/tracing
+files:
+- path: "weasyl/define.py"
+  code_changes:
+  - lines: ["988:979"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [log_exc]
+    target_apis: [capture_exception]
+- path: "weasyl/middleware.py"
+  code_changes:
+  - lines: ["8-9:10"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [raven, raven.processors]
+    target_apis: [sentry_sdk.capture_exception, sentry_sdk.capture_message, sentry_sdk.push_scope, sentry_sdk.set_user]

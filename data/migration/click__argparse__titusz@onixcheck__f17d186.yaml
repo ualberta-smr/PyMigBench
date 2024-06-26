@@ -1,0 +1,81 @@
+repo: titusz/onixcheck
+commit: f17d1861f0fd83d951149066b55fdf1010bb7701
+source: click
+target: argparse
+commit_url: https://github.com/titusz/onixcheck/commit/f17d1861
+domain: Utility
+files:
+- path: "src/onixcheck/__main__.py"
+  code_changes:
+  - lines: ["16:"]
+    cardinality: one-to-zero
+    source_program_elements: [decorator]
+    target_program_elements: []
+    properties: []
+    source_apis: [command]
+    target_apis: []
+  - lines: ["17:27"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [argument]
+    target_apis: [add_argument]
+  - lines: ["18:30"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [function call]
+    properties: [argument deletion, element name change]
+    source_apis: [option]
+    target_apis: [add_argument]
+  - lines: ["19:31", "20:32", "21:33"]
+    cardinality: one-to-one
+    source_program_elements: [decorator]
+    target_program_elements: [function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [option]
+    target_apis: [add_argument]
+  - lines: ["22:"]
+    cardinality: one-to-zero
+    source_program_elements: [decorator]
+    target_program_elements: []
+    properties: []
+    source_apis: [version_option]
+    target_apis: []
+  - lines: ["5:6"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [click]
+    target_apis: [argparse.ArgumentParser, argparse.FileType]
+  - lines: [":20-24"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [ArgumentParser]
+- path: "tests/test_onixcheck.py"
+  code_changes:
+  - lines: ["17:", "25:", "33:", "40:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [CliRunner]
+    target_apis: []
+  - lines: ["18:", "26:", "34:", "41:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [invoke]
+    target_apis: []
+  - lines: ["3:"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: []
+    properties: []
+    source_apis: [click.testing.CliRunner]
+    target_apis: []

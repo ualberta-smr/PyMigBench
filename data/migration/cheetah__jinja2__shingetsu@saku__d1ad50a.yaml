@@ -1,0 +1,23 @@
+repo: shingetsu/saku
+commit: d1ad50a9baedf58b37fd8527c09d9b0668d59013
+source: cheetah
+target: jinja2
+commit_url: https://github.com/shingetsu/saku/commit/d1ad50a9
+domain: Web Framework
+files:
+- path: "shingetsu/template.py"
+  code_changes:
+  - lines: ["34:32"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Cheetah.Template]
+    target_apis: [jinja2]
+  - lines: ["72:67"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [compile]
+    target_apis: [get_template]

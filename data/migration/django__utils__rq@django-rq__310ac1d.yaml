@@ -1,0 +1,43 @@
+repo: rq/django-rq
+commit: 310ac1d9934796988ef454d83a34b8e08bc608ce
+source: django
+target: utils
+commit_url: https://github.com/rq/django-rq/commit/310ac1d9
+domain: Web Framework
+files:
+- path: "django_rq/decorators.py"
+  code_changes:
+  - lines: ["4:"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: []
+    properties: []
+    source_apis: [six]
+    target_apis: []
+- path: "django_rq/jobs.py"
+  code_changes:
+  - lines: ["5:"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: []
+    properties: []
+    source_apis: [six]
+    target_apis: []
+- path: "django_rq/queues.py"
+  code_changes:
+  - lines: ["11:"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: []
+    properties: []
+    source_apis: [six]
+    target_apis: []
+- path: "django_rq/workers.py"
+  code_changes:
+  - lines: ["5:"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: []
+    properties: []
+    source_apis: [six]
+    target_apis: []

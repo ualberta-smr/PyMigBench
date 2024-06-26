@@ -1,0 +1,23 @@
+repo: hustlzp/permission
+commit: d174a21795ede39cdfce884a7f9757f50e29ca9b
+source: pyandoc
+target: pypandoc
+commit_url: https://github.com/hustlzp/permission/commit/d174a217
+domain: Documentation
+files:
+- path: "makedoc.py"
+  code_changes:
+  - lines: ["1:1"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pandoc]
+    target_apis: [pypandoc]
+  - lines: ["3-6,8:4"]
+    cardinality: many-to-one
+    source_program_elements: [attribute, function call, attribute, attribute]
+    target_program_elements: [function call]
+    properties: [argument addition, element name change]
+    source_apis: [PANDOC_PATH, Document, markdown, rst]
+    target_apis: [convert]

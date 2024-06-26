@@ -1,0 +1,225 @@
+repo: clearmatics/ion
+commit: 03fb3a3a307640d2fc0d4481cc3c529c8661b55c
+source: argparse
+target: click
+commit_url: https://github.com/clearmatics/ion/commit/03fb3a3a
+domain: Utility
+files:
+- path: "ion/plasma/chain.py"
+  code_changes:
+  - lines: ["132:135"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: ["299:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["300-301:299"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument name change, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["302-303:300", "304-305:301"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["306:302"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument addition, argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument, Path]
+  - lines: ["307:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - lines: [":298"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]
+- path: "ion/plasma/payment.py"
+  code_changes:
+  - lines: ["199:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["201:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [add_mutually_exclusive_group]
+    target_apis: []
+  - lines: ["204-205:197", "211-212:201", "213-214:202", "215-216:203", "218-219:204"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument name change, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["206-207:198"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["206:198"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [FileType]
+    target_apis: [File]
+  - lines: ["209-210:200"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument name change, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["227:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - lines: ["5:7"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: [":196"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]
+- path: "ion/rpc/client.py"
+  code_changes:
+  - lines: ["222:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["223-224:223", "226-227:224"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["228:225"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["225:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [add_mutually_exclusive_group]
+    target_apis: []
+  - lines: ["229:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - lines: ["3:4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: [":222"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]
+- path: "ion/rpc/server.py"
+  code_changes:
+  - lines: ["123:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["127-128:119"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, argument name change, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["129-130:120", "131-132:121"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["134-135:123", "136-137:122"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["139:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - lines: ["8:7"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: [":118"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]

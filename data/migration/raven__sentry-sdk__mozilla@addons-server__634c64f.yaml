@@ -1,0 +1,23 @@
+repo: mozilla/addons-server
+commit: 634c64f7d1a6e6183087ad996599f1c033e333b1
+source: raven
+target: sentry-sdk
+commit_url: https://github.com/mozilla/addons-server/commit/634c64f7
+domain: HTTP Clients
+files:
+- path: "src/olympia/amo/celery.py"
+  code_changes:
+  - lines: ["22-23:16,23-24"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [raven.Client, raven.contrib.celery.register_logger_signal, raven.contrib.celery.register_signal]
+    target_apis: [sentry_sdk, sentry_sdk.integrations.celery.CeleryIntegration, sentry_sdk.integrations.django.DjangoIntegration]
+  - lines: ["84,87,90,94:85-87"]
+    cardinality: many-to-many
+    source_program_elements: [function call, function call, function call, function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument transformation, element name change]
+    source_apis: [Client, register_logger_signal, register_signal, register_logger_signal]
+    target_apis: [init, DjangoIntegration, CeleryIntegration]

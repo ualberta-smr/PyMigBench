@@ -1,0 +1,58 @@
+repo: logicaldash/lise
+commit: 028d0b34a4dadc59b18c88fa3381967c23245e63
+source: umsgpack
+target: msgpack
+commit_url: https://github.com/logicaldash/lise/commit/028d0b34
+domain: Serialization
+files:
+- path: "LiSE/LiSE/engine.py"
+  code_changes:
+  - lines: ["13:13"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [umsgpack]
+    target_apis: [msgpack]
+  - lines: ["184:184", "187-189:187-189", "192-194:192-194", "197-199:197-199", "202:202", "205:205", "208:208", "211-213:211-213", "216-222:216-222", "225:225", "385:390"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Ext]
+    target_apis: [ExtType]
+  - lines: ["184:184", "187-189:187-189", "192-194:192-194", "197-199:197-199", "202:202", "205:205", "208:208", "211-213:211-213"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument name change]
+    source_apis: [packb]
+    target_apis: [packb]
+  - lines: ["222:222", "225:225"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition]
+    source_apis: [packb]
+    target_apis: [packb]
+  - lines: ["228:228", "237:237", "252:252", "267:267", "297:297", "300:300", "303:303", "350:350", "395:407"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument name change, argument transformation]
+    source_apis: [unpackb]
+    target_apis: [unpackb]
+  - lines: ["282:282", "285:285", "288:288", "291:291", "294:294"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument transformation]
+    source_apis: [unpackb]
+    target_apis: [unpackb]
+  - lines: ["392:404"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument addition, argument name change, argument transformation]
+    source_apis: [packb]
+    target_apis: [packb]

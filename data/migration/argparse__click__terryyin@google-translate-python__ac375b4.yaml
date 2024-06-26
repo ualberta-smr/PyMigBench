@@ -1,0 +1,51 @@
+repo: terryyin/google-translate-python
+commit: ac375b49cf1e72e0a79f78ba1a74e57b6c3f8aed
+source: argparse
+target: click
+commit_url: https://github.com/terryyin/google-translate-python/commit/ac375b49
+domain: Utility
+files:
+- path: "translate/main.py"
+  code_changes:
+  - lines: ["25:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["26-29:48-52", "30-33:43-47"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["34-37:53"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["42:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []
+  - lines: ["8:9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: [":42"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [decorator]
+    properties: []
+    source_apis: []
+    target_apis: [command]

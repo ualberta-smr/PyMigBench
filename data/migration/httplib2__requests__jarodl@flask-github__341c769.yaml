@@ -1,0 +1,30 @@
+repo: jarodl/flask-github
+commit: 341c769f2f7889583a0802982ea3373677573de1
+source: httplib2
+target: requests
+commit_url: https://github.com/jarodl/flask-github/commit/341c769f
+domain: HTTP Clients
+files:
+- path: "flask_github.py"
+  code_changes:
+  - lines: ["14:12"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [httplib2.Http]
+    target_apis: [requests]
+  - lines: ["70,73:72"]
+    cardinality: many-to-one
+    source_program_elements: [function call, function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, argument transformation, element name change]
+    source_apis: [Http, request]
+    target_apis: [request]
+  - lines: [":40"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [session]

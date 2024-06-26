@@ -1,0 +1,16 @@
+repo: nlpia/nlpia-bot
+commit: 054d5d207cba12d9b5c4765454be1c51424ea4f3
+source: fuzzywuzzy
+target: rapidfuzz
+commit_url: https://github.com/nlpia/nlpia-bot/commit/054d5d20
+domain: Utilities
+files:
+- path: "qary/skills/search_fuzzy_bots.py"
+  code_changes:
+  - lines: ["8:8"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [fuzzywuzzy.process]
+    target_apis: [rapidfuzz.process]

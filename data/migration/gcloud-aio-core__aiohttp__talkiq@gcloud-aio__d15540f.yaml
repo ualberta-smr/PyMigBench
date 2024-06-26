@@ -1,0 +1,16 @@
+repo: talkiq/gcloud-aio
+commit: d15540f94ecdf468b1baf7fd9c025e4f862b3b69
+source: gcloud-aio-core
+target: aiohttp
+commit_url: https://github.com/talkiq/gcloud-aio/commit/d15540f9
+domain: HTTP client/server
+files:
+- path: "taskqueue/gcloud/aio/taskqueue/taskqueue.py"
+  code_changes:
+  - lines: ["12-17:6"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [gcloud.aio.core.aio.call_later, gcloud.aio.core.http.delete, gcloud.aio.core.http.get, gcloud.aio.core.http.HttpError, gcloud.aio.core.http.patch, gcloud.aio.core.http.post]
+    target_apis: [aiohttp]

@@ -1,0 +1,23 @@
+repo: tgalal/python-axolotl
+commit: f74a936745db2c2f04575bd63308d6b6c0cc91ce
+source: pycryptodome
+target: cryptography
+commit_url: https://github.com/tgalal/python-axolotl/commit/f74a9367
+domain: Crypto
+files:
+- path: "axolotl/sessioncipher.py"
+  code_changes:
+  - lines: ["230:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [new]
+    target_apis: []
+  - lines: ["5-6:6-7"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [Crypto.Cipher.AES, Crypto.Util.Counter]
+    target_apis: [cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes, cryptography.hazmat.backends.default_backend]

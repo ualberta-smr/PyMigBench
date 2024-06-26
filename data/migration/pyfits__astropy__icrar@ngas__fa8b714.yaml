@@ -1,0 +1,34 @@
+repo: icrar/ngas
+commit: fa8b714cfe1a3644f4132b25932b614a2ed625a7
+source: pyfits
+target: astropy
+commit_url: https://github.com/icrar/ngas/commit/fa8b714c
+domain: Filesystem&Scientific
+files:
+- path: "src/ngamsPlugIns/ngamsPlugIns/gleam/ngamsGLEAM_Fix_Phase2_JobPI.py"
+  code_changes:
+  - lines: ["46:46"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pyfits]
+    target_apis: [astropy.io.fits]
+- path: "src/ngamsPlugIns/ngamsPlugIns/mwa/ngamsMWA_MIT_FilterPlugin.py"
+  code_changes:
+  - lines: ["59:59"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pyfits]
+    target_apis: [astropy.io.fits]
+- path: "src/ngamsPlugIns/ngamsPlugIns/mwa/ngamsMWA_MIT_NoTape_FilterPI.py"
+  code_changes:
+  - lines: ["40:40"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pyfits]
+    target_apis: [astropy.io.fits]

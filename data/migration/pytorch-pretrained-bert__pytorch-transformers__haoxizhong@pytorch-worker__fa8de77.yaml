@@ -1,0 +1,32 @@
+repo: haoxizhong/pytorch-worker
+commit: fa8de771a86df6130d7ff456319240bc1387804d
+source: pytorch-pretrained-bert
+target: pytorch-transformers
+commit_url: https://github.com/haoxizhong/pytorch-worker/commit/fa8de771
+domain: Deep Learning
+files:
+- path: "formatter/nlp/BasicBertFormatter.py"
+  code_changes:
+  - lines: ["5:5"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_pretrained_bert.tokenization.BertTokenizer]
+    target_apis: [pytorch_transformers.tokenization_bert.BertTokenizer]
+- path: "model/nlp/BasicBert.py"
+  code_changes:
+  - lines: ["26:26"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion]
+    source_apis: [bert]
+    target_apis: [bert]
+  - lines: ["4:4"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pytorch_pretrained_bert.BertModel]
+    target_apis: [pytorch_transformers.BertModel]

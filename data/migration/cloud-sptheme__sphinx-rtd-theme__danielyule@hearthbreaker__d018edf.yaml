@@ -1,0 +1,23 @@
+repo: danielyule/hearthbreaker
+commit: d018edff306bf88c8be56d2c8252a44b374f9293
+source: cloud-sptheme
+target: sphinx-rtd-theme
+commit_url: https://github.com/danielyule/hearthbreaker/commit/d018edff
+domain: Documentation
+files:
+- path: "docs/conf.py"
+  code_changes:
+  - lines: ["121:121"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [get_theme_dir]
+    target_apis: [get_html_theme_path]
+  - lines: ["21:21"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [cloud_sptheme]
+    target_apis: [sphinx_rtd_theme]

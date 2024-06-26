@@ -1,0 +1,23 @@
+repo: mozilla/addons-server
+commit: 5fd17b43f241bb83c2cdb1d2d179b3b4369e644f
+source: requests-oauth2
+target: oauthlib
+commit_url: https://github.com/mozilla/addons-server/commit/5fd17b43
+domain: Auth
+files:
+- path: "mkt/api/tests/test_oauth.py"
+  code_changes:
+  - lines: ["11:12"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [oauth2]
+    target_apis: [oauthlib.oauth1]
+  - lines: ["41:43"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [attribute]
+    properties: [element name change]
+    source_apis: [SignatureMethod_HMAC_SHA1]
+    target_apis: [SIGNATURE_HMAC]

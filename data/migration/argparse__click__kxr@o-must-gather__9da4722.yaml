@@ -1,0 +1,128 @@
+repo: kxr/o-must-gather
+commit: 9da472294ca5a598bb74cb413db0bd880f7012b2
+source: argparse
+target: click
+commit_url: https://github.com/kxr/o-must-gather/commit/9da47229
+domain: Utility
+files:
+- path: "omg/cli.py"
+  code_changes:
+  - lines: ["15:", "20:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [ArgumentParser]
+    target_apis: []
+  - lines: ["16:16", "17:17"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument transformation, element name change]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["1:1"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [argparse]
+    target_apis: [click]
+  - lines: ["21:28"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, element name change]
+    source_apis: [add_subparsers]
+    target_apis: [group]
+  - lines: ["24:33", "31-32:44", "37-38:53", "42-43:61", "50-51:72", "64-65:94", "69-70:102"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [add_parser]
+    target_apis: [command]
+  - lines: ["26:34-35"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument, Path]
+  - lines: ["27:36"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["28:", "34:", "39:", "47:", "53:", "61:", "66:", "71:", "81:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [set_defaults]
+    target_apis: []
+  - lines: ["44:62"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["45:63"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [decorator, function call]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option, Choice]
+  - lines: ["52:73"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["56-57:82"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, argument transformation, element name change]
+    source_apis: [add_parser]
+    target_apis: [command]
+  - lines: ["58:83"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [argument]
+  - lines: ["59:84"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["60:85"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument addition, argument deletion, argument transformation, element name change, parameter addition to decorated function]
+    source_apis: [add_argument]
+    target_apis: [option]
+  - lines: ["74-75:110"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [decorator]
+    properties: [argument deletion, element name change]
+    source_apis: [add_parser]
+    target_apis: [group]
+  - lines: ["84:"]
+    cardinality: one-to-zero
+    source_program_elements: [function call]
+    target_program_elements: []
+    properties: []
+    source_apis: [parse_args]
+    target_apis: []

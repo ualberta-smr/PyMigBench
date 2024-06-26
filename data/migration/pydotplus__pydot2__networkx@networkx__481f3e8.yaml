@@ -1,0 +1,61 @@
+repo: networkx/networkx
+commit: 481f3e8e405cafc05c570e8fc5a2a4d531f86121
+source: pydotplus
+target: pydot2
+commit_url: https://github.com/networkx/networkx/commit/481f3e8e
+domain: Graphic
+files:
+- path: "examples/drawing/atlas.py"
+  code_changes:
+  - lines: ["67:67"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pydotplus]
+    target_apis: [pydot]
+- path: "examples/drawing/circular_tree.py"
+  code_changes:
+  - lines: ["9:9"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pydotplus]
+    target_apis: [pydot]
+- path: "examples/drawing/giant_component.py"
+  code_changes:
+  - lines: ["30:30"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pydotplus]
+    target_apis: [pydot]
+- path: "examples/drawing/lanl_routes.py"
+  code_changes:
+  - lines: ["53:53"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pydotplus]
+    target_apis: [pydot]
+- path: "examples/graph/atlas.py"
+  code_changes:
+  - lines: ["67:67"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pydotplus]
+    target_apis: [pydot]
+- path: "examples/pygraphviz/write_dotfile.py"
+  code_changes:
+  - lines: ["31:31"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [pydotplus]
+    target_apis: [pydot]

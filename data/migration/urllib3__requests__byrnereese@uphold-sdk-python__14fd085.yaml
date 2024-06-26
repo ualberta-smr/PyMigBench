@@ -1,0 +1,44 @@
+repo: byrnereese/uphold-sdk-python
+commit: 14fd08502a37cd98aaf4570f53d4082b3dafe3dd
+source: urllib3
+target: requests
+commit_url: https://github.com/byrnereese/uphold-sdk-python/commit/14fd0850
+domain: HTTP Clients
+files:
+- path: "bitreserve/bitreserve.py"
+  code_changes:
+  - lines: ["22:22"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [urllib3]
+    target_apis: [requests]
+  - lines: ["254:250"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, element name change]
+    source_apis: [request_encode_body]
+    target_apis: [post]
+  - lines: ["255:251", "270:266"]
+    cardinality: one-to-one
+    source_program_elements: [exception]
+    target_program_elements: [exception]
+    properties: []
+    source_apis: [SSLError]
+    target_apis: [SSLError]
+  - lines: ["269:265"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, element name change]
+    source_apis: [request]
+    target_apis: [get]
+  - lines: ["36-39:35"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument deletion, element name change]
+    source_apis: [PoolManager]
+    target_apis: [Session]

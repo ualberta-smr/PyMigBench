@@ -1,0 +1,141 @@
+repo: openstack/fuel-devops
+commit: 5d0df07841dd862165137ed34fcb2a02d9ec2b7b
+source: ipaddr
+target: netaddr
+commit_url: https://github.com/openstack/fuel-devops/commit/5d0df078
+domain: HTTP Clients
+files:
+- path: "devops/driver/libvirt/libvirt_driver.py"
+  code_changes:
+  - lines: ["202-203:202-203", "391:391"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [IPNetwork]
+    target_apis: [IPNetwork]
+  - lines: ["24:25"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [netaddr]
+- path: "devops/helpers/network.py"
+  code_changes:
+  - lines: [":14"]
+    cardinality: not applicable
+    source_program_elements: []
+    target_program_elements: [import]
+    properties: []
+    source_apis: []
+    target_apis: [netaddr.IPSet]
+  - lines: [":29"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [IPSet]
+- path: "devops/helpers/templates.py"
+  code_changes:
+  - lines: ["19:19"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr.IPNetwork]
+    target_apis: [netaddr.IPNetwork]
+- path: "devops/models/environment.py"
+  code_changes:
+  - lines: ["19:19"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr.IPNetwork]
+    target_apis: [netaddr.IPNetwork]
+- path: "devops/models/network.py"
+  code_changes:
+  - lines: ["16:21"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr.IPNetwork]
+    target_apis: [netaddr.IPNetwork]
+- path: "devops/tests/driver/libvirt/test_driver.py"
+  code_changes:
+  - lines: ["142:142"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [IPNetwork]
+    target_apis: [IPNetwork]
+  - lines: ["18:19"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [netaddr.IPNetwork]
+- path: "devops/tests/driver/libvirt/test_l2_network_device.py"
+  code_changes:
+  - lines: ["110:110"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [IPNetwork]
+    target_apis: [IPNetwork]
+  - lines: ["16:17"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [netaddr.IPNetwork]
+- path: "devops/tests/driver/libvirt/test_template.py"
+  code_changes:
+  - lines: ["18:19"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr]
+    target_apis: [netaddr.IPAddress]
+  - lines: ["263:263"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [IPAddress]
+    target_apis: [IPAddress]
+- path: "devops/tests/driver/libvirt/test_xml_builder.py"
+  code_changes:
+  - lines: ["17:17"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr.IPNetwork]
+    target_apis: [netaddr.IPNetwork]
+- path: "devops/tests/test_helpers.py"
+  code_changes:
+  - lines: ["19:19"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr.IPNetwork]
+    target_apis: [netaddr.IPNetwork]
+- path: "devops/tests/test_manager.py"
+  code_changes:
+  - lines: ["16:16"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [ipaddr.IPNetwork]
+    target_apis: [netaddr.IPNetwork]

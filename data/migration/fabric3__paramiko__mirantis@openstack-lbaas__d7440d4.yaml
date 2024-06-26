@@ -1,0 +1,79 @@
+repo: mirantis/openstack-lbaas
+commit: d7440d4693629c15fc6ce6cc09d6bcda62c8b08a
+source: fabric3
+target: paramiko
+commit_url: https://github.com/mirantis/openstack-lbaas/commit/d7440d46
+domain: HTTP Clients
+files:
+- path: "balancer/drivers/haproxy/RemoteControl.py"
+  code_changes:
+  - lines: ["101:104,107-109", "111-112:121-123", "51-52:45-48"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, element name change, output transformation]
+    source_apis: [run]
+    target_apis: [connect, exec_command]
+  - lines: ["102:111-112", "115:128-129", "33:36-37", "55:52"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [argument transformation, element name change]
+    source_apis: [sudo]
+    target_apis: [exec_command]
+  - lines: ["108:118", "119:133", "168:184", "75:74", "79:79", "83:84", "98:101"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [disconnect_all]
+    target_apis: [close]
+  - lines: ["161-164:176-180"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument transformation, element name change, output transformation]
+    source_apis: [sudo]
+    target_apis: [connect, exec_command]
+  - lines: ["23:23-26"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument addition, element name change]
+    source_apis: [get]
+    target_apis: [connect, open_sftp, get]
+  - lines: ["25:27-28"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [element name change]
+    source_apis: [disconnect_all]
+    target_apis: [close, close]
+  - lines: ["29-30:32-35"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call, function call]
+    properties: [argument addition, element name change]
+    source_apis: [put]
+    target_apis: [connect, open_sftp, put]
+  - lines: ["3-4:2"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [fabric.api.env, fabric.api.sudo, fabric.api.get, fabric.api.put, fabric.api.run, fabric.network.disconnect_all]
+    target_apis: [paramiko]
+  - lines: ["74:72-73", "78:77-78", "82:82-83", "97:98-100"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument transformation, element name change]
+    source_apis: [sudo]
+    target_apis: [connect, exec_command]
+  - lines: [":57"]
+    cardinality: zero-to-one
+    source_program_elements: []
+    target_program_elements: [function call]
+    properties: []
+    source_apis: []
+    target_apis: [close]

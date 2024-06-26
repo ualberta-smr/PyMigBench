@@ -1,0 +1,16 @@
+repo: scrapinghub/scrapinghub-entrypoint-scrapy
+commit: 80b2262a9696bf8fa6b0d5423efc30fdd46fe54f
+source: hubstorage
+target: scrapinghub
+commit_url: https://github.com/scrapinghub/scrapinghub-entrypoint-scrapy/commit/80b2262a
+domain: HTTP Clients&Web Framework
+files:
+- path: "sh_scrapy/hsref.py"
+  code_changes:
+  - lines: ["47:47"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [hubstorage.client.HubstorageClient]
+    target_apis: [scrapinghub.HubstorageClient]

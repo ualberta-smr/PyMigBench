@@ -1,0 +1,30 @@
+repo: thombashi/sqlitebiter
+commit: 26c8e7467fb764d6abca03d6830f7679cbfc3ea1
+source: dataproperty
+target: typepy
+commit_url: https://github.com/thombashi/sqlitebiter/commit/26c8e746
+domain: Utilities
+files:
+- path: "sqlitebiter/sqlitebiter.py"
+  code_changes:
+  - lines: ["136:136", "227:227"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: []
+    source_apis: [is_empty_sequence]
+    target_apis: [is_empty_sequence]
+  - lines: ["13:17"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [dataproperty]
+    target_apis: [typepy]
+  - lines: ["239:239", "46:46"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [is_not_empty_string]
+    target_apis: [is_not_null_string]

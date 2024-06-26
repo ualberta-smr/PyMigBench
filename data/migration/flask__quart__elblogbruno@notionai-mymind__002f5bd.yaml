@@ -1,0 +1,44 @@
+repo: elblogbruno/notionai-mymind
+commit: 002f5bde5d5d5f2eaaf6999e41e4619817c10400
+source: flask
+target: quart
+commit_url: https://github.com/elblogbruno/notionai-mymind/commit/002f5bde
+domain: Development framework/extension
+files:
+- path: "Python Server/app/server.py"
+  code_changes:
+  - lines: ["149:110"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [async transformation]
+    source_apis: [render_template]
+    target_apis: [render_template]
+  - lines: ["154:115"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [function call]
+    properties: [async transformation, element name change]
+    source_apis: [form]
+    target_apis: [get_json]
+  - lines: ["20:14"]
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [Flask]
+    target_apis: [Quart]
+  - lines: ["4-6:3"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [flask.send_from_directory, flask.render_template, flask.Flask, flask.flash, flask.request, flask.redirect, flask.url_for]
+    target_apis: [quart.Quart, quart.render_template, quart.flash, quart.request, quart.redirect]
+  - lines: ["80:55"]
+    cardinality: one-to-one
+    source_program_elements: [attribute]
+    target_program_elements: [attribute]
+    properties: [async transformation]
+    source_apis: [files]
+    target_apis: [files]

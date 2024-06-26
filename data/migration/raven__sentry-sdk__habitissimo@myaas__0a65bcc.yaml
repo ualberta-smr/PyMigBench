@@ -1,0 +1,23 @@
+repo: habitissimo/myaas
+commit: 0a65bcc2ce97a2e3ad9b028b1cf9bcc58499f5d9
+source: raven
+target: sentry-sdk
+commit_url: https://github.com/habitissimo/myaas/commit/0a65bcc2
+domain: Logging/tracing
+files:
+- path: "src/runserver.py"
+  code_changes:
+  - lines: ["7:6-7"]
+    cardinality: not applicable
+    source_program_elements: [import]
+    target_program_elements: [import]
+    properties: []
+    source_apis: [raven.contrib.flask.Sentry]
+    target_apis: [sentry_sd, sentry_sdk.integrations.flask.FlaskIntegration]
+  - lines: ["8:9-12"]
+    cardinality: one-to-many
+    source_program_elements: [function call]
+    target_program_elements: [function call, function call]
+    properties: [argument addition, argument deletion, element name change]
+    source_apis: [Sentry]
+    target_apis: [init, FlaskIntegration]
