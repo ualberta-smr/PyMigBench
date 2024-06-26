@@ -39,8 +39,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [gcloud.credentials.get_credentials, gcloud.storage, gcloud.storage.connection.Connection]
-    target_apis: [google.auth.credentials.with_scopes_if_required, google.cloud.credentials.get_credentials, google.cloud.storage, google.cloud.storage._http.Connection]
+    source_apis: [gcloud.storage.connection.Connection, gcloud.credentials.get_credentials, gcloud.storage]
+    target_apis: [google.cloud.storage._http.Connection, google.cloud.credentials.get_credentials, google.cloud.storage, google.auth.credentials.with_scopes_if_required]
   - line: "27:28"
     cardinality: one-to-one
     source_program_elements: [function call]

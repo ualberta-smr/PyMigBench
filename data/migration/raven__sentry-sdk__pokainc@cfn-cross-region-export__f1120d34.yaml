@@ -13,7 +13,7 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument addition, argument deletion, element name change]
     source_apis: [Client, captureException]
-    target_apis: [AwsLambdaIntegration, init]
+    target_apis: [init, AwsLambdaIntegration]
   - line: "8-9:8-9"
     cardinality: not applicable
     source_program_elements: [import]

@@ -13,7 +13,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [Crypto.Cipher.AES, Crypto.Random, Crypto.Random.random]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes]
+    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.modes]
   - line: "47:"
     cardinality: one-to-zero
     source_program_elements: [function call]
@@ -23,29 +23,29 @@ files:
     target_apis: []
   - line: "57:62-63"
     cardinality: many-to-many
-    source_program_elements: [attribute, function call]
+    source_program_elements: [function call, attribute]
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
-    source_apis: [MODE_CBC, new]
-    target_apis: [AES, CBC, Cipher, default_backend]
+    source_apis: [new, MODE_CBC]
+    target_apis: [Cipher, AES, CBC, default_backend]
   - line: "79:89"
     cardinality: many-to-many
-    source_program_elements: [attribute, function call]
+    source_program_elements: [function call, attribute]
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
-    source_apis: [MODE_CBC, new]
-    target_apis: [AES, CBC, Cipher, default_backend]
+    source_apis: [new, MODE_CBC]
+    target_apis: [Cipher, AES, CBC, default_backend]
   - line: "58:65-67"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [element name change]
     source_apis: [encrypt]
-    target_apis: [encryptor, finalize, update]
+    target_apis: [encryptor, update, finalize]
   - line: "80:91-92"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [element name change]
     source_apis: [decrypt]
-    target_apis: [decryptor, finalize, update]
+    target_apis: [decryptor, update, finalize]

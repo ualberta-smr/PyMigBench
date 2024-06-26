@@ -19,5 +19,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [urllib3.connectionpool, urllib3.exceptions, urllib3.util]
+    source_apis: [urllib3.exceptions, urllib3.connectionpool, urllib3.util]
     target_apis: [requests, requests.exceptions]

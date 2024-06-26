@@ -19,5 +19,5 @@ files:
     source_program_elements: [function call, function call, function call]
     target_program_elements: [function call, function call, function call]
     properties: [async transformation, async transformation, element name change, output transformation]
-    source_apis: [json, post, raise_for_status]
+    source_apis: [post, raise_for_status, json]
     target_apis: [ClientSession, post, text]

@@ -118,7 +118,7 @@ files:
     target_program_elements: [function call, function call, function call]
     properties: [argument addition, element name change]
     source_apis: [get]
-    target_apis: [connect, get, open_sftp]
+    target_apis: [connect, open_sftp, get]
   - line: "25:27-28"
     cardinality: one-to-many
     source_program_elements: [function call]
@@ -138,7 +138,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [fabric.api.env, fabric.api.get, fabric.api.put, fabric.api.run, fabric.api.sudo, fabric.network.disconnect_all]
+    source_apis: [fabric.api.env, fabric.api.sudo, fabric.api.get, fabric.api.put, fabric.api.run, fabric.network.disconnect_all]
     target_apis: [paramiko]
   - line: "74:72-73"
     cardinality: one-to-many

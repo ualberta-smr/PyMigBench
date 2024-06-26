@@ -57,4 +57,4 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [slack]
-    target_apis: [slack_sdk.rtm.RTMClient, slack_sdk.web.WebClient]
+    target_apis: [slack_sdk.web.WebClient, slack_sdk.rtm.RTMClient]

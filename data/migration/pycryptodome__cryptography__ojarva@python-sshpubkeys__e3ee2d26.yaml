@@ -12,8 +12,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [Crypto.PublicKey.DSA, Crypto.PublicKey.RSA]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.dsa.DSAParameterNumbers, cryptography.hazmat.primitives.asymmetric.dsa.DSAPublicNumbers, cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicNumbers]
+    source_apis: [Crypto.PublicKey.RSA, Crypto.PublicKey.DSA]
+    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.dsa.DSAPublicNumbers, cryptography.hazmat.primitives.asymmetric.dsa.DSAParameterNumbers, cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicNumbers]
   - line: "277:278"
     cardinality: one-to-many
     source_program_elements: [function call]

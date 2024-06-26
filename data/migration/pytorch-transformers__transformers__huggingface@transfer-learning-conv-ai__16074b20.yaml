@@ -12,8 +12,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.GPT2DoubleHeadsModel, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer, pytorch_transformers.OpenAIGPTDoubleHeadsModel, pytorch_transformers.OpenAIGPTLMHeadModel, pytorch_transformers.OpenAIGPTTokenizer]
-    target_apis: [transformers.GPT2DoubleHeadsModel, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer, transformers.OpenAIGPTDoubleHeadsModel, transformers.OpenAIGPTLMHeadModel, transformers.OpenAIGPTTokenizer]
+    source_apis: [pytorch_transformers.OpenAIGPTDoubleHeadsModel, pytorch_transformers.OpenAIGPTLMHeadModel, pytorch_transformers.OpenAIGPTTokenizer, pytorch_transformers.GPT2DoubleHeadsModel, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer]
+    target_apis: [transformers.OpenAIGPTDoubleHeadsModel, transformers.OpenAIGPTLMHeadModel, transformers.OpenAIGPTTokenizer, transformers.GPT2DoubleHeadsModel, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer]
 - path: "interact.py"
   code_changes:
   - line: "15:15"
@@ -21,8 +21,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer, pytorch_transformers.OpenAIGPTLMHeadModel, pytorch_transformers.OpenAIGPTTokenizer]
-    target_apis: [transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer, transformers.OpenAIGPTLMHeadModel, transformers.OpenAIGPTTokenizer]
+    source_apis: [pytorch_transformers.OpenAIGPTLMHeadModel, pytorch_transformers.OpenAIGPTTokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer]
+    target_apis: [transformers.OpenAIGPTLMHeadModel, transformers.OpenAIGPTTokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer]
 - path: "test_special_tokens.py"
   code_changes:
   - line: "5:5"
@@ -30,8 +30,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.OpenAIGPTTokenizer]
-    target_apis: [transformers.GPT2Tokenizer, transformers.OpenAIGPTTokenizer]
+    source_apis: [pytorch_transformers.OpenAIGPTTokenizer, pytorch_transformers.GPT2Tokenizer]
+    target_apis: [transformers.OpenAIGPTTokenizer, transformers.GPT2Tokenizer]
 - path: "train.py"
   code_changes:
   - line: "19:19"
@@ -39,8 +39,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.AdamW, pytorch_transformers.CONFIG_NAME, pytorch_transformers.GPT2DoubleHeadsModel, pytorch_transformers.GPT2Tokenizer, pytorch_transformers.OpenAIGPTDoubleHeadsModel, pytorch_transformers.OpenAIGPTTokenizer, pytorch_transformers.WEIGHTS_NAME]
-    target_apis: [transformers.AdamW, transformers.CONFIG_NAME, transformers.GPT2DoubleHeadsModel, transformers.GPT2Tokenizer, transformers.OpenAIGPTDoubleHeadsModel, transformers.OpenAIGPTTokenizer, transformers.WEIGHTS_NAME]
+    source_apis: [pytorch_transformers.AdamW, pytorch_transformers.OpenAIGPTDoubleHeadsModel, pytorch_transformers.OpenAIGPTTokenizer, pytorch_transformers.GPT2DoubleHeadsModel, pytorch_transformers.GPT2Tokenizer, pytorch_transformers.WEIGHTS_NAME, pytorch_transformers.CONFIG_NAME]
+    target_apis: [transformers.AdamW, transformers.OpenAIGPTDoubleHeadsModel, transformers.OpenAIGPTTokenizer, transformers.GPT2DoubleHeadsModel, transformers.GPT2Tokenizer, transformers.WEIGHTS_NAME, transformers.CONFIG_NAME]
   - line: "263:263"
     cardinality: one-to-one
     source_program_elements: [type]

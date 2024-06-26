@@ -12,7 +12,7 @@ files:
     source_program_elements: [function call, function call]
     target_program_elements: [function call]
     properties: [argument addition, element name change]
-    source_apis: [BytesEncoder, create]
+    source_apis: [create, BytesEncoder]
     target_apis: [create_pool]
   - line: "6-7:4"
     cardinality: not applicable

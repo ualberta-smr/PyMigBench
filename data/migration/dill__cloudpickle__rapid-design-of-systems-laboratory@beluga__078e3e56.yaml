@@ -12,7 +12,7 @@ files:
     source_program_elements: [attribute, function call]
     target_program_elements: [function call]
     properties: [element name change]
-    source_apis: [dump, settings]
+    source_apis: [settings, dump]
     target_apis: [dump]
   - line: "8:8"
     cardinality: not applicable

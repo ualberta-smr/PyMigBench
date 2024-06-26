@@ -9,52 +9,52 @@ files:
   code_changes:
   - line: "118:119-120"
     cardinality: many-to-many
-    source_program_elements: [attribute, function call]
+    source_program_elements: [function call, attribute]
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
-    source_apis: [MODE_ECB, new]
-    target_apis: [AES, Cipher, ECB, default_backend]
+    source_apis: [new, MODE_ECB]
+    target_apis: [Cipher, AES, ECB, default_backend]
   - line: "119:121-122"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [argument name change, element name change]
     source_apis: [decrypt]
-    target_apis: [decryptor, finalize, update]
+    target_apis: [decryptor, update, finalize]
   - line: "364:371-372"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [argument name change, element name change]
     source_apis: [decrypt]
-    target_apis: [decryptor, finalize, update]
+    target_apis: [decryptor, update, finalize]
   - line: "363:368-370"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
     source_apis: [new]
-    target_apis: [AES, CBC, Cipher, default_backend]
+    target_apis: [Cipher, AES, default_backend, CBC]
   - line: "385:395-397"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
     source_apis: [new]
-    target_apis: [AES, CBC, Cipher, default_backend]
+    target_apis: [Cipher, AES, default_backend, CBC]
   - line: "389:398-399"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [element name change]
     source_apis: [encrypt]
-    target_apis: [encryptor, finalize, update]
+    target_apis: [encryptor, update, finalize]
   - line: "56-57:56-57"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [Crypto.Cipher.AES, Crypto.Hash.SHA256]
+    source_apis: [Crypto.Hash.SHA256, Crypto.Cipher.AES]
     target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes]
 - path: "privacyidea/lib/importotp.py"
   code_changes:
@@ -78,4 +78,4 @@ files:
     target_program_elements: [function call, function call, function call]
     properties: [element name change]
     source_apis: [encrypt]
-    target_apis: [encryptor, finalize, update]
+    target_apis: [encryptor, update, finalize]

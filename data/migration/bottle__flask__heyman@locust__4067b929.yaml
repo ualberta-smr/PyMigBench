@@ -19,7 +19,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [bottle, bottle.route, bottle.run, bottle.send_file]
+    source_apis: [bottle.route, bottle.run, bottle.send_file, bottle]
     target_apis: [flask.Flask, flask.make_response]
   - line: "20:19-21"
     cardinality: one-to-many

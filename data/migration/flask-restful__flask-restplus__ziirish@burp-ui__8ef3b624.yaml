@@ -21,8 +21,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask.ext.restful.Resource, flask.ext.restful.reqparse]
-    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.reqparse]
+    source_apis: [flask.ext.restful.reqparse, flask.ext.restful.Resource]
+    target_apis: [flask.ext.restplus.reqparse, flask.ext.restplus.Resource]
 - path: "burpui/api/clients.py"
   code_changes:
   - line: "15:15"
@@ -30,8 +30,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask.ext.restful.Resource, flask.ext.restful.reqparse]
-    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.reqparse]
+    source_apis: [flask.ext.restful.reqparse, flask.ext.restful.Resource]
+    target_apis: [flask.ext.restplus.reqparse, flask.ext.restplus.Resource]
 - path: "burpui/api/misc.py"
   code_changes:
   - line: "15:15"
@@ -39,8 +39,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask.ext.restful.Resource, flask.ext.restful.abort, flask.ext.restful.reqparse]
-    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.abort, flask.ext.restplus.reqparse]
+    source_apis: [flask.ext.restful.reqparse, flask.ext.restful.Resource, flask.ext.restful.abort]
+    target_apis: [flask.ext.restplus.reqparse, flask.ext.restplus.Resource, flask.ext.restplus.abort]
 - path: "burpui/api/restore.py"
   code_changes:
   - line: "18:18"
@@ -48,8 +48,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask.ext.restful.Resource, flask.ext.restful.abort, flask.ext.restful.reqparse]
-    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.abort, flask.ext.restplus.reqparse]
+    source_apis: [flask.ext.restful.reqparse, flask.ext.restful.Resource, flask.ext.restful.abort]
+    target_apis: [flask.ext.restplus.reqparse, flask.ext.restplus.Resource, flask.ext.restplus.abort]
 - path: "burpui/api/servers.py"
   code_changes:
   - line: "8:8"
@@ -57,8 +57,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask.ext.restful.Resource, flask.ext.restful.reqparse]
-    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.reqparse]
+    source_apis: [flask.ext.restful.reqparse, flask.ext.restful.Resource]
+    target_apis: [flask.ext.restplus.reqparse, flask.ext.restplus.Resource]
 - path: "burpui/api/settings.py"
   code_changes:
   - line: "14:14"
@@ -66,5 +66,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask.ext.restful.Resource, flask.ext.restful.abort, flask.ext.restful.reqparse]
-    target_apis: [flask.ext.restplus.Resource, flask.ext.restplus.abort, flask.ext.restplus.reqparse]
+    source_apis: [flask.ext.restful.reqparse, flask.ext.restful.abort, flask.ext.restful.Resource]
+    target_apis: [flask.ext.restplus.reqparse, flask.ext.restplus.abort, flask.ext.restplus.Resource]

@@ -20,7 +20,7 @@ files:
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument transformation, element name change]
     source_apis: [docopt]
-    target_apis: [ArgumentParser, add_argument, add_mutually_exclusive_group, parse_args]
+    target_apis: [ArgumentParser, add_argument, parse_args, add_mutually_exclusive_group]
 - path: "pyhwp/hwp5/hwp5odt.py"
   code_changes:
   - line: "347:22"
@@ -36,7 +36,7 @@ files:
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument transformation, element name change]
     source_apis: [docopt]
-    target_apis: [ArgumentParser, add_argument, add_mutually_exclusive_group, parse_args]
+    target_apis: [ArgumentParser, add_argument, parse_args, add_mutually_exclusive_group]
 - path: "pyhwp/hwp5/hwp5txt.py"
   code_changes:
   - line: "45:22"

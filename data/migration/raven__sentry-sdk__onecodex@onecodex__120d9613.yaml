@@ -48,4 +48,4 @@ files:
     target_program_elements: [function call, function call]
     properties: [element name change]
     source_apis: [clear]
-    target_apis: [clear, configure_scope]
+    target_apis: [configure_scope, clear]

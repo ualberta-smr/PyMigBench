@@ -26,7 +26,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [eventlet, eventlet.green.socket, eventlet.green.threading, eventlet.green.time]
+    source_apis: [eventlet, eventlet.green.threading, eventlet.green.time, eventlet.green.socket]
     target_apis: [gevent]
 - path: "lp_callback.py"
   code_changes:
@@ -35,7 +35,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [eventlet.event, eventlet.green.socket, eventlet.green.threading]
+    source_apis: [eventlet.event, eventlet.green.threading, eventlet.green.socket]
     target_apis: [gevent.event]
 - path: "speed.py"
   code_changes:
@@ -65,5 +65,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [eventlet, eventlet.green.socket, eventlet.green.threading, eventlet.green.time]
+    source_apis: [eventlet, eventlet.green.threading, eventlet.green.time, eventlet.green.socket]
     target_apis: [gevent, gevent.monkey]

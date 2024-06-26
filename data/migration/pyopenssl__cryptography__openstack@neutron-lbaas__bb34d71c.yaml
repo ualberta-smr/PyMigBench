@@ -19,5 +19,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [OpenSSL.SSL, OpenSSL.crypto]
+    source_apis: [OpenSSL.crypto, OpenSSL.SSL]
     target_apis: [cryptography.x509]

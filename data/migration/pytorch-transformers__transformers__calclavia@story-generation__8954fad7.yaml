@@ -12,8 +12,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.GPT2Config, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer]
-    target_apis: [transformers.GPT2Config, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer]
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]
 - path: "analysis/eval_ppl.py"
   code_changes:
   - line: "12:12"
@@ -21,8 +21,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.GPT2Config, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer]
-    target_apis: [transformers.GPT2Config, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer]
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]
 - path: "analysis/eval_prompt_rank.py"
   code_changes:
   - line: "13:13"
@@ -30,8 +30,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.GPT2Config, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer]
-    target_apis: [transformers.GPT2Config, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer]
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]
 - path: "analysis/generate.py"
   code_changes:
   - line: "10:10"
@@ -39,8 +39,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.GPT2Config, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer]
-    target_apis: [transformers.GPT2Config, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer]
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]
 - path: "train.py"
   code_changes:
   - line: "9:9"
@@ -48,5 +48,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.GPT2Config, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Tokenizer]
-    target_apis: [transformers.GPT2Config, transformers.GPT2LMHeadModel, transformers.GPT2Tokenizer]
+    source_apis: [pytorch_transformers.GPT2Tokenizer, pytorch_transformers.GPT2LMHeadModel, pytorch_transformers.GPT2Config]
+    target_apis: [transformers.GPT2Tokenizer, transformers.GPT2LMHeadModel, transformers.GPT2Config]

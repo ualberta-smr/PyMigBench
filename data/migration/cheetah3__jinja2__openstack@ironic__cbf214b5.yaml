@@ -13,7 +13,7 @@ files:
     target_program_elements: [function call, function call, function call, function call]
     properties: [element name change, output transformation]
     source_apis: [Template]
-    target_apis: [Environment, FileSystemLoader, get_template, render]
+    target_apis: [FileSystemLoader, get_template, render, Environment]
   - line: "21:25"
     cardinality: not applicable
     source_program_elements: [import]
@@ -36,4 +36,4 @@ files:
     target_program_elements: [function call, function call, function call, function call]
     properties: [element name change, output transformation]
     source_apis: [Template]
-    target_apis: [Environment, FileSystemLoader, get_template, render]
+    target_apis: [FileSystemLoader, get_template, render, Environment]

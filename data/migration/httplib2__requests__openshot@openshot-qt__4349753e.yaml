@@ -10,14 +10,14 @@ files:
   - line: "155:155-156"
     cardinality: many-to-many
     source_program_elements: [function call, function call]
-    target_program_elements: [attribute, attribute, function call]
+    target_program_elements: [function call, attribute, attribute]
     properties: [argument deletion, element name change, output transformation]
     source_apis: [Http, request]
     target_apis: [get, status_code, text]
   - line: "175:175-176"
     cardinality: many-to-many
     source_program_elements: [function call, function call]
-    target_program_elements: [attribute, attribute, function call]
+    target_program_elements: [function call, attribute, attribute]
     properties: [argument deletion, argument name change, element name change, output transformation]
     source_apis: [Http, request]
     target_apis: [post, status_code, text]
@@ -40,7 +40,7 @@ files:
   - line: "51:51-52,55"
     cardinality: many-to-many
     source_program_elements: [function call, function call]
-    target_program_elements: [attribute, function call, function call]
+    target_program_elements: [function call, attribute, function call]
     properties: [element name change, output transformation]
     source_apis: [Http, request]
-    target_apis: [get, json, text]
+    target_apis: [get, text, json]

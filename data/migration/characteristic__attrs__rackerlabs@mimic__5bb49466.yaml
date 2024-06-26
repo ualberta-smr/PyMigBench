@@ -12,7 +12,7 @@ files:
     source_program_elements: [import]
     target_program_elements: []
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: []
   - line: "160:158"
     cardinality: one-to-one
@@ -33,7 +33,7 @@ files:
     source_program_elements: [decorator, function call]
     target_program_elements: [decorator]
     properties: [argument deletion, element name change]
-    source_apis: [Attribute, attributes]
+    source_apis: [attributes, Attribute]
     target_apis: [s]
 - path: "mimic/model/customer_objects.py"
   code_changes:
@@ -42,21 +42,21 @@ files:
     source_program_elements: [decorator, function call, function call]
     target_program_elements: [decorator]
     properties: [argument deletion, element name change]
-    source_apis: [Attribute, Attribute, attributes]
+    source_apis: [attributes, Attribute, Attribute]
     target_apis: [s]
   - line: "75:78"
     cardinality: many-to-one
     source_program_elements: [decorator, function call]
     target_program_elements: [decorator]
     properties: [argument deletion, element name change]
-    source_apis: [Attribute, attributes]
+    source_apis: [attributes, Attribute]
     target_apis: [s]
   - line: "7:7"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
 - path: "mimic/model/flavor_collections.py"
   code_changes:
@@ -65,21 +65,21 @@ files:
     source_program_elements: [decorator, function call]
     target_program_elements: [decorator]
     properties: [argument deletion, element name change]
-    source_apis: [Attribute, attributes]
+    source_apis: [attributes, Attribute]
     target_apis: [s]
   - line: "90-91:92"
     cardinality: many-to-one
     source_program_elements: [decorator, function call]
     target_program_elements: [decorator]
     properties: [argument deletion, element name change]
-    source_apis: [Attribute, attributes]
+    source_apis: [attributes, Attribute]
     target_apis: [s]
   - line: "9:9"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
 - path: "mimic/model/flavors.py"
   code_changes:
@@ -126,55 +126,55 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "15:20"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "16:21"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "17:22"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "204:210"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "205-208:211-212"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "306:312"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "5:5"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: ":17"
     cardinality: zero-to-one
@@ -317,13 +317,13 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "7:7"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: ":22"
     cardinality: zero-to-one
@@ -361,20 +361,20 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "86:98"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "9:9"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: ":17"
     cardinality: zero-to-one
@@ -447,20 +447,20 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "79:89"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "8:7"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: ":18"
     cardinality: zero-to-one
@@ -519,13 +519,13 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "7:7"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: ":20"
     cardinality: zero-to-one
@@ -633,27 +633,27 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "656-658:677-678"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "977:1001"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "9:9"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: ":1000"
     cardinality: zero-to-one
@@ -838,13 +838,13 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "5:5"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
 - path: "mimic/model/rackspace_images.py"
   code_changes:
@@ -916,7 +916,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: ":151"
     cardinality: zero-to-one
@@ -1108,13 +1108,13 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "7:7"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
 - path: "mimic/rest/cloudfeeds.py"
   code_changes:
@@ -1362,7 +1362,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: "235:239"
     cardinality: one-to-one
@@ -1384,28 +1384,28 @@ files:
     target_program_elements: [function call, function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib, instance_of]
+    target_apis: [ib, Factory, instance_of]
   - line: "76-77:95-96"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib, instance_of]
+    target_apis: [ib, Factory, instance_of]
   - line: "82-83:101-102"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib, instance_of]
+    target_apis: [ib, Factory, instance_of]
   - line: "84:103"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib, instance_of]
+    target_apis: [ib, Factory, instance_of]
   - line: "148-149:174"
     cardinality: one-to-many
     source_program_elements: [function call]
@@ -1540,13 +1540,13 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "12:12"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: "102:105"
     cardinality: one-to-one
@@ -1632,7 +1632,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [characteristic.Attribute, characteristic.attributes]
+    source_apis: [characteristic.attributes, characteristic.Attribute]
     target_apis: [attr]
   - line: "16-18:16"
     cardinality: one-to-one
@@ -1654,14 +1654,14 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "18:27"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [Attribute]
-    target_apis: [Factory, ib]
+    target_apis: [ib, Factory]
   - line: "49:58"
     cardinality: one-to-many
     source_program_elements: [function call]

@@ -22,7 +22,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [utils.crypto]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding, cryptography.x509.load_pem_x509_certificate]
+    target_apis: [cryptography.x509.load_pem_x509_certificate, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding]
   - line: "24:30-31"
     cardinality: one-to-one
     source_program_elements: [function call]
@@ -49,7 +49,7 @@ files:
     source_program_elements: [function call, function call]
     target_program_elements: [attribute]
     properties: [element name change]
-    source_apis: [get_components, get_issuer]
+    source_apis: [get_issuer, get_components]
     target_apis: [issuer]
   - line: "46:57-62"
     cardinality: one-to-one
@@ -80,7 +80,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [utils.crypto]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding, cryptography.hazmat.primitives.serialization]
+    target_apis: [cryptography.hazmat.primitives.serialization, cryptography.hazmat.primitives.asymmetric.padding, cryptography.hazmat.backends.default_backend]
 - path: "celery/security/utils.py"
   code_changes:
   - line: "12:8-9"
@@ -89,7 +89,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [OpenSSL.crypto]
-    target_apis: [cryptography.exceptions, cryptography.hazmat.primitives.hashes]
+    target_apis: [cryptography.hazmat.primitives.hashes, cryptography.exceptions]
   - line: "23:26"
     cardinality: one-to-one
     source_program_elements: [exception]

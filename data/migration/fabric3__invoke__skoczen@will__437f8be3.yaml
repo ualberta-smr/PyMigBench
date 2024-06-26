@@ -180,7 +180,7 @@ files:
     source_program_elements: [function call, function call]
     target_program_elements: [function call]
     properties: [element name change]
-    source_apis: [local, settings]
+    source_apis: [settings, local]
     target_apis: [run]
   - line: ":104"
     cardinality: zero-to-one

@@ -49,7 +49,7 @@ files:
     source_program_elements: [function call, function call]
     target_program_elements: [function call]
     properties: [argument transformation, element name change]
-    source_apis: [Bytes, IPv6Address]
+    source_apis: [IPv6Address, Bytes]
     target_apis: [IPv6Address]
   - line: "19:19"
     cardinality: not applicable
@@ -471,7 +471,7 @@ files:
     target_program_elements: [attribute, attribute]
     properties: [element name change]
     source_apis: [broadcast]
-    target_apis: [broadcast_address, network]
+    target_apis: [network, broadcast_address]
   - line: "448:448"
     cardinality: one-to-one
     source_program_elements: [function call]

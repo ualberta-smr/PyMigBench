@@ -24,7 +24,7 @@ files:
   - line: "273-283:304-309"
     cardinality: one-to-many
     source_program_elements: [function call]
-    target_program_elements: [attribute, function call]
+    target_program_elements: [function call, attribute]
     properties: [argument deletion, argument name change, argument transformation, element name change]
     source_apis: [request]
-    target_apis: [json, post]
+    target_apis: [post, json]

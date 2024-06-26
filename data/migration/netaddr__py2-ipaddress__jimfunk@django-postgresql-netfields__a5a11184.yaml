@@ -31,10 +31,10 @@ files:
   - line: "95:95"
     cardinality: many-to-many
     source_program_elements: [function call, function call]
-    target_program_elements: [attribute, function call]
+    target_program_elements: [function call, attribute]
     properties: [element name change]
     source_apis: [IPAddress, IPNetwork]
-    target_apis: [ip, ip_interface]
+    target_apis: [ip_interface, ip]
   - line: "96:96"
     cardinality: one-to-one
     source_program_elements: [exception]
@@ -50,7 +50,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [IPNetwork]
-    target_apis: [_BaseNetwork, _IPAddressBase, ip_interface, ip_network]
+    target_apis: [ip_interface, ip_network, _IPAddressBase, _BaseNetwork]
   - line: "42:42"
     cardinality: one-to-one
     source_program_elements: [type]

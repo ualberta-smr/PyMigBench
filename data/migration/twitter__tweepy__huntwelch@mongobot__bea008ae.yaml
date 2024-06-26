@@ -13,7 +13,7 @@ files:
     target_program_elements: [function call, function call, function call]
     properties: [argument name change, element name change]
     source_apis: [Api]
-    target_apis: [API, OAuthHandler, set_access_token]
+    target_apis: [OAuthHandler, set_access_token, API]
   - line: "1:1"
     cardinality: not applicable
     source_program_elements: [import]

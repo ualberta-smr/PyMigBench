@@ -19,5 +19,5 @@ files:
     source_program_elements: [function call, function call, function call, function call]
     target_program_elements: [function call, function call, function call]
     properties: [argument transformation, element name change]
-    source_apis: [Client, register_logger_signal, register_logger_signal, register_signal]
-    target_apis: [CeleryIntegration, DjangoIntegration, init]
+    source_apis: [Client, register_logger_signal, register_signal, register_logger_signal]
+    target_apis: [init, DjangoIntegration, CeleryIntegration]

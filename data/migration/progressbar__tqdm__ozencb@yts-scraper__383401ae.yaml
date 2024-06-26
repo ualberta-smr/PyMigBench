@@ -33,7 +33,7 @@ files:
     source_program_elements: [function call, function call, function call, function call]
     target_program_elements: [function call]
     properties: [argument addition, argument deletion, element name change]
-    source_apis: [Bar, ETA, ProgressBar, Timer]
+    source_apis: [Timer, ETA, Bar, ProgressBar]
     target_apis: [tqdm]
   - line: "8:8"
     cardinality: not applicable

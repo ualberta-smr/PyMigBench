@@ -9,10 +9,10 @@ files:
   code_changes:
   - line: "14-16:10"
     cardinality: many-to-one
-    source_program_elements: [attribute, attribute, function call, function call, function call]
+    source_program_elements: [function call, attribute, function call, attribute, function call]
     target_program_elements: [function call]
     properties: [argument addition, argument deletion, element name change, output transformation]
-    source_apis: [HTMLParser, HTMLSanitizer, childNodes, parseFragment, toxml]
+    source_apis: [HTMLParser, HTMLSanitizer, parseFragment, childNodes, toxml]
     target_apis: [clean]
   - line: "2:1"
     cardinality: not applicable

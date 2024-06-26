@@ -27,7 +27,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [OpenSSL]
-    target_apis: [cryptography.hazmat.backends.openssl, cryptography.hazmat.primitives.hashes, cryptography.x509]
+    target_apis: [cryptography.x509, cryptography.hazmat.backends.openssl, cryptography.hazmat.primitives.hashes]
   - line: "62-65:60"
     cardinality: one-to-one
     source_program_elements: [function call]
@@ -41,18 +41,18 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument transformation, element name change, output transformation]
     source_apis: [digest]
-    target_apis: [MD5, fingerprint]
+    target_apis: [fingerprint, MD5]
   - line: "79:64"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument transformation, element name change, output transformation]
     source_apis: [digest]
-    target_apis: [SHA1, fingerprint]
+    target_apis: [fingerprint, SHA1]
   - line: "80:65"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument transformation, element name change, output transformation]
     source_apis: [digest]
-    target_apis: [SHA256, fingerprint]
+    target_apis: [fingerprint, SHA256]

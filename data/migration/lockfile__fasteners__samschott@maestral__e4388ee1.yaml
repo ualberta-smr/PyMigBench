@@ -12,5 +12,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [AlreadyLocked, PIDLockFile]
+    source_apis: [PIDLockFile, AlreadyLocked]
     target_apis: [InterProcessLock]

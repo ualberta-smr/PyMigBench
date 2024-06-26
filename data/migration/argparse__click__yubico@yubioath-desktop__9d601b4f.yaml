@@ -69,7 +69,7 @@ files:
     target_program_elements: [decorator, function call]
     properties: [argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [IntRange, option]
+    target_apis: [option, IntRange]
   - line: "163:136"
     cardinality: one-to-one
     source_program_elements: [function call]
@@ -83,14 +83,14 @@ files:
     target_program_elements: [decorator, function call]
     properties: [argument name change, argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Choice, option]
+    target_apis: [option, Choice]
   - line: "166-167:139-140"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [decorator, function call]
     properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Choice, option]
+    target_apis: [option, Choice]
   - line: "170-171:142"
     cardinality: one-to-one
     source_program_elements: [function call]

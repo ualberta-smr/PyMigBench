@@ -378,8 +378,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [PySide2.QtCore.QRunnable, PySide2.QtCore.QThread, PySide2.QtCore.pyqtSignal]
-    target_apis: [PySide2.QtCore.QRunnable, PySide2.QtCore.QThread, PySide2.QtCore.Signal]
+    source_apis: [PySide2.QtCore.QThread, PySide2.QtCore.QRunnable, PySide2.QtCore.pyqtSignal]
+    target_apis: [PySide2.QtCore.QThread, PySide2.QtCore.QRunnable, PySide2.QtCore.Signal]
   - line: "166:166"
     cardinality: one-to-one
     source_program_elements: [function call]
@@ -566,8 +566,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [PyQt5.QtCore, "PyQt5.QtGui.*", "PyQt5.QtWidgets.*"]
-    target_apis: [PySide2.QtCore, PySide2.QtGui, "PySide2.QtGui.*", PySide2.QtWidgets, "PySide2.QtWidgets.*"]
+    source_apis: ["PyQt5.QtWidgets.*", PyQt5.QtCore, "PyQt5.QtGui.*"]
+    target_apis: ["PySide2.QtWidgets.*", PySide2.QtCore, PySide2.QtWidgets, PySide2.QtGui, "PySide2.QtGui.*"]
 - path: "src/GridCal/Gui/Main/GridCalMain.py"
   code_changes:
   - line: "57:57"

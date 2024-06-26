@@ -20,4 +20,4 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [botocore.exceptions.ClientError]
-    target_apis: [boto.ec2, boto.utils]
+    target_apis: [boto.utils, boto.ec2]

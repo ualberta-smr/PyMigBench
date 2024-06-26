@@ -12,5 +12,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [watchdog.events.FileSystemEventHandler, watchdog.observers.Observer]
+    source_apis: [watchdog.observers.Observer, watchdog.events.FileSystemEventHandler]
     target_apis: [pyinotify]

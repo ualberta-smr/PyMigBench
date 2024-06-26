@@ -20,4 +20,4 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [Crypto.Cipher.AES, Crypto.Util.Counter]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes]
+    target_apis: [cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes, cryptography.hazmat.backends.default_backend]

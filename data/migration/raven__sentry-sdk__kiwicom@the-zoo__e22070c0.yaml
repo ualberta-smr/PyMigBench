@@ -26,10 +26,10 @@ files:
   - line: "142:142-144"
     cardinality: one-to-many
     source_program_elements: [function call]
-    target_program_elements: [attribute, function call, function call]
+    target_program_elements: [function call, attribute, function call]
     properties: [element name change]
     source_apis: [captureException]
-    target_apis: [capture_exception, fingerprint, push_scope]
+    target_apis: [fingerprint, capture_exception, push_scope]
   - line: "8:4"
     cardinality: not applicable
     source_program_elements: [import]

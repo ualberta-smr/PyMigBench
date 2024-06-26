@@ -49,8 +49,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [Crypto.Cipher.AES, Crypto.Cipher.DES3, Crypto.PublicKey.DSA, Crypto.PublicKey.RSA, Crypto.Util]
-    target_apis: [cryptography.exceptions.InvalidSignature, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.dsa, cryptography.hazmat.primitives.asymmetric.padding, cryptography.hazmat.primitives.asymmetric.rsa, cryptography.hazmat.primitives.asymmetric.utils.decode_rfc6979_signature, cryptography.hazmat.primitives.asymmetric.utils.ecode_dss_signature, cryptography.hazmat.primitives.asymmetric.utils.encode_dss_signature, cryptography.hazmat.primitives.asymmetric.utils.encode_rfc6979_signature, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes, cryptography.hazmat.primitives.hashes]
+    source_apis: [Crypto.Cipher.DES3, Crypto.Cipher.AES, Crypto.PublicKey.RSA, Crypto.PublicKey.DSA, Crypto.Util]
+    target_apis: [cryptography.exceptions.InvalidSignature, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.hashes, cryptography.hazmat.primitives.asymmetric.dsa, cryptography.hazmat.primitives.asymmetric.rsa, cryptography.hazmat.primitives.asymmetric.padding, cryptography.hazmat.primitives.asymmetric.utils.encode_dss_signature, cryptography.hazmat.primitives.asymmetric.utils.ecode_dss_signature, cryptography.hazmat.primitives.asymmetric.utils.encode_rfc6979_signature, cryptography.hazmat.primitives.asymmetric.utils.decode_rfc6979_signature, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes]
   - line: "233:256"
     cardinality: one-to-one
     source_program_elements: [type]
@@ -78,7 +78,7 @@ files:
     target_program_elements: [function call, function call, function call]
     properties: [element name change]
     source_apis: [decrypt]
-    target_apis: [decryptor, finalize, update]
+    target_apis: [decryptor, update, finalize]
   - line: "276:307-315"
     cardinality: one-to-many
     source_program_elements: [function call]
@@ -101,7 +101,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [Crypto.Util]
-    target_apis: [cryptography.exceptions.UnsupportedAlgorithm, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes]
+    target_apis: [cryptography.exceptions.UnsupportedAlgorithm, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes, cryptography.hazmat.primitives.ciphers.Cipher]
   - line: "50:"
     cardinality: one-to-zero
     source_program_elements: [function call]

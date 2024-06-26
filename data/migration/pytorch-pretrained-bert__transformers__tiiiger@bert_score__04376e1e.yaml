@@ -26,5 +26,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_pretrained_bert.BertForMaskedLM, pytorch_pretrained_bert.BertModel, pytorch_pretrained_bert.BertTokenizer]
+    source_apis: [pytorch_pretrained_bert.BertTokenizer, pytorch_pretrained_bert.BertModel, pytorch_pretrained_bert.BertForMaskedLM]
     target_apis: [transformers.AutoModel, transformers.AutoTokenizer]

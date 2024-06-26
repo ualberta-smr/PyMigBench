@@ -12,5 +12,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [dill, dill.dumps, dill.loads]
+    source_apis: [dill.loads, dill.dumps, dill]
     target_apis: [pickle]

@@ -9,11 +9,11 @@ files:
   code_changes:
   - line: "164:167-168"
     cardinality: many-to-many
-    source_program_elements: [attribute, function call, function call]
+    source_program_elements: [function call, attribute, function call]
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument deletion, argument transformation, element name change]
-    source_apis: [MODE_CTR, new, new]
-    target_apis: [AES, CTR, Cipher, default_backend]
+    source_apis: [new, MODE_CTR, new]
+    target_apis: [AES, Cipher, CTR, default_backend]
   - line: "166:169,172"
     cardinality: one-to-many
     source_program_elements: [function call]
@@ -27,4 +27,4 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [Crypto.Cipher.AES, Crypto.Util.Counter]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.primitives.ciphers.modes.CTR]
+    target_apis: [cryptography.hazmat.primitives.ciphers.Cipher, cryptography.hazmat.primitives.ciphers.algorithms, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.ciphers.modes.CTR]

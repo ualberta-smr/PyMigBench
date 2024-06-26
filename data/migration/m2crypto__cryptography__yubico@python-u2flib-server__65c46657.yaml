@@ -13,7 +13,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [M2Crypto.X509]
-    target_apis: [cryptography.exceptions.InvalidSignature, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding, cryptography.x509, cryptography.x509.oid.NameOID]
+    target_apis: [cryptography.exceptions.InvalidSignature, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding, cryptography.x509.oid.NameOID, cryptography.x509]
   - line: "65:69"
     cardinality: one-to-one
     source_program_elements: [function call]
@@ -31,14 +31,14 @@ files:
   - line: "66:70"
     cardinality: one-to-many
     source_program_elements: [function call]
-    target_program_elements: [attribute, function call]
+    target_program_elements: [function call, attribute]
     properties: [argument addition, element name change, output transformation]
     source_apis: [as_text]
     target_apis: [get_attributes_for_oid, value]
   - line: "73:94"
     cardinality: one-to-many
     source_program_elements: [function call]
-    target_program_elements: [attribute, function call]
+    target_program_elements: [function call, attribute]
     properties: [argument addition, element name change, output transformation]
     source_apis: [as_text]
     target_apis: [get_attributes_for_oid, value]

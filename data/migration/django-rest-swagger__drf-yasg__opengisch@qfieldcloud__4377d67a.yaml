@@ -13,4 +13,4 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [rest_framework_swagger.views.get_swagger_view]
-    target_apis: [drf_yasg.openapi, drf_yasg.views.get_schema_view]
+    target_apis: [drf_yasg.views.get_schema_view, drf_yasg.openapi]

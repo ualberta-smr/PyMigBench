@@ -12,5 +12,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [MapResult, Pool]
-    target_apis: [MapResult, Pool]
+    source_apis: [Pool, MapResult]
+    target_apis: [Pool, MapResult]

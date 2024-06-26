@@ -12,7 +12,7 @@ files:
     source_program_elements: [function call, function call, function call, function call]
     target_program_elements: [function call]
     properties: [argument transformation, element name change]
-    source_apis: [BytesIO, Curl, HTTPHeader, setopt]
+    source_apis: [Curl, BytesIO, HTTPHeader, setopt]
     target_apis: [get]
   - line: "1660:1643"
     cardinality: one-to-one

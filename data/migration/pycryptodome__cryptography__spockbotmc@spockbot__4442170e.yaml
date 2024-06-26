@@ -13,7 +13,7 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument addition, argument name change, element name change]
     source_apis: [new]
-    target_apis: [encrypt, load_der_public_key]
+    target_apis: [load_der_public_key, encrypt]
   - line: "134:137"
     cardinality: one-to-one
     source_program_elements: [function call]
@@ -33,8 +33,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [Crypto.Cipher.PKCS1_v1_5, Crypto.PublicKey.RSA, Crypto.Random]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding, cryptography.hazmat.primitives.serialization]
+    source_apis: [Crypto.Random, Crypto.Cipher.PKCS1_v1_5, Crypto.PublicKey.RSA]
+    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.serialization, cryptography.hazmat.primitives.asymmetric.padding]
   - line: "70:"
     cardinality: one-to-zero
     source_program_elements: [function call]

@@ -33,8 +33,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask.Flask, flask.flash, flask.redirect, flask.render_template, flask.request, flask.send_from_directory, flask.url_for]
-    target_apis: [quart.Quart, quart.flash, quart.redirect, quart.render_template, quart.request]
+    source_apis: [flask.send_from_directory, flask.render_template, flask.Flask, flask.flash, flask.request, flask.redirect, flask.url_for]
+    target_apis: [quart.Quart, quart.render_template, quart.flash, quart.request, quart.redirect]
   - line: "80:55"
     cardinality: one-to-one
     source_program_elements: [attribute]

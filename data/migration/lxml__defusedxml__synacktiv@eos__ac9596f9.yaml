@@ -12,7 +12,7 @@ files:
     source_program_elements: [function call, function call]
     target_program_elements: [function call]
     properties: [element name change]
-    source_apis: [getroot, parse]
+    source_apis: [parse, getroot]
     target_apis: [parse]
   - line: "116:115"
     cardinality: one-to-one

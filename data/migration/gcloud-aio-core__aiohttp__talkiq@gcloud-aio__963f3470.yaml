@@ -13,7 +13,7 @@ files:
     target_program_elements: [function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
     source_apis: [post]
-    target_apis: [ClientSession, json, post]
+    target_apis: [ClientSession, post, json]
   - line: "5:4"
     cardinality: not applicable
     source_program_elements: [import]

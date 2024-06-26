@@ -12,5 +12,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [Crypto.Cipher.AES, Crypto.Cipher.PKCS1_OAEP, Crypto.Hash, Crypto.Hash.SHA, Crypto.Hash.SHA256, Crypto.PublicKey.RSA, Crypto.Random, Crypto.Signature.PKCS1_v1_5]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding, cryptography.hazmat.primitives.hashes, cryptography.hazmat.primitives.serialization, cryptography.x509]
+    source_apis: [Crypto.Signature.PKCS1_v1_5, Crypto.Hash.SHA256, Crypto.Hash.SHA, Crypto.PublicKey.RSA, Crypto.Cipher.AES, Crypto.Cipher.PKCS1_OAEP, Crypto.Hash, Crypto.Random]
+    target_apis: [cryptography.x509, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.serialization, cryptography.hazmat.primitives.hashes, cryptography.hazmat.primitives.asymmetric.padding]

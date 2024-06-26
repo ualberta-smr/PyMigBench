@@ -12,7 +12,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [argparse.ArgumentDefaultsHelpFormatter, argparse.ArgumentParser]
+    source_apis: [argparse.ArgumentParser, argparse.ArgumentDefaultsHelpFormatter]
     target_apis: [click]
   - line: "192-194:"
     cardinality: one-to-zero
@@ -49,7 +49,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [argparse.ArgumentDefaultsHelpFormatter, argparse.ArgumentParser]
+    source_apis: [argparse.ArgumentParser, argparse.ArgumentDefaultsHelpFormatter]
     target_apis: [click]
   - line: "68-70:"
     cardinality: one-to-zero
@@ -71,21 +71,21 @@ files:
     target_program_elements: [decorator, function call]
     properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Path, option]
+    target_apis: [option, Path]
   - line: "79-86:73-78"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [decorator, function call]
     properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Path, option]
+    target_apis: [option, Path]
   - line: "87-89:79-84"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [decorator, function call]
     properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Path, option]
+    target_apis: [option, Path]
   - line: "94:"
     cardinality: one-to-zero
     source_program_elements: [function call]
@@ -107,7 +107,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [argparse.ArgumentDefaultsHelpFormatter, argparse.ArgumentParser]
+    source_apis: [argparse.ArgumentParser, argparse.ArgumentDefaultsHelpFormatter]
     target_apis: [click]
   - line: "164-166:"
     cardinality: one-to-zero
@@ -129,7 +129,7 @@ files:
     target_program_elements: [decorator, function call]
     properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Path, option]
+    target_apis: [option, Path]
   - line: "180:"
     cardinality: one-to-zero
     source_program_elements: [function call]

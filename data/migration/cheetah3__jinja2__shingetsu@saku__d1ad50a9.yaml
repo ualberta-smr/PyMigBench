@@ -20,4 +20,4 @@ files:
     target_program_elements: [function call, function call, function call]
     properties: [argument transformation, element name change]
     source_apis: [compile]
-    target_apis: [Environment, get_template, render]
+    target_apis: [get_template, render, Environment]

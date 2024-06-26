@@ -30,8 +30,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_transformers.BERT_PRETRAINED_CONFIG_ARCHIVE_MAP, pytorch_transformers.BERT_PRETRAINED_MODEL_ARCHIVE_MAP, pytorch_transformers.BertConfig, pytorch_transformers.BertModel]
-    target_apis: [transformers.BERT_PRETRAINED_CONFIG_ARCHIVE_MAP, transformers.BERT_PRETRAINED_MODEL_ARCHIVE_MAP, transformers.BertConfig, transformers.BertModel]
+    source_apis: [pytorch_transformers.BertConfig, pytorch_transformers.BertModel, pytorch_transformers.BERT_PRETRAINED_MODEL_ARCHIVE_MAP, pytorch_transformers.BERT_PRETRAINED_CONFIG_ARCHIVE_MAP]
+    target_apis: [transformers.BertConfig, transformers.BertModel, transformers.BERT_PRETRAINED_MODEL_ARCHIVE_MAP, transformers.BERT_PRETRAINED_CONFIG_ARCHIVE_MAP]
 - path: "examples/nlp/joint_intent_slot_infer.py"
   code_changes:
   - line: "5:5"

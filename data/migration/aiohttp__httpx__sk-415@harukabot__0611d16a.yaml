@@ -20,14 +20,14 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, element name change]
     source_apis: [request]
-    target_apis: [AsyncClient, get]
+    target_apis: [get, AsyncClient]
   - line: "37:44-45"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument deletion, element name change]
     source_apis: [request]
-    target_apis: [AsyncClient, post]
+    target_apis: [post, AsyncClient]
   - line: "34:40-41"
     cardinality: one-to-many
     source_program_elements: [function call]
@@ -50,7 +50,7 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument deletion, element name change]
     source_apis: [request]
-    target_apis: [AsyncClient, get]
+    target_apis: [get, AsyncClient]
   - line: "112:113-114"
     cardinality: one-to-many
     source_program_elements: [function call]

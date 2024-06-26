@@ -9,32 +9,32 @@ files:
   code_changes:
   - line: "119:121-124"
     cardinality: many-to-many
-    source_program_elements: [attribute, function call]
+    source_program_elements: [function call, attribute]
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
-    source_apis: [MODE_CBC, new]
-    target_apis: [AES, CBC, Cipher, default_backend]
+    source_apis: [new, MODE_CBC]
+    target_apis: [Cipher, AES, CBC, default_backend]
   - line: "128:140-143"
     cardinality: many-to-many
-    source_program_elements: [attribute, function call]
+    source_program_elements: [function call, attribute]
     target_program_elements: [function call, function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
-    source_apis: [MODE_CBC, new]
-    target_apis: [AES, CBC, Cipher, default_backend]
+    source_apis: [new, MODE_CBC]
+    target_apis: [Cipher, AES, CBC, default_backend]
   - line: "121:133-134"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [argument deletion, argument transformation, element name change]
     source_apis: [encrypt]
-    target_apis: [encryptor, finalize, update]
+    target_apis: [encryptor, update, finalize]
   - line: "130:145-146"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call, function call]
     properties: [element name change]
     source_apis: [decrypt]
-    target_apis: [decryptor, finalize, update]
+    target_apis: [decryptor, update, finalize]
   - line: "44:41-45"
     cardinality: not applicable
     source_program_elements: [import]

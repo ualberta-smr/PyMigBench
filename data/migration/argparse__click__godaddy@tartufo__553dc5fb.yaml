@@ -54,22 +54,22 @@ files:
     source_program_elements: [function call, function call]
     target_program_elements: [decorator, function call]
     properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
-    source_apis: [FileType, add_argument]
-    target_apis: [File, option]
+    source_apis: [add_argument, FileType]
+    target_apis: [option, File]
   - line: "156-165:39-44"
     cardinality: many-to-many
     source_program_elements: [function call, function call]
     target_program_elements: [decorator, function call]
     properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
-    source_apis: [FileType, add_argument]
-    target_apis: [File, option]
+    source_apis: [add_argument, FileType]
+    target_apis: [option, File]
   - line: "166-172:45-46"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [decorator, function call]
     properties: [argument deletion, argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Path, option]
+    target_apis: [option, Path]
   - line: "189:"
     cardinality: one-to-zero
     source_program_elements: [function call]
@@ -125,7 +125,7 @@ files:
     target_program_elements: [decorator, function call]
     properties: [argument addition, argument deletion, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [File, option]
+    target_apis: [option, File]
   - line: ":15"
     cardinality: zero-to-one
     source_program_elements: []

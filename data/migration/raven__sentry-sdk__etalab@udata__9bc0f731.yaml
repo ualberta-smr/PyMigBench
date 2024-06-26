@@ -12,19 +12,19 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [raven.contrib.celery.register_logger_signal, raven.contrib.celery.register_signal]
-    target_apis: [sentry_sdk, sentry_sdk.integrations.celery.CeleryIntegration, sentry_sdk.integrations.flask.FlaskIntegration]
+    source_apis: [raven.contrib.celery.register_signal, raven.contrib.celery.register_logger_signal]
+    target_apis: [sentry_sdk, sentry_sdk.integrations.flask.FlaskIntegration, sentry_sdk.integrations.celery.CeleryIntegration]
   - line: "42,66:59-63"
     cardinality: many-to-many
     source_program_elements: [function call, function call]
     target_program_elements: [function call, function call, function call]
     properties: [argument addition, argument transformation, element name change]
     source_apis: [Sentry, init_app]
-    target_apis: [CeleryIntegration, FlaskIntegration, init]
+    target_apis: [init, FlaskIntegration, CeleryIntegration]
   - line: "48-49:69"
     cardinality: many-to-one
     source_program_elements: [attribute, attribute]
     target_program_elements: [attribute]
     properties: [element name change]
-    source_apis: [level, logging]
+    source_apis: [logging, level]
     target_apis: [set_level]

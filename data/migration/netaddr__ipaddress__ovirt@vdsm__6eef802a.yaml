@@ -103,10 +103,10 @@ files:
   - line: "46:48"
     cardinality: one-to-many
     source_program_elements: [function call]
-    target_program_elements: [attribute, function call]
+    target_program_elements: [function call, attribute]
     properties: [element name change]
     source_apis: [IPNetwork]
-    target_apis: [ip_interface, network]
+    target_apis: [network, ip_interface]
 - path: "lib/vdsm/network/sourceroute.py"
   code_changes:
   - line: "24:23"
@@ -119,13 +119,13 @@ files:
   - line: "51:52"
     cardinality: one-to-many
     source_program_elements: [function call]
-    target_program_elements: [attribute, function call]
+    target_program_elements: [function call, attribute]
     properties: [element name change]
     source_apis: [IPNetwork]
     target_apis: [ip_interface, network]
   - line: "56:56"
     cardinality: many-to-one
-    source_program_elements: [attribute, function call]
+    source_program_elements: [function call, attribute]
     target_program_elements: [function call]
     properties: [element name change, output transformation]
     source_apis: [IPAddress, value]

@@ -13,7 +13,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [lxml.etree]
-    target_apis: [defusedxml.ElementTree, defusedxml.lxml.etree]
+    target_apis: [defusedxml.lxml.etree, defusedxml.ElementTree]
   - line: ":32"
     cardinality: zero-to-one
     source_program_elements: []

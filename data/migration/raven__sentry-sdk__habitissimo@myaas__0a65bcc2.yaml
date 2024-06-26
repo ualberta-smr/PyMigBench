@@ -20,4 +20,4 @@ files:
     target_program_elements: [function call, function call]
     properties: [argument addition, argument deletion, element name change]
     source_apis: [Sentry]
-    target_apis: [FlaskIntegration, init]
+    target_apis: [init, FlaskIntegration]

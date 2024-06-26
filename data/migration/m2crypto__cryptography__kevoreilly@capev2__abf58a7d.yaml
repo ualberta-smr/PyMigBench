@@ -12,7 +12,7 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [M2Crypto.BIO, M2Crypto.SMIME, M2Crypto.X509, M2Crypto.m2]
+    source_apis: [M2Crypto.m2, M2Crypto.BIO, M2Crypto.X509, M2Crypto.SMIME]
     target_apis: [cryptography, cryptography.hazmat.backends.openssl.backend.backend, cryptography.hazmat.backends.openssl.x509, cryptography.hazmat.primitives.hashes]
   - line: "770:774"
     cardinality: one-to-one

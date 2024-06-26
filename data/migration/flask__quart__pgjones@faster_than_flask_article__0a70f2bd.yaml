@@ -12,8 +12,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask.Blueprint, flask.abort, flask.current_app, flask.jsonify, flask.request]
-    target_apis: [quart.Blueprint, quart.abort, quart.current_app, quart.jsonify, quart.request]
+    source_apis: [flask.abort, flask.Blueprint, flask.current_app, flask.jsonify, flask.request]
+    target_apis: [quart.abort, quart.Blueprint, quart.current_app, quart.jsonify, quart.request]
 - path: "app/reviews.py"
   code_changes:
   - line: "1:1"
@@ -21,8 +21,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask.Blueprint, flask.abort, flask.current_app, flask.jsonify, flask.request]
-    target_apis: [quart.Blueprint, quart.abort, quart.current_app, quart.jsonify, quart.request]
+    source_apis: [flask.abort, flask.Blueprint, flask.current_app, flask.jsonify, flask.request]
+    target_apis: [quart.abort, quart.Blueprint, quart.current_app, quart.jsonify, quart.request]
   - line: "8:8"
     cardinality: one-to-one
     source_program_elements: [function call]

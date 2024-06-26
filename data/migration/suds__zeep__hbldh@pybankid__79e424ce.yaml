@@ -19,8 +19,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [suds.WebFault, suds.client.Client, suds.sax.text.Text, suds.transport.Reply, suds.transport.http.HttpAuthenticated]
-    target_apis: [zeep.Client, zeep.exceptions.Error, zeep.transports.Transport]
+    source_apis: [suds.client.Client, suds.transport.http.HttpAuthenticated, suds.transport.Reply, suds.WebFault, suds.sax.text.Text]
+    target_apis: [zeep.Client, zeep.transports.Transport, zeep.exceptions.Error]
   - line: "66-67:67"
     cardinality: one-to-one
     source_program_elements: [function call]

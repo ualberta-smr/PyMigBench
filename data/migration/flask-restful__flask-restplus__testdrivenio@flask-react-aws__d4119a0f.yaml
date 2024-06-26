@@ -22,4 +22,4 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [flask_restful.Api, flask_restful.Resource]
-    target_apis: [flask_restplus.Namespace, flask_restplus.Resource, flask_restplus.fields]
+    target_apis: [flask_restplus.Resource, flask_restplus.fields, flask_restplus.Namespace]

@@ -13,7 +13,7 @@ files:
     target_program_elements: [function call, function call, function call]
     properties: [argument transformation, element name change]
     source_apis: [encrypt]
-    target_apis: [encryptor, finalize, update]
+    target_apis: [encryptor, update, finalize]
   - line: "109:110"
     cardinality: one-to-one
     source_program_elements: [function call]
@@ -34,7 +34,7 @@ files:
     target_program_elements: [function call, function call, function call]
     properties: [element name change]
     source_apis: [decrypt]
-    target_apis: [decryptor, finalize, update]
+    target_apis: [decryptor, update, finalize]
   - line: "8:8"
     cardinality: not applicable
     source_program_elements: [import]

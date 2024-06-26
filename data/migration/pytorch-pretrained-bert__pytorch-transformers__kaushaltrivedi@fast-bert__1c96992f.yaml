@@ -42,8 +42,8 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pytorch_pretrained_bert.optimization.BertAdam, pytorch_pretrained_bert.optimization.ConstantLR, pytorch_pretrained_bert.optimization.WarmupConstantSchedule, pytorch_pretrained_bert.optimization.WarmupCosineSchedule, pytorch_pretrained_bert.optimization.WarmupCosineWithHardRestartsSchedule, pytorch_pretrained_bert.optimization.WarmupCosineWithWarmupRestartsSchedule, pytorch_pretrained_bert.optimization.WarmupLinearSchedule]
-    target_apis: [pytorch_transformers.AdamW, pytorch_transformers.ConstantLRSchedule, pytorch_transformers.WarmupConstantSchedule, pytorch_transformers.WarmupCosineSchedule, pytorch_transformers.WarmupCosineWithHardRestartsSchedule, pytorch_transformers.WarmupLinearSchedule]
+    source_apis: [pytorch_pretrained_bert.optimization.BertAdam, pytorch_pretrained_bert.optimization.ConstantLR, pytorch_pretrained_bert.optimization.WarmupCosineSchedule, pytorch_pretrained_bert.optimization.WarmupConstantSchedule, pytorch_pretrained_bert.optimization.WarmupLinearSchedule, pytorch_pretrained_bert.optimization.WarmupCosineWithWarmupRestartsSchedule, pytorch_pretrained_bert.optimization.WarmupCosineWithHardRestartsSchedule]
+    target_apis: [pytorch_transformers.AdamW, pytorch_transformers.ConstantLRSchedule, pytorch_transformers.WarmupCosineSchedule, pytorch_transformers.WarmupConstantSchedule, pytorch_transformers.WarmupLinearSchedule, pytorch_transformers.WarmupCosineWithHardRestartsSchedule]
 - path: "fast_bert/lm-data.py"
   code_changes:
   - line: "5:5"

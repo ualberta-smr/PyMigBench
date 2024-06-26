@@ -13,14 +13,14 @@ files:
     target_program_elements: [function call, function call]
     properties: [element name change]
     source_apis: [WSGIServer, serve_forever]
-    target_apis: [listen, server]
+    target_apis: [server, listen]
   - line: "3,5:1,6"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
     source_apis: [gevent.monkey, gevent.pywsgi.WSGIServer]
-    target_apis: [eventlet.patcher, eventlet.patcher, eventlet.wsgi, eventlet.wsgi]
+    target_apis: [eventlet.wsgi, eventlet.patcher, eventlet.wsgi, eventlet.patcher]
   - line: "4:2"
     cardinality: one-to-one
     source_program_elements: [function call]

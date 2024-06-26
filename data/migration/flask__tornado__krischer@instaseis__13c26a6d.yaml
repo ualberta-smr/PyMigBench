@@ -12,5 +12,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [flask, flask.Flask, flask.ext.restful.reqparse, flask.make_response]
+    source_apis: [flask, flask.Flask, flask.make_response, flask.ext.restful.reqparse]
     target_apis: [tornado.ioloop, tornado.web]

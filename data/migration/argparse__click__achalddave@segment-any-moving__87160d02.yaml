@@ -48,7 +48,7 @@ files:
     target_program_elements: [decorator, function call]
     properties: [argument name change, argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Choice, option]
+    target_apis: [option, Choice]
   - line: "277-283:34-40"
     cardinality: one-to-one
     source_program_elements: [function call]

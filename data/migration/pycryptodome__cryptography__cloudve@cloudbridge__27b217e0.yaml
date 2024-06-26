@@ -13,7 +13,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [Crypto.PublicKey.RSA]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.rsa, cryptography.hazmat.primitives.serialization]
+    target_apis: [cryptography.hazmat.primitives.serialization, cryptography.hazmat.primitives.asymmetric.rsa, cryptography.hazmat.backends.default_backend]
   - line: "6:8-11"
     cardinality: one-to-one
     source_program_elements: [function call]
@@ -26,8 +26,8 @@ files:
     source_program_elements: [function call, function call]
     target_program_elements: [function call, function call]
     properties: [argument addition, argument deletion, element name change]
-    source_apis: [exportKey, publickey]
-    target_apis: [public_bytes, public_key]
+    source_apis: [publickey, exportKey]
+    target_apis: [public_key, public_bytes]
   - line: "8:12-15"
     cardinality: one-to-one
     source_program_elements: [function call]

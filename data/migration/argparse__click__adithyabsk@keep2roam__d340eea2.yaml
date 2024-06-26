@@ -27,14 +27,14 @@ files:
     target_program_elements: [decorator, function call]
     properties: [argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Path, argument]
+    target_apis: [argument, Path]
   - line: "57-61:61"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [decorator, function call]
     properties: [argument transformation, element name change, parameter addition to decorated function]
     source_apis: [add_argument]
-    target_apis: [Path, argument]
+    target_apis: [argument, Path]
   - line: "62:"
     cardinality: one-to-zero
     source_program_elements: [function call]

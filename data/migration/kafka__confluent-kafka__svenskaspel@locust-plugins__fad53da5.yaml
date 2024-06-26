@@ -19,7 +19,7 @@ files:
     source_program_elements: [function call, function call, function call]
     target_program_elements: [function call]
     properties: [argument transformation, element name change]
-    source_apis: [add_callback, add_callback, send]
+    source_apis: [send, add_callback, add_callback]
     target_apis: [produce]
   - line: "3:3"
     cardinality: not applicable

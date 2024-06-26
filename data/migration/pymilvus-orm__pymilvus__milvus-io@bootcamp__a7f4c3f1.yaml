@@ -12,5 +12,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [pymilvus_orm.collection.Collection, pymilvus_orm.connections, pymilvus_orm.schema.CollectionSchema, pymilvus_orm.schema.FieldSchema, pymilvus_orm.types.DataType, pymilvus_orm.utility]
-    target_apis: [pymilvus.Collection, pymilvus.CollectionSchema, pymilvus.DataType, pymilvus.FieldSchema, pymilvus.connections, pymilvus.utility]
+    source_apis: [pymilvus_orm.connections, pymilvus_orm.types.DataType, pymilvus_orm.schema.FieldSchema, pymilvus_orm.schema.CollectionSchema, pymilvus_orm.collection.Collection, pymilvus_orm.utility]
+    target_apis: [pymilvus.connections, pymilvus.FieldSchema, pymilvus.CollectionSchema, pymilvus.DataType, pymilvus.Collection, pymilvus.utility]

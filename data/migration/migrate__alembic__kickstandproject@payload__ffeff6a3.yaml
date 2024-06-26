@@ -12,5 +12,5 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [migrate, migrate.exceptions, migrate.versioning.api, migrate.versioning.repository.Repository, migrate.versioning.util]
+    source_apis: [migrate, migrate.versioning.util, migrate.exceptions, migrate.versioning.api, migrate.versioning.repository.Repository]
     target_apis: [alembic.command, alembic.config, alembic.migration]

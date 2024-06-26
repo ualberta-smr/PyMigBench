@@ -13,7 +13,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [ldap]
-    target_apis: [ldap3.ALL, ldap3.Connection, ldap3.Server, ldap3.core.exceptions]
+    target_apis: [ldap3.Server, ldap3.Connection, ldap3.ALL, ldap3.core.exceptions]
   - line: "47:66"
     cardinality: one-to-one
     source_program_elements: [function call]

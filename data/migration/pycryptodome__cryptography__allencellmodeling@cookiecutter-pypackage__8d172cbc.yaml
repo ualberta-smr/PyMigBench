@@ -12,19 +12,19 @@ files:
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
-    source_apis: [Crypto.Cipher.PKCS1_v1_5, Crypto.PublicKey.RSA]
-    target_apis: [cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding.PKCS1v15, cryptography.hazmat.primitives.serialization.load_pem_public_key]
+    source_apis: [Crypto.PublicKey.RSA, Crypto.Cipher.PKCS1_v1_5]
+    target_apis: [cryptography.hazmat.primitives.serialization.load_pem_public_key, cryptography.hazmat.backends.default_backend, cryptography.hazmat.primitives.asymmetric.padding.PKCS1v15]
   - line: "34-35:31,35"
     cardinality: many-to-many
     source_program_elements: [function call, function call]
     target_program_elements: [function call, function call]
     properties: [argument addition, argument transformation, element name change]
     source_apis: [importKey, new]
-    target_apis: [default_backend, load_pem_public_key]
+    target_apis: [load_pem_public_key, default_backend]
   - line: "36:36"
     cardinality: one-to-many
     source_program_elements: [function call]
     target_program_elements: [function call, function call]
     properties: [argument addition, element name change]
     source_apis: [encrypt]
-    target_apis: [PKCS1v15, encrypt]
+    target_apis: [encrypt, PKCS1v15]
