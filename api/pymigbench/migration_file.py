@@ -6,7 +6,8 @@ class MigrationFile:
         self.path = path
         self.code_changes = code_changes
         self.mig: 'Migration' = None
-        for cc in self.code_changes:
+        for i, cc in enumerate(self.code_changes):
+            cc.index = i
             cc.file = self
 
     def id(self):

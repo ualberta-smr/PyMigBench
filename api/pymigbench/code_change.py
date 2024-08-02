@@ -17,13 +17,14 @@ class CodeChange:
         self.file: 'MigrationFile' | None = None
 
     def is_import(self):
-        return ProgramElement.IMPORT in self.source_program_elements or ProgramElement.IMPORT in self.target_program_elements
+        return (ProgramElement.IMPORT in self.source_program_elements) or (
+                    ProgramElement.IMPORT in self.target_program_elements)
 
     def is_addition_only(self):
-        return not self.target_apis
+        return not self.source_apis
 
     def is_removal_only(self):
-        return not self.source_apis
+        return not self.target_apis
 
     def can_have_properties(self):
         return not (self.is_import() or self.is_addition_only() or self.is_removal_only())
