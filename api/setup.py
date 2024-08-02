@@ -4,7 +4,7 @@ version = open('./.publish/version').read().strip()
 setup(
     name='pymigbench',
     description='APIs to access the PyMigBench dataset',
-    long_description=open('./.publish/README.md').read(),
+    long_description=open('./README.md').read(),
     long_description_content_type='text/markdown',
     version=version,
     packages=['pymigbench'],
