@@ -1,0 +1,1 @@
+py -m twine upload dist/* -u __token__ -p "$(cat .publish/pypi.token.txt)"
