@@ -1,9 +1,12 @@
 from setuptools import setup
 
+version = open('./.publish/version').read().strip()
 setup(
     name='pymigbench',
     description='APIs to access the PyMigBench dataset',
-    version='0.0.1',
+    long_description=open('./.publish/README.md').read(),
+    long_description_content_type='text/markdown',
+    version=version,
     packages=['pymigbench'],
     author='PyMigBench Team',
     author_email='mohayemin@ualberta.ca',
@@ -12,7 +15,6 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
-        'Operating System:: OSIndependent',
     ],
     python_requires='>=3.11',
     install_requires=[
