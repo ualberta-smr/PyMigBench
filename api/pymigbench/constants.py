@@ -2,14 +2,13 @@ from enum import Enum
 
 
 class ProgramElement(Enum):
-    F_CALL = "function call"
-    ATTR = "attribute"
-    DEC = "decorator"
-    F_REF = "function reference"
+    FUNCTION_CALL = "function call"
+    ATTRIBUTE = "attribute"
+    DECORATOR = "decorator"
+    FUNCTION_REFERENCE = "function reference"
     TYPE = "type"
-    EXC = "exception"
-    IMP = "import"
-    NO_PE = "none"
+    EXCEPTION = "exception"
+    IMPORT = "import"
 
 
 class Cardinality(Enum):
@@ -19,39 +18,37 @@ class Cardinality(Enum):
     ONE_TO_MANY = "one-to-many"
     MANY_TO_ONE = "many-to-one"
     MANY_TO_MANY = "many-to-many"
+    NOT_APPLICABLE = "not applicable"
 
 
 class Property(Enum):
-    ENC = "element name change"
-    ARG_ADD = "argument addition"
-    ARG_DEL = "argument deletion"
-    ARG_NC = "argument name change"
-    ARG_TRANS = "argument transformation"
-    ASYNC_TRANS = "async transformation"
-    OUT_TRANS = "output transformation"
-    PARAM_ADD_TO_DECORATE = "parameter addition to decorated function"
-    NO_PROP = "no properties"
-    Not_Applicable = "not applicable"
+    ELEMENT_NAME_CHANGE = "element name change"
+    ARGUMENT_ADDITION = "argument addition"
+    ARGUMENT_DELETION = "argument deletion"
+    ARGUMENT_NAME_CHANGE = "argument name change"
+    ARGUMENT_TRANSFORMATION = "argument transformation"
+    ASYNC_TRANSFORMATION = "async transformation"
+    OUTPUT_TRANSFORMATION = "output transformation"
+    PARAM_ADD_TO_DECORATED = "parameter addition to decorated function"
 
 
 _short_name_map = {
-    ProgramElement.F_CALL: "fCall",
-    ProgramElement.ATTR: "attr",
-    ProgramElement.DEC: "dec",
-    ProgramElement.F_REF: "fRef",
+    ProgramElement.FUNCTION_CALL: "fCall",
+    ProgramElement.ATTRIBUTE: "attr",
+    ProgramElement.DECORATOR: "dec",
+    ProgramElement.FUNCTION_REFERENCE: "fRef",
     ProgramElement.TYPE: "type",
-    ProgramElement.EXC: "exc",
-    ProgramElement.IMP: "imp",
+    ProgramElement.EXCEPTION: "exc",
+    ProgramElement.IMPORT: "imp",
 
-    Property.NO_PROP: "noProps",
-    Property.ENC: "elemNC",
-    Property.ARG_ADD: "argAdd",
-    Property.ARG_DEL: "argDel",
-    Property.ARG_NC: "argNC",
-    Property.ARG_TRANS: "argTrans",
-    Property.ASYNC_TRANS: "asyncTrans",
-    Property.OUT_TRANS: "outTrans",
-    Property.PARAM_ADD_TO_DECORATE: "paramAdd",
+    Property.ELEMENT_NAME_CHANGE: "elemNC",
+    Property.ARGUMENT_ADDITION: "argAdd",
+    Property.ARGUMENT_DELETION: "argDel",
+    Property.ARGUMENT_NAME_CHANGE: "argNC",
+    Property.ARGUMENT_TRANSFORMATION: "argTrans",
+    Property.ASYNC_TRANSFORMATION: "asyncTrans",
+    Property.OUTPUT_TRANSFORMATION: "outTrans",
+    Property.PARAM_ADD_TO_DECORATED: "paramAdd",
 
     Cardinality.ONE_TO_ONE: "OO",
     Cardinality.ONE_TO_MANY: "OM",

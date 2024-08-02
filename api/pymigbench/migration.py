@@ -12,7 +12,7 @@ class Migration:
         self.domain = domain
         self._ccs: list[CodeChange] | None = None
         self.pair_id = "__".join([self.source, self.target])
-        self.commit_url: str = f"https://github.com/{self.repo}/commit/{self.commit}"
+        self.commit_url: str = f"https://github.com/{self.repo}/commit/{self.short_commit()}"
         for file in self.files:
             file.mig = self
 

@@ -1,6 +1,5 @@
 from pymigbench.constants import ProgramElement, Cardinality, Property
 from pymigbench.line_replacement import LineReplacement
-from pymigbench.migration_file import MigrationFile
 
 
 class CodeChange:
@@ -15,10 +14,10 @@ class CodeChange:
         self.cardinality = cardinality
         self.properties = properties
         self.index: int | None = None
-        self.file: MigrationFile | None = None
+        self.file: 'MigrationFile' | None = None
 
     def is_import(self):
-        return ProgramElement.IMP in self.source_program_elements or ProgramElement.IMP in self.target_program_elements
+        return ProgramElement.IMPORT in self.source_program_elements or ProgramElement.IMPORT in self.target_program_elements
 
     def is_addition_only(self):
         return not self.target_apis

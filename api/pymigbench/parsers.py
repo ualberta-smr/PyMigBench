@@ -8,8 +8,8 @@ from pymigbench.types import Dynamic
 
 def parse_code_change(data: Dynamic):
     line = LineReplacement.from_expression(data["line"])
-    source_pes = [ProgramElement(pe) for pe in data["source_apis"]]
-    target_pes = [ProgramElement(pe) for pe in data["target_apis"]]
+    source_pes = [ProgramElement(pe) for pe in data["source_program_elements"]]
+    target_pes = [ProgramElement(pe) for pe in data["target_program_elements"]]
     cardinality = Cardinality(data["cardinality"])
     props = [Property(pe) for pe in data["properties"]]
     return CodeChange(line, data["source_apis"], data["target_apis"], source_pes, target_pes, cardinality, props)
