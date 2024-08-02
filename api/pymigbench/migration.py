@@ -10,7 +10,6 @@ class Migration:
         self.target = target
         self.files = files
         self.domain = domain
-        self.errors: list[str] | None = None
         self._ccs: list[CodeChange] | None = None
         self.pair_id = "__".join([self.source, self.target])
         self.commit_url: str = f"https://github.com/{self.repo}/commit/{self.commit}"
@@ -22,6 +21,11 @@ class Migration:
 
     def id(self):
         return "__".join([self.source, self.target, self.repo, self.short_commit()])
+
+    def code_changes(self):
+        if self._ccs is None:
+            self._ccs = [cc for file in self.files for cc in file.code_changes]
+        return self._ccs
 
     def __str__(self):
         return self.id()
