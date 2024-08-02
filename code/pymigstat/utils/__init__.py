@@ -1,1 +1,0 @@
-Dynamic = dict[str, any]
