@@ -1,0 +1,3 @@
+exclude pymigbench_tests/*
+exclude data/*
+include version

@@ -1,0 +1,4 @@
+secrets.json
+dist/
+*.egg-info/
+.venv/
