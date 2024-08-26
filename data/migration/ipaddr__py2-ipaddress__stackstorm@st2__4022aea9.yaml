@@ -14,7 +14,14 @@ files:
     properties: []
     source_apis: [ipaddr]
     target_apis: [ipaddress]
-  - line: "43,59:43,59"
+  - line: "43:43"
+    cardinality: one-to-one
+    source_program_elements: [function call]
+    target_program_elements: [function call]
+    properties: [element name change]
+    source_apis: [IPAddress]
+    target_apis: [ip_address]
+  - line: "59:59"
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
