@@ -19,8 +19,8 @@ files:
     source_program_elements: [function call]
     target_program_elements: [function call]
     properties: []
-    source_apis: [IPNetwork]
-    target_apis: [IPNetwork]
+    source_apis: [IPAddress]
+    target_apis: [IPAddress]
   - line: "24:25"
     cardinality: not applicable
     source_program_elements: [import]
