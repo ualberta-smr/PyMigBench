@@ -1,30 +1,30 @@
-repo: redhat-cip/hardware
-commit: a429c38cf6e6630f6bc1d1793f1aa2a75b21cc03
+repo: stackstorm/st2
+commit: 4022aea911726ab98e376860cfba75987e4b3df4
 source: ipaddr
-target: py2-ipaddress
-commit_url: https://github.com/redhat-cip/hardware/commit/a429c38c
+target: ipaddress
+commit_url: https://github.com/stackstorm/st2/commit/4022aea9
 domain: HTTP Clients
 files:
-- path: "hardware/matcher.py"
+- path: "st2common/st2common/util/ip_utils.py"
   code_changes:
-  - line: "24:20"
+  - line: "19:19"
     cardinality: not applicable
     source_program_elements: [import]
     target_program_elements: [import]
     properties: []
     source_apis: [ipaddr]
     target_apis: [ipaddress]
-  - line: "88:84"
+  - line: "43:43"
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
-    properties: []
-    source_apis: [IPv4Address]
-    target_apis: [IPv4Address]
-  - line: "88:84"
+    properties: [element name change]
+    source_apis: [IPAddress]
+    target_apis: [ip_address]
+  - line: "59:59"
     cardinality: one-to-one
     source_program_elements: [function call]
     target_program_elements: [function call]
-    properties: []
-    source_apis: [IPv4Network]
-    target_apis: [IPv4Network]
+    properties: [element name change]
+    source_apis: [IPAddress]
+    target_apis: [ip_address]

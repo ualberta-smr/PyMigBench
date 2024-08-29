@@ -1,7 +1,7 @@
 repo: evgeni/bley
 commit: dcc428536d19b0f43604d4052ecaadabadef5e64
 source: ipaddr
-target: py2-ipaddress
+target: ipaddress
 commit_url: https://github.com/evgeni/bley/commit/dcc42853
 domain: HTTP Clients
 files:

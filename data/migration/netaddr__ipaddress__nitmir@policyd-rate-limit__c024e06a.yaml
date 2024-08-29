@@ -1,7 +1,7 @@
 repo: nitmir/policyd-rate-limit
 commit: c024e06ab9313b2b4dae1e1962aa9c2a4de4d62e
 source: netaddr
-target: py2-ipaddress
+target: ipaddress
 commit_url: https://github.com/nitmir/policyd-rate-limit/commit/c024e06a
 domain: HTTP Clients
 files:
