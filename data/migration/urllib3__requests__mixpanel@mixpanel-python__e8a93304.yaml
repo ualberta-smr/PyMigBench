@@ -56,12 +56,4 @@ files:
     properties: []
     source_apis: []
     target_apis: [mount]
-- path: "test_mixpanel.py"
-  code_changes:
-  - line: "13:"
-    cardinality: not applicable
-    source_program_elements: [import]
-    target_program_elements: []
-    properties: []
-    source_apis: [urllib3]
-    target_apis: []
+
