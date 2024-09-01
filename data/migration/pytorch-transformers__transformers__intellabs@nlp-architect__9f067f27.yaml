@@ -55,38 +55,4 @@ files:
     properties: []
     source_apis: [XLNetPreTrainedModel]
     target_apis: [XLNetPreTrainedModel]
-  - line: ":135"
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [type]
-    properties: []
-    source_apis: []
-    target_apis: [BertPreTrainedModel]
-  - line: ":143"
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [type]
-    properties: []
-    source_apis: []
-    target_apis: [RobertaConfig]
-  - line: ":144"
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [type]
-    properties: []
-    source_apis: []
-    target_apis: [ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP]
-  - line: ":151"
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [function call]
-    properties: []
-    source_apis: []
-    target_apis: [RobertaModel]
-  - line: ":160"
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [function call]
-    properties: []
-    source_apis: []
-    target_apis: [roberta]
+
