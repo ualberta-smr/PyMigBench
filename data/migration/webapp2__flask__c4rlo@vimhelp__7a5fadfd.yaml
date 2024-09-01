@@ -35,7 +35,7 @@ files:
     properties: []
     source_apis: [query_string]
     target_apis: [query_string]
-  - line: "69:69"
+  - line: "69:74"
     cardinality: one-to-one
     source_program_elements: [attribute]
     target_program_elements: [attribute]
