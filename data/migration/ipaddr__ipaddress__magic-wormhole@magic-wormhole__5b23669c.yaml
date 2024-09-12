@@ -1,7 +1,7 @@
 repo: magic-wormhole/magic-wormhole
 commit: 5b23669cf3fec46471bbc30620651ffc188c578c
 source: ipaddr
-target: py2-ipaddress
+target: ipaddress
 commit_url: https://github.com/magic-wormhole/magic-wormhole/commit/5b23669c
 domain: HTTP Clients
 files:

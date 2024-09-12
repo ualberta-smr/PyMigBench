@@ -21,17 +21,4 @@ files:
     properties: []
     source_apis: []
     target_apis: [Element]
-  - line: ":33"
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [type]
-    properties: []
-    source_apis: []
-    target_apis: [SubElement]
-  - line: ":34"
-    cardinality: zero-to-one
-    source_program_elements: []
-    target_program_elements: [function reference]
-    properties: []
-    source_apis: []
-    target_apis: [tostring]
+

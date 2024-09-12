@@ -1,7 +1,7 @@
 repo: redhat-cip/hardware
 commit: a429c38cf6e6630f6bc1d1793f1aa2a75b21cc03
 source: ipaddr
-target: py2-ipaddress
+target: ipaddress
 commit_url: https://github.com/redhat-cip/hardware/commit/a429c38c
 domain: HTTP Clients
 files:

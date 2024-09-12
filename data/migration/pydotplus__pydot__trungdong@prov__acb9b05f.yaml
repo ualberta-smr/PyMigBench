@@ -1,7 +1,7 @@
 repo: trungdong/prov
 commit: acb9b05f0bd99b3fbd58e5f1a684d1cfc28961f8
 source: pydotplus
-target: pydot2
+target: pydot
 commit_url: https://github.com/trungdong/prov/commit/acb9b05f
 domain: Graphic
 files:

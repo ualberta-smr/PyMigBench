@@ -1,7 +1,7 @@
 repo: networkx/networkx
 commit: 481f3e8e405cafc05c570e8fc5a2a4d531f86121
 source: pydotplus
-target: pydot2
+target: pydot
 commit_url: https://github.com/networkx/networkx/commit/481f3e8e
 domain: Graphic
 files:
