@@ -13,7 +13,7 @@ files:
     target_program_elements: [import]
     properties: []
     source_apis: [prettytable.PrettyTable, prettytable.ALL]
-    target_apis: [prettytable.PrettyTable, prettytable.ALL]
+    target_apis: [tabulate.tabulate]
   - line: "879-883,900:899-902"
     cardinality: many-to-one
     source_program_elements: [function call, attribute, attribute, function call]
